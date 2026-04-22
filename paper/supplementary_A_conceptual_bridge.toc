@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}Information-Theoretic Metrics}{1}{section.1}%
+\contentsline {paragraph}{Entropy ($H$).}{1}{section*.2}%
+\contentsline {paragraph}{Conditional entropy ($H_n$).}{1}{section*.3}%
+\contentsline {paragraph}{Mutual information (MI).}{2}{section*.4}%
+\contentsline {paragraph}{Index of coincidence (IC).}{2}{section*.5}%
+\contentsline {paragraph}{Kasiski test.}{2}{section*.6}%
+\contentsline {section}{\numberline {2}Generative Models}{2}{section.2}%
+\contentsline {paragraph}{Generative model.}{2}{section*.7}%
+\contentsline {paragraph}{SilPart (syllabic partition).}{2}{section*.8}%
+\contentsline {section}{\numberline {3}Decipherment Algorithms}{3}{section.3}%
+\contentsline {paragraph}{Bayesian decipherment.}{3}{section*.9}%
+\contentsline {paragraph}{Expectation-Maximisation (EM).}{3}{section*.10}%
+\contentsline {paragraph}{Markov Chain Monte Carlo (MCMC).}{3}{section*.11}%
+\contentsline {paragraph}{$\hat {R}$ (R-hat, Gelman--Rubin diagnostic).}{3}{section*.12}%
+\contentsline {paragraph}{Temperature ($T$).}{3}{section*.13}%
+\contentsline {section}{\numberline {4}Language Models}{4}{section.4}%
+\contentsline {paragraph}{Language model (LM).}{4}{section*.14}%
+\contentsline {paragraph}{$n$-gram model.}{4}{section*.15}%
+\contentsline {paragraph}{LSTM (Long Short-Term Memory).}{4}{section*.16}%
+\contentsline {paragraph}{Perplexity / validation loss.}{4}{section*.17}%
+\contentsline {section}{\numberline {5}Validation Concepts}{4}{section.5}%
+\contentsline {paragraph}{$n$-gram realism (percentile).}{4}{section*.18}%
+\contentsline {paragraph}{Root matching.}{4}{section*.19}%
+\contentsline {paragraph}{Scorecard.}{5}{section*.20}%
+\contentsline {paragraph}{Cardinality ratio ($K_{\mathrm {eff}} / |\Sigma _T|$).}{5}{section*.21}%
+\contentsline {section}{\numberline {6}Historical-Cryptanalytic Context}{5}{section.6}%
+\contentsline {paragraph}{Monoalphabetic substitution.}{5}{section*.22}%
+\contentsline {paragraph}{Nomenclator.}{5}{section*.23}%
+\contentsline {paragraph}{Constructed language (conlang).}{5}{section*.24}%

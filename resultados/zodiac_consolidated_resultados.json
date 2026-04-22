@@ -1,0 +1,43 @@
+{
+  "signs_present": [
+    "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius"
+  ],
+  "signs_missing": [
+    "Aquarius (unknown)",
+    "Capricorn (f74, cut out)"
+  ],
+  "labels_per_sign": {
+    "Pisces": 30,
+    "Aries": 30,
+    "Taurus": 30,
+    "Gemini": 29,
+    "Cancer": 30,
+    "Leo": 30,
+    "Virgo": 30,
+    "Libra": 30,
+    "Scorpio": 30,
+    "Sagittarius": 30
+  },
+  "total_labels": 299,
+  "unique_labels": 264,
+  "mean_atoms": 5.3,
+  "onset_dominant": "A1 (75%)",
+  "suffix_dominant": "A2 (49%)",
+  "shared_labels": 17,
+  "astrological_correlations": "NONE found (8 tests, all at or below chance)",
+  "information_bits": 20,
+  "compatible_with": "composite degree properties (planet+brightness+gender+special)",
+  "not_compatible_with": "Heidelberg full entries (139 bits)",
+  "calendar_order": true,
+  "heidelberg_parallel": "Astrolabium Planum (Pietro d'Abano, Padua, c.1300)",
+  "padua_connection": "Palazzo della Ragione frescoes (1306-1420)"
+}

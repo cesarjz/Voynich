@@ -1,0 +1,14 @@
+{
+  "onset_category_chi2": 21.39603494623656,
+  "onset_category_p": 0.09190576351971697,
+  "intra_ingredient_onset_consistency": 0.5114814814814814,
+  "same_onset_jaccard": 0.06205359752816936,
+  "diff_onset_jaccard": 0.05164162614348773,
+  "onset_cooccurrence_p": 3.334134058348415e-69,
+  "onset_cooccurrence_effect": 0.08737755382584433,
+  "same_pair_jaccard": 0.06779652707621278,
+  "diff_pair_jaccard": 0.05377200189551422,
+  "pair_effect": 0.11457597601828362,
+  "significant_onsets": 9,
+  "total_onsets_tested": 18
+}

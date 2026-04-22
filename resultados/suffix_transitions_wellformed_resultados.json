@@ -1,0 +1,102 @@
+{
+  "suffix_transitions": {
+    "stems_multi_section": 361,
+    "suffix_changes": 138,
+    "observed_change_rate": 0.382,
+    "null_change_rate": 0.362,
+    "p_value": 0.1,
+    "top_transitions": [
+      {
+        "from": "bio",
+        "suf1": "B2",
+        "to": "herbal",
+        "suf2": "C1",
+        "n": 12
+      },
+      {
+        "from": "herbal",
+        "suf1": "C1",
+        "to": "stars",
+        "suf2": "B2",
+        "n": 10
+      },
+      {
+        "from": "stars",
+        "suf1": "G1",
+        "to": "text",
+        "suf2": "C1",
+        "n": 9
+      },
+      {
+        "from": "pharma",
+        "suf1": "C1",
+        "to": "stars",
+        "suf2": "B2",
+        "n": 9
+      },
+      {
+        "from": "herbal",
+        "suf1": "G1",
+        "to": "stars",
+        "suf2": "C1",
+        "n": 9
+      },
+      {
+        "from": "herbal",
+        "suf1": "G1",
+        "to": "text",
+        "suf2": "C1",
+        "n": 8
+      },
+      {
+        "from": "bio",
+        "suf1": "B2",
+        "to": "text",
+        "suf2": "C1",
+        "n": 8
+      },
+      {
+        "from": "bio",
+        "suf1": "F1",
+        "to": "stars",
+        "suf2": "G1",
+        "n": 8
+      },
+      {
+        "from": "cosmo",
+        "suf1": "C1",
+        "to": "herbal",
+        "suf2": "G1",
+        "n": 7
+      },
+      {
+        "from": "bio",
+        "suf1": "A2",
+        "to": "stars",
+        "suf2": "A1",
+        "n": 7
+      }
+    ]
+  },
+  "well_formedness": {
+    "total": 33095,
+    "well_formed": 14063,
+    "pct": 0.425,
+    "by_section": {
+      "stars": 40.3,
+      "herbal": 47.7,
+      "bio": 32.2,
+      "pharma": 48.0,
+      "text": 40.4,
+      "cosmo": 46.9,
+      "zodiac": 54.2,
+      "astro": 59.7
+    },
+    "reasons": {
+      "no_syllable_break": 17249,
+      "well_formed": 14063,
+      "invalid_suffix": 1625,
+      "both_invalid": 158
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "n_botanical_ids": 35,
+  "n_cross_refs": 1225,
+  "observed_matches": 1,
+  "null_mean": 0.6,
+  "null_std": 0.7,
+  "p_value": 0.518,
+  "n_new_candidates": 257,
+  "n_specific_candidates": 104
+}

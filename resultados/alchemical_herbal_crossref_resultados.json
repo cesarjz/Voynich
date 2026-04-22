@@ -1,0 +1,69 @@
+{
+  "alchemical_plants_recovered": 98,
+  "with_botanical_id": "26",
+  "matching_recipe_ingredients": 7,
+  "matching_david_ingredients": 1,
+  "matching_voynich_botanical_ids": 0,
+  "recipe_matches": [
+    {
+      "alch": "Herba Ciloga",
+      "botanical": "Orchis",
+      "recipe": [
+        "Orchis"
+      ],
+      "david": []
+    },
+    {
+      "alch": "Herba Ditimo biancho",
+      "botanical": "Dictamnus albus",
+      "recipe": [
+        "Dictamnus"
+      ],
+      "david": []
+    },
+    {
+      "alch": "Herba Requificia",
+      "botanical": "Glycyrrhiza glabra",
+      "recipe": [
+        "Glycyrrhiza"
+      ],
+      "david": []
+    },
+    {
+      "alch": "Herba Luza Mandragora",
+      "botanical": "Mandragora",
+      "recipe": [
+        "Mandragora"
+      ],
+      "david": []
+    },
+    {
+      "alch": "Herba Rucha savlaticha",
+      "botanical": "Ruta",
+      "recipe": [
+        "Ruta",
+        "Succo rutae"
+      ],
+      "david": []
+    },
+    {
+      "alch": "Herba Spigonarda",
+      "botanical": "Nardostachys jatamansi",
+      "recipe": [
+        "Stachys"
+      ],
+      "david": []
+    },
+    {
+      "alch": "Herba Genesiana/Genciana",
+      "botanical": "Gentiana",
+      "recipe": [
+        "Gentiana"
+      ],
+      "david": [
+        "Gentiana"
+      ]
+    }
+  ],
+  "voynich_matches": []
+}

@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}The Funnel Principle}{2}{section.1}%
+\contentsline {section}{\numberline {2}Stage 1 $\to $ Stage 2: The Fingerprint Kills Classical Ciphers}{2}{section.2}%
+\contentsline {section}{\numberline {3}Stage 2 $\to $ Stage 3: SilPart Forces Syllabic Segmentation}{2}{section.3}%
+\contentsline {section}{\numberline {4}Stage 3 $\to $ Stage 4: Syllabic Structure Demands Bayesian Decipherment}{3}{section.4}%
+\contentsline {section}{\numberline {5}Why Hebrew? The Bayesian Language Ranking}{3}{section.5}%
+\contentsline {subsection}{\numberline {5.1}The Selection Logic}{3}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}What the Ranking Reveals}{3}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Why This Matters for the Funnel}{4}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}What the Ranking Does NOT Prove}{4}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Stage 4 $\to $ Structural Limit: Why Sixteen Models Hit the Same Wall}{5}{section.6}%
+\contentsline {subsection}{\numberline {6.1}The Alphabet Asymmetry Trap}{5}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}LM Dominance and Posterior Collapse}{5}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}The Witten-Bell--Dirichlet Interaction}{5}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}The Root Ceiling: Statistical Mirage}{6}{subsection.6.4}%
+\contentsline {section}{\numberline {7}The Funnel in One Diagram}{6}{section.7}%
+\contentsline {section}{\numberline {8}Conclusion: The Bounded Mystery}{7}{section.8}%

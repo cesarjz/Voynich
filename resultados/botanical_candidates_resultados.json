@@ -1,0 +1,405 @@
+{
+  "n_candidates": 444,
+  "n_recipe_matched": 104,
+  "null_mean": 85.6,
+  "p_value": 0.19,
+  "top_candidates": [
+    {
+      "stem": "K1A3B2",
+      "score": 3.17,
+      "n_recipe_folios": 1,
+      "confidence": "medium",
+      "recipe_match": true,
+      "category": "medicinal_poison",
+      "candidate_ingredients": [
+        "Crocus"
+      ],
+      "plants": "Colchicum autumnale (Autumn Crocus)",
+      "herbal_folios": "f27r"
+    },
+    {
+      "stem": "K1A1Q2K1",
+      "score": 3.0,
+      "n_recipe_folios": 1,
+      "confidence": "high",
+      "recipe_match": true,
+      "category": "climbing_plant",
+      "candidate_ingredients": [
+        "Opium",
+        "Papaver album",
+        "Papaver nigrum"
+      ],
+      "plants": "Hedera (Ivy), Papaver (Poppy)",
+      "herbal_folios": "f35v, f49v"
+    },
+    {
+      "stem": "D1A1Q1A3B2Ba",
+      "score": 2.83,
+      "n_recipe_folios": 1,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Euphorbia",
+      "herbal_folios": "f46r"
+    },
+    {
+      "stem": "K1J1P1K1",
+      "score": 2.83,
+      "n_recipe_folios": 1,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Euphorbia",
+      "herbal_folios": "f46r"
+    },
+    {
+      "stem": "D1A1Q1Ba",
+      "score": 2.83,
+      "n_recipe_folios": 1,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Euphorbia",
+      "herbal_folios": "f46r"
+    },
+    {
+      "stem": "P2K1B1",
+      "score": 2.83,
+      "n_recipe_folios": 1,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Euphorbia",
+      "herbal_folios": "f46r"
+    },
+    {
+      "stem": "X1A1",
+      "score": 2.83,
+      "n_recipe_folios": 1,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Euphorbia",
+      "herbal_folios": "f46r"
+    },
+    {
+      "stem": "K1A3C1",
+      "score": 2.67,
+      "n_recipe_folios": 1,
+      "confidence": "medium",
+      "recipe_match": true,
+      "category": "medicinal_poison",
+      "candidate_ingredients": [
+        "Crocus"
+      ],
+      "plants": "Colchicum autumnale (Autumn Crocus), Urtica (Nettle)",
+      "herbal_folios": "f27r, f42r"
+    },
+    {
+      "stem": "K1Q1A3B2",
+      "score": 2.5,
+      "n_recipe_folios": 1,
+      "confidence": "high",
+      "recipe_match": false,
+      "category": "climbing_plant",
+      "candidate_ingredients": [],
+      "plants": "Hedera (Ivy)",
+      "herbal_folios": "f35v"
+    },
+    {
+      "stem": "B1A3B2",
+      "score": 2.5,
+      "n_recipe_folios": 2,
+      "confidence": "high",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Plantago (Plantain), Gossypium (Cotton)",
+      "herbal_folios": "f9v, f31r, f35v, f41r, f43r, f44v, f46r"
+    },
+    {
+      "stem": "D1A1Q1K1Aa",
+      "score": 2.5,
+      "n_recipe_folios": 1,
+      "confidence": "high",
+      "recipe_match": false,
+      "category": "climbing_plant",
+      "candidate_ingredients": [],
+      "plants": "Hedera (Ivy)",
+      "herbal_folios": "f35v"
+    },
+    {
+      "stem": "K1J1A1Q1K2",
+      "score": 2.42,
+      "n_recipe_folios": 4,
+      "confidence": "medium",
+      "recipe_match": true,
+      "category": "medicinal_poison",
+      "candidate_ingredients": [
+        "Crocus"
+      ],
+      "plants": "Colchicum autumnale (Autumn Crocus)",
+      "herbal_folios": "f27r"
+    },
+    {
+      "stem": "Q1L1J1A1B1",
+      "score": 2.33,
+      "n_recipe_folios": 2,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_poison",
+      "candidate_ingredients": [
+        "Opium",
+        "Papaver album",
+        "Papaver nigrum"
+      ],
+      "plants": "Papaver (Poppy)",
+      "herbal_folios": "f49v"
+    },
+    {
+      "stem": "K1J1Q2K1",
+      "score": 2.33,
+      "n_recipe_folios": 2,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_poison",
+      "candidate_ingredients": [
+        "Opium",
+        "Papaver album",
+        "Papaver nigrum"
+      ],
+      "plants": "Papaver (Poppy)",
+      "herbal_folios": "f49v"
+    },
+    {
+      "stem": "D1A1P1K1Ba",
+      "score": 2.33,
+      "n_recipe_folios": 2,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Euphorbia",
+      "herbal_folios": "f46r"
+    },
+    {
+      "stem": "A1B2K1B1",
+      "score": 2.33,
+      "n_recipe_folios": 2,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Aristolochia longa",
+        "Aristolochia rotunda"
+      ],
+      "plants": "Aristolochia",
+      "herbal_folios": "f34v"
+    },
+    {
+      "stem": "P2K1J1B1",
+      "score": 2.33,
+      "n_recipe_folios": 2,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Euphorbia",
+      "herbal_folios": "f46r"
+    },
+    {
+      "stem": "A1B1A2",
+      "score": 2.33,
+      "n_recipe_folios": 1,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "aquatic",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Nymphaea (Water lily), Euphorbia",
+      "herbal_folios": "f14v, f46r"
+    },
+    {
+      "stem": "L1A1B2Q1A3",
+      "score": 2.33,
+      "n_recipe_folios": 2,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Euphorbia",
+      "herbal_folios": "f46r"
+    },
+    {
+      "stem": "B1A3B2B1",
+      "score": 2.33,
+      "n_recipe_folios": 1,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Hypericum"
+      ],
+      "plants": "Hypericum (St John's Wort), Allium/Onion family",
+      "herbal_folios": "f13r, f45r"
+    },
+    {
+      "stem": "U2",
+      "score": 2.33,
+      "n_recipe_folios": 3,
+      "confidence": "high",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia",
+        "Fumaria"
+      ],
+      "plants": "Centaurea, Helleborus (Hellebore)?",
+      "herbal_folios": "f2r, f3v, f6r, f14v, f15v, f16r, f22r, f32r, f35v, f38r, f42r, f44v, f45r, f46r, f56r, f93r"
+    },
+    {
+      "stem": "AaQ1J1Ba",
+      "score": 2.33,
+      "n_recipe_folios": 1,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Aristolochia longa",
+        "Aristolochia rotunda"
+      ],
+      "plants": "Aristolochia, Calendula (Marigold)",
+      "herbal_folios": "f34v, f40r"
+    },
+    {
+      "stem": "U1",
+      "score": 2.33,
+      "n_recipe_folios": 3,
+      "confidence": "high",
+      "recipe_match": true,
+      "category": "medicinal_poison",
+      "candidate_ingredients": [
+        "Aristolochia longa",
+        "Aristolochia rotunda",
+        "Opium",
+        "Papaver album",
+        "Papaver nigrum"
+      ],
+      "plants": "Helleborus (Hellebore)?, Plantago (Plantain)",
+      "herbal_folios": "f3v, f9v, f22r, f34v, f35v, f44v, f49v"
+    },
+    {
+      "stem": "T1",
+      "score": 2.33,
+      "n_recipe_folios": 1,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Aristolochia longa",
+        "Aristolochia rotunda"
+      ],
+      "plants": "Aristolochia, Mentha (Mint)",
+      "herbal_folios": "f34v, f47r"
+    },
+    {
+      "stem": "A2B1A3",
+      "score": 2.25,
+      "n_recipe_folios": 4,
+      "confidence": "high",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Hypericum"
+      ],
+      "plants": "Borage, Hypericum (St John's Wort)",
+      "herbal_folios": "f6r, f13r, f14v, f16r, f22r, f35v"
+    },
+    {
+      "stem": "K1A1Q2",
+      "score": 2.2,
+      "n_recipe_folios": 5,
+      "confidence": "high",
+      "recipe_match": true,
+      "category": "tree_aromatic",
+      "candidate_ingredients": [
+        "Opium",
+        "Papaver album",
+        "Papaver nigrum",
+        "Viola"
+      ],
+      "plants": "Viola (Violet), Nymphaea (Water lily)",
+      "herbal_folios": "f5v, f14v, f15v, f16r, f35v, f49v, f56r"
+    },
+    {
+      "stem": "L1A1U2",
+      "score": 2.17,
+      "n_recipe_folios": 1,
+      "confidence": "medium",
+      "recipe_match": false,
+      "category": "tree_aromatic",
+      "candidate_ingredients": [],
+      "plants": "Juniperus (Juniper) cont.",
+      "herbal_folios": "f16r"
+    },
+    {
+      "stem": "C2L1J1",
+      "score": 2.17,
+      "n_recipe_folios": 1,
+      "confidence": "medium",
+      "recipe_match": false,
+      "category": "aquatic",
+      "candidate_ingredients": [],
+      "plants": "Nymphaea (Water lily)",
+      "herbal_folios": "f2v"
+    },
+    {
+      "stem": "K1A2Q1A3",
+      "score": 2.17,
+      "n_recipe_folios": 1,
+      "confidence": "medium",
+      "recipe_match": false,
+      "category": "spice",
+      "candidate_ingredients": [],
+      "plants": "Nigella sativa (Black cumin)",
+      "herbal_folios": "f29v"
+    },
+    {
+      "stem": "L1Ba",
+      "score": 2.17,
+      "n_recipe_folios": 3,
+      "confidence": "low",
+      "recipe_match": true,
+      "category": "medicinal_herb",
+      "candidate_ingredients": [
+        "Euphorbia"
+      ],
+      "plants": "Euphorbia",
+      "herbal_folios": "f46r"
+    }
+  ]
+}

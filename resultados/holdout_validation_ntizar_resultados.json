@@ -1,0 +1,12 @@
+{
+  "holdout_f1_mean": 0.6205481364855298,
+  "holdout_f1_std": 0.020502773868664427,
+  "null_f1_mean": 0.5518455868129984,
+  "null_f1_std": 0.01707281559520803,
+  "gap_mean": 0.06870254967253125,
+  "paired_t": 48.126492360631204,
+  "paired_p": 8.690146660566427e-71,
+  "splits_real_gt_null": 100,
+  "n_splits": 100,
+  "per_ingredient_mean_hit_rate": 0.7548218972360465
+}

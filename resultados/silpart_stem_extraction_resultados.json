@@ -1,0 +1,10 @@
+{
+  "agreement_pct": 69.4,
+  "naive_stems": 6135,
+  "silpart_stems": 3459,
+  "naive_concentration": 0.6101,
+  "silpart_concentration": 0.5016,
+  "naive_jaccard_gap": 0.1864,
+  "silpart_jaccard_gap": 0.0702,
+  "verdict": "SilPart segmentation DEGRADES ingredient discrimination."
+}

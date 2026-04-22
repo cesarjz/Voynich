@@ -1,0 +1,16 @@
+{
+  "voynich_stems": 6135,
+  "voynich_suffixes": 67,
+  "voynich_mean_suf_per_stem": 3.6,
+  "hebrew_roots": 2500,
+  "hebrew_patterns": 25,
+  "hebrew_mean_pat_per_root": 8,
+  "stem_suffix_ratio": 91.6,
+  "hebrew_root_pattern_ratio": 100.0,
+  "parallels": [
+    "morphological (root+pattern)",
+    "genre-dependent (context shifts)",
+    "combinatorial (positional classes, Sefer Yetzirah)"
+  ],
+  "probable_author_profile": "Jewish physician-Kabbalist, northern Italy, 1404-1438"
+}

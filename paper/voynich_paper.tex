@@ -1,0 +1,72 @@
+% ============================================================
+%  OUP version (Digital Scholarship in the Humanities)
+%  Compile: pdflatex → bibtex → pdflatex → pdflatex
+% ============================================================
+\documentclass[numsec,webpdf,modern,medium,namedate]{oup-authoring-template}
+
+\graphicspath{{../images/}{../}}
+
+% --- Mathematics ---
+\usepackage{amsmath,amssymb}
+
+% --- Tables ---
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{adjustbox}
+
+% --- Misc ---
+\usepackage{enumitem}
+
+% --- Typography ---
+\usepackage{microtype}
+\emergencystretch=1em
+
+% --- Custom commands ---
+\newcommand{\vms}{Voynich Manuscript}
+\newcommand{\MI}{\mathrm{MI}}
+\newcommand{\JSD}{\mathrm{JSD}}
+\newcommand{\Rhat}{\hat{R}}
+
+% --- OUP flag (controls table*/tabular* in shared body) ---
+\newif\ifoup
+\ouptrue
+
+% ============================================================
+\begin{document}
+
+\journaltitle{Digital Scholarship in the Humanities}
+\DOI{DOI HERE}
+\copyrightyear{2026}
+\pubyear{2026}
+\access{Advance Access Publication Date: Day Month Year}
+\appnotes{Paper}
+
+\firstpage{1}
+
+\title[Computational Analysis of the Voynich Manuscript]{Computational Analysis of the Voynich Manuscript: Statistical Fingerprinting, Generative Modelling, and Sixteen Decipherment Models Yield a Structured Negative Result}
+
+\author[1,$\ast$]{C\'esar Jim\'enez Zapata}
+
+\authormark{Jim\'enez Zapata}
+
+\address[1]{\orgname{Independent Researcher}, \orgaddress{\country{Spain}}}
+
+\corresp[$\ast$]{Corresponding author. \href{mailto:cesarjz@gmail.com}{cesarjz@gmail.com}}
+
+\received{11}{3}{2026}
+
+\abstract{
+\input{voynich_abstract}
+}
+
+\keywords{\input{voynich_keywords}}
+
+\maketitle
+
+\input{voynich_body}
+
+\bibliographystyle{abbrvnat}
+\bibliography{voynich_paper}
+
+\end{document}

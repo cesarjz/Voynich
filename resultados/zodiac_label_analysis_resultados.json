@@ -1,0 +1,12 @@
+{
+  "shared_labels": 17,
+  "same_degree_position": 0,
+  "mean_degree_diff": 10.6,
+  "element_jaccard_same": 0.0043,
+  "element_jaccard_diff": 0.0115,
+  "zodiac_distance_corr": -0.283,
+  "zodiac_distance_p": 0.0596,
+  "label_bits": 20.0,
+  "compatible_with": "Andalo di Negro degree categories (~6 bits)",
+  "not_compatible_with": "Heidelberg Astrolabium full entries (~139 bits)"
+}

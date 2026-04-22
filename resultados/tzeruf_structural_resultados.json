@@ -1,0 +1,20 @@
+{
+  "class_ratios": {
+    "chi2": 105.3,
+    "p": 0.0
+  },
+  "selectivity": {
+    "sy_scaled": 49.7,
+    "voynich_bigrams": 4.6,
+    "voynich_onset_coda": 6.7
+  },
+  "modifier_ratio": {
+    "abulafia": 5.0,
+    "voynich": 3.6
+  },
+  "symmetry": {
+    "bidirectional_pct": 35.6,
+    "correlation": 0.206
+  },
+  "compatible_metrics": 1
+}

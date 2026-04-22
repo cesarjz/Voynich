@@ -1,0 +1,258 @@
+{
+  "corpus": {
+    "n_folios": 227,
+    "n_words": 37848,
+    "n_glyph_types": 166
+  },
+  "tier_distribution": {
+    "T2": 18246,
+    "T1": 16894,
+    "?": 2708
+  },
+  "metrics_by_I": {
+    "H": {
+      "n_words": 11128,
+      "pct_F": 0.421,
+      "pct_OC": 0.159,
+      "utilisation": 0.058,
+      "oc_ratio": 1.82,
+      "n_oc_observed": 482
+    },
+    "B": {
+      "n_words": 6276,
+      "pct_F": 0.619,
+      "pct_OC": 0.139,
+      "utilisation": 0.059,
+      "oc_ratio": 1.67,
+      "n_oc_observed": 262
+    },
+    "P": {
+      "n_words": 2533,
+      "pct_F": 0.417,
+      "pct_OC": 0.18,
+      "utilisation": 0.061,
+      "oc_ratio": 1.55,
+      "n_oc_observed": 190
+    },
+    "S": {
+      "n_words": 11341,
+      "pct_F": 0.511,
+      "pct_OC": 0.172,
+      "utilisation": 0.057,
+      "oc_ratio": 1.8,
+      "n_oc_observed": 517
+    },
+    "Z": {
+      "n_words": 1251,
+      "pct_F": 0.36,
+      "pct_OC": 0.215,
+      "utilisation": 0.06,
+      "oc_ratio": 1.59,
+      "n_oc_observed": 131
+    },
+    "A": {
+      "n_words": 839,
+      "pct_F": 0.276,
+      "pct_OC": 0.204,
+      "utilisation": 0.057,
+      "oc_ratio": 1.7,
+      "n_oc_observed": 107
+    },
+    "C": {
+      "n_words": 2180,
+      "pct_F": 0.401,
+      "pct_OC": 0.193,
+      "utilisation": 0.051,
+      "oc_ratio": 1.66,
+      "n_oc_observed": 214
+    },
+    "T": {
+      "n_words": 2300,
+      "pct_F": 0.511,
+      "pct_OC": 0.173,
+      "utilisation": 0.044,
+      "oc_ratio": 1.98,
+      "n_oc_observed": 187
+    }
+  },
+  "metrics_by_L": {
+    "?": {
+      "n_words": 3179,
+      "pct_F": 0.344,
+      "pct_OC": 0.203,
+      "utilisation": 0.053,
+      "oc_ratio": 1.74,
+      "n_oc_observed": 259
+    },
+    "A": {
+      "n_words": 11178,
+      "pct_F": 0.418,
+      "pct_OC": 0.148,
+      "utilisation": 0.061,
+      "oc_ratio": 1.82,
+      "n_oc_observed": 457
+    },
+    "B": {
+      "n_words": 23491,
+      "pct_F": 0.528,
+      "pct_OC": 0.17,
+      "utilisation": 0.063,
+      "oc_ratio": 1.85,
+      "n_oc_observed": 726
+    }
+  },
+  "metrics_by_H": {
+    "1": {
+      "n_words": 7921,
+      "pct_F": 0.412,
+      "pct_OC": 0.139,
+      "utilisation": 0.064,
+      "oc_ratio": 1.85,
+      "n_oc_observed": 354
+    },
+    "1>": {
+      "n_words": 2712,
+      "pct_F": 0.423,
+      "pct_OC": 0.165,
+      "utilisation": 0.06,
+      "oc_ratio": 1.62,
+      "n_oc_observed": 194
+    },
+    "2": {
+      "n_words": 10934,
+      "pct_F": 0.566,
+      "pct_OC": 0.163,
+      "utilisation": 0.05,
+      "oc_ratio": 1.78,
+      "n_oc_observed": 461
+    },
+    "3": {
+      "n_words": 4022,
+      "pct_F": 0.48,
+      "pct_OC": 0.186,
+      "utilisation": 0.056,
+      "oc_ratio": 1.75,
+      "n_oc_observed": 296
+    },
+    "3>": {
+      "n_words": 7447,
+      "pct_F": 0.523,
+      "pct_OC": 0.167,
+      "utilisation": 0.053,
+      "oc_ratio": 1.88,
+      "n_oc_observed": 403
+    },
+    "4": {
+      "n_words": 1771,
+      "pct_F": 0.36,
+      "pct_OC": 0.199,
+      "utilisation": 0.053,
+      "oc_ratio": 1.68,
+      "n_oc_observed": 167
+    },
+    "4>": {
+      "n_words": 1687,
+      "pct_F": 0.321,
+      "pct_OC": 0.208,
+      "utilisation": 0.052,
+      "oc_ratio": 1.71,
+      "n_oc_observed": 175
+    },
+    "5": {
+      "n_words": 791,
+      "pct_F": 0.387,
+      "pct_OC": 0.203,
+      "utilisation": 0.062,
+      "oc_ratio": 2.08,
+      "n_oc_observed": 97
+    },
+    "5>": {
+      "n_words": 111,
+      "pct_F": 0.302,
+      "pct_OC": 0.226,
+      "utilisation": 0.146,
+      "oc_ratio": 2.69,
+      "n_oc_observed": 21
+    },
+    "@>": {
+      "n_words": 452,
+      "pct_F": 0.474,
+      "pct_OC": 0.181,
+      "utilisation": 0.077,
+      "oc_ratio": 1.86,
+      "n_oc_observed": 57
+    }
+  },
+  "chi2_tests": {
+    "onset_family_x_I": {
+      "chi2": 0.0,
+      "p": 1.0,
+      "dof": 0
+    },
+    "onset_family_x_L": {
+      "chi2": 0.0,
+      "p": 1.0,
+      "dof": 0
+    },
+    "community_x_I": {
+      "chi2": 79122.77787813322,
+      "p": 0.0,
+      "dof": 126
+    },
+    "community_x_L": {
+      "chi2": 44775.560832747615,
+      "p": 0.0,
+      "dof": 36
+    },
+    "community_x_H": {
+      "chi2": 82856.46428820639,
+      "p": 0.0,
+      "dof": 162
+    }
+  },
+  "onset_families": {
+    "n_clusters": 1
+  },
+  "identifier_uniqueness": {
+    "H": {
+      "n_folios": 129,
+      "n_unique": 127,
+      "ratio": 0.984
+    },
+    "B": {
+      "n_folios": 19,
+      "n_unique": 19,
+      "ratio": 1.0
+    },
+    "P": {
+      "n_folios": 16,
+      "n_unique": 16,
+      "ratio": 1.0
+    },
+    "S": {
+      "n_folios": 25,
+      "n_unique": 25,
+      "ratio": 1.0
+    },
+    "Z": {
+      "n_folios": 12,
+      "n_unique": 12,
+      "ratio": 1.0
+    },
+    "A": {
+      "n_folios": 8,
+      "n_unique": 8,
+      "ratio": 1.0
+    },
+    "C": {
+      "n_folios": 11,
+      "n_unique": 11,
+      "ratio": 1.0
+    },
+    "T": {
+      "n_folios": 6,
+      "n_unique": 6,
+      "ratio": 1.0
+    }
+  }
+}

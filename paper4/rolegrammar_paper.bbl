@@ -1,0 +1,53 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[D'Imperio(1978)]{dimperio1978}
+M.~E. D'Imperio.
+\newblock \emph{The {Voynich} Manuscript: An Elegant Enigma}.
+\newblock National Security Agency / Central Security Service, Fort Meade, MD,
+  1978.
+\newblock NSA publication C-001-78.
+
+\bibitem[Jim\'enez~Zapata(2026{\natexlab{a}})]{jimenez2026negative}
+C.~Jim\'enez~Zapata.
+\newblock Computational analysis of the {Voynich Manuscript}: Statistical
+  fingerprinting, generative modelling, and sixteen decipherment models yield a
+  structured negative result, 2026{\natexlab{a}}.
+\newblock URL \url{https://zenodo.org/doi/10.5281/zenodo.19188265}.
+\newblock Companion study (paper 1).
+
+\bibitem[Jim\'enez~Zapata(2026{\natexlab{b}})]{jimenez2026twotier}
+C.~Jim\'enez~Zapata.
+\newblock Two-tier encoding in the {Voynich Manuscript}: Positional syllable
+  structure reveals a designed combinatorial system, 2026{\natexlab{b}}.
+\newblock URL \url{https://zenodo.org/doi/10.5281/zenodo.19188265}.
+\newblock Companion study (paper 2).
+
+\bibitem[Jim\'enez~Zapata(2026{\natexlab{c}})]{jimenez2026venusring}
+C.~Jim\'enez~Zapata.
+\newblock The venus ring of {Voynich} f57v: A localized talismanic inscription
+  with a private subalphabet, and its direct comparison with \textit{{Picatrix
+  Latinus}} ({Cracow Jagiellonian Library MS~793}), 2026{\natexlab{c}}.
+\newblock URL \url{https://zenodo.org/doi/10.5281/zenodo.19188265}.
+\newblock Companion study (paper 3).
+
+\bibitem[Mart\'inez~Gavil\'an(2025)]{martinezgavilan2025}
+M.~D. Mart\'inez~Gavil\'an.
+\newblock En los l\'imites de la ling\"u\'istica: el {\textit{apparatus
+  philosophicus}} (1665) de {Juan Caramuel} y los nuevos intereses en el
+  estudio del lenguaje.
+\newblock \emph{Bolet\'in de la Sociedad Espa\~nola de Historiograf\'ia
+  Ling\"u\'istica}, \penalty0 (19):\penalty0 99--152, 2025.
+\newblock \doi{10.5281/zenodo.17961147}.
+
+\bibitem[Zandbergen(2025)]{zandbergen_sta1}
+R.~Zandbergen.
+\newblock {STA1} super transliteration alphabet for the {Voynich} manuscript
+  and {STA1 2.0} corpus, 2025.
+\newblock URL \url{https://voynich.nu/}.
+
+\end{thebibliography}

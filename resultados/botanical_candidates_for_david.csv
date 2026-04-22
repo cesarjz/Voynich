@@ -1,0 +1,445 @@
+stem,score,n_recipe_folios,confidence,recipe_match,category,candidate_ingredients,plants,herbal_folios
+K1A3B2,3.17,1,medium,True,medicinal_poison,['Crocus'],Colchicum autumnale (Autumn Crocus),f27r
+K1A1Q2K1,3.0,1,high,True,climbing_plant,"['Opium', 'Papaver album', 'Papaver nigrum']","Hedera (Ivy), Papaver (Poppy)","f35v, f49v"
+D1A1Q1A3B2Ba,2.83,1,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+K1J1P1K1,2.83,1,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+D1A1Q1Ba,2.83,1,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+P2K1B1,2.83,1,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+X1A1,2.83,1,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+K1A3C1,2.67,1,medium,True,medicinal_poison,['Crocus'],"Colchicum autumnale (Autumn Crocus), Urtica (Nettle)","f27r, f42r"
+K1Q1A3B2,2.5,1,high,False,climbing_plant,[],Hedera (Ivy),f35v
+B1A3B2,2.5,2,high,True,medicinal_herb,['Euphorbia'],"Plantago (Plantain), Gossypium (Cotton)","f9v, f31r, f35v, f41r, f43r, f44v, f46r"
+D1A1Q1K1Aa,2.5,1,high,False,climbing_plant,[],Hedera (Ivy),f35v
+K1J1A1Q1K2,2.42,4,medium,True,medicinal_poison,['Crocus'],Colchicum autumnale (Autumn Crocus),f27r
+Q1L1J1A1B1,2.33,2,low,True,medicinal_poison,"['Opium', 'Papaver album', 'Papaver nigrum']",Papaver (Poppy),f49v
+K1J1Q2K1,2.33,2,low,True,medicinal_poison,"['Opium', 'Papaver album', 'Papaver nigrum']",Papaver (Poppy),f49v
+D1A1P1K1Ba,2.33,2,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+A1B2K1B1,2.33,2,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+P2K1J1B1,2.33,2,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+A1B1A2,2.33,1,low,True,aquatic,['Euphorbia'],"Nymphaea (Water lily), Euphorbia","f14v, f46r"
+L1A1B2Q1A3,2.33,2,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+B1A3B2B1,2.33,1,low,True,medicinal_herb,['Hypericum'],"Hypericum (St John's Wort), Allium/Onion family","f13r, f45r"
+U2,2.33,3,high,True,medicinal_herb,"['Euphorbia', 'Fumaria']","Centaurea, Helleborus (Hellebore)?","f2r, f3v, f6r, f14v, f15v, f16r, f22r, f32r, f35v, f38r, f42r, f44v, f45r, f46r, f56r, f93r"
+AaQ1J1Ba,2.33,1,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Aristolochia, Calendula (Marigold)","f34v, f40r"
+U1,2.33,3,high,True,medicinal_poison,"['Aristolochia longa', 'Aristolochia rotunda', 'Opium', 'Papaver album', 'Papaver nigrum']","Helleborus (Hellebore)?, Plantago (Plantain)","f3v, f9v, f22r, f34v, f35v, f44v, f49v"
+T1,2.33,1,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Aristolochia, Mentha (Mint)","f34v, f47r"
+A2B1A3,2.25,4,high,True,medicinal_herb,['Hypericum'],"Borage, Hypericum (St John's Wort)","f6r, f13r, f14v, f16r, f22r, f35v"
+K1A1Q2,2.2,5,high,True,tree_aromatic,"['Opium', 'Papaver album', 'Papaver nigrum', 'Viola']","Viola (Violet), Nymphaea (Water lily)","f5v, f14v, f15v, f16r, f35v, f49v, f56r"
+L1A1U2,2.17,1,medium,False,tree_aromatic,[],Juniperus (Juniper) cont.,f16r
+C2L1J1,2.17,1,medium,False,aquatic,[],Nymphaea (Water lily),f2v
+K1A2Q1A3,2.17,1,medium,False,spice,[],Nigella sativa (Black cumin),f29v
+L1Ba,2.17,3,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+B1K1J1Ba,2.17,1,medium,False,spice,[],Coriandrum (Coriander),f41r
+A2P1K1,2.17,1,medium,False,spice,[],Coriandrum (Coriander),f41r
+D1A1Q1K1Ba,2.17,3,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+L1Q2,2.17,1,medium,False,aquatic,[],Nymphaea (Water lily),f2v
+K1U1J1A1B1,2.17,1,medium,False,spice,[],"Coriandrum (Coriander), Capsicum (Pepper)","f41r, f100r"
+D1A1P1K1,2.17,3,low,True,medicinal_herb,['Hypericum'],Hypericum (St John's Wort),f13r
+U2A1B1,2.17,2,medium,True,medicinal_poison,['Crocus'],"Colchicum autumnale (Autumn Crocus), Nigella sativa (Black cumin)","f27r, f29v"
+D1A1Q2K1,2.14,7,high,True,climbing_plant,"['Opium', 'Papaver album', 'Papaver nigrum', 'Viola']","Viola (Violet), Nymphaea (Water lily)","f5v, f14v, f32r, f35v, f49v, f56r, f93r"
+A1Q1K1,2.11,9,high,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Hypericum']","Hypericum (St John's Wort), Juniperus (Juniper) cont.","f13r, f16r, f34v, f35v, f45r, f56r"
+D1A1A1,2.08,4,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+A1C2A3,2.08,4,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+Q2J1B1,2.08,4,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+K1J1A3,2.08,12,high,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Aristolochia, Hedera (Ivy)","f34v, f35v, f42r, f46r, f2v"
+K1A1B1A3,2.07,14,high,True,medicinal_poison,"['Opium', 'Papaver album', 'Papaver nigrum', 'Viola']","Helleborus (Hellebore)?, Cyperus/Sedge","f3v, f4v, f5v, f35v, f49v, f2v, f93r"
+A1A3,2.06,17,high,True,flower,"['Opium', 'Papaver album', 'Papaver nigrum']","Hedera (Ivy), Lilium (Lily)","f35v, f44v, f49v, f93r"
+B1A1,2.06,16,high,True,medicinal_poison,"['Aristolochia longa', 'Aristolochia rotunda', 'Hypericum', 'Opium', 'Papaver album', 'Papaver nigrum']","Helleborus (Hellebore)?, Hypericum (St John's Wort)","f3v, f13r, f14v, f15v, f25v, f29v, f32r, f34v, f35v, f41r, f43r, f45r, f47r, f49v, f53r, f2v, f93r"
+D1A1Q1,2.05,19,high,True,tree_aromatic,"['Opium', 'Papaver album', 'Papaver nigrum']","Juniperus (Juniper), Juniperus (Juniper) cont.","f15v, f16r, f35v, f40r, f45r, f49v"
+K1,2.04,28,high,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Crocus', 'Euphorbia', 'Fumaria', 'Opium', 'Papaver album', 'Papaver nigrum']","Helleborus (Hellebore)?, Borage","f3v, f6r, f9v, f14v, f15v, f16r, f25v, f27r, f29v, f31r, f34v, f35v, f38r, f42r, f46r, f47r, f49v, f56r, f2v, f93r, f100r"
+L1,2.04,25,high,True,medicinal_poison,"['Aristolochia longa', 'Aristolochia rotunda', 'Crocus', 'Euphorbia', 'Hypericum', 'Opium', 'Papaver album', 'Papaver nigrum']","Centaurea, Helleborus (Hellebore)?","f2r, f3v, f4v, f13r, f15v, f16r, f25v, f27r, f29v, f32r, f34v, f35v, f39r, f42r, f43r, f44v, f45r, f46r, f47r, f49v, f56r, f2v, f100r"
+A1Q1K2,2.04,26,high,True,climbing_plant,['Euphorbia'],"Hedera (Ivy), Dill/Anethum","f35v, f41v, f46r"
+A3,2.03,37,high,True,medicinal_flower,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia', 'Fumaria']","Centaurea, Juniperus (Juniper)","f2r, f15v, f16r, f31r, f32r, f33v, f34v, f35v, f38r, f39r, f40r, f41r, f43r, f44v, f46r, f47r, f56r, f93r, f100r"
+K1J1A1,2.03,36,high,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Helleborus (Hellebore)?, Cyperus/Sedge","f3v, f4v, f15v, f31r, f34v, f35v, f39r, f44v, f45r, f46r, f2v, f93r, f100r"
+K1A1,2.03,35,high,True,medicinal_herb,"['Crocus', 'Euphorbia', 'Fumaria', 'Hypericum', 'Opium', 'Papaver album', 'Papaver nigrum', 'Viola']","Centaurea, Helleborus (Hellebore)?","f2r, f3v, f4v, f5v, f6r, f9v, f13r, f14v, f15v, f16r, f25v, f27r, f35v, f38r, f39r, f41v, f42r, f44v, f45r, f46r, f47r, f49v, f53r, f56r, f2v, f93r, f100r"
+B1A3,2.03,38,high,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Crocus', 'Euphorbia', 'Fumaria', 'Hypericum', 'Opium', 'Papaver album', 'Papaver nigrum', 'Viola']","Centaurea, Helleborus (Hellebore)?","f2r, f3v, f4v, f5v, f6r, f9v, f13r, f14v, f15v, f16r, f22r, f25v, f27r, f29v, f31r, f32r, f33v, f34v, f35v, f38r, f39r, f40r, f41r, f41v, f42r, f43r, f44v, f45r, f46r, f47r, f49v, f53r, f56r, f2v, f93r, f100r"
+A1P1K1J1Ba,2.03,5,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+A1,2.03,36,high,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Centaurea, Helleborus (Hellebore)?","f2r, f3v, f6r, f15v, f22r, f31r, f32r, f33v, f34v, f35v, f39r, f40r, f41v, f42r, f44v, f45r, f53r, f56r, f93r"
+C2A1A3,2.0,2,high,False,climbing_plant,[],Hedera (Ivy),f35v
+A2Q2K1,2.0,1,high,False,medicinal_poison,['Hypericum'],"Helleborus (Hellebore)?, Hypericum (St John's Wort)","f3v, f13r, f35v"
+L1J1U1,2.0,6,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+D1A1P1K1B1,1.96,8,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+D1A1Q1K1B1,1.94,9,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+Q1K2B1,1.93,10,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Aristolochia, Euphorbia","f34v, f46r"
+L1K2B1,1.92,11,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+L1J1Q1,1.92,4,medium,True,spice,['Euphorbia'],"Nigella sativa (Black cumin), Rosmarinus (Rosemary)","f29v, f33v, f46r"
+A1Q2J1B1,1.9,14,low,True,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+K1Q1A3,1.9,15,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Plantago (Plantain), Aristolochia","f9v, f34v, f42r, f46r"
+D1A1Q2K1J1,1.87,5,medium,True,tree_aromatic,['Crocus'],"Juniperus (Juniper), Colchicum autumnale (Autumn Crocus)","f15v, f27r"
+K1J1Q2,1.87,5,medium,True,medicinal_herb,['Euphorbia'],"Centaurea, Urtica (Nettle)","f2r, f42r, f43r, f46r"
+D1A1Q2A1B1A3,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+A1P2K1A1L1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+D1A1U2A1,1.83,1,low,False,medicinal_herb,[],Borage,f6r
+K1A1Q1,1.83,6,medium,True,tree_aromatic,"['Euphorbia', 'Opium', 'Papaver album', 'Papaver nigrum']","Nymphaea (Water lily), Juniperus (Juniper)","f14v, f15v, f16r, f44v, f46r, f49v, f56r"
+AaQ1K2B1,1.83,1,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+L1Q1K1,1.83,1,low,False,medicinal_herb,['Hypericum'],Hypericum (St John's Wort),f13r
+D1A1P2K1A1,1.83,1,low,False,medicinal_poison,[],Aconitum (Monkshood),f25v
+A1J1P1K1Q1L1K2,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+BaA3B2,1.83,1,low,False,aromatic_herb,[],Salvia (Sage),f43r
+B1K2A3B3K1A1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+B1AaC1J1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+C2A1E1Q2,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+A2Q1K2A1B1,1.83,1,low,False,spice,[],Dill/Anethum,f41v
+P2A1B2L1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+P2K1A1B1A2K1J1A1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+AaC2J1C2,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+J1Q2,1.83,1,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+Q1L1J1,1.83,1,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+T1J1,1.83,1,low,False,aromatic_herb,[],Salvia (Sage),f43r
+K1J1A3C1,1.83,1,low,False,medicinal_poison,[],Helleborus (Hellebore)?,f3v
+A1Q2A1B2K1J1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+C2AaC1A3C1A2B1A3,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+JaW1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+A3B2T2,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+A2Q1L1K2,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+D1Q1K2A1B1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+K1A1B2L1J1A1B1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+A1U2A1B1A3B2,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+A1P1A3B2J1P2A1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+A1Q2A1B2L1K2A1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+AaQ2J1A1,1.83,1,low,False,aromatic_herb,[],Salvia (Sage),f43r
+Da,1.83,1,low,False,medicinal_flower,['Viola'],Viola (Violet),f5v
+A1Q1A1B2,1.83,1,low,False,fern,[],Fern,f22r
+B1A3E1,1.83,1,low,False,medicinal_herb,[],Plantago (Plantain),f9v
+B1A3F3A1B1,1.83,1,low,False,medicinal_flower,['Viola'],Viola (Violet),f5v
+B1B2,1.83,1,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+A2Q2J1A1B1,1.83,1,low,False,aromatic_herb,[],Salvia (Sage),f43r
+K1B2,1.83,1,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+LbA1B1A3,1.83,1,low,False,herb,[],Cyperus/Sedge,f4v
+A2Q2K1B1,1.83,1,low,False,aromatic_herb,[],Salvia (Sage),f43r
+D1A1P2K1J1Ba,1.83,1,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+Q2K1J1Ba,1.83,1,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+A1Q1A1B2Ba,1.83,1,low,False,medicinal_flower,[],Calendula (Marigold),f40r
+A1P1K1,1.83,6,medium,True,medicinal_herb,['Hypericum'],"Hypericum (St John's Wort), Juniperus (Juniper) cont.","f13r, f16r"
+B1K1B1A3,1.83,1,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+A2B1,1.83,1,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+A1Q1K1K2,1.83,3,high,False,climbing_plant,[],Hedera (Ivy),f35v
+M1Ba,1.83,1,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+D1A1Q1K1K2,1.83,1,low,False,medicinal_poison,[],Drosera (Sundew) or Solanum (Nightshade),f56r
+L1J1A1U1,1.83,1,low,False,medicinal_herb,['Euphorbia'],Euphorbia,f46r
+K1U2A3,1.83,3,high,False,climbing_plant,[],Hedera (Ivy),f35v
+A1B2BaA3,1.83,1,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+B2A1K2,1.83,1,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+B1A3F3,1.83,2,low,True,flower,"['Opium', 'Papaver album', 'Papaver nigrum']","Lilium (Lily), Papaver (Poppy)","f44v, f49v"
+B1A3F3A1,1.83,1,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+A1Q2A3C1,1.83,1,low,False,aromatic_herb,[],Salvia (Sage),f43r
+K1A1Q2K2,1.83,1,low,False,aromatic_herb,[],Salvia (Sage),f43r
+A1Q2A1B2B1,1.83,1,low,False,flower,[],Lilium (Lily),f44v
+D1A1Q1K1A3,1.83,1,low,False,flower,[],Lilium (Lily),f44v
+LbM1Q1,1.83,1,low,False,aromatic_herb,[],Salvia (Sage),f43r
+P1L1B1A3,1.83,1,low,False,aromatic_herb,[],Salvia (Sage),f43r
+Q2K1A1Q1,1.83,1,low,False,medicinal_poison,[],Drosera (Sundew) or Solanum (Nightshade),f56r
+Q1K1B1A3,1.83,1,low,False,aromatic_herb,[],Mentha (Mint),f47r
+B1A3G1,1.83,1,low,False,aromatic_herb,[],Mentha (Mint),f47r
+D1A1Q2M1,1.83,1,low,False,medicinal_poison,"['Opium', 'Papaver album', 'Papaver nigrum']",Papaver (Poppy),f49v
+A1T1,1.83,1,low,False,fern,[],Fern,f22r
+K1Aa,1.83,1,low,False,medicinal_poison,[],Drosera (Sundew) or Solanum (Nightshade),f56r
+A1B2L1J1,1.83,1,low,False,aromatic_herb,[],Mentha (Mint),f47r
+A2Q1K2BaA3,1.83,1,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+B1K2,1.83,1,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+K1J1P1A3,1.83,1,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+L1U2J1,1.83,1,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+A2L1J1B1A3,1.83,1,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+P2K1,1.83,1,low,False,climbing_plant,[],Convolvulus/Ivy,f32r
+A2Q1J1B1,1.83,1,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+K1A1B1A3B2,1.83,1,low,False,medicinal_poison,[],"Helleborus (Hellebore)?, Drosera (Sundew) or Solanum (Nightshade)","f3v, f56r"
+U2A1B1A3,1.83,1,low,False,climbing_plant,[],Convolvulus/Ivy,f32r
+A1B1J1A1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+L1C2,1.83,1,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+K1J1K1J1,1.83,1,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+K1A1C1A3,1.83,1,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Aristolochia, Urtica (Nettle)","f34v, f42r"
+B2L1J1A1B1,1.83,1,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+B2A1B1A3,1.83,1,low,False,aromatic_herb,[],Rosmarinus (Rosemary),f33v
+Q1J1A3,1.83,1,low,False,medicinal_poison,[],Helleborus (Hellebore)?,f3v
+K2AaB2C2A3,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+K1A1P2A3C1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+C2A1K1A1C1T2,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+A2Q1K1,1.83,2,low,True,medicinal_poison,['Hypericum'],"Helleborus (Hellebore)?, Hypericum (St John's Wort)","f3v, f13r, f56r"
+B1A3Q1A1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+D1A1T1K2U1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+C2A1P2A3,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+K1A1C2A3C1A1L1A1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+C2K1A1BaK1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+U2A1U1Ac,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+A1Q1K1J1A1B1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+K1D1J1A1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+K1Wd,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+A2Q1K2A1B1A3,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+TaB1A3PeA1Q2,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+K1A1L1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+S1K1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+Q1A1B1L1A1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+U1A1B1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+LbA1BaA3,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+A2K1A1U1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+A1C2A1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+K1AaQ2A3,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+K1A1Q2J1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+A2K1A1U2,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+Q2J1A1B2,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+U2A1L1A1,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+Q2K2A2,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+A1K1J1A1B1A3,1.83,1,low,False,flower,[],Helianthus (Sunflower),f93r
+D1A1U1A1B1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+C2A3F2K1A1,1.83,1,low,False,spice,[],Capsicum (Pepper),f100r
+K1J1Q1A3,1.79,8,medium,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Aristolochia, Ranunculus (Buttercup)","f34v, f39r, f41r, f46r"
+Q2K1J1,1.79,8,medium,True,medicinal_poison,"['Crocus', 'Euphorbia']","Colchicum autumnale (Autumn Crocus), Euphorbia","f27r, f46r, f93r"
+C2,1.78,9,medium,True,medicinal_herb,"['Fumaria', 'Hypericum']","Hypericum (St John's Wort), Nigella sativa (Black cumin)","f13r, f29v, f38r, f47r, f100r"
+A1B2,1.76,11,medium,True,medicinal_herb,"['Euphorbia', 'Fumaria']","Helleborus (Hellebore)?, Cyperus/Sedge","f3v, f4v, f15v, f38r, f41v, f43r, f46r, f47r"
+L1J1A3,1.76,11,medium,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Juniperus (Juniper) cont., Aristolochia","f16r, f34v, f46r, f47r"
+A2Q2A3,1.74,13,medium,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Borage, Juniperus (Juniper) cont.","f6r, f16r, f33v, f34v, f43r, f44v, f45r"
+K1U2,1.74,13,medium,True,aquatic,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia', 'Opium', 'Papaver album', 'Papaver nigrum']","Centaurea, Cyperus/Sedge","f2r, f4v, f14v, f34v, f44v, f45r, f46r, f49v, f2v"
+A2Q1A3,1.74,13,medium,True,aromatic_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Juniperus (Juniper) cont., Rosmarinus (Rosemary)","f16r, f33v, f34v, f39r, f40r, f43r, f45r, f46r"
+U2J1,1.74,13,medium,True,medicinal_poison,"['Crocus', 'Opium', 'Papaver album', 'Papaver nigrum']","Centaurea, Colchicum autumnale (Autumn Crocus)","f2r, f27r, f47r, f49v, f100r"
+D1A1Q1A1,1.73,15,medium,True,tree_aromatic,['Euphorbia'],"Juniperus (Juniper), Juniperus (Juniper) cont.","f15v, f16r, f22r, f25v, f40r, f41v, f43r, f45r, f46r, f93r"
+K1A1B1,1.72,19,medium,True,tree_aromatic,['Euphorbia'],"Juniperus (Juniper), Salvia (Sage)","f15v, f43r, f46r, f56r"
+B1,1.72,19,medium,True,medicinal_poison,"['Aristolochia longa', 'Aristolochia rotunda', 'Crocus', 'Euphorbia', 'Hypericum', 'Opium', 'Papaver album', 'Papaver nigrum', 'Viola']","Helleborus (Hellebore)?, Viola (Violet)","f3v, f5v, f9v, f13r, f14v, f16r, f22r, f27r, f33v, f34v, f39r, f40r, f43r, f44v, f45r, f46r, f49v, f56r"
+Q1A3,1.71,22,medium,True,aromatic_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Juniperus (Juniper), Rosmarinus (Rosemary)","f15v, f33v, f34v, f39r, f40r, f43r, f44v, f45r, f46r"
+L1J1,1.7,28,medium,True,medicinal_herb,"['Crocus', 'Euphorbia', 'Opium', 'Papaver album', 'Papaver nigrum']","Cyperus/Sedge, Borage","f4v, f6r, f16r, f27r, f39r, f43r, f45r, f46r, f49v, f93r, f100r"
+BaA3,1.7,28,medium,True,medicinal_flower,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia', 'Hypericum', 'Viola']","Viola (Violet), Hypericum (St John's Wort)","f5v, f13r, f15v, f31r, f34v, f39r, f40r, f41v, f43r, f45r, f46r, f100r"
+L1K2,1.7,27,medium,True,medicinal_flower,"['Euphorbia', 'Viola']","Centaurea, Viola (Violet)","f2r, f5v, f31r, f46r, f100r"
+D1A1Q1A3,1.7,27,medium,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Plantago (Plantain), Juniperus (Juniper)","f9v, f15v, f34v, f39r, f40r, f41r, f41v, f42r, f45r, f46r"
+B1A3B2A3,1.67,2,medium,False,spice,[],Coriandrum (Coriander),f41r
+D1A1Q1K1A1,1.67,3,low,True,fern,"['Opium', 'Papaver album', 'Papaver nigrum']","Fern, Papaver (Poppy)","f22r, f49v"
+K1BaA3,1.67,3,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Aristolochia, Ranunculus (Buttercup)","f34v, f39r, f46r"
+D1A1Q2K1A1,1.67,1,medium,False,medicinal_herb,['Hypericum'],"Helleborus (Hellebore)?, Hypericum (St John's Wort)","f3v, f13r, f15v, f32r, f42r, f45r"
+A1K1A1,1.67,3,low,True,medicinal_poison,"['Opium', 'Papaver album', 'Papaver nigrum']","Helleborus (Hellebore)?, Papaver (Poppy)","f3v, f49v, f93r"
+K1Q1,1.67,3,low,True,medicinal_herb,"['Euphorbia', 'Fumaria']","Helleborus (Hellebore)?, Nymphaea (Water lily)","f3v, f14v, f38r, f43r, f46r"
+A2Q1K2Ba,1.67,2,medium,False,spice,[],Coriandrum (Coriander),f41r
+A2P1K1J1B1,1.67,3,low,True,spice,['Euphorbia'],"Dill/Anethum, Euphorbia","f41v, f46r"
+K1A1Q2A1B2,1.67,1,medium,False,medicinal_herb,['Crocus'],"Borage, Colchicum autumnale (Autumn Crocus)","f6r, f27r"
+Q1K1,1.67,1,medium,False,medicinal_herb,['Hypericum'],"Hypericum (St John's Wort), Nymphaea (Water lily)","f13r, f14v, f16r, f22r, f31r"
+K1J1Q1J1,1.67,1,medium,False,fiber_plant,[],"Gossypium (Cotton), Coriandrum (Coriander)","f31r, f41r"
+A1Q1K1A3,1.67,3,low,True,medicinal_herb,['Hypericum'],"Hypericum (St John's Wort), Lilium (Lily)","f13r, f44v, f45r"
+A1P1K1A1,1.67,3,low,True,medicinal_herb,['Hypericum'],"Hypericum (St John's Wort), Fern","f13r, f22r, f44v"
+A2P1K1A1,1.67,1,medium,False,aquatic,[],"Nymphaea (Water lily), Juniperus (Juniper) cont.","f14v, f16r"
+B1A3B2K1,1.67,2,medium,False,tree_aromatic,[],Juniperus (Juniper) cont.,f16r
+A1Q1K1A1,1.58,4,low,True,medicinal_herb,['Hypericum'],"Helleborus (Hellebore)?, Hypericum (St John's Wort)","f3v, f13r, f14v, f42r"
+L1Q1,1.58,4,low,True,flower,['Euphorbia'],"Lilium (Lily), Euphorbia","f44v, f46r"
+Q2J1Ba,1.58,4,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Aristolochia, Ranunculus (Buttercup)","f34v, f39r"
+B2B1,1.53,5,low,True,fiber_plant,['Euphorbia'],"Gossypium (Cotton), Euphorbia","f31r, f46r"
+L1K2A1,1.53,5,low,True,herb,"['Opium', 'Papaver album', 'Papaver nigrum']","Cyperus/Sedge, Papaver (Poppy)","f4v, f49v"
+U1J1,1.53,5,low,True,medicinal_poison,"['Opium', 'Papaver album', 'Papaver nigrum']","Aconitum (Monkshood), Mentha (Mint)","f25v, f47r, f49v"
+A2Q1A1,1.5,2,high,False,medicinal_flower,"['Hypericum', 'Viola']","Viola (Violet), Hypericum (St John's Wort)","f5v, f13r, f35v"
+P1K1B1A3,1.5,6,low,True,medicinal_flower,['Euphorbia'],"Ranunculus (Buttercup), Euphorbia","f39r, f46r"
+D1A1Q2K1J1Ba,1.5,3,medium,False,spice,[],Coriandrum (Coriander),f41r
+K1U1A1,1.5,2,high,False,climbing_plant,[],"Helleborus (Hellebore)?, Convolvulus/Ivy","f3v, f32r, f35v"
+Q2K1B1,1.5,3,medium,False,spice,[],Coriandrum (Coriander),f41r
+A1B2L1K2,1.5,3,medium,False,medicinal_flower,[],Centaurea,f2r
+D1A1Q2J1Ba,1.5,6,low,True,aromatic_herb,['Euphorbia'],"Salvia (Sage), Euphorbia","f43r, f46r"
+L1B1,1.46,8,low,True,medicinal_flower,['Euphorbia'],"Calendula (Marigold), Salvia (Sage)","f40r, f43r, f46r"
+L1U1,1.46,8,low,True,medicinal_flower,"['Opium', 'Papaver album', 'Papaver nigrum']","Ranunculus (Buttercup), Papaver (Poppy)","f39r, f49v"
+L1A1B1A3,1.46,8,low,True,climbing_plant,"['Opium', 'Papaver album', 'Papaver nigrum']","Convolvulus/Ivy, Papaver (Poppy)","f32r, f49v, f93r"
+D1A1Q1K1,1.42,12,low,True,medicinal_poison,"['Aristolochia longa', 'Aristolochia rotunda', 'Opium', 'Papaver album', 'Papaver nigrum']","Helleborus (Hellebore)?, Aconitum (Monkshood)","f3v, f25v, f31r, f32r, f34v, f40r, f44v, f45r, f49v, f93r"
+K1B1A3,1.42,12,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Aristolochia, Ranunculus (Buttercup)","f34v, f39r, f46r"
+B2A3,1.42,11,low,True,medicinal_flower,['Euphorbia'],"Ranunculus (Buttercup), Allium/Onion family","f39r, f45r, f46r"
+L1A3,1.4,16,low,True,medicinal_herb,['Hypericum'],"Helleborus (Hellebore)?, Cyperus/Sedge","f3v, f4v, f13r, f22r, f42r, f44v, f45r"
+Q1K2,1.4,15,low,True,aromatic_herb,['Euphorbia'],"Gossypium (Cotton), Rosmarinus (Rosemary)","f31r, f33v, f46r, f47r, f56r, f100r"
+K1J1Ba,1.39,19,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Aristolochia, Ranunculus (Buttercup)","f34v, f39r, f43r"
+K1B1,1.39,17,low,True,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda', 'Euphorbia']","Aristolochia, Ranunculus (Buttercup)","f34v, f39r, f40r, f43r, f46r, f47r, f56r"
+A1B2A3,1.38,21,low,True,medicinal_flower,['Euphorbia'],"Ranunculus (Buttercup), Euphorbia","f39r, f46r"
+A1Q2A1B1,1.37,5,medium,False,spice,[],Nigella sativa (Black cumin),f29v
+K1A1B2A1,1.33,2,low,False,aromatic_herb,[],Mentha (Mint),f47r
+K1A1Q1K1J1,1.33,2,low,False,medicinal_poison,[],Drosera (Sundew) or Solanum (Nightshade),f56r
+C2K1A1,1.33,1,low,False,fern,[],"Fern, Drosera (Sundew) or Solanum (Nightshade)","f22r, f56r, f93r"
+A2Q1J1,1.33,1,low,False,medicinal_flower,['Euphorbia'],"Ranunculus (Buttercup), Euphorbia","f39r, f46r"
+A1P1K1Ba,1.33,2,low,False,aromatic_herb,[],Salvia (Sage),f43r
+P2K1J1Ba,1.33,2,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+A1B2Q1,1.33,2,low,False,aromatic_herb,[],Salvia (Sage),f43r
+A1P1K1A3,1.33,2,low,False,vegetable,[],Allium/Onion family,f45r
+D1A1Q1A1B1,1.33,2,low,False,aromatic_herb,[],Salvia (Sage),f43r
+Q2L1J1,1.33,2,low,False,aromatic_herb,[],Salvia (Sage),f43r
+A1Ba,1.33,2,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+B1A3B2A1,1.33,2,low,False,vegetable,[],Allium/Onion family,f45r
+Q2K1A3,1.33,2,low,False,flower,[],Lilium (Lily),f44v
+B2L1,1.33,2,low,False,flower,[],Lilium (Lily),f44v
+L1K2A1B1,1.33,1,low,False,fiber_plant,[],"Gossypium (Cotton), Helianthus (Sunflower)","f31r, f93r"
+Q2K1,1.33,1,low,False,climbing_plant,[],"Convolvulus/Ivy, Lilium (Lily)","f32r, f44v"
+A2L1A1,1.33,2,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Aristolochia, Urtica (Nettle)","f34v, f42r"
+B1A3F2B1,1.33,1,low,False,medicinal_poison,[],"Helleborus (Hellebore)?, Urtica (Nettle)","f3v, f42r"
+L1J1A1K2,1.33,2,low,False,flower,[],Helianthus (Sunflower),f93r
+L1J1A1B1A1,1.33,2,low,False,flower,[],Helianthus (Sunflower),f93r
+B1A3G1B1,1.33,2,low,False,spice,[],Capsicum (Pepper),f100r
+A1Q1K1J1A1,1.33,2,low,False,flower,[],Helianthus (Sunflower),f93r
+A1Q1A3C1,1.33,1,low,False,medicinal_poison,[],"Helleborus (Hellebore)?, Rosmarinus (Rosemary)","f3v, f33v"
+L1A1Q1K1,1.33,2,low,False,herb,[],Cyperus/Sedge,f4v
+K1A1B2B1,1.33,1,low,False,herb,[],"Cyperus/Sedge, Mentha (Mint)","f4v, f47r"
+A1C1A3C1,1.33,2,low,False,spice,[],Capsicum (Pepper),f100r
+U2A3,1.33,1,low,False,medicinal_herb,['Fumaria'],"Helleborus (Hellebore)?, Fumaria (Fumitory)","f3v, f38r, f42r, f44v, f47r"
+B1A3F2,1.33,2,low,False,medicinal_poison,[],Helleborus (Hellebore)?,f3v
+C2K1J1,1.33,1,low,False,climbing_plant,[],"Convolvulus/Ivy, Drosera (Sundew) or Solanum (Nightshade)","f32r, f56r"
+K1A1Q1J1A1,1.33,2,low,False,climbing_plant,[],Convolvulus/Ivy,f32r
+K1A1Q1K1A1,1.33,1,low,False,aromatic_herb,[],"Mentha (Mint), Drosera (Sundew) or Solanum (Nightshade)","f47r, f56r"
+L1A1A3,1.33,2,low,False,medicinal_herb,[],Artemisia (Wormwood),f53r
+Q2L1,1.33,1,low,False,medicinal_herb,['Hypericum'],"Hypericum (St John's Wort), Lilium (Lily)","f13r, f44v"
+B1A2B1,1.33,1,low,False,aquatic,[],"Nymphaea (Water lily), Ranunculus (Buttercup)","f14v, f39r"
+K1A1U2,1.33,3,high,False,spice,[],"Nigella sativa (Black cumin), Hedera (Ivy)","f29v, f35v"
+B1J1,1.33,2,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+A2Q1K1J1,1.33,2,low,False,medicinal_flower,[],Calendula (Marigold),f40r
+A1B2L1J1B1,1.33,2,low,False,medicinal_flower,[],Calendula (Marigold),f40r
+L1U1J1,1.33,2,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+K1A1B2A3,1.33,2,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+K1U1B1,1.33,2,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+D1A1B2A3,1.33,2,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+Q2A1A3,1.33,2,low,False,medicinal_flower,[],Calendula (Marigold),f40r
+BaA3C1A3,1.33,1,low,False,medicinal_flower,[],"Calendula (Marigold), Salvia (Sage)","f40r, f43r"
+A2Q2A1,1.33,1,low,False,medicinal_flower,"['Fumaria', 'Viola']","Viola (Violet), Fumaria (Fumitory)","f5v, f38r, f39r, f43r"
+A2L1,1.33,2,low,False,medicinal_herb,[],Borage,f6r
+L1A1Q1,1.33,1,low,False,herb,[],"Cyperus/Sedge, Urtica (Nettle)","f4v, f42r"
+U1A3,1.33,2,low,False,medicinal_herb,[],"Borage, Urtica (Nettle)","f6r, f42r"
+A2K1A3,1.33,2,low,False,medicinal_herb,[],Borage,f6r
+A1P1,1.33,1,low,False,medicinal_herb,[],"Plantago (Plantain), Lilium (Lily)","f9v, f44v"
+D1A1B2Q1A3,1.33,2,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+K1J1A1Ba,1.33,2,low,False,aromatic_herb,[],Salvia (Sage),f43r
+P1K1A1B1,1.33,2,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+K1A1C1A1,1.33,2,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+K1A1Q2A1,1.33,1,low,False,medicinal_herb,[],"Urtica (Nettle), Drosera (Sundew) or Solanum (Nightshade)","f42r, f56r"
+C2A1B2Q1A3,1.33,2,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+P1K1J1A3,1.33,2,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+A2P1A3,1.33,2,low,False,aromatic_herb,[],Salvia (Sage),f43r
+A2Q1K2A3,1.33,2,low,False,spice,[],Capsicum (Pepper),f100r
+A1Q1J1A1B1,1.33,2,low,False,spice,[],Dill/Anethum,f41v
+Q1A3C1,1.33,2,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+A1Q2K1A3,1.33,1,low,False,medicinal_poison,[],"Helleborus (Hellebore)?, Borage","f3v, f6r, f45r"
+A1Q2J1,1.24,13,medium,False,spice,[],Nigella sativa (Black cumin),f29v
+D1A1Q1K2Ba,1.24,13,medium,False,spice,[],"Coriandrum (Coriander), Dill/Anethum","f41r, f41v"
+A1Q2K2,1.21,26,medium,False,spice,[],"Coriandrum (Coriander), Capsicum (Pepper)","f41r, f100r"
+K1A1Q1K2,1.2,5,high,False,medicinal_poison,[],"Aconitum (Monkshood), Hedera (Ivy)","f25v, f35v, f56r"
+A2K1J1A3,1.17,3,low,False,medicinal_poison,[],Helleborus (Hellebore)?,f3v
+L1J1Aa,1.17,3,low,False,medicinal_poison,[],Helleborus (Hellebore)?,f3v
+B2Q1K2A1B1,1.17,3,low,False,spice,[],Dill/Anethum,f41v
+A1Q2A1B2,1.17,3,low,False,spice,[],Capsicum (Pepper),f100r
+D1A1Q2A3B2,1.17,3,low,False,aromatic_herb,[],Salvia (Sage),f43r
+D1A1B1,1.17,3,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+K1A1A3,1.17,3,low,False,herb,[],Cyperus/Sedge,f4v
+P1A1C1A3,1.17,3,low,False,aromatic_herb,[],Rosmarinus (Rosemary),f33v
+A2Q2J1B1,1.17,2,medium,False,spice,[],"Coriandrum (Coriander), Salvia (Sage)","f41r, f43r"
+A1B2Q1J1B1,1.17,3,low,False,medicinal_flower,[],Calendula (Marigold),f40r
+L1Q2A3,1.17,3,low,False,herb,[],Cyperus/Sedge,f4v
+A1Q1K2A3,1.17,3,low,False,medicinal_poison,[],Aconitum (Monkshood),f25v
+L1A1Q1A3,1.17,3,low,False,medicinal_poison,[],Drosera (Sundew) or Solanum (Nightshade),f56r
+A2Q1J1A1,1.17,6,high,False,medicinal_herb,[],"Borage, Hedera (Ivy)","f6r, f35v, f41r, f45r"
+K1J1A1BaA3,1.17,3,low,False,flower,[],Helianthus (Sunflower),f93r
+K1J1Q1K2,1.17,3,low,False,spice,[],Capsicum (Pepper),f100r
+A1B2L1,1.17,3,low,False,fern,[],Fern,f22r
+K1Q2,1.17,3,low,False,medicinal_herb,[],Plantago (Plantain),f9v
+D1A1U1,1.17,3,low,False,fern,[],Fern,f22r
+A2Q1J1Ba,1.17,2,medium,False,aromatic_herb,[],"Rosmarinus (Rosemary), Coriandrum (Coriander)","f33v, f41r"
+A1Q2K1Ba,1.17,3,low,False,aromatic_herb,[],Salvia (Sage),f43r
+A1Q1Aa,1.17,3,low,False,flower,[],Lilium (Lily),f44v
+AaC1A3,1.17,3,low,False,aromatic_herb,[],Rosmarinus (Rosemary),f33v
+A1P2A3,1.17,3,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+K1A1B2,1.14,7,high,False,medicinal_flower,['Viola'],"Viola (Violet), Hedera (Ivy)","f5v, f35v, f56r, f2v"
+A1Q2K1J1,1.11,9,high,False,medicinal_poison,[],"Aconitum (Monkshood), Nigella sativa (Black cumin)","f25v, f29v, f35v, f53r, f56r"
+A2,1.08,4,low,False,medicinal_poison,[],Drosera (Sundew) or Solanum (Nightshade),f56r
+A2L1J1A1,1.08,4,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+A1Q2K1B1,1.08,4,low,False,aromatic_herb,[],Salvia (Sage),f43r
+AaQ2A3,1.08,4,low,False,aromatic_herb,[],Salvia (Sage),f43r
+A1Q2Aa,1.08,4,low,False,medicinal_herb,['Fumaria'],Fumaria (Fumitory),f38r
+D1A1P2K1J1B1,1.08,4,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+B1L1J1,1.08,4,low,False,medicinal_poison,[],Aconitum (Monkshood),f25v
+L1J1A1Q1,1.08,4,low,False,flower,[],Helianthus (Sunflower),f93r
+B1K1K2,1.08,4,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+L1A1U1,1.08,4,low,False,medicinal_poison,[],Helleborus (Hellebore)?,f3v
+A2Q1M1,1.08,4,low,False,spice,[],Capsicum (Pepper),f100r
+M1,1.08,4,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+A1B2K1,1.08,4,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+A2Q2K1J1B1,1.08,4,low,False,aromatic_herb,[],Salvia (Sage),f43r
+K1A1B2Q1A3,1.08,4,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+A1Q2K1K2,1.08,4,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+A2C2A3,1.08,4,low,False,flower,[],Helianthus (Sunflower),f93r
+A1B2K1A3,1.08,4,low,False,medicinal_herb,[],Borage,f6r
+A1B1A1,1.08,4,low,False,flower,[],Helianthus (Sunflower),f93r
+D1A1Q1J1BaA3,1.03,5,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+A1Q1A3B2,1.03,5,low,False,aromatic_herb,[],Rosmarinus (Rosemary),f33v
+B2K1A3,1.03,5,low,False,vegetable,[],Allium/Onion family,f45r
+B1K1J1,1.03,5,low,False,medicinal_poison,[],Drosera (Sundew) or Solanum (Nightshade),f56r
+Q1,1.03,5,low,False,medicinal_poison,[],Aconitum (Monkshood),f25v
+L1Q1A3,1.03,5,low,False,medicinal_poison,[],Helleborus (Hellebore)?,f3v
+A1Q2J1A1B1A3,1.03,5,low,False,spice,[],Dill/Anethum,f41v
+K1J1Q2A3,1.03,5,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+D1A1Q1K2B1A3,1.03,5,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+P1A1,1.03,5,low,False,fern,[],Fern,f22r
+D1A1Q1J1B1A3,1.03,5,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+A2Q1,1.0,3,medium,False,medicinal_flower,[],"Centaurea, Plantago (Plantain)","f2r, f9v, f16r, f45r"
+K1J1U2,1.0,6,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+P1K1J1B1A3,1.0,6,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+P1K1A1,1.0,6,low,False,vegetable,[],Allium/Onion family,f45r
+U2K2,1.0,6,low,False,flower,[],Lilium (Lily),f44v
+A1Q1J1B1A3,1.0,6,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+Q1K1J1B1,1.0,6,low,False,aromatic_herb,[],Salvia (Sage),f43r
+D1A1U1A1,1.0,6,low,False,spice,[],Capsicum (Pepper),f100r
+D1A1Q1K2A1B1,0.98,7,low,False,spice,[],Capsicum (Pepper),f100r
+B1K1J1A1,0.98,7,low,False,spice,[],Capsicum (Pepper),f100r
+A2Q1K2B1,0.98,7,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+D1A1P1K1J1,0.98,7,low,False,medicinal_poison,[],Aconitum (Monkshood),f25v
+Q1K2A1,0.98,7,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+A3B2,0.96,8,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+A1Q2J1A3,0.96,8,low,False,spice,[],Capsicum (Pepper),f100r
+A2Q1K2A1,0.96,8,low,False,medicinal_herb,[],Artemisia (Wormwood),f53r
+D1A1Q1K1J1,0.94,9,low,False,aromatic_herb,[],Mentha (Mint),f47r
+A1Q1K1J1,0.94,9,low,False,medicinal_herb,['Hypericum'],Hypericum (St John's Wort),f13r
+K1A1U1,0.94,9,low,False,medicinal_herb,[],Urtica (Nettle),f42r
+Q2K1J1B1,0.93,10,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+C1,0.93,10,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+D1A1Q1J1Ba,0.92,12,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+A3C1A3,0.92,11,low,False,medicinal_flower,[],Calendula (Marigold),f40r
+A1P1K1J1,0.92,12,low,False,medicinal_flower,[],Calendula (Marigold),f40r
+Ba,0.92,4,medium,False,aromatic_herb,[],"Rosmarinus (Rosemary), Coriandrum (Coriander)","f33v, f41r"
+A1Q2J1A1B1,0.92,12,low,False,spice,[],Dill/Anethum,f41v
+K1J1BaA3,0.91,13,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']",Aristolochia,f34v
+B2K1J1B1,0.9,16,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+K1J1A1B1A3,0.9,15,low,False,flower,[],Helianthus (Sunflower),f93r
+A2K1K2,0.9,15,low,False,medicinal_flower,[],Calendula (Marigold),f40r
+A1B2Q1A3,0.9,16,low,False,medicinal_flower,[],Ranunculus (Buttercup),f39r
+K1J1B1A3,0.9,16,low,False,fiber_plant,[],Gossypium (Cotton),f31r
+D1A1Q2K2,0.89,19,low,False,spice,[],Capsicum (Pepper),f100r
+A1Q2K2B1,0.88,21,low,False,spice,[],Dill/Anethum,f41v
+K1J1A1B1,0.88,22,low,False,aromatic_herb,[],Salvia (Sage),f43r
+L1U2,0.87,5,medium,False,flower,[],"Juniperus (Juniper) cont., Lilium (Lily)","f16r, f44v, f93r"
+A1Q2K1,0.87,5,medium,False,aquatic,[],"Nymphaea (Water lily), Juniperus (Juniper)","f14v, f15v, f22r, f44v, f47r, f53r, f56r"
+B1A3C1,0.87,5,medium,False,spice,[],"Nigella sativa (Black cumin), Convolvulus/Ivy","f29v, f32r, f45r"
+Q1K1J1A1,0.83,2,low,False,medicinal_poison,[],"Helleborus (Hellebore)?, Cyperus/Sedge","f3v, f4v"
+A2Q1K1B1,0.83,2,low,False,medicinal_herb,[],"Artemisia (Wormwood), Helianthus (Sunflower)","f53r, f93r"
+A1C1A1,0.83,6,medium,False,tree_aromatic,[],"Juniperus (Juniper) cont., Artemisia (Wormwood)","f16r, f53r, f100r"
+K1A1Q1K1,0.83,2,low,False,herb,"['Opium', 'Papaver album', 'Papaver nigrum']","Cyperus/Sedge, Nymphaea (Water lily)","f4v, f14v, f42r, f49v"
+B1L1A1,0.83,2,low,False,medicinal_poison,[],"Aconitum (Monkshood), Lilium (Lily)","f25v, f44v"
+Q1K1B1,0.83,2,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Aristolochia, Ranunculus (Buttercup)","f34v, f39r"
+K1A1B2Q1,0.83,2,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Aristolochia, Salvia (Sage)","f34v, f43r"
+A1C1,0.83,6,medium,False,tree_aromatic,[],"Juniperus (Juniper), Calendula (Marigold)","f15v, f40r"
+T1A3,0.83,2,low,False,fern,[],"Fern, Lilium (Lily)","f22r, f44v"
+Q1J1A1,0.79,8,medium,False,medicinal_flower,[],"Centaurea, Drosera (Sundew) or Solanum (Nightshade)","f2r, f56r, f93r"
+A1Q1J1B1,0.77,10,medium,False,spice,[],"Gossypium (Cotton), Coriandrum (Coriander)","f31r, f41r, f41v, f43r"
+L1A1B1,0.76,11,medium,False,herb,[],"Cyperus/Sedge, Juniperus (Juniper) cont.","f4v, f16r, f29v, f43r, f93r"
+A2Q1K2,0.76,11,medium,False,medicinal_flower,[],"Centaurea, Ranunculus (Buttercup)","f2r, f39r, f45r"
+K1A1Q2A3,0.75,12,medium,False,medicinal_flower,['Viola'],"Centaurea, Viola (Violet)","f2r, f5v, f42r, f93r"
+D1A1B1A3,0.74,13,medium,False,medicinal_poison,[],"Helleborus (Hellebore)?, Borage","f3v, f6r, f41r, f45r"
+D1A1Q1J1B1,0.74,13,medium,False,fiber_plant,[],"Gossypium (Cotton), Ranunculus (Buttercup)","f31r, f39r, f41r, f43r"
+D1A1Q2J1B1,0.73,15,medium,False,fiber_plant,[],"Gossypium (Cotton), Coriandrum (Coriander)","f31r, f41r, f43r"
+D1A1Q1J1,0.72,18,medium,False,herb,[],"Cyperus/Sedge, Gossypium (Cotton)","f4v, f31r, f41r"
+C2A3,0.7,34,medium,False,medicinal_flower,[],"Centaurea, Juniperus (Juniper) cont.","f2r, f16r, f39r, f43r, f93r, f100r"
+D1A1Q1K2,0.7,27,medium,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Gossypium (Cotton), Aristolochia","f31r, f34v, f41r, f53r, f100r"
+K1A1Q1A1,0.67,3,low,False,aromatic_herb,[],"Salvia (Sage), Drosera (Sundew) or Solanum (Nightshade)","f43r, f56r"
+A1B2K1A1,0.67,3,low,False,flower,[],"Helianthus (Sunflower), Capsicum (Pepper)","f93r, f100r"
+Q1J1Ba,0.67,3,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Aristolochia, Salvia (Sage)","f34v, f43r"
+K1Ba,0.58,4,low,False,aromatic_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Rosmarinus (Rosemary), Aristolochia","f33v, f34v, f39r"
+K1Q1K2,0.58,4,low,False,medicinal_flower,[],"Ranunculus (Buttercup), Capsicum (Pepper)","f39r, f100r"
+A2K1A1,0.53,5,low,False,medicinal_herb,[],"Borage, Plantago (Plantain)","f6r, f9v, f93r"
+A1Q1J1Ba,0.53,5,low,False,fiber_plant,[],"Gossypium (Cotton), Salvia (Sage)","f31r, f43r"
+A1B1,0.5,6,low,False,herb,[],"Cyperus/Sedge, Calendula (Marigold)","f4v, f40r, f43r, f53r, f93r"
+A1B2A1,0.48,7,low,False,medicinal_flower,[],"Ranunculus (Buttercup), Salvia (Sage)","f39r, f43r"
+Q1K1J1,0.46,8,low,False,medicinal_flower,[],"Calendula (Marigold), Allium/Onion family","f40r, f45r, f56r"
+Q2J1A1,0.44,9,low,False,spice,[],"Dill/Anethum, Lilium (Lily)","f41v, f44v"
+A2K1J1,0.43,10,low,False,flower,[],"Calendula (Marigold), Lilium (Lily)","f40r, f44v, f93r"
+K1J1Q1,0.42,11,low,False,aromatic_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Rosmarinus (Rosemary), Aristolochia","f33v, f34v, f39r, f42r, f43r, f100r"
+A1Q2J1Ba,0.42,12,low,False,medicinal_flower,[],"Ranunculus (Buttercup), Salvia (Sage)","f39r, f43r"
+D1A1Q2A1,0.42,11,low,False,medicinal_poison,['Viola'],"Helleborus (Hellebore)?, Viola (Violet)","f3v, f5v, f32r, f44v"
+K1J1U1,0.42,12,low,False,medicinal_herb,"['Aristolochia longa', 'Aristolochia rotunda']","Aristolochia, Ranunculus (Buttercup)","f34v, f39r, f43r"
+K1A1Q1A3,0.4,14,low,False,medicinal_herb,[],"Borage, Mentha (Mint)","f6r, f47r, f53r, f93r"
+B2,0.4,14,low,False,fiber_plant,"['Aristolochia longa', 'Aristolochia rotunda']","Gossypium (Cotton), Aristolochia","f31r, f34v, f44v"
+A1B2Q1K2,0.4,14,low,False,spice,[],"Dill/Anethum, Helianthus (Sunflower)","f41v, f93r"
+Aa,0.4,14,low,False,medicinal_flower,[],"Ranunculus (Buttercup), Salvia (Sage)","f39r, f43r, f45r"
+D1A1Q2,0.4,15,low,False,herb,[],"Cyperus/Sedge, Lilium (Lily)","f4v, f44v, f53r"
+A1Q1,0.39,17,low,False,medicinal_flower,['Fumaria'],"Helleborus (Hellebore)?, Fumaria (Fumitory)","f3v, f38r, f39r, f40r, f44v, f45r"
+L1J1Ba,0.39,17,low,False,fiber_plant,"['Aristolochia longa', 'Aristolochia rotunda']","Gossypium (Cotton), Aristolochia","f31r, f34v, f39r"
+D1A1Q2A3,0.37,25,low,False,fiber_plant,[],"Gossypium (Cotton), Dill/Anethum","f31r, f41v, f43r"

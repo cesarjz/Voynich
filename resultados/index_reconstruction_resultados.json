@@ -1,0 +1,35 @@
+{
+  "n_anchors": 3,
+  "n_confirmed": 23,
+  "n_gold": 0,
+  "n_silver": 3,
+  "null_anchors_mean": 5.983,
+  "null_confirmed_mean": 36.519,
+  "null_gold_mean": 9.954,
+  "p_anchors": 0.867,
+  "p_confirmed": 0.863,
+  "p_gold": 1.0,
+  "partial_index": [
+    {
+      "stem": "D1A1",
+      "ingredient": "Myrrha",
+      "tier": "SILVER",
+      "n_confirmations": 2,
+      "n_distinct_recipes": 2
+    },
+    {
+      "stem": "A1Q1A3",
+      "ingredient": "Piper longum",
+      "tier": "SILVER",
+      "n_confirmations": 2,
+      "n_distinct_recipes": 2
+    },
+    {
+      "stem": "K1J1",
+      "ingredient": "Zingiber",
+      "tier": "SILVER",
+      "n_confirmations": 2,
+      "n_distinct_recipes": 2
+    }
+  ]
+}

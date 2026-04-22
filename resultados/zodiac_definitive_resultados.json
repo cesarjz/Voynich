@@ -1,0 +1,47 @@
+{
+  "total_labels": 341,
+  "degrees_per_sign": {
+    "Pisces": 30,
+    "Aries": 30,
+    "Taurus": 30,
+    "Gemini": 29,
+    "Cancer": 30,
+    "Leo": 30,
+    "Virgo": 30,
+    "Libra": 30,
+    "Scorpio": 30,
+    "Sagittarius": 30
+  },
+  "fdr_significant": 1,
+  "bonferroni_significant": 1,
+  "permutation_p": 0.0005,
+  "signal_all_lengths": {
+    "4": 2,
+    "5": 2,
+    "6": 8,
+    "7": 6
+  },
+  "significant_properties": [
+    "season",
+    "human_animal",
+    "fertility"
+  ],
+  "non_significant": [
+    "element",
+    "modality",
+    "ruler",
+    "polarity"
+  ],
+  "within_sign_pisces_p": 0.04,
+  "within_sign_sagittarius_p": 0.05,
+  "labels_vs_headers": "signal in labels only",
+  "strongest_test": "pos2 x season, p=0.0002, Bonferroni-significant",
+  "encoding_map": {
+    "pos0": "FIXED: A1 = zodiac marker",
+    "pos1": "SEMI: Q1/Q2 = unknown",
+    "pos2": "VARIABLE: season + sign type (p=0.0002)",
+    "pos3": "VARIABLE: season + fertility + sign type",
+    "pos4": "VARIABLE: sign type + fertility",
+    "pos5": "SEMI: A2 = degree label marker"
+  }
+}

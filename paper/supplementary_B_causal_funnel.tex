@@ -1,0 +1,209 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{titling}
+\usepackage{natbib}
+
+\newcommand{\vms}{Voynich Manuscript}
+\newcommand{\MI}{\mathrm{MI}}
+\newcommand{\Rhat}{\hat{R}}
+
+\title{Supplementary Material B:\\The Causal Funnel---How Each Discovery Forces the Next Tool}
+\author{C\'esar Jim\'enez Zapata}
+\date{Companion to: \textit{Computational Analysis of the Voynich Manuscript}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This supplementary document makes explicit the causal logic that connects the four stages of the analytical pipeline described in the main paper.  Each phase produces an empirical result that mathematically eliminates a class of hypotheses, leaving no choice but to escalate to the next, more powerful analytical tool.  The document also provides a technical autopsy of the decipherment collapse: why the alphabet asymmetry ($|\Sigma|/|\mathcal{A}| \approx 6$) pushes the MCMC optimiser into a structural dead end, detailing the interaction between Witten-Bell smoothing, Dirichlet priors, and cardinality collapse.
+\end{abstract}
+
+\tableofcontents
+\bigskip
+
+% ============================================================
+\section{The Funnel Principle}
+
+Readers trained in the humanities sometimes perceive statistical analyses as a series of independent experiments---a catalogue of tests that could be reordered without consequence.  This document makes the opposite case explicit: each phase of the pipeline produces an empirical result that \emph{mathematically eliminates} a class of hypotheses, leaving no choice but to escalate to the next, more powerful analytical tool.  The logic is that of a causal funnel: each stage narrows the space of admissible explanations, and the tool selected for the next stage is not arbitrary but \emph{forced} by the surviving hypotheses.
+
+
+% ============================================================
+\section{Stage 1 $\to$ Stage 2: The Fingerprint Kills Classical Ciphers}
+
+The statistical fingerprint establishes two anomalies that no previously proposed model can explain simultaneously:
+
+\begin{itemize}[nosep]
+\item \textbf{The U-shaped entropy curve} (bounce $= 0.813$).  In every known natural language and cipher, knowing more preceding characters makes the next character \emph{more} predictable---entropy decays monotonically.  Voynichese violates this: after an initial drop, entropy \emph{rises} from $H_2$ onward.  The text briefly ``forgets'' its context.
+
+Linguistically, this is \textit{structural amnesia}: the micro-level regularities captured in 1--2 characters of context give way to novel combinatorial patterns at 3--4 characters, as if glyph sequences create composite units absent at lower orders.  No single-character substitution cipher can produce this effect, because substitution preserves the source language's entropy curve shape.  The Cardan grille hypothesis (which assumes text is an anagram, i.e.\ a giant transposition) is killed here: transpositions redistribute characters within a window, but the rigid micro-block structure revealed by the bounce is incompatible with anagrammatic generation.  Naive cipher and Vigen\`ere hypotheses are killed for the same reason: if a rigid positional micro-structure governs glyph placement, random permutations and periodic-key mechanisms cannot reproduce it.
+
+\item \textbf{Positional mutual information} ($\MI_p = 0.658$, more than $2\times$ any tested language).  Each glyph carries strong information about \emph{where} in the word it sits.  In an alphabetic language, position constrains letter choice mildly (e.g.\ capital letters at the start of German nouns).  In Voynichese, the constraint is so extreme that it implies glyphs are not phonemic characters but \emph{sub-syllabic components}---onset, nucleus, coda---drawn from largely disjoint pools.
+\end{itemize}
+
+\noindent\textbf{Causal consequence:} The combination of bounce and MI kills five classical hypotheses: random text, Caesar cipher, Vigen\`ere cipher, Cardan grille, and any purely alphabetic substitution.  The surviving explanations must involve \emph{compositional encoding}---glyphs that combine to form higher-order units.  This is why Stage~2 tests generative models that operate at the syllabic level.
+
+
+% ============================================================
+\section{Stage 2 $\to$ Stage 3: SilPart Forces Syllabic Segmentation}
+
+Generative model comparison tests eleven explicit ``recipes'' for producing Voynich-like text.  The winner, SilPart ($d = 0.445$), partitions the glyph inventory into positional pools (onset, nucleus, coda) and builds words by concatenating syllables drawn from those pools---like Korean Hangul, where each block combines a leading consonant, a vowel, and an optional trailing consonant from separate inventories.
+
+Four literature models---Rugg's Cardan grille, Timm and Schinner's verbose cipher, Hermes's nomenclator polynomial, and Greshko's card shuffle---are decisively eliminated: none can reproduce the U-shaped entropy curve (bounce $= 0.000$ for all four).
+
+\noindent\textbf{Causal consequence:} We can no longer assume that each glyph represents a single letter.  The text behaves as if each \emph{syllable-sized block} is the meaningful unit.  Before attempting decipherment, we must therefore segment words into syllabic components.  This is not a methodological preference---it is an obligation imposed by the empirical failure of character-level models.
+
+
+% ============================================================
+\section{Stage 3 $\to$ Stage 4: Syllabic Structure Demands Bayesian Decipherment}
+
+Syllabic segmentation yields 2,923 distinct syllable types (792 with frequency $\geq 5$), classified by position: 114~onset, 198~nucleus, 165~coda, 315~free.  The segmentation reveals that 73\% of glyphs are \emph{position-locked}---they appear exclusively or overwhelmingly in a single syllabic role.  This phonotactic compression has a direct consequence: the search space for decipherment is enormous ($\sim$$22^{166}$ possible character mappings), but it is structured by position.  A brute-force frequency attack---what worked since al-Kind\=\i---fails because the many-to-one mapping ($|\Sigma| = 166 \gg |\mathcal{A}| = 27$) gives the optimiser too many degrees of freedom.
+
+\noindent\textbf{Causal consequence:} Classical frequency analysis is mathematically inadequate for a 166-type inventory mapping to $\sim$27 target characters.  The only remaining approach is \emph{probabilistic search}: algorithms that explore the vast mapping space guided by a language model, accepting or rejecting proposals based on how ``native'' the decoded text sounds.  This is Bayesian decipherment (EM + MCMC)---we use it not because it is fashionable, but because it is the only mathematical architecture that remains viable after classical methods have been excluded.
+
+But Bayesian decipherment requires a \emph{target language}: a language model against which to evaluate candidate mappings.  How do we choose which language to test?  This is the role of the Bayesian ranking step.
+
+
+% ============================================================
+\section{Why Hebrew?  The Bayesian Language Ranking}
+\label{sec:why-hebrew}
+
+A common objection to Voynich decipherment attempts is circularity: the researcher assumes a target language, builds a model around that assumption, and then interprets partial matches as confirmation.  Our pipeline avoids this trap by letting the \emph{data} select the language.  The Bayesian ranking is not a guess---it is an empirical filter, applied identically to six candidate languages from three different families.
+
+\subsection{The Selection Logic}
+
+The candidate languages were chosen to span three typological families relevant to the manuscript's 15th-century European context:
+
+\begin{itemize}[nosep]
+  \item \textbf{NW Semitic:} Hebrew (Biblical, Torah) and Aramaic (Targum Onkelos)---the languages of Jewish scholarship in medieval Europe, written in consonantal abjads with $\sim$27 characters.
+  \item \textbf{Semitic (broader):} Arabic (Quranic)---a related Semitic language with a larger alphabet (36 characters) and different morphological patterns.
+  \item \textbf{Non-Semitic controls:} Turkish (agglutinative, 32 characters), Finnish (agglutinative, 26), and Latin (Vulgate, 26)---typologically diverse European languages that serve as negative controls.
+\end{itemize}
+
+For each language, we train a character-level language model on a comparable-sized corpus, then run the same Bayesian decipherment pipeline (syllabic mapping, EM initialisation, MCMC refinement) and record the best log-likelihood score achieved.
+
+\subsection{What the Ranking Reveals}
+
+The results are unambiguous at the family level:
+
+\begin{itemize}[nosep]
+  \item \textbf{Syllabic mapping:} Hebrew $-35.64$, Aramaic $-35.91$, Arabic $-37.41$, Turkish $-41.2$, Finnish $-42.8$, Latin $-43.1$.
+  \item The gap between NW Semitic (Hebrew/Aramaic) and non-Semitic languages exceeds 3.5~nats---a decisive separation.
+  \item Within NW Semitic, Hebrew and Aramaic are \emph{statistically indistinguishable}: the gap of 0.27~nats (which reduces to $\sim$0.01 on re-execution due to MCMC stochasticity) is smaller than the inter-seed variance.
+\end{itemize}
+
+\textit{Analogy for humanists:} Imagine asking six native speakers---one Hebrew, one Aramaic, one Arabic, one Turkish, one Finnish, one Latin---to read aloud a decoded text and rate how ``natural'' it sounds in their language.  The Hebrew and Aramaic speakers both rate it moderately natural (and give nearly identical scores); the Arabic speaker rates it somewhat lower; and the Turkish, Finnish, and Latin speakers all agree it sounds foreign.  The Bayesian ranking formalises this intuition with mathematical precision.
+
+\subsection{Why This Matters for the Funnel}
+
+The ranking does three things simultaneously:
+
+\begin{enumerate}[nosep]
+  \item \textbf{It eliminates three language families.}  Turkish, Finnish, and Latin produce scores so far below NW Semitic that they can be excluded as source languages.  This is not a subjective judgement---it is a quantitative gap of $>$3.5~nats, confirmed across multiple seeds and MCMC chains.
+  \item \textbf{It identifies NW Semitic as a single category.}  Hebrew and Aramaic are operationally interchangeable at the syllabic level.  This makes historical sense: both languages share the same 22-consonant alphabet, similar morphological structure (triliteral roots, prefix/suffix patterns), and were used interchangeably in Jewish scholarly communities of 15th-century Northern Italy.  The correct hypothesis is not ``Hebrew'' or ``Aramaic'' but ``NW Semitic biblical register.''
+  \item \textbf{It constrains the decipherment target.}  When we run sixteen decipherment models, we test primarily against Hebrew (the top-ranked language) but also verify against Aramaic (indistinguishable) and Zohar (Aramaic register).  The structural limit we discover ($\leq$68\% $n$-gram, $\leq$5 roots) holds across all NW Semitic variants, confirming it is not a language-selection artefact.
+\end{enumerate}
+
+\noindent\textbf{Causal consequence:} The ranking narrows ``which language?'' from an open question to a closed one.  Combined with Stage~3's conclusion that Bayesian decipherment is the only viable approach, we now know both the \emph{method} (MCMC with language model) and the \emph{target} (NW Semitic).  This is why Stage~4 tests sixteen models against Hebrew/Aramaic rather than casting a wider net---the funnel has already eliminated the alternatives.
+
+\subsection{What the Ranking Does NOT Prove}
+
+Two important caveats:
+
+\begin{itemize}[nosep]
+  \item \textbf{Compatibility is not identity.}  The ranking shows that Voynichese's statistical properties are \emph{most compatible} with NW Semitic among the six tested languages.  It does not prove that the manuscript \emph{is} written in Hebrew or Aramaic.  An untested language (e.g., a medieval Judeo-Italian dialect, or a constructed language designed by a Hebrew-literate author) could score equally well or better.
+  \item \textbf{The ranking does not test Romance languages.}  Given the manuscript's probable Northern Italian provenance, Italian, Spanish, or French might seem natural candidates.  However, the fingerprint's extreme positional MI (0.658, more than twice any tested language) and U-shaped entropy curve are incompatible with alphabetic Romance orthographies.  These properties require a compositional syllabary, not the phonemic writing systems of Romance scripts.  A Romance source would need to be encoded through a syllabic intermediary---at which point it becomes a cipher hypothesis rather than a language hypothesis, and falls under Stage~4's sixteen-model analysis.
+\end{itemize}
+
+
+% ============================================================
+\section{Stage 4 $\to$ Structural Limit: Why Sixteen Models Hit the Same Wall}
+
+Sixteen decipherment strategies---spanning trigram and neural LMs, single and triple mapping tables, character and syllable targets, morphological role indexing, nucleus-only filtering, and two independent transcription systems---converge on the same ceiling: $\leq$68\% $n$-gram realism, $\leq$5 root matches.  The wall is not a property of any single model; it is a structural property of the Voynich text itself.  The rest of this section provides a technical autopsy of \emph{why} the wall exists.
+
+\subsection{The Alphabet Asymmetry Trap}
+
+The core of the problem is the ratio $|\Sigma|/|\mathcal{A}| \approx 166/27 \approx 6$.  In successfully deciphered historical ciphers, this ratio is small: Zodiac~340 ($\sim$2), Copiale ($\sim$3).  At ratio 6, the mapping is radically many-to-one: on average, each Hebrew character absorbs $\sim$6 distinct Voynich glyphs.
+
+\textit{Analogy for humanists:} Imagine deciphering a text where each Latin letter has been replaced by one of six different symbols, chosen with unknown probabilities.  With 26 Latin letters, you face $6^{26} \approx 10^{20}$ possible assignments.  No amount of letter-frequency counting can disambiguate among the alternatives, because the cipher has deliberately destroyed the one-to-one correspondence that frequency analysis exploits.
+
+\subsection{LM Dominance and Posterior Collapse}
+
+When the alphabet ratio is large, the language model (LM) acquires a pathological amount of power.  The MCMC algorithm seeks mappings that maximise the probability of the decoded text under the LM.  With $\sim$6 glyphs mapping to each Hebrew character, the algorithm can ``shop'' among Voynich glyphs to fill high-probability Hebrew slots, producing text that \emph{sounds} Hebrew-like at the character level (68\% $n$-gram realism) without recovering any genuine lexical content (only 3 roots).
+
+This is \emph{LM dominance}: the language model's statistical preferences overpower the channel signal.  The decoded text is not Hebrew; it is a statistical hallucination---a pseudo-Hebrew surface generated by the LM's own biases.  The phenomenon is analogous to what machine learning researchers call \emph{mode collapse}: the algorithm converges not to the true solution but to the mode of the prior distribution.
+
+\textit{Analogy for humanists:} A forger who has memorised Hebrew letter frequencies can produce text that \emph{statistically resembles} Hebrew---the right proportion of aleph, bet, gimel---without writing a single real word.  Our MCMC algorithm is doing something similar: it arranges Voynich glyphs to satisfy Hebrew bigram and trigram statistics, producing convincing-looking sequences that are lexically empty.
+
+\subsection{The Witten-Bell--Dirichlet Interaction}
+
+The LSTM language model uses Witten-Bell smoothing for rare character sequences: when a bigram has never been seen in training, the model assigns it a small but non-zero probability proportional to the number of distinct characters that have appeared in that context.  The Dirichlet prior on the mapping favours spreading probability mass across many target characters rather than concentrating it.  These two mechanisms interact destructively at high $|\Sigma|/|\mathcal{A}|$:
+
+\begin{enumerate}[nosep]
+  \item The Dirichlet prior encourages each Hebrew character to attract multiple Voynich glyphs (many-to-one).
+  \item The Witten-Bell smoothing assigns non-trivial probability to novel bigrams, so even linguistically implausible decoded sequences receive moderate LM scores.
+  \item The MCMC sampler, guided by this combined signal, gravitates toward mappings that maximise coverage of high-frequency Hebrew characters (\emph{he}, \emph{yod}, \emph{vav}, \emph{lamed}) at the expense of rare but informationally critical characters.
+  \item The result is cardinality collapse: 8--10 Voynich glyphs map to a single high-frequency Hebrew character, while 5--8 Hebrew characters receive zero or near-zero glyph assignments.
+\end{enumerate}
+
+This is why the cardinality test ($K_{\text{eff}}/|\Sigma_T|$) is a critical validation metric.  A genuine decipherment should use \emph{all} 27 Hebrew characters; our best model uses 25--26, but the distribution is severely skewed.
+
+\subsection{The Root Ceiling: Statistical Mirage}
+
+The 3--5 root matches found across models are themselves partially artefactual.  With 37,087 decoded words, each averaging $\sim$4 Hebrew characters, and 100 test roots of 3 consonants each, the expected number of chance matches by random consonant co-occurrence is $\sim$1.5 (Monte Carlo null: $p < 0.01$ for 3 roots).  The matches are statistically significant but linguistically vacuous: the ``roots'' found are high-frequency consonant clusters (\emph{het}-\emph{kaf}-\emph{mem}, \emph{lamed}-\emph{het}-\emph{mem}, \emph{shin}-\emph{lamed}-\emph{het}) that co-occur because the mapping collapses multiple glyphs onto these same common letters.  They are consonant co-occurrence artefacts, not recovered morphology.
+
+
+% ============================================================
+\section{The Funnel in One Diagram}
+
+Table~\ref{tab:funnel} summarises the causal chain.  Each row shows the empirical result, the hypotheses it kills, and the analytical tool it forces.  The final row is the structural limit: the point where the funnel closes and no monoalphabetic model---however sophisticated---can proceed further.
+
+\begin{table*}[t]
+\caption{The causal funnel: each empirical finding eliminates hypotheses and forces the next analytical stage.}
+\label{tab:funnel}
+\centering
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}p{2.8cm}p{4.5cm}p{4.5cm}p{3.5cm}@{}}
+\toprule
+\textbf{Stage} & \textbf{Key finding} & \textbf{Hypotheses eliminated} & \textbf{Next tool forced} \\
+\midrule
+1.\ Fingerprint &
+  Bounce $= 0.813$; $\MI_p = 0.658$ (${>}2\times$ any language) &
+  Random, Caesar, Vigen\`ere, Cardan grille, verbose cipher, card shuffle, nomenclator polynomial &
+  Generative models at syllabic level \\
+\addlinespace
+2.\ Generative &
+  SilPart best fit ($d = 0.445$); 4 literature models fail bounce &
+  All character-level generation; each glyph $=$ one letter &
+  Syllabic segmentation \\
+\addlinespace
+3.\ Segmentation &
+  2,923 syllable types; 73\% glyphs position-locked; $|\Sigma|/|\mathcal{A}| \approx 6$ &
+  Classical frequency analysis (requires $|\Sigma| \approx |\mathcal{A}|$) &
+  Bayesian language ranking \\
+\addlinespace
+3b.\ Language ranking &
+  Hebrew $-35.64$, Aramaic $-35.91$ (gap 0.27); non-Semitic ${>}3.5$~nats worse &
+  Turkish, Finnish, Latin as source languages; Hebrew/Aramaic merged into ``NW Semitic'' &
+  Bayesian decipherment (EM + MCMC) against NW Semitic \\
+\addlinespace
+4.\ Decipherment &
+  16 models converge: $\leq$68\% $n$-gram, $\leq$5 roots &
+  All monoalphabetic substitution models; polyalphabetic, polygraphic, transposition (by cipher diagnostics); nomenclator (by glyph/word clustering) &
+  \textit{Structural limit reached} \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+
+% ============================================================
+\section{Conclusion: The Bounded Mystery}
+
+The funnel does not end with despair.  The structural limit is itself a discovery: it constrains any future proposal.  Whatever the Voynich script encodes, the encoding must (a)~reproduce a U-shaped entropy curve with bounce~$> 0.8$, (b)~exhibit positional MI~$> 0.5$, and (c)~resist monoalphabetic decipherment at $|\Sigma|/|\mathcal{A}| \approx 6$.  These are not vague desiderata---they are quantitative falsification criteria that narrow the remaining hypothesis space to two: substitution to an untested language, or a constructed language with natural-language-like statistics.  The funnel has converted an open mystery into a precisely bounded one.
+
+
+\end{document}

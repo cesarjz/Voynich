@@ -1,0 +1,70 @@
+% ============================================================
+%  Positional Role Grammar and Structural Dictionary Reconstruction
+%  for the Voynich Manuscript
+%  Target: arXiv / Zenodo (long form preprint)
+%  Compile: pdflatex → bibtex → pdflatex → pdflatex
+% ============================================================
+\documentclass[11pt,a4paper]{article}
+
+% --- Encoding ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+\usepackage{graphicx}
+\graphicspath{{../historic/}{../images/}{../}}
+
+% --- Mathematics ---
+\usepackage{amsmath,amssymb}
+
+% --- Tables ---
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{adjustbox}
+
+% --- Misc ---
+\usepackage{enumitem}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{url}
+
+% --- Typography ---
+\usepackage[expansion=false]{microtype}
+\emergencystretch=1em
+
+% --- Custom commands ---
+\newcommand{\vms}{Voynich Manuscript}
+\newcommand{\sta}{STA1}
+\newcommand{\silpart}{SilPart}
+\PassOptionsToPackage{hyphens}{url}
+\urlstyle{tt}
+\newcommand{\filename}[1]{\path{#1}}
+
+% ============================================================
+\begin{document}
+
+\title{Positional Role Grammar and Structural Dictionary\\
+Reconstruction for the \vms}
+
+\author{C\'esar Jim\'enez Zapata\\
+\small Independent Researcher, Spain\\
+\small \href{mailto:cesarjz@gmail.com}{cesarjz@gmail.com}}
+
+\date{April 2026}
+
+\maketitle
+
+\begin{abstract}
+\input{rolegrammar_abstract}
+\end{abstract}
+
+\noindent\textbf{Keywords:} \input{rolegrammar_keywords}
+
+\input{rolegrammar_body}
+
+\bibliographystyle{abbrvnat}
+\bibliography{rolegrammar_paper}
+
+\end{document}

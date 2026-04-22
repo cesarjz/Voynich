@@ -1,0 +1,77 @@
+% ============================================================
+%  The Venus Ring of Voynich f57v: A Localized Talismanic Inscription
+%  and Its Comparison with Picatrix Latinus (Krakow BJ MS 793)
+%  Target: arXiv / Zenodo (long form preprint)
+%  Compile: pdflatex → bibtex → pdflatex → pdflatex
+% ============================================================
+\documentclass[11pt,a4paper]{article}
+
+% --- Encoding for Polish/Spanish/Czech characters and arrows ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+\usepackage{graphicx}
+\graphicspath{{../historic/}{../images/}{../}}
+
+% --- Mathematics ---
+\usepackage{amsmath,amssymb}
+
+% --- Tables ---
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{adjustbox}
+
+% --- Misc ---
+\usepackage{enumitem}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{url}
+
+% --- Typography ---
+\usepackage[expansion=false]{microtype}
+\emergencystretch=1em
+
+% --- Custom commands ---
+\newcommand{\vms}{Voynich Manuscript}
+\newcommand{\msc}{Picatrix Latinus}
+\newcommand{\bjms}{Cracow BJ MS~793}
+
+% \filename{...} renders a file path in monospaced font and allows the
+% line-breaker to split the path at slashes and underscores. This is
+% essential for long artefact paths in the data-availability section
+% which would otherwise overflow the right margin.
+\PassOptionsToPackage{hyphens}{url}
+\urlstyle{tt}
+\newcommand{\filename}[1]{\path{#1}}
+
+% ============================================================
+\begin{document}
+
+\title{The Venus Ring of Voynich f57v:\\
+A Localized Talismanic Inscription with a Private Subalphabet,\\
+and Its Direct Comparison with \textit{Picatrix Latinus}\\
+(Cracow Jagiellonian Library MS 793)}
+
+\author{C\'esar Jim\'enez Zapata\\
+\small Independent Researcher, Spain\\
+\small \href{mailto:cesarjz@gmail.com}{cesarjz@gmail.com}}
+
+\date{April 2026}
+
+\maketitle
+
+\begin{abstract}
+\input{venusring_abstract}
+\end{abstract}
+
+\noindent\textbf{Keywords:} \input{venusring_keywords}
+
+\input{venusring_body}
+
+\bibliographystyle{abbrvnat}
+\bibliography{venusring_paper}
+
+\end{document}

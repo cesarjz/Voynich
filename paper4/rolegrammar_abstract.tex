@@ -1,0 +1,59 @@
+% Abstract — Positional Role Grammar and Structural Dictionary
+% Reconstruction for the Voynich Manuscript
+% Approximately 400 words.
+
+The \vms\ (Beinecke MS~408, radiocarbon-dated 1404--1438~CE) has been
+shown in three companion studies to resist all tested substitution-based
+decipherment models~\citep{jimenez2026negative}, to exhibit a two-tier
+positional encoding consistent with an encyclopaedic categorial
+code~\citep{jimenez2026twotier}, and to belong to the medieval
+astrological-talismanic tradition codified by \textit{Picatrix
+Latinus}~\citep{jimenez2026venusring}. Those studies characterised
+\emph{what kind of system} the manuscript is and \emph{which tradition}
+it belongs to. The present, fourth study asks a different question:
+\emph{can the internal combinatorial rules of the code be recovered
+without access to the lost key book?}
+
+We report three cumulative findings based on the full 37,087-word
+\sta\ 2.0 corpus (166 glyph types, 157,254 tokens, 224 folios).
+
+\textbf{First}, visual glyph families---groups of glyphs sharing a
+common graphic root in the \sta\ classification---concentrate in
+specific word positions far more than chance predicts. A
+frequency-stratified permutation test ($10{,}000$ iterations) yields
+$z = -3.38$, $p = 0.0007$, establishing that graphic form encodes
+functional role: glyphs that \emph{look alike} tend to \emph{behave
+alike} within the word.
+
+\textbf{Second}, this form--function correlation resolves into a
+six-role combinatorial grammar. Each of the 34 core glyphs (covering
+99.5\% of tokens) is classified as OPENER, ENCODER, CONNECTOR, BODY,
+SCAFFOLD, or CLOSER based on its positional profile. The grammar is
+strongly directional: OPENER$\to$ENCODER accounts for 63.5\% of
+first-to-second-position transitions; several role pairs are effectively
+forbidden ($O/E < 0.3$). A leave-one-out folio classifier trained on
+role proportions alone achieves 66.4\% accuracy across five manuscript
+sections (herbal, biological, astronomical, zodiac, pharmaceutical),
+against a 27\% chance baseline. The grammar is \emph{universal} across
+sections; what varies is the \emph{proportion} of glyphs per role,
+yielding section-specific markers (e.g., glyph D1 is $1.7\times$
+enriched in biological folios; Z1 is $2.8\times$ enriched in zodiac
+folios).
+
+\textbf{Third}, the grammar induces a five-slot structural schema for
+the Voynich word: DOMINIUM (domain classifier, position~1),
+GENUS (primary category encoder, position~2), SPECIES (secondary
+modifier, position~3, highest entropy at 4.09~bits), CORPUS (body
+content, position~4), and FINIS (terminator, positions~5--6). Each slot
+has a closed inventory with measurable section specificity (Jensen--Shannon
+divergence ranging from 0.186 to 0.226). The schema is exported as a
+machine-readable structural dictionary
+(\filename{voynich_structural_dictionary.json}).
+
+The reconstructed schema represents the \emph{syntax} of the lost key
+book---the combinatorial frame within which the original author assigned
+semantic values to each slot. The analysis recovers the rules that
+govern which glyph sequences are valid Voynich words without recovering
+what those words mean. Content access remains contingent on the recovery
+of the key book itself; the structural dictionary delimits the
+search space that any future key-book candidate must satisfy.

@@ -1,0 +1,55 @@
+{
+  "conclusion": "Automated visual comparison of Voynich herbal illustrations with medieval herbals does NOT produce useful plant-to-plant matches. All methods find manuscript-level similarity (layout, color palette) but not botanical-level similarity (leaf shapes, root forms).",
+  "methods_tested": [
+    {
+      "method": "CLIP direct (full pages)",
+      "result": "Manfredus most similar (mean=0.833). Matches dominated by layout similarity, not plant shapes.",
+      "notebook": "65_visual_herbal_comparison.ipynb"
+    },
+    {
+      "method": "Contour extraction + CLIP",
+      "result": "Higher scores (mean=0.896) but same pages repeat in all matches. Captures page structure, not plants.",
+      "notebook": "65 (variant)"
+    },
+    {
+      "method": "Shape matching (Hu moments + color histograms)",
+      "result": "Same pages dominate matches. Similarity > 1.0 (metric bug). No useful plant discrimination.",
+      "script": "herbal/compare_shapes.py"
+    },
+    {
+      "method": "Color-separated CLIP (green=leaves, red/roots, blue, brown)",
+      "result": "Green channel best separation (167/200 Voynich pages). Red channel captures parchment not roots. Blue too sparse. Manfredus wins all channels.",
+      "script": "herbal/compare_by_color.py"
+    },
+    {
+      "method": "Refined color (green + adaptive roots)",
+      "result": "Roots channel improved diversity (10 unique pages in top 20) but still captures text+parchment, not roots specifically. CLIP confuses 'has brown tones' with 'similar roots'.",
+      "script": "herbal/compare_green_red.py"
+    }
+  ],
+  "consistent_finding": "The Manfredus (BnF lat. 6823, Tractatus de Herbis, southern Italy 14th c.) is the most visually similar herbal to the Voynich across ALL methods and ALL color channels. Carrara Herbal (Padua, 1390-1404) ranks 2nd-3rd.",
+  "why_it_fails": [
+    "CLIP is a general-purpose model trained on modern photos, not medieval manuscripts",
+    "All herbal manuscript pages share similar layout (parchment + plant + text), so CLIP finds generic similarity",
+    "Color separation helps isolate plants but CLIP still compares color blobs, not botanical shapes",
+    "Without manual segmentation of individual plants, automated comparison cannot distinguish specific leaf/root forms"
+  ],
+  "what_would_work": [
+    "Manual segmentation of individual plants by a human",
+    "A model fine-tuned on botanical illustration comparison (does not exist)",
+    "Consultation with a historian of medieval botanical art"
+  ],
+  "manuscripts_compared": {
+    "voynich": "200 folios (Beinecke MS 408, Yale)",
+    "bnf_lat_6823_manfredus": "100 pages (Tractatus de Herbis, Gallica)",
+    "bnf_lat_17848": "80 pages (alchemical herbal, Gallica)",
+    "bnf_hebr_1199": "80 pages (Hebrew herbal, Gallica — B&W, excluded from color comparison)",
+    "carrara_herbal": "6 pages (BL Egerton 2020, Wikimedia — partial)"
+  },
+  "ranking_by_similarity_to_voynich": [
+    {"manuscript": "BnF lat. 6823 (Manfredus)", "tradition": "Tractatus de Herbis, Salerno", "green": 0.822, "roots": 0.833},
+    {"manuscript": "BnF lat. 17848", "tradition": "Alchemical herbal", "green": 0.792, "roots": 0.723},
+    {"manuscript": "Carrara Herbal", "tradition": "Paduan herbal", "green": 0.771, "roots": 0.710},
+    {"manuscript": "BnF hebr. 1199", "tradition": "Hebrew herbal", "green": null, "roots": null, "note": "B&W scan, excluded"}
+  ]
+}

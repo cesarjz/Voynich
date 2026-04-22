@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "notebook": "37_distributional_clustering",
+    "corpus": "STA1 2.0",
+    "segmentation": "TP-P20",
+    "n_words": 37087,
+    "n_glyph_tokens": 157254,
+    "n_glyph_types": 166
+  },
+  "cooccurrence_matrix": {
+    "n_onsets_functional": 152,
+    "n_codas_functional": 77,
+    "n_oc_pairs": 9518,
+    "matrix_density": 0.12508544087491455,
+    "total_cooccurrences": 9437
+  },
+  "onset_clustering": {
+    "best_k": 7,
+    "silhouette": 0.5661475413507454,
+    "silhouette_by_k": {
+      "3": 0.40961722782774407,
+      "5": 0.5436137907532581,
+      "7": 0.5661475413507454,
+      "10": 0.47773613955738586
+    },
+    "pca_variance": [
+      0.30075081460463116,
+      0.2436004759100254
+    ],
+    "clusters": {
+      "0": {
+        "n_members": 30,
+        "top_onsets": [
+          "A1B2A3",
+          "A1B2Q1A3",
+          "A1C1A1",
+          "A1C1A3",
+          "A1Q1A3"
+        ]
+      },
+      "1": {
+        "n_members": 74,
+        "top_onsets": [
+          "A1",
+          "A1B2A1",
+          "A1B2K1",
+          "A1B2Q1K2A1",
+          "A1C1K1"
+        ]
+      },
+      "2": {
+        "n_members": 5,
+        "top_onsets": [
+          "A1Q1J1Ba",
+          "A1Q2J1B1",
+          "A1Q2J1Ba",
+          "K1J1B1",
+          "U2J1"
+        ]
+      },
+      "3": {
+        "n_members": 30,
+        "top_onsets": [
+          "A1B2Q1",
+          "A1Q1",
+          "A1Q2",
+          "A2Q1",
+          "A2Q2"
+        ]
+      },
+      "4": {
+        "n_members": 3,
+        "top_onsets": [
+          "A2K1",
+          "C1K1",
+          "D1A1B2K1"
+        ]
+      },
+      "5": {
+        "n_members": 9,
+        "top_onsets": [
+          "A1B2Q1K2",
+          "A1Q1K2",
+          "A1Q2K2",
+          "A2Q1K2",
+          "A2Q2K2"
+        ]
+      },
+      "6": {
+        "n_members": 1,
+        "top_onsets": [
+          "K1A1B2A3"
+        ]
+      }
+    }
+  },
+  "coda_clustering": {
+    "best_k": 5,
+    "silhouette": 0.473383198862643,
+    "silhouette_by_k": {
+      "3": 0.3828777752355685,
+      "5": 0.473383198862643,
+      "7": 0.41007610302507647,
+      "10": 0.3284027911622776
+    },
+    "pca_variance": [
+      0.28709312103414264,
+      0.2276094148262633
+    ],
+    "clusters": {
+      "0": {
+        "n_members": 28,
+        "top_codas": [
+          "A4",
+          "Ab",
+          "B1A2",
+          "BaA2",
+          "C2"
+        ]
+      },
+      "1": {
+        "n_members": 2,
+        "top_codas": [
+          "E1C2",
+          "F3A2"
+        ]
+      },
+      "2": {
+        "n_members": 7,
+        "top_codas": [
+          "A2",
+          "A2B1A2",
+          "AaB2",
+          "AaC1",
+          "M1A2"
+        ]
+      },
+      "3": {
+        "n_members": 16,
+        "top_codas": [
+          "B3",
+          "B3A2",
+          "B5A2",
+          "Bd",
+          "E1B2"
+        ]
+      },
+      "4": {
+        "n_members": 24,
+        "top_codas": [
+          "B4",
+          "F1",
+          "F3A3C1",
+          "G1",
+          "G3A3B2"
+        ]
+      }
+    }
+  },
+  "section_analysis": {
+    "onset_chi2": 537.5410461049107,
+    "onset_p": 2.3362486295052703e-94,
+    "onset_cramers_v": 0.08782234005943336,
+    "coda_chi2": 221.44680253722288,
+    "coda_p": 6.141554844847834e-36,
+    "coda_cramers_v": 0.06716288516611335,
+    "onset_more_specific": true
+  },
+  "free_word_analysis": {
+    "n_free_tokens": 19516,
+    "n_free_types": 2422,
+    "n_struct_tokens": 17571,
+    "n_struct_types": 7705,
+    "zipf_alpha_free": 1.1562962380723816,
+    "zipf_alpha_struct": 0.6412982473722959,
+    "zipf_r2_free": 0.938045696184047,
+    "zipf_r2_struct": 0.8622395239184404,
+    "mean_section_entropy_free": 0.6954687623012882,
+    "mean_section_entropy_struct": 0.7014742016858746,
+    "free_more_uniform": false,
+    "sfs_trigram_observed": 0.20855751985652063,
+    "sfs_trigram_expected": 0.224465473558845,
+    "top10_free_words": [
+      {
+        "word": "B1A3G1",
+        "freq": 665,
+        "section_entropy": 0.7170636966710494
+      },
+      {
+        "word": "A1B2",
+        "freq": 493,
+        "section_entropy": 0.7505225557702314
+      },
+      {
+        "word": "A3G1",
+        "freq": 445,
+        "section_entropy": 0.7860351862030195
+      },
+      {
+        "word": "A3C1",
+        "freq": 354,
+        "section_entropy": 0.8726986523174771
+      },
+      {
+        "word": "K1A1B2",
+        "freq": 342,
+        "section_entropy": 0.6370656120236728
+      },
+      {
+        "word": "A1C1",
+        "freq": 336,
+        "section_entropy": 0.8287458476103915
+      },
+      {
+        "word": "K1J1B1A2",
+        "freq": 323,
+        "section_entropy": 0.6381707269221268
+      },
+      {
+        "word": "K1J1A2",
+        "freq": 320,
+        "section_entropy": 0.7578064610852693
+      },
+      {
+        "word": "D1A1Q1K2A2",
+        "freq": 295,
+        "section_entropy": 0.5872829162125879
+      },
+      {
+        "word": "D1A1Q1A3F1",
+        "freq": 271,
+        "section_entropy": 0.48195094330355986
+      }
+    ]
+  },
+  "bigram_context": {
+    "free_preceded_by_free": 0.5582598893215823,
+    "free_preceded_by_struct": 0.44174011067841773,
+    "free_followed_by_free": 0.5582884960286959,
+    "free_followed_by_struct": 0.4417115039713041
+  }
+}

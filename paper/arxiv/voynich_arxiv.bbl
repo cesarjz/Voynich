@@ -1,0 +1,271 @@
+\begin{thebibliography}{36}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Amancio et~al.(2013)Amancio, Altmann, Rybski, Oliveira~Jr., and
+  Costa]{amancio2013}
+D.~R. Amancio, E.~G. Altmann, D.~Rybski, O.~N. Oliveira~Jr., and L.~d.~F.
+  Costa.
+\newblock Probing the statistical properties of unknown texts: Application to
+  the {Voynich} manuscript.
+\newblock \emph{PLoS ONE}, 8\penalty0 (7):\penalty0 e67310, 2013.
+\newblock \doi{10.1371/journal.pone.0067310}.
+
+\bibitem[Berg-Kirkpatrick and Klein(2013)]{berg2013}
+T.~Berg-Kirkpatrick and D.~Klein.
+\newblock Decipherment with a million random restarts.
+\newblock In \emph{Proceedings of the 2013 Conference on Empirical Methods in
+  Natural Language Processing}, pages 874--878, 2013.
+\newblock URL \url{https://aclanthology.org/D13-1087/}.
+
+\bibitem[Bowern and Lindemann(2021)]{bowern2021}
+C.~Bowern and L.~Lindemann.
+\newblock The linguistics of the {Voynich} manuscript.
+\newblock \emph{Annual Review of Linguistics}, 7:\penalty0 285--308, 2021.
+\newblock \doi{10.1146/annurev-linguistics-011619-030613}.
+
+\bibitem[Clemens and Harkness(2016)]{clemens2016}
+R.~Clemens and D.~Harkness.
+\newblock \emph{The {Voynich} Manuscript}.
+\newblock Yale University Press, New Haven, CT, 2016.
+\newblock ISBN 978-0-300-21723-0.
+
+\bibitem[Cover and Thomas(2006)]{cover2006}
+T.~M. Cover and J.~A. Thomas.
+\newblock \emph{Elements of Information Theory}.
+\newblock Wiley-Interscience, Hoboken, NJ, 2nd edition, 2006.
+\newblock ISBN 978-0-471-24195-9.
+
+\bibitem[Currier(1976)]{currier1976}
+P.~H. Currier.
+\newblock Some important new statistical findings.
+\newblock In \emph{New Research on the {Voynich} Manuscript: Proceedings of a
+  Seminar}. 1976.
+\newblock Presented at the Naval Intelligence Support Center, Washington, DC.
+  Available at \url{http://www.voynich.nu/extra/curr_main.html}.
+
+\bibitem[Dempster et~al.(1977)Dempster, Laird, and Rubin]{dempster1977}
+A.~P. Dempster, N.~M. Laird, and D.~B. Rubin.
+\newblock Maximum likelihood from incomplete data via the {EM} algorithm.
+\newblock \emph{Journal of the Royal Statistical Society: Series B},
+  39\penalty0 (1):\penalty0 1--38, 1977.
+\newblock \doi{10.1111/j.2517-6161.1977.tb01600.x}.
+
+\bibitem[D'Imperio(1978)]{dimperio1978}
+M.~E. D'Imperio.
+\newblock \emph{The {Voynich} Manuscript: An Elegant Enigma}.
+\newblock National Security Agency / Central Security Service, Fort Meade, MD,
+  1978.
+\newblock NSA publication C-001-78. Available at
+  \url{https://www.nsa.gov/portals/75/documents/about/cryptologic-heritage/historical-figures-publications/publications/misc/voynich_manuscript.pdf}.
+  Also at \url{https://archive.org/details/VoynichManuscriptAnElegantEnigma}.
+
+\bibitem[Gaskell and Bowern(2022)]{gaskell2022}
+D.~Gaskell and C.~Bowern.
+\newblock Gibberish after all? {Voynichese} is statistically similar to
+  human-produced samples of meaningless text.
+\newblock In \emph{Proceedings of the International Conference on the Voynich
+  Manuscript}, volume 3313 of \emph{CEUR Workshop Proceedings}, 2022.
+\newblock URL \url{https://ceur-ws.org/Vol-3313/paper4.pdf}.
+
+\bibitem[Gelman and Rubin(1992)]{gelman1992}
+A.~Gelman and D.~B. Rubin.
+\newblock Inference from iterative simulation using multiple sequences.
+\newblock \emph{Statistical Science}, 7\penalty0 (4):\penalty0 457--472, 1992.
+\newblock \doi{10.1214/ss/1177011136}.
+
+\bibitem[Greshko(2025)]{greshko2025}
+M.~A. Greshko.
+\newblock The {Naibbe} cipher: A substitution cipher that encrypts {Latin} and
+  {Italian} as {Voynich} manuscript-like ciphertext.
+\newblock \emph{Cryptologia}, 2025.
+\newblock \doi{10.1080/01611194.2025.2566408}.
+
+\bibitem[Harris(1955)]{harris1955}
+Z.~S. Harris.
+\newblock From phoneme to morpheme.
+\newblock \emph{Language}, 31\penalty0 (2):\penalty0 190--222, 1955.
+\newblock \doi{10.2307/411036}.
+
+\bibitem[Hauer and Kondrak(2016)]{hauer2016}
+B.~Hauer and G.~Kondrak.
+\newblock Decoding anagrammed texts written in an unknown language and script.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  4:\penalty0 75--86, 2016.
+\newblock \doi{10.1162/tacl_a_00084}.
+
+\bibitem[Hermes(2022)]{hermes2022b}
+J.~Hermes.
+\newblock {Polygraphia III}: The cipher that pretends to be an artificial
+  language.
+\newblock In \emph{Proceedings of the International Conference on the {Voynich}
+  Manuscript 2022}, volume 3313 of \emph{CEUR Workshop Proceedings}, 2022.
+\newblock URL \url{https://ceur-ws.org/Vol-3313/paper7.pdf}.
+
+\bibitem[Hodgins(2011)]{hodgins2011}
+G.~Hodgins.
+\newblock Measuring the age of the {Voynich} manuscript.
+\newblock \emph{ORau Newsheet}, 2011.
+\newblock Radiocarbon dating of four parchment samples: 1404--1438 CE at 95\%
+  confidence. Results reported by the McCrone Research Institute and the
+  University of Arizona AMS Laboratory.
+
+\bibitem[Jastrow(1903)]{jastrow1903}
+M.~Jastrow.
+\newblock \emph{A Dictionary of the {Targumim}, the {Talmud Babli} and
+  {Yerushalmi}, and the {Midrashic} Literature}.
+\newblock Luzac, London, 1903.
+\newblock Available at
+  \url{https://archive.org/details/dictionaryoftarg01jastuoft/page/x/mode/2up}.
+
+\bibitem[Kahn(1967)]{kahn1967}
+D.~Kahn.
+\newblock \emph{The Codebreakers: The Story of Secret Writing}.
+\newblock Macmillan, New York, 1967.
+\newblock ISBN 978-0-684-83130-5.
+
+\bibitem[Knight et~al.(2006)Knight, Nair, Rathod, and Yamada]{knight2006}
+K.~Knight, A.~Nair, N.~Rathod, and K.~Yamada.
+\newblock Unsupervised analysis for decipherment problems.
+\newblock In \emph{Proceedings of the COLING/ACL 2006 Main Conference Poster
+  Sessions}, pages 499--506, 2006.
+\newblock URL \url{https://aclanthology.org/P06-2065/}.
+
+\bibitem[Knight et~al.(2011)Knight, Megyesi, and Schaefer]{knight2011}
+K.~Knight, B.~Megyesi, and C.~Schaefer.
+\newblock The {Copiale} cipher.
+\newblock In \emph{Proceedings of the 4th Workshop on Building and Using
+  Comparable Corpora}, pages 2--9. Association for Computational Linguistics,
+  2011.
+\newblock URL \url{https://aclanthology.org/W11-1202/}.
+
+\bibitem[Landini(2001)]{landini2001}
+G.~Landini.
+\newblock Evidence of linguistic structure in the {Voynich} manuscript using
+  spectral analysis.
+\newblock \emph{Cryptologia}, 25\penalty0 (4):\penalty0 275--295, 2001.
+\newblock \doi{10.1080/0161-110191889932}.
+
+\bibitem[Metropolis et~al.(1953)Metropolis, Rosenbluth, Rosenbluth, Teller, and
+  Teller]{metropolis1953}
+N.~Metropolis, A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and E.~Teller.
+\newblock Equation of state calculations by fast computing machines.
+\newblock \emph{The Journal of Chemical Physics}, 21\penalty0 (6):\penalty0
+  1087--1092, 1953.
+\newblock \doi{10.1063/1.1699114}.
+\newblock Available at
+  \url{https://bayes.wustl.edu/Manual/EquationOfState.pdf}.
+
+\bibitem[Montemurro and Zanette(2013)]{montemurro2013}
+M.~A. Montemurro and D.~H. Zanette.
+\newblock Keywords and co-occurrence patterns in the {Voynich} manuscript: An
+  information-theoretic analysis.
+\newblock \emph{PLoS ONE}, 8\penalty0 (6):\penalty0 e66344, 2013.
+\newblock \doi{10.1371/journal.pone.0066344}.
+
+\bibitem[Nuhn et~al.(2012)Nuhn, Mauser, and Ney]{nuhn2012}
+M.~Nuhn, A.~Mauser, and H.~Ney.
+\newblock Deciphering foreign language by combining language models and context
+  vectors.
+\newblock In \emph{Proceedings of the 50th Annual Meeting of the Association
+  for Computational Linguistics}, pages 156--164, 2012.
+\newblock URL \url{https://aclanthology.org/P12-1017/}.
+
+\bibitem[Nuhn et~al.(2014)Nuhn, Schamper, and Ney]{nuhn2014}
+M.~Nuhn, J.~Schamper, and H.~Ney.
+\newblock Improved decipherment of homophonic ciphers.
+\newblock In \emph{Proceedings of the 2014 Conference on Empirical Methods in
+  Natural Language Processing}, pages 1764--1768, 2014.
+\newblock \doi{10.3115/v1/D14-1184}.
+\newblock URL \url{https://aclanthology.org/D14-1184/}.
+
+\bibitem[Ravi and Knight(2011)]{ravi2011}
+S.~Ravi and K.~Knight.
+\newblock Bayesian inference for {Zodiac} and other homophonic ciphers.
+\newblock In \emph{Proceedings of the 49th Annual Meeting of the Association
+  for Computational Linguistics}, pages 239--247. Association for Computational
+  Linguistics, 2011.
+\newblock URL \url{https://aclanthology.org/P11-1025/}.
+
+\bibitem[Reddy and Knight(2011)]{reddy2011}
+S.~Reddy and K.~Knight.
+\newblock What we know about the {Voynich} manuscript.
+\newblock In \emph{Proceedings of the 5th ACL-HLT Workshop on Language
+  Technology for Cultural Heritage, Social Sciences, and Humanities}, pages
+  78--86, 2011.
+\newblock URL \url{https://aclanthology.org/W11-1511/}.
+
+\bibitem[Rugg(2004)]{rugg2004}
+G.~Rugg.
+\newblock An elegant hoax? a possible solution to the {Voynich} manuscript.
+\newblock \emph{Cryptologia}, 28\penalty0 (1):\penalty0 31--46, 2004.
+\newblock \doi{10.1080/0161-110491892755}.
+
+\bibitem[Saffran et~al.(1996)Saffran, Aslin, and Newport]{saffran1996}
+J.~R. Saffran, R.~N. Aslin, and E.~L. Newport.
+\newblock Statistical learning by 8-month-old infants.
+\newblock \emph{Science}, 274\penalty0 (5294):\penalty0 1926--1928, 1996.
+\newblock \doi{10.1126/science.274.5294.1926}.
+
+\bibitem[{Sefaria}(2024)]{sefaria2024}
+{Sefaria}.
+\newblock Targum {Onkelos} on the {Pentateuch}.
+\newblock \url{https://www.sefaria.org}, 2024.
+\newblock Open-source digital library of Jewish texts. Corpus: 82,842 words, 27
+  characters. Source data: \url{https://github.com/Sefaria/Sefaria-Export}.
+
+\bibitem[Shannon(1948)]{shannon1948}
+C.~E. Shannon.
+\newblock A mathematical theory of communication.
+\newblock \emph{The Bell System Technical Journal}, 27\penalty0 (3):\penalty0
+  379--423, 1948.
+\newblock \doi{10.1002/j.1538-7305.1948.tb01338.x}.
+\newblock Available at
+  \url{https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf}.
+
+\bibitem[Snyder et~al.(2010)Snyder, Barzilay, and Knight]{snyder2010}
+B.~Snyder, R.~Barzilay, and K.~Knight.
+\newblock A statistical model for lost language decipherment.
+\newblock In \emph{Proceedings of the 48th Annual Meeting of the Association
+  for Computational Linguistics}, pages 1048--1057, 2010.
+\newblock URL \url{https://aclanthology.org/P10-1107/}.
+
+\bibitem[Stolfi(1997)]{stolfi1997}
+J.~Stolfi.
+\newblock A quantitative study of the {Voynich} manuscript.
+\newblock Unpublished manuscript, University of Campinas, 1997.
+\newblock Available at \url{https://www.ic.unicamp.br/~stolfi/voynich/}.
+
+\bibitem[Timm and Schinner(2020)]{timm2020}
+T.~Timm and A.~Schinner.
+\newblock A possible generating algorithm of the {Voynich} manuscript.
+\newblock \emph{Cryptologia}, 44\penalty0 (3):\penalty0 231--257, 2020.
+\newblock \doi{10.1080/01611194.2019.1596999}.
+
+\bibitem[Timm and Schinner(2024)]{timm2024}
+T.~Timm and A.~Schinner.
+\newblock The {Voynich} manuscript: Discussion of text creation hypotheses.
+\newblock \emph{Cryptologia}, 48\penalty0 (4):\penalty0 305--322, 2024.
+\newblock \doi{10.1080/01611194.2023.2225716}.
+
+\bibitem[Witten and Bell(1991)]{witten1991}
+I.~H. Witten and T.~C. Bell.
+\newblock The zero-frequency problem: Estimating the probabilities of novel
+  events in adaptive text compression.
+\newblock \emph{IEEE Transactions on Information Theory}, 37\penalty0
+  (4):\penalty0 1085--1094, 1991.
+\newblock \doi{10.1109/18.87000}.
+
+\bibitem[Zandbergen(2022)]{zandbergen2022}
+R.~Zandbergen.
+\newblock A super transliteration alphabet for the {Voynich} manuscript.
+\newblock In \emph{Proceedings of the International Conference on the Voynich
+  Manuscript}, volume 3313 of \emph{CEUR Workshop Proceedings}, 2022.
+\newblock URL \url{https://ceur-ws.org/Vol-3313/}.
+\newblock STA1 2.0: 166-type alphabet unifying FSG, Currier, EVA, and v101
+  systems. Corpus available at \url{https://www.voynich.nu/transcr.html}.
+
+\end{thebibliography}

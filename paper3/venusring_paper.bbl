@@ -1,0 +1,96 @@
+\begin{thebibliography}{11}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Attrell and Porreca(2019)]{attrell2019}
+D.~Attrell and D.~Porreca.
+\newblock \emph{Picatrix: A Medieval Treatise on Astral Magic}.
+\newblock Penn State University Press, University Park, 2019.
+
+\bibitem[Bakhouche et~al.(2003)Bakhouche, Fauquier, and
+  P\'erez-Jean]{bakhouche2003}
+B.~Bakhouche, F.~Fauquier, and B.~P\'erez-Jean.
+\newblock \emph{Picatrix: un trait\'e de magie m\'edi\'eval}.
+\newblock Miroir du Moyen \^Age. Brepols, Turnhout, 2003.
+\newblock ISBN 978-2-503-51068-2.
+
+\bibitem[D'Imperio(1978)]{dimperio1978}
+M.~E. D'Imperio.
+\newblock \emph{The {Voynich} Manuscript: An Elegant Enigma}.
+\newblock National Security Agency / Central Security Service, Fort Meade, MD,
+  1978.
+\newblock NSA publication C-001-78. First published mention of the
+  magical/Picatrix angle on the Voynich.
+
+\bibitem[Fierro(1996)]{fierro1996}
+M.~Fierro.
+\newblock B\=a\d{t}inism in al-andalus. {Maslama b. Q\=asim
+  al-Qur\d{t}ub\={\i}} (d. 353/964), author of the {Rutbat al-\d{H}ak\={\i}m}
+  and the {Gh\=ayat al-\d{H}ak\={\i}m} (picatrix).
+\newblock \emph{Studia Islamica}, 84:\penalty0 87--112, 1996.
+
+\bibitem[Jim\'enez~Zapata(2026{\natexlab{a}})]{jimenez2026negative}
+C.~Jim\'enez~Zapata.
+\newblock Computational analysis of the {Voynich Manuscript}: Statistical
+  fingerprinting, generative modelling, and sixteen decipherment models yield a
+  structured negative result, 2026{\natexlab{a}}.
+\newblock URL \url{https://zenodo.org/doi/10.5281/zenodo.19188265}.
+\newblock Companion study (paper 1).
+
+\bibitem[Jim\'enez~Zapata(2026{\natexlab{b}})]{jimenez2026twotier}
+C.~Jim\'enez~Zapata.
+\newblock Two-tier encoding in the {Voynich Manuscript}: Positional syllable
+  structure reveals a designed combinatorial system, 2026{\natexlab{b}}.
+\newblock URL \url{https://zenodo.org/doi/10.5281/zenodo.19188265}.
+\newblock Companion study (paper 2).
+
+\bibitem[Mart\'inez~Gavil\'an(2025)]{martinezgavilan2025}
+M.~D. Mart\'inez~Gavil\'an.
+\newblock En los l\'imites de la ling\"u\'istica: el {\textit{apparatus
+  philosophicus}} (1665) de {Juan Caramuel} y los nuevos intereses en el
+  estudio del lenguaje.
+\newblock \emph{Bolet\'in de la Sociedad Espa\~nola de Historiograf\'ia
+  Ling\"u\'istica}, \penalty0 (19):\penalty0 99--152, 2025.
+\newblock \doi{10.5281/zenodo.17961147}.
+
+\bibitem[Pingree(1986)]{pingree1986}
+D.~Pingree, editor.
+\newblock \emph{Picatrix: The Latin Version of the {Gh\=ayat
+  al-\d{H}ak\={\i}m}. Text, Introduction, Appendices, Indices}, volume~39 of
+  \emph{Studies of the Warburg Institute}.
+\newblock The Warburg Institute, University of London, London, 1986.
+\newblock ISBN 0-85481-069-2.
+\newblock Series edited by J.~B.~Trapp; dedicated to the memory of Elsbeth
+  Jaff\'e. The critical apparatus is published separately on 7~microfiches; the
+  printed volume contains the main critical text, the introduction (including a
+  manuscript census), excerpts from manuscripts not used as base text,
+  appendices, and indices verborum. Cited Latin passages on \textit{Forma
+  Veneris} (Book~II, Capitulum~X, entries~27 and~55, pp.~67 and~70) verified
+  directly against the printed edition.
+
+\bibitem[\'Snie\.zy\'nska-Stolot(2009)]{sniezynska2009}
+E.~\'Snie\.zy\'nska-Stolot.
+\newblock \emph{Picatrix Latinus. Ikonografia planet i planet dekanicznych w
+  r\k{e}kopisie krakowskim}.
+\newblock Wydawnictwo Uniwersytetu Jagiello\'nskiego, Krak\'ow, 2009.
+\newblock ISBN 978-83-233-2666-3.
+\newblock Bilingual Polish/English. Open access at the Jagiellonian University
+  institutional repository (RUJ).
+
+\bibitem[Zandbergen(2025{\natexlab{a}})]{zandbergen_ivtff}
+R.~Zandbergen.
+\newblock {IVTFF} -- intermediate {Voynich MS} transliteration file format,
+  version 2.0.1.
+\newblock Technical report, voynich.nu, July 2025{\natexlab{a}}.
+\newblock Document issue 2.0.2, 08/07/2025.
+
+\bibitem[Zandbergen(2025{\natexlab{b}})]{zandbergen_sta1}
+R.~Zandbergen.
+\newblock {STA1} super transliteration alphabet for the {Voynich} manuscript
+  and {STA1 2.0} corpus, 2025{\natexlab{b}}.
+\newblock URL \url{https://voynich.nu/}.
+
+\end{thebibliography}

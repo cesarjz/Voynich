@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Model weights
+*.pth
+*.pt
+*.pkl
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+
+# Claude Code
+.claude/
+
+# Large media (videos, audio)
+media/
+
+# Misc
+missfont.log
+herbal/herbal.md
+herbal/plant_identifications.json
+herbal/voynich_illustr.html
+herbal/Voynich-a-provisional-partial-decoding-BAX.pdf
+zodiac/zodiac.md
+aux_docs/Voynich_Data_Autopsy.pptx
+aux_docs/The_Voynich_Architecture.pptx
+pages/f087r_crd.jpg
+pages/f088r_crd.jpg
+pages/f090v2_crd.jpg
+pages/f103r_crd.jpg
+pages/f116r_crd.jpg
+pages/f116v_crd.jpg
+images/bloque_C_multilingue.png-autosave.kra
+linkedin/mensaje_david_antizar.md
+linkedin/raul_vazquez_verde.md
+historic/books/Hebrewbooks_org_23968.pdf
+historic/books/Picatrix Latinus MS 793.pdf
+historic/books/Picatrix_Krakau_Manuscript_In_Latin.pdf
+historic/books/PicatrixGhayatAlHakim_text.pdf
+historic/books/sniezynska-stolot_picatrix_latinus_ikonografia_planet_i_planet_dekanicznych_2009.pdf
+
+# Large PDFs in historic/ (avoid accidental commits >100MB)
+historic/*.pdf
+historic/**/*.pdf

@@ -1,0 +1,163 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{titling}
+
+\newcommand{\vms}{Voynich Manuscript}
+\newcommand{\MI}{\mathrm{MI}}
+
+\title{Supplementary Material A:\\Conceptual Bridge---Statistical Concepts for Humanities Scholars}
+\author{C\'esar Jim\'enez Zapata}
+\date{Companion to: \textit{Computational Analysis of the Voynich Manuscript}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This supplementary document translates the statistical and algorithmic machinery used in the main paper into analogies drawn from linguistics, palaeography, and historical cryptanalysis.  It is intended for readers whose primary training lies in the humanities rather than in information theory or machine learning.  Each entry provides: the technical term, a one-sentence definition, and an extended analogy.
+\end{abstract}
+
+\tableofcontents
+\bigskip
+
+% ============================================================
+\section{Information-Theoretic Metrics}
+
+\paragraph{Entropy ($H$).}
+\textit{Definition:} A measure of how unpredictable the next symbol is, given what has come before.
+
+\textit{Analogy:} Imagine reading a medieval Latin charter.  After the opening \textit{In nomine Domini}, the next word is highly predictable---entropy is low.  In the middle of an unusual property description, the next word could be almost anything---entropy is high.  Entropy quantifies this intuition: a text where every next letter is a surprise has high entropy (like a random cipher), while a text full of formulaic expressions has low entropy (like a notarial protocol).
+
+\paragraph{Conditional entropy ($H_n$).}
+\textit{Definition:} The entropy of the next symbol given the previous $n$ symbols.
+
+\textit{Analogy:} If you know the last two letters of an English word are \texttt{qu}, the next letter is almost certainly a vowel---$H_2$ is very low in that context.  Conditional entropy measures how much ``context memory'' a writing system exhibits: natural languages become increasingly predictable as you see more preceding letters; random ciphers do not.  The sequence $H_0, H_1, H_2, \ldots$ traces a \textit{decay curve}---how quickly predictability accumulates.  Every known language shows a monotone decay; Voynichese shows an anomalous rise at $H_2$ (the \textit{bounce}), as if the script briefly ``forgets'' its context.
+
+\paragraph{Mutual information (MI).}
+\textit{Definition:} How much knowing one variable tells you about another.
+
+\textit{Analogy:} In Arabic calligraphy, knowing that a letter sits at the beginning of a word tells you a great deal about its shape---initial, medial, and final forms differ systematically.  MI between glyph identity and word position measures exactly this: how strongly position constrains which glyphs appear.  In Voynichese, this positional MI is twice that of any tested natural language, suggesting that position does not merely modulate glyph form (as in Arabic) but fundamentally determines glyph \textit{selection}---more akin to a syllabary where onset, nucleus, and coda draw from separate inventories.
+
+\paragraph{Index of coincidence (IC).}
+\textit{Definition:} The probability that two randomly chosen symbols from a text are identical.
+
+\textit{Analogy:} If you shuffle two copies of an inscription and compare them letter by letter, IC is the fraction of positions where the letters happen to match.  A monoalphabetic cipher preserves the IC of the underlying language (because letter frequencies are merely relabelled).  A polyalphabetic cipher like Vigen\`ere flattens frequencies and lowers the IC toward that of random text.  Voynichese's IC matches natural language, immediately ruling out polyalphabetic encryption.
+
+\paragraph{Kasiski test.}
+\textit{Definition:} A method that detects periodic keys by finding repeated $n$-grams and measuring the distances between them.
+
+\textit{Analogy:} Suppose a scribe encrypts a text by cycling through five different alphabets.  Whenever the same plaintext word happens to align with the same position in the key cycle, it produces the same ciphertext.  These repetitions occur at intervals that are multiples of the key length (5, 10, 15\ldots).  The Kasiski test looks for this clustering.  In Voynichese, repeated sequences show no periodic clustering whatsoever---their spacing is indistinguishable from what natural language produces, excluding any periodic-key mechanism.
+
+
+% ============================================================
+\section{Generative Models}
+
+\paragraph{Generative model.}
+\textit{Definition:} A set of explicit rules (a ``recipe'') that produces synthetic text, which can then be compared statistically with the real manuscript.
+
+\textit{Analogy:} Think of a palaeographer asked to forge a document.  A generative model is the forger's instruction manual: ``choose word length from this distribution, then fill each position by drawing from that position's glyph pool.''  We test eleven such manuals.  The one whose forgeries are hardest to distinguish from the original (by our six metrics) is the best description of how Voynichese was produced.  The winner, SilPart, says: partition the glyph inventory into positional pools and build words by concatenating syllables drawn from those pools.
+
+\paragraph{SilPart (syllabic partition).}
+\textit{Definition:} A generative model where glyphs are divided into onset, nucleus, and coda pools, and words are built by stringing together syllables that draw from these pools.
+
+\textit{Analogy:} Korean Hangul provides a concrete parallel.  Each syllable block is assembled from a leading consonant (onset, \textit{choseong}), a vowel (nucleus, \textit{jungseong}), and an optional trailing consonant (coda, \textit{jongseong}).  The pools are disjoint in function even when some symbols recur across positions.  SilPart posits that Voynichese works analogously: 73\% of its glyphs are ``locked'' to a specific syllable position, and words are built by concatenating such positional units.
+
+\textit{Important caveat:} The Hangul analogy describes the \emph{encoding mechanism}, not the source language.  SilPart says nothing about Korean---it says that Voynich glyphs behave like sub-syllabic components drawn from positional pools, regardless of what language is being encoded.  Korean is not a viable candidate on historical grounds: Hangul was invented by King Sejong in 1443 and promulgated in 1446, overlapping with but independent of the \vms{}'s radiocarbon date (1404--1438), and no transmission vector exists between the Korean court and 15th-century Northern Italy.  Our pipeline separates the two questions explicitly: ``How is the text encoded?'' (answered by SilPart: positional syllabic partition) and ``What language is encoded?'' (answered by the Bayesian ranking: NW~Semitic).  The Hangul parallel illuminates the first question; the second is resolved empirically by testing six candidate languages.
+
+
+% ============================================================
+\section{Decipherment Algorithms}
+
+\paragraph{Bayesian decipherment.}
+\textit{Definition:} A method that searches for the most probable letter-substitution mapping by combining a language model (``what does plausible Hebrew look like?'') with the observed Voynich text.
+
+\textit{Analogy:} Imagine you intercept a letter written in an unknown substitution cipher and you suspect the language is French.  You try every possible letter reassignment, and for each one, you ask a native French speaker: ``Does this read like French?''  Bayesian decipherment automates this by replacing the native speaker with a statistical language model trained on French texts.  The algorithm iteratively swaps letter assignments, keeping changes that make the decoded text ``sound more French'' and discarding those that make it worse.  After thousands of iterations, it converges on the mapping that maximises linguistic plausibility.
+
+\paragraph{Expectation-Maximisation (EM).}
+\textit{Definition:} An iterative algorithm that alternates between evaluating how good the current mapping is (E-step) and finding a small change that improves it (M-step).
+
+\textit{Analogy:} A codebreaker working on a substitution cipher might proceed as follows: (1)~make an initial guess for each letter; (2)~read through the decoded text and note where it ``doesn't sound right''; (3)~swap two letter assignments that seem wrong; (4)~re-read.  If the text improves, keep the swap; otherwise, undo it.  Repeating this thousands of times is essentially EM.  Each ``read-and-judge'' step is the E-step; each ``try a swap'' step is the M-step.
+
+\paragraph{Markov Chain Monte Carlo (MCMC).}
+\textit{Definition:} A refinement of EM that sometimes accepts slightly worse solutions, allowing the algorithm to escape local traps and explore the full space of possible mappings.
+
+\textit{Analogy:} Imagine our codebreaker is stuck: every single-letter swap makes the text worse, but the current decoding is clearly not right either.  MCMC allows the codebreaker to occasionally accept a slightly worse swap (with a probability controlled by a ``temperature'' parameter), in the hope that this detour leads to a much better region of the solution space---like climbing over a small hill to reach a deeper valley.  Running multiple independent codebreakers (``chains'') in parallel provides a check: if they all converge on the same solution, we gain confidence that it is globally optimal rather than a lucky accident.
+
+\paragraph{$\hat{R}$ (R-hat, Gelman--Rubin diagnostic).}
+\textit{Definition:} A convergence diagnostic that compares the variation \textit{within} each MCMC chain to the variation \textit{between} chains.
+
+\textit{Analogy:} If four independent codebreakers (who cannot communicate) all arrive at the same letter assignments, we trust the result.  If each arrives at a wildly different mapping, we do not.  $\hat{R}$ formalises this: a value near 1.0 means the chains agree; a value above 1.1 signals disagreement.  When 90\% of letter assignments have $\hat{R} < 1.1$, the decipherment has genuinely converged.
+
+\paragraph{Temperature ($T$).}
+\textit{Definition:} A parameter that controls how ``adventurous'' the search algorithm is.
+
+\textit{Analogy:} At low temperature, the algorithm is conservative---a cautious scribe who never risks an unusual reading.  At high temperature, it becomes adventurous---a daring interpreter willing to try unlikely substitutions.  The optimal temperature balances exploitation (refining a promising mapping) with exploration (escaping dead ends).  In our experiments, $T = 2.0$ provides this balance; higher values produce erratic mappings, lower values get trapped.
+
+
+% ============================================================
+\section{Language Models}
+
+\paragraph{Language model (LM).}
+\textit{Definition:} A statistical model that assigns a probability to any sequence of characters or words, capturing the patterns of a given language.
+
+\textit{Analogy:} A language model is a computational native speaker.  Just as a Hebrew scholar can instantly tell that \textit{breshit} is a plausible Hebrew word while \textit{ggggg} is not, a language model assigns high probability to sequences that resemble its training language and low probability to implausible ones.  It encodes the ``rules'' of the language---letter frequencies, common combinations, forbidden clusters---without being explicitly programmed with grammar.
+
+\paragraph{$n$-gram model.}
+\textit{Definition:} A language model that predicts the next character based on the previous $n-1$ characters.
+
+\textit{Analogy:} An $n$-gram model is like a scribe who remembers only the last few letters.  A bigram model ($n=2$) remembers one previous letter: in English, after \texttt{q}, it predicts \texttt{u} with near certainty.  A trigram model ($n=3$) remembers two: after \texttt{th}, it predicts \texttt{e} most often.  These models capture local patterns but miss long-range structure.
+
+\paragraph{LSTM (Long Short-Term Memory).}
+\textit{Definition:} A neural network architecture that learns to predict the next character while maintaining a ``memory'' of earlier context.
+
+\textit{Analogy:} If an $n$-gram model is a scribe with short-term memory, an LSTM is a scribe who keeps a notebook.  It can remember patterns from much earlier in the word---for instance, that a Hebrew word beginning with the prefix \textit{b-} (``in'') is likely to end differently than one beginning with \textit{ha-} (the definite article).  The LSTM learns these long-range dependencies automatically from training data, making it a more powerful (but more opaque) judge of linguistic plausibility.
+
+\paragraph{Perplexity / validation loss.}
+\textit{Definition:} How ``surprised'' the language model is by new text it has not seen during training.
+
+\textit{Analogy:} If you train a language model on the Torah and then show it text from the Mishnah, its surprise level (perplexity) reflects how different the two registers are.  Low perplexity means the model finds the text familiar; high perplexity means the text contains unexpected patterns.  When we decode Voynichese into Hebrew and measure perplexity, we are asking: ``Does the decoded text surprise a Hebrew-trained model as little as real Hebrew does?''
+
+
+% ============================================================
+\section{Validation Concepts}
+
+\paragraph{$n$-gram realism (percentile).}
+\textit{Definition:} How plausible the decoded character sequences are, compared to randomly shuffled mappings.
+
+\textit{Analogy:} Take the decoded text and ask the language model to score it.  Then generate 1,000 random decodings (by shuffling the letter assignments) and score those too.  If the real decoding scores better than 68\% of the random ones, it sits at the 68th percentile.  This is like asking: ``Is our codebreaker doing better than a monkey randomly reassigning letters?''  A perfect decipherment would sit above the 99th percentile; 68\% is encouraging but far from conclusive.
+
+\paragraph{Root matching.}
+\textit{Definition:} Counting how many decoded words match known roots in the target language's dictionary.
+
+\textit{Analogy:} In Semitic linguistics, a \textit{root} is a consonantal skeleton that carries core meaning: Hebrew \textit{k-t-b} underlies ``write,'' ``book,'' ``scribe.''  If our decoding produces words whose consonants form known roots, this is evidence that real language has been recovered.  Finding 3 roots out of 100 tested is above chance ($p < 0.01$) but far below what a successful decipherment would produce (dozens or hundreds).
+
+\paragraph{Scorecard.}
+\textit{Definition:} A standardised summary of five validation tests applied identically to every decipherment model.
+
+\textit{Analogy:} Just as a palaeographer evaluates a disputed manuscript against multiple criteria (script, language, material, provenance), our scorecard evaluates each decipherment against five independent tests: convergence ($\hat{R}$), mapping quality (collapse test), character-level realism ($n$-gram percentile), lexical recovery (root matching), and alphabet coverage (cardinality).  Each test returns PASS / MARGINAL / FAIL.  A model must pass all five to claim success; our best model scores 4 PASS / 0 MARGINAL / 1 FAIL---close but not convincing.
+
+\paragraph{Cardinality ratio ($K_{\mathrm{eff}} / |\Sigma_T|$).}
+\textit{Definition:} The fraction of target-language characters that the mapping actually uses.
+
+\textit{Analogy:} Hebrew has 22 consonants.  If our decoding only ever produces 15 of them, the cardinality ratio is 15/22 = 68\%.  A genuine decipherment should use most or all characters of the target alphabet.  If the mapping collapses many Voynich glyphs onto the same few Hebrew letters, it signals degeneracy rather than linguistic structure---like a ``translation'' that renders every word as one of three options.
+
+
+% ============================================================
+\section{Historical-Cryptanalytic Context}
+
+\paragraph{Monoalphabetic substitution.}
+A cipher where each plaintext letter is consistently replaced by the same ciphertext letter.  The Caesar cipher is the simplest example.  Frequency analysis, developed by al-Kind\=\i{} in the 9th century, breaks such ciphers routinely.  Our sixteen models all assume some variant of monoalphabetic substitution; all fail, despite using far more sophisticated tools than frequency counting.
+
+\paragraph{Nomenclator.}
+The dominant cipher system in 15th-century Italian diplomacy: a monoalphabetic substitution table augmented with special symbols (``code words'') for common names, places, or phrases.  We tested whether Voynichese contains a separable population of code-symbols; it does not.  The SilPart positional pattern is universal across all glyphs and words.
+
+\paragraph{Constructed language (conlang).}
+A language deliberately invented rather than naturally evolved.  Historical examples include Hildegard von Bingen's \textit{Lingua Ignota} (12th century) and, later, Esperanto.  A constructed language could exhibit statistical regularities (like the entropy curve) without corresponding to any natural language---explaining why all our decipherment models fail while the text retains language-like structure.
+
+
+\end{document}

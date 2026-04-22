@@ -1,0 +1,14 @@
+{
+  "n_stems_mapped": 75,
+  "n_stems_total": 75,
+  "mean_concentration": 0.595309018752313,
+  "null_mean_concentration": 0.40458718870038896,
+  "null_std_concentration": 0.011051615344931064,
+  "permutation_p_value": 0.0,
+  "z_score": 17.25737135245126,
+  "func_word_spread": 7.375,
+  "ingredient_spread": 4.298507462686567,
+  "mann_whitney_p": 0.0010749942152231801,
+  "intra_ingredient_coherence": 0.6938888888888889,
+  "perfect_coherence_fraction": "4/15"
+}

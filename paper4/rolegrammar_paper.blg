@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: rolegrammar_paper.aux
+The style file: abbrvnat.bst
+Database file #1: rolegrammar_paper.bib
+Warning--there's a number but no volume in martinezgavilan2025
+You've used 6 entries,
+            2773 wiz_defined-function locations,
+            624 strings with 5898 characters,
+and the built_in function-call counts, 1957 in all, are:
+= -- 175
+> -- 60
+< -- 6
++ -- 26
+- -- 18
+* -- 115
+:= -- 307
+add.period$ -- 23
+call.type$ -- 6
+change.case$ -- 23
+chr.to.int$ -- 4
+cite$ -- 13
+duplicate$ -- 100
+empty$ -- 200
+format.name$ -- 24
+if$ -- 410
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 3
+newline$ -- 43
+num.names$ -- 24
+pop$ -- 65
+preamble$ -- 1
+purify$ -- 18
+quote$ -- 0
+skip$ -- 73
+stack$ -- 0
+substring$ -- 34
+swap$ -- 9
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 61
+warning$ -- 1
+while$ -- 20
+width$ -- 0
+write$ -- 91
+(There was 1 warning)

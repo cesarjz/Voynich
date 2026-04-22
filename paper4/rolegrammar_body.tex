@@ -1,0 +1,553 @@
+% ============================================================
+%  rolegrammar_body.tex — Main body of Paper 4
+% ============================================================
+
+% ============================================================
+\section{Introduction}
+\label{sec:introduction}
+
+The \vms\ (Beinecke MS~408) has been the subject of three companion
+studies by the present author. The first~\citep{jimenez2026negative}
+tested nineteen substitution-based decipherment models against five
+Semitic target languages and established a structured negative result:
+all models converge on the same structural ceiling without producing
+readable text. The second~\citep{jimenez2026twotier} demonstrated that
+the manuscript's positional glyph structure is consistent with a
+designed two-tier categorial code rather than a natural language in
+disguise. The third~\citep{jimenez2026venusring} identified the medieval
+astrological-talismanic tradition codified by \textit{Picatrix Latinus}
+as the historical framework within which the manuscript's encoding
+practice is situated, and established that the manuscript's global
+encoding constitutes a \textit{cifra ineffabilis} in the sense of
+\citet{martinezgavilan2025}.
+
+Those three studies answered two foundational questions: \emph{what kind
+of system} is the Voynich (a categorial code, not a substitution cipher)
+and \emph{which tradition} does it belong to (the Picatrix-derived
+talismanic pasigraphy tradition). The present paper addresses a third
+question that follows naturally from the first two:
+
+\begin{quote}
+\emph{Can the combinatorial rules of the code be recovered from the
+text alone, without access to the lost key book?}
+\end{quote}
+
+We show that the answer is partially affirmative. The analysis proceeds
+in three stages that mirror the logical dependencies of the argument:
+
+\begin{enumerate}[nosep]
+  \item \textbf{Form encodes function} (\S\ref{sec:family_position}):
+    visual glyph families correlate with word-internal positions,
+    establishing that the graphic shape of a glyph is predictive of its
+    combinatorial role.
+  \item \textbf{Role grammar} (\S\ref{sec:role_grammar}): the
+    form--function correlation resolves into a six-role combinatorial
+    grammar with directional transition rules, universal across all
+    manuscript sections but with section-specific glyph proportions.
+  \item \textbf{Structural dictionary} (\S\ref{sec:structural_dict}):
+    the grammar induces a five-slot schema for the Voynich word, each
+    slot with a closed inventory and measurable section specificity,
+    representing the syntactic skeleton of the lost key book.
+\end{enumerate}
+
+The progression is deliberately cumulative: each stage depends on the
+results of the previous one, and none can be skipped without undermining
+the next. Section~\ref{sec:discussion} discusses what the reconstructed
+schema tells us---and what it does not---about the manuscript's
+content. Section~\ref{sec:limitations} addresses limitations and
+future work.
+
+
+% ============================================================
+\section{Background and prior results}
+\label{sec:background}
+
+We summarise only the results from the three companion papers that are
+directly needed as premises for the present analysis. The reader is
+referred to the original studies for full methodological detail.
+
+\subsection{Corpus}
+
+All analyses in this paper use the \sta\ 2.0 transliteration of the
+\vms\ compiled by \citet{zandbergen_sta1}, consisting of 37,087 words,
+157,254 glyph tokens, and 166 distinct glyph types distributed across
+224 folios. Words are segmented into positional classes using the
+\silpart\ pipeline introduced in the second companion
+paper~\citep{jimenez2026twotier}: each glyph token is assigned to one
+of six word-internal positions ($p_1$ through $p_6$) based on its
+frequency profile across those positions.
+
+\subsection{Key prior findings}
+
+\paragraph{Two-tier positional structure.}
+The second companion paper established that Voynich glyphs are not
+randomly distributed across word positions but exhibit a highly
+structured positional profile. Mutual information between glyph identity
+and word position ($\mathrm{MI}_{\text{pos}} = 0.670$~bits for
+\sta\ 2.0) is approximately double that of any natural language at
+comparable inventory size. The \silpart\ generative model---which
+assigns each glyph a probability distribution over six positional
+slots---achieves the best generative fit among all tested models
+($d = 0.445$).
+
+\paragraph{Categorial encoding.}
+The cumulative evidence from the first two papers is that the \vms\
+uses a positional categorial code: each word is a sequence of glyphs
+drawn from position-specific inventories, and the combinatorial rules
+governing which glyph may follow which are determined by the positional
+slot rather than by phonological constraints. This is the encoding type
+that \citet{martinezgavilan2025} recovers under the term \textit{cifra
+ineffabilis}, as discussed in the third companion
+paper~\citep{jimenez2026venusring}.
+
+\paragraph{Historical tradition.}
+The third companion paper identified the medieval Picatrix tradition as
+the historical context within which the Voynich's encoding practice
+is situated. The present paper does not depend on the historical
+identification; its results are purely structural and hold regardless
+of which tradition the manuscript belongs to.
+
+
+% ============================================================
+\section{Form encodes function: family--position correlation}
+\label{sec:family_position}
+
+\subsection{Hypothesis}
+
+The \sta\ 2.0 classification assigns each glyph a two-character code
+whose first character denotes a \emph{visual family}: glyphs sharing
+a common graphic root (e.g., all A-family glyphs share an arch-like
+base stroke; all Q-family glyphs share a looped descender). There are
+23 families with at least two members in the core inventory.
+
+If the Voynich's positional structure is a designed code, a natural
+prediction follows: \emph{glyphs that look alike should behave alike}.
+That is, members of the same visual family should tend to occupy the
+same word-internal positions. This is not trivially true: glyph
+families are defined by graphic form, while word positions are defined
+by distributional frequency. The correlation, if present, would
+establish that the code's designer used visual similarity as a carrier
+of functional information.
+
+\subsection{Test design}
+
+For each of the 23 families, we compute the Shannon entropy of its
+members' positional distribution (the distribution of positions
+$p_1$--$p_6$ occupied by all tokens in that family). The test statistic
+is the mean family entropy across all 23 families. A lower mean entropy
+indicates stronger positional concentration within families.
+
+The null hypothesis is that visual family membership is unrelated to
+positional behaviour. We implement a frequency-stratified permutation
+test: glyph types are divided into frequency bands, and family labels
+are permuted \emph{within} each band ($10{,}000$ iterations, random
+seed 42). This controls for the trivial possibility that rare glyphs
+are positionally restricted simply because they are rare.
+
+\subsection{Results}
+
+The observed mean family entropy is significantly lower than the
+null distribution:
+
+\begin{itemize}[nosep]
+  \item Observed mean entropy: $H_{\text{obs}}$
+  \item Null mean: $H_{\text{null}} = 2.213$~bits
+  \item $z = -3.38$, $p = 0.0007$ (one-tailed)
+\end{itemize}
+
+The result is robust: the significance holds under both unstratified
+and frequency-stratified null models, ruling out a frequency artefact.
+
+We also tested a stronger hypothesis---that family membership predicts
+\silpart\ positional \emph{class} (the six-class discretisation used
+for generative modelling) rather than raw word position. This stronger
+test is \emph{not} significant ($z = -0.11$, $p = 0.449$), indicating
+that the correlation operates at the level of continuous positional
+profiles, not discrete positional classes. Families predict
+\emph{where in the word} a glyph tends to appear, but not the exact
+\silpart\ slot boundary.
+
+\subsection{Interpretation}
+
+The family--position correlation establishes the foundational premise
+for all subsequent analyses: \textbf{graphic form encodes functional
+role in the Voynich code}. The designer of the system used visual
+similarity systematically---not perfectly, but significantly above
+chance---to signal which combinatorial slot a glyph belongs to. This
+licenses the next step: classifying glyphs into functional roles based
+on their positional profiles.
+
+
+% ============================================================
+\section{Six functional roles and combinatorial grammar}
+\label{sec:role_grammar}
+
+\subsection{Role assignment}
+
+Building on the family--position correlation, we classify each of the
+34 core glyphs (those with $\geq 100$ corpus occurrences, covering
+99.5\% of all tokens) into functional roles based on their positional
+concentration profile. The classification uses the dominant position
+and the shape of the positional distribution to assign each glyph to
+one of six roles:
+
+\begin{enumerate}[nosep]
+  \item \textbf{OPENER}: position-1 specialists. Highest frequency at
+    $p_1$, rapid decay toward later positions. 10 glyph types, 37,533
+    tokens. Examples: K1 (44.2\% at $p_1$), D1 (39.0\%), A1 (36.5\%).
+  \item \textbf{ENCODER}: position-2 specialists. Highest frequency at
+    $p_2$, encoding the primary category value. 7 glyph types, 57,220
+    tokens.
+  \item \textbf{CONNECTOR}: nuclear-dominant glyphs occupying
+    mid-word positions ($p_3$--$p_4$). Internal structural function.
+    3 glyph types, 17,381 tokens.
+  \item \textbf{BODY}: late-position content carriers ($p_3$--$p_5$).
+    3 glyph types, 21,608 tokens.
+  \item \textbf{SCAFFOLD}: position-invariant structural glue,
+    relatively flat distribution across positions. 3 glyph types,
+    18,440 tokens.
+  \item \textbf{CLOSER}: coda-dominant terminators, highest frequency
+    at $p_5$--$p_6$. 8 glyph types, 3,136 tokens.
+\end{enumerate}
+
+\subsection{Transition matrix}
+
+The six roles define a first-order Markov grammar over word-internal
+transitions. We compute the empirical transition probability
+$P(\text{role}_{i+1} \mid \text{role}_i)$ for all consecutive glyph
+pairs within words across the entire corpus.
+
+The grammar is strongly directional:
+
+\begin{itemize}[nosep]
+  \item OPENER $\to$ ENCODER: \textbf{63.5\%} of all position-1 to
+    position-2 transitions.
+  \item ENCODER $\to$ BODY: dominant at position-2 to position-3.
+  \item BODY $\to$ CLOSER: dominant at late positions.
+  \item Several role pairs are effectively forbidden ($O/E < 0.3$),
+    including CLOSER $\to$ OPENER and SCAFFOLD $\to$ OPENER.
+\end{itemize}
+
+The transition matrix reveals a canonical word template:
+
+\begin{center}
+\textsc{OPENER} $\to$ \textsc{ENCODER} $\to$
+[\textsc{BODY}/\textsc{CONNECTOR}] $\to$ \textsc{CLOSER}
+\end{center}
+
+\noindent with SCAFFOLD elements optionally inserted at any internal
+position.
+
+% TODO: Table 1 — Full 6×6 role transition matrix with O/E ratios
+% (extract from notebook 76, cell 2)
+
+\subsection{Section universality with local vocabulary}
+\label{sec:sections}
+
+The manuscript is traditionally divided into five thematic sections
+based on illustration type: herbal, biological, astronomical, zodiac,
+and pharmaceutical (recipe). If the combinatorial grammar is a property
+of the encoding system rather than of any particular section's content,
+we predict that the \emph{grammar} should be constant across sections
+while the \emph{glyph proportions} vary.
+
+This is precisely what we observe:
+
+\begin{itemize}[nosep]
+  \item The transition matrix is structurally stable across all five
+    sections: OPENER $\to$ ENCODER remains the dominant first transition
+    everywhere.
+  \item What varies is the \emph{proportion} of specific glyphs within
+    each role. Glyph D1 (an OPENER) is $1.7\times$ enriched in
+    biological folios relative to the corpus baseline. Glyph Z1 is
+    $2.8\times$ enriched in zodiac folios. These enrichments function
+    as \emph{section markers}: glyphs whose elevated frequency in a
+    particular section signals domain-specific content.
+  \item A leave-one-out folio classifier using only the six role
+    proportions per folio achieves \textbf{66.4\%} accuracy across the
+    five sections, against a 27\% chance baseline ($p < 10^{-6}$).
+\end{itemize}
+
+The implication is that the code has a \emph{universal grammar} (the
+transition rules) instantiated with \emph{local vocabularies} (the
+section-specific glyph weightings). The grammar is the skeleton of the
+code; the vocabulary is where the content lives.
+
+
+% ============================================================
+\section{Structural dictionary: the five-slot schema}
+\label{sec:structural_dict}
+
+\subsection{From roles to slots}
+
+The six functional roles, combined with the positional structure
+established by \silpart, induce a five-slot schema for the Voynich
+word. Each slot corresponds to a positional range and a functional
+interpretation derived from the role grammar:
+
+\begin{enumerate}[nosep]
+  \item \textbf{DOMINIUM} (position $p_1$): the domain classifier.
+    Selects the broad thematic domain of the entry. Closed inventory
+    of 113 glyph types (36,568 tokens). Highest section variability
+    (Jensen--Shannon divergence $\text{JSD} = 0.226$). Top glyphs:
+    A1 (22.1\%), K1 (16.0\%), D1 (14.6\%).
+  \item \textbf{GENUS} (position $p_2$): the primary category encoder.
+    Specifies the main category within the domain. 89 types (35,697
+    tokens), $\text{JSD} = 0.189$. Top glyphs: A1 (26.2\%), J1
+    (12.3\%), A3 (10.8\%), Q1 (10.2\%), Q2 (8.5\%).
+  \item \textbf{SPECIES} (position $p_3$): the secondary modifier.
+    Carries the highest informational load of any slot (Shannon entropy
+    $H = 4.09$~bits). 75 types (32,232 tokens), $\text{JSD} = 0.199$.
+    Top glyphs: Q1 (13.2\%), A3 (10.9\%), A1 (9.8\%), J1 (8.4\%).
+  \item \textbf{CORPUS} (position $p_4$): body content. 81 types
+    (24,152 tokens), $\text{JSD} = 0.186$ (lowest section variability,
+    suggesting section-invariant structural function). Top glyphs:
+    A2 (17.9\%), A3 (12.8\%), A1 (9.7\%), B2 (8.3\%).
+  \item \textbf{FINIS} (positions $p_5$--$p_6$): the terminator.
+    60 types at $p_5$ (14,962 tokens), 51 types at $p_6$ (6,804
+    tokens). Glyph A2 dominates $p_6$ at 38.1\% with the lowest
+    coefficient of variation ($\text{CV} = 0.09$), making it the most
+    universal closer in the system---effectively a full stop.
+    $\text{JSD} = 0.213$ at $p_6$ (second highest, suggesting that
+    termination patterns carry section-specific information).
+\end{enumerate}
+
+\subsection{Slot properties}
+
+Several properties of the schema deserve explicit comment.
+
+\paragraph{Entropy gradient.}
+The informational load is not uniformly distributed. Position $p_3$
+(SPECIES) carries the highest entropy, followed by $p_2$ (GENUS) and
+$p_1$ (DOMINIUM). Positions $p_5$--$p_6$ (FINIS) carry the lowest.
+This gradient is consistent with a classificatory system: the first
+slots narrow the domain progressively, and the terminal slots close
+the entry with a constrained set of markers.
+
+\paragraph{Universal closer.}
+Glyph A2 at position $p_6$ is effectively a punctuation mark: it
+appears in 38.1\% of all sixth-position tokens with negligible
+section variation ($\text{CV} = 0.09$). No other glyph in any other
+position achieves comparable universality.
+
+\paragraph{Section specificity.}
+The Jensen--Shannon divergence across the five manuscript sections
+varies by slot. DOMINIUM ($p_1$) shows the highest JSD (0.226),
+confirming that the opening glyph is where section-specific domain
+selection occurs. CORPUS ($p_4$) shows the lowest (0.186), suggesting
+that the body of the word is structurally stable regardless of section.
+
+\subsection{Machine-readable export}
+
+The full structural dictionary---including glyph inventories, frequency
+profiles, section specificities, and slot assignments for all 166 glyph
+types across six positions---is exported as a JSON file
+(\filename{voynich_structural_dictionary.json}) available in the
+project's public repository. This file provides the complete
+specification of the reconstructed schema in machine-readable form,
+suitable for programmatic validation or extension by other researchers.
+
+
+% ============================================================
+\section{CLAVIS CODICIS: the schema of the lost key book}
+\label{sec:clavis}
+
+The five-slot schema reconstructed in the previous section represents
+the \emph{syntactic skeleton} of the document that is missing: the
+original key book (or equivalent reference table) without which the
+manuscript's content cannot be read.
+
+We can now state precisely what the key book must contain and what
+form it must take:
+
+\begin{enumerate}[nosep]
+  \item \textbf{Five assignment tables}, one per slot (DOMINIUM through
+    FINIS), mapping each glyph in that slot's inventory to a semantic
+    value in the original author's conceptual framework.
+  \item \textbf{Section prefixes or markers} indicating how the
+    assignment tables vary across the manuscript's five thematic
+    sections---or, equivalently, five parallel sets of tables, one
+    per section.
+  \item \textbf{A reading rule} specifying the order in which slots
+    are composed to produce a complete entry: DOMINIUM selects the
+    domain, GENUS the category, SPECIES the modifier, CORPUS the
+    body content, and FINIS terminates the entry.
+\end{enumerate}
+
+What the structural analysis \emph{cannot} recover is the semantic
+content of the assignment tables: the actual meanings that the original
+author assigned to each glyph in each slot. The grammar tells us that
+glyph K1 at position~1 is a domain classifier enriched in herbal
+folios; it does not tell us which herbal domain K1 designates. The
+grammar tells us that the SPECIES slot carries the highest
+informational load; it does not tell us what the species categories
+are.
+
+This is the fundamental asymmetry of the reconstruction: the analysis
+recovers the \emph{rules} of the code but not its \emph{content}. The
+syntax is accessible from the text alone; the semantics require the
+key book. This asymmetry is not a limitation of the method---it is a
+property of the encoding system itself. A categorial code is designed
+so that its combinatorial structure can be learned (by the intended
+reader, who has the key book) while its content remains opaque to
+anyone who does not.
+
+The reconstructed schema nonetheless has immediate practical value:
+any future candidate for the lost key book must be \emph{compatible}
+with the five-slot structure. A historical document that proposes
+semantic assignments violating the grammar (e.g., assigning an OPENER
+glyph to a terminator function, or proposing more category values
+than the slot's inventory allows) can be ruled out on structural
+grounds alone. The schema thus functions as a \emph{filter} for
+documentary research: it does not tell us where the key book is, but
+it tells us what shape it must have.
+
+% TODO: Figure — CLAVIS CODICIS visualisation from notebook 78
+% (key_book_reconstructed.png)
+
+
+% ============================================================
+\section{Discussion}
+\label{sec:discussion}
+
+The analysis presented in this paper recovers the combinatorial
+structure of the Voynich code at a level of detail that, to our
+knowledge, has not been previously achieved. The progression from
+form--function correlation (\S\ref{sec:family_position}) through
+role grammar (\S\ref{sec:role_grammar}) to structural dictionary
+(\S\ref{sec:structural_dict}) yields a complete syntactic
+specification of the encoding system: we know what the valid word
+forms are, what roles each glyph plays, how roles combine, and how
+the system varies across manuscript sections.
+
+What the analysis does \emph{not} yield is the semantic content.
+The structural dictionary delimits the space of valid Voynich words
+but does not tell us what any of them mean. This is not a failure of
+the method but a direct consequence of the encoding type: in a
+categorial code, the syntax is public (it is visible in the statistical
+regularities of the text) while the semantics are private (they are
+stored in the key book, which is not part of the text). The analysis
+can describe the rules of the system from outside without being able
+to read the content from inside.
+
+This asymmetry has a constructive implication. If the code's syntax
+is now known, then the search for the lost key book is no longer
+unconstrained. Any candidate document must satisfy the five-slot
+schema: it must provide assignment tables for closed glyph inventories
+at each position, it must respect the transition grammar, and it must
+account for section-specific variation. This transforms the documentary
+search from ``find a book that might explain the Voynich'' to ``find
+a book whose structure matches a known five-slot categorial schema
+with these specific properties.'' The search space is smaller than it
+was before.
+
+\subsection{Relation to prior work}
+
+The positional structure of Voynich words has been noted by several
+previous authors, most notably in the ``slot grammar'' descriptions
+of the voynichological community and in the formal analyses of
+\citet{dimperio1978}. The present work differs from prior descriptions
+in three respects: (i)~it provides a statistical test for the
+family--position correlation ($p = 0.0007$) rather than relying on
+visual inspection; (ii)~it derives a complete six-role grammar with
+quantified transition probabilities rather than a qualitative
+positional description; and (iii)~it exports the result as a
+machine-readable structural dictionary suitable for programmatic
+use.
+
+\subsection{Relation to the Picatrix framework}
+
+The third companion paper~\citep{jimenez2026venusring} established
+that the \vms\ belongs to the medieval astrological-talismanic
+tradition codified by \textit{Picatrix Latinus}, and that the
+manuscript's encoding constitutes a \textit{cifra ineffabilis} in the
+sense recovered by \citet{martinezgavilan2025}. The present paper's
+findings are consistent with that framework but do not depend on it:
+the role grammar and structural dictionary are derived entirely from
+the text's internal statistics and hold regardless of the manuscript's
+historical attribution. If the Picatrix connection were refuted, the
+five-slot schema would remain intact.
+
+
+% ============================================================
+\section{Limitations and future work}
+\label{sec:limitations}
+
+\paragraph{Role assignment granularity.}
+The six-role classification is based on dominant positional profiles
+of the 34 core glyphs. The remaining 132 glyph types (0.5\% of
+tokens) are not classified. A finer-grained classification---for
+instance, distinguishing sub-roles within ENCODER---might reveal
+additional structure but would require a larger effective sample size
+per glyph type than the corpus currently provides.
+
+\paragraph{Transition order.}
+The grammar reported here is first-order Markov (bigram transitions
+between consecutive roles). Higher-order dependencies may exist but
+are difficult to estimate reliably given the short average word
+length (4.24 glyphs/word). Future work could explore trigram
+transitions for the most frequent role sequences.
+
+\paragraph{Section boundaries.}
+The five-section partition (herbal, biological, astronomical, zodiac,
+pharmaceutical) follows the traditional iconographic classification
+and may not correspond exactly to the original author's thematic
+divisions. The section-specificity analysis is sensitive to this
+partition; alternative segmentations should be tested.
+
+\paragraph{Slot nomenclature and interpretive framework.}
+The Latin slot names (DOMINIUM, GENUS, SPECIES, CORPUS, FINIS) are
+an \emph{interpretive} overlay, not an empirical result. What the
+data establish is that five positional slots exist with closed
+inventories, measurable entropy gradients, and section-specific
+variation. The decision to label these slots with medieval scholastic
+categories reflects the Picatrix/Caramuel framework adopted in the
+companion papers; a critic working from a purely linguistic
+perspective could relabel them as prefix, root, infix, suffix, and
+terminator without altering any quantitative finding. The nomenclature
+is chosen for historical coherence with the manuscript's probable
+tradition, not because the statistics mandate a taxonomic rather than
+grammatical reading. Readers should evaluate the structural results
+independently of the labels assigned to them.
+
+\paragraph{Semantic access.}
+The structural dictionary provides the syntactic frame but not
+the semantic content of the code. Content access requires either
+the recovery of the lost key book or the identification of a
+sufficiently constrained set of ``cribs'' (known plaintext--ciphertext
+pairs) that could bootstrap semantic assignment. The zodiac labels
+analysed in the third companion paper~\citep{jimenez2026venusring}
+represent the most promising crib candidates identified to date, but
+even they proved insufficient for cross-sign discrimination.
+
+\paragraph{Reproducibility.}
+All analyses are implemented in Jupyter notebooks (notebooks 75--78
+in the project repository), using the public \sta\ 2.0 corpus. The
+structural dictionary is available as a JSON file. All code and data
+required to reproduce every figure and table in this paper are
+publicly available under the project's Zenodo DOI.
+
+
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+We have shown that the combinatorial rules of the \vms's encoding
+system can be substantially recovered from the text alone. Visual
+glyph families correlate significantly with word-internal positions
+($z = -3.38$, $p = 0.0007$), resolving into a six-role grammar with
+directional transition rules (OPENER $\to$ ENCODER at 63.5\%) that
+is universal across all five manuscript sections. The grammar induces
+a five-slot structural schema (DOMINIUM, GENUS, SPECIES, CORPUS,
+FINIS) with closed inventories and measurable section specificity,
+representing the syntactic skeleton of the lost key book.
+
+The reconstruction establishes that the Voynich code is not
+opaque because it lacks structure---it is opaque because its structure
+is \emph{syntactic}, and the missing piece is \emph{semantic}. The
+rules are in the text. The meanings are in the key book. The
+structural dictionary now provides a formal specification against
+which any future key-book candidate can be tested.
+
+The manuscript's content remains unread. But the shape of the lock
+is now known, and that constrains the shape of the key.

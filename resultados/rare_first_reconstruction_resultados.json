@@ -1,0 +1,415 @@
+{
+  "n_anchors": 28,
+  "n_confirmed": 67,
+  "n_rare_confirmed": 23,
+  "null_anchors_mean": 33.433,
+  "null_confirmed_mean": 573.797,
+  "null_rare_confirmed_mean": 185.646,
+  "p_anchors": 0.846,
+  "p_confirmed": 1.0,
+  "p_rare": 1.0,
+  "confirmed_mappings": [
+    {
+      "stem": "K1J1",
+      "ingredient": "Zingiber",
+      "n_confirmations": 26,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "K1K2",
+      "ingredient": "Zingiber",
+      "n_confirmations": 24,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1Q1A3",
+      "ingredient": "Piper longum",
+      "n_confirmations": 23,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1C1A3",
+      "ingredient": "Crocus",
+      "n_confirmations": 18,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1Q2A1",
+      "ingredient": "Myrrha",
+      "n_confirmations": 16,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1Q1A1",
+      "ingredient": "Piper nigrum",
+      "n_confirmations": 15,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "K1J1B1",
+      "ingredient": "Castoreum",
+      "n_confirmations": 15,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "L1J1B1",
+      "ingredient": "Castoreum",
+      "n_confirmations": 14,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "Q2A3",
+      "ingredient": "Castoreum",
+      "n_confirmations": 14,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "D1A1",
+      "ingredient": "Myrrha",
+      "n_confirmations": 14,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "K1A3",
+      "ingredient": "Crocus",
+      "n_confirmations": 14,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "D1A1Q1K2B1",
+      "ingredient": "Castoreum",
+      "n_confirmations": 13,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "K1U1",
+      "ingredient": "Castoreum",
+      "n_confirmations": 13,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "B2A1",
+      "ingredient": "Castoreum",
+      "n_confirmations": 12,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1Q2J1A1",
+      "ingredient": "Casia",
+      "n_confirmations": 12,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "Q2A1",
+      "ingredient": "Mel despumatum",
+      "n_confirmations": 12,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "B2Q1A3",
+      "ingredient": "Castoreum",
+      "n_confirmations": 11,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1Q1K2B1",
+      "ingredient": "Castoreum",
+      "n_confirmations": 11,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1Q2",
+      "ingredient": "Castoreum",
+      "n_confirmations": 11,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "K1K2A1",
+      "ingredient": "Galbanum",
+      "n_confirmations": 10,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "C1A3",
+      "ingredient": "Cardamomum",
+      "n_confirmations": 10,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "Q1A1",
+      "ingredient": "Mel despumatum",
+      "n_confirmations": 10,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "D1",
+      "ingredient": "Bdellium",
+      "n_confirmations": 9,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "A1Q1J1",
+      "ingredient": "Myrrha",
+      "n_confirmations": 9,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "D1A1A3",
+      "ingredient": "Myrrha",
+      "n_confirmations": 8,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "K1U1J1",
+      "ingredient": "Amomum",
+      "n_confirmations": 7,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "U2A1",
+      "ingredient": "Mel despumatum",
+      "n_confirmations": 7,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1Q1K2A1",
+      "ingredient": "Casia",
+      "n_confirmations": 6,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "P1K1J1A1",
+      "ingredient": "Cinnamomum",
+      "n_confirmations": 6,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1B2K1J1",
+      "ingredient": "Crocus",
+      "n_confirmations": 5,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A2Q2J1A1",
+      "ingredient": "Crocus",
+      "n_confirmations": 5,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1B2B1A3",
+      "ingredient": "Opopanax",
+      "n_confirmations": 4,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "A1Q1K2Ba",
+      "ingredient": "Petroselinum",
+      "n_confirmations": 4,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "K1U1A3",
+      "ingredient": "Petroselinum",
+      "n_confirmations": 4,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "D1A1Q1J1A1B1",
+      "ingredient": "Cardamomum",
+      "n_confirmations": 4,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "Q2K1A1",
+      "ingredient": "Mel despumatum",
+      "n_confirmations": 4,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "U1A1",
+      "ingredient": "Mel despumatum",
+      "n_confirmations": 4,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A2A3",
+      "ingredient": "Cinnamomum",
+      "n_confirmations": 4,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "T1A1",
+      "ingredient": "Cubeba",
+      "n_confirmations": 3,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "T1A1",
+      "ingredient": "Galanga",
+      "n_confirmations": 3,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "K1C2",
+      "ingredient": "Amomum",
+      "n_confirmations": 3,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "T1A1",
+      "ingredient": "Nux moschata",
+      "n_confirmations": 3,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "A1Q2K1A1",
+      "ingredient": "Petroselinum",
+      "n_confirmations": 3,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "B1L1K2B1",
+      "ingredient": "Petroselinum",
+      "n_confirmations": 3,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "Q1K1A1",
+      "ingredient": "Myrrha",
+      "n_confirmations": 3,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "B1L1J1A1",
+      "ingredient": "Crocus",
+      "n_confirmations": 3,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "K1J1U1J1",
+      "ingredient": "Crocus",
+      "n_confirmations": 3,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1Q1L1",
+      "ingredient": "Styrax",
+      "n_confirmations": 2,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "U1J1A1B1",
+      "ingredient": "Styrax",
+      "n_confirmations": 2,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "P1K1K2",
+      "ingredient": "Bdellium",
+      "n_confirmations": 2,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "Q2A1B1A3",
+      "ingredient": "Gentiana",
+      "n_confirmations": 2,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "D1A1Q1K2Aa",
+      "ingredient": "Gentiana",
+      "n_confirmations": 2,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "D1A1Q2J1A1",
+      "ingredient": "Cardamomum",
+      "n_confirmations": 2,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "D1A1Q1K2A1",
+      "ingredient": "Casia",
+      "n_confirmations": 2,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "K1A1B2B1A3",
+      "ingredient": "Cubeba",
+      "n_confirmations": 1,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "A3F2",
+      "ingredient": "Opopanax",
+      "n_confirmations": 1,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "K1A1B2B1A3",
+      "ingredient": "Galanga",
+      "n_confirmations": 1,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "K1A1C1",
+      "ingredient": "Amomum",
+      "n_confirmations": 1,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "K1A1B2B1A3",
+      "ingredient": "Nux moschata",
+      "n_confirmations": 1,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "B1K1A1",
+      "ingredient": "Rosa",
+      "n_confirmations": 1,
+      "specificity": "RARE"
+    },
+    {
+      "stem": "L1A1U1J1",
+      "ingredient": "Cardamomum",
+      "n_confirmations": 1,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "A1B2K1J1A1",
+      "ingredient": "Cardamomum",
+      "n_confirmations": 1,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "K1J1A1U1",
+      "ingredient": "Cardamomum",
+      "n_confirmations": 1,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "T1J1A1B1A3",
+      "ingredient": "Myrrha",
+      "n_confirmations": 1,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "U1J1Aa",
+      "ingredient": "Crocus",
+      "n_confirmations": 1,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "K1K2Q1J1",
+      "ingredient": "Crocus",
+      "n_confirmations": 1,
+      "specificity": "COMMON"
+    },
+    {
+      "stem": "T1J1A1",
+      "ingredient": "Crocus",
+      "n_confirmations": 1,
+      "specificity": "COMMON"
+    }
+  ]
+}

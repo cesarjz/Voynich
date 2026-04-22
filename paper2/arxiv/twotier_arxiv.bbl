@@ -1,0 +1,100 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bax(2014)]{bax2014}
+S.~Bax.
+\newblock A proposed partial decoding of the {Voynich} script.
+\newblock \emph{Unpublished manuscript, University of Bedfordshire}, 2014.
+\newblock Version 1, January 2014. Available at \url{https://stephenbax.net}.
+
+\bibitem[Clemens and Harkness(2016)]{clemens2016}
+R.~Clemens and D.~Harkness.
+\newblock \emph{The {Voynich} Manuscript}.
+\newblock Yale University Press, New Haven, CT, 2016.
+\newblock ISBN 978-0-300-21723-0.
+
+\bibitem[Currier(1976)]{currier1976}
+P.~H. Currier.
+\newblock Some important new statistical findings.
+\newblock In \emph{New Research on the {Voynich} Manuscript: Proceedings of a
+  Seminar}. 1976.
+\newblock Presented at the Naval Intelligence Support Center, Washington, DC.
+  Available at \url{http://www.voynich.nu/extra/curr_main.html}.
+
+\bibitem[D'Imperio(1978)]{dimperio1978}
+M.~E. D'Imperio.
+\newblock \emph{The {Voynich} Manuscript: An Elegant Enigma}.
+\newblock National Security Agency / Central Security Service, Fort Meade, MD,
+  1978.
+\newblock NSA publication C-001-78. Available at
+  \url{https://www.nsa.gov/portals/75/documents/about/cryptologic-heritage/historical-figures-publications/publications/misc/voynich_manuscript.pdf}.
+  Also at \url{https://archive.org/details/VoynichManuscriptAnElegantEnigma}.
+
+\bibitem[Gaskell and Bowern(2022)]{gaskell2022}
+D.~Gaskell and C.~Bowern.
+\newblock Gibberish after all? {Voynichese} is statistically similar to
+  human-produced samples of meaningless text.
+\newblock In \emph{Proceedings of the International Conference on the Voynich
+  Manuscript}, volume 3313 of \emph{CEUR Workshop Proceedings}, 2022.
+\newblock URL \url{https://ceur-ws.org/Vol-3313/paper4.pdf}.
+
+\bibitem[Harris(1955)]{harris1955}
+Z.~S. Harris.
+\newblock From phoneme to morpheme.
+\newblock \emph{Language}, 31\penalty0 (2):\penalty0 190--222, 1955.
+\newblock \doi{10.2307/411036}.
+
+\bibitem[Hauer and Kondrak(2016)]{hauer2016}
+B.~Hauer and G.~Kondrak.
+\newblock Decoding anagrammed texts written in an unknown language and script.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  4:\penalty0 75--86, 2016.
+\newblock \doi{10.1162/tacl_a_00084}.
+
+\bibitem[Hodgins(2011)]{hodgins2011}
+G.~Hodgins.
+\newblock Measuring the age of the {Voynich} manuscript.
+\newblock \emph{ORau Newsheet}, 2011.
+\newblock Radiocarbon dating of four parchment samples: 1404--1438 CE at 95\%
+  confidence. Results reported by the McCrone Research Institute and the
+  University of Arizona AMS Laboratory.
+
+\bibitem[Jim\'enez~Zapata(2026)]{jimenez2026}
+C.~Jim\'enez~Zapata.
+\newblock Computational analysis of the {Voynich} manuscript: Statistical
+  fingerprinting, generative modelling, and nineteen decipherment models yield
+  a structured negative result.
+\newblock Companion paper. arXiv preprint, 2026.
+
+\bibitem[Rugg(2004)]{rugg2004}
+G.~Rugg.
+\newblock An elegant hoax? a possible solution to the {Voynich} manuscript.
+\newblock \emph{Cryptologia}, 28\penalty0 (1):\penalty0 31--46, 2004.
+\newblock \doi{10.1080/0161-110491892755}.
+
+\bibitem[Saffran et~al.(1996)Saffran, Aslin, and Newport]{saffran1996}
+J.~R. Saffran, R.~N. Aslin, and E.~L. Newport.
+\newblock Statistical learning by 8-month-old infants.
+\newblock \emph{Science}, 274\penalty0 (5294):\penalty0 1926--1928, 1996.
+\newblock \doi{10.1126/science.274.5294.1926}.
+
+\bibitem[Stolfi(1997)]{stolfi1997}
+J.~Stolfi.
+\newblock A quantitative study of the {Voynich} manuscript.
+\newblock Unpublished manuscript, University of Campinas, 1997.
+\newblock Available at \url{https://www.ic.unicamp.br/~stolfi/voynich/}.
+
+\bibitem[Zandbergen(2022)]{zandbergen2022}
+R.~Zandbergen.
+\newblock A super transliteration alphabet for the {Voynich} manuscript.
+\newblock In \emph{Proceedings of the International Conference on the Voynich
+  Manuscript}, volume 3313 of \emph{CEUR Workshop Proceedings}, 2022.
+\newblock URL \url{https://ceur-ws.org/Vol-3313/}.
+\newblock STA1 2.0: 166-type alphabet unifying FSG, Currier, EVA, and v101
+  systems. Corpus available at \url{https://www.voynich.nu/transcr.html}.
+
+\end{thebibliography}

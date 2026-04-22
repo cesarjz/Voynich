@@ -1,0 +1,314 @@
+{
+  "n_labels": 87,
+  "n_tests": 32,
+  "n_significant": 8,
+  "expected_by_chance": 1.6,
+  "significant_correlations": [
+    {
+      "position": 2,
+      "property": "season",
+      "p": 0.0002
+    },
+    {
+      "position": 3,
+      "property": "season",
+      "p": 0.0063
+    },
+    {
+      "position": 4,
+      "property": "human_animal",
+      "p": 0.0086
+    },
+    {
+      "position": 4,
+      "property": "fertility",
+      "p": 0.0106
+    },
+    {
+      "position": 3,
+      "property": "fertility",
+      "p": 0.0236
+    },
+    {
+      "position": 3,
+      "property": "human_animal",
+      "p": 0.0239
+    },
+    {
+      "position": 2,
+      "property": "human_animal",
+      "p": 0.0276
+    },
+    {
+      "position": 4,
+      "property": "ruler",
+      "p": 0.0311
+    }
+  ],
+  "all_tests": [
+    {
+      "position": 1,
+      "property": "season",
+      "chi2": 33.9,
+      "p": 0.0869,
+      "dof": 24,
+      "significant": false
+    },
+    {
+      "position": 1,
+      "property": "human_animal",
+      "chi2": 19.7,
+      "p": 0.2334,
+      "dof": 16,
+      "significant": false
+    },
+    {
+      "position": 1,
+      "property": "fertility",
+      "chi2": 17.6,
+      "p": 0.3499,
+      "dof": 16,
+      "significant": false
+    },
+    {
+      "position": 1,
+      "property": "element",
+      "chi2": 27.3,
+      "p": 0.2922,
+      "dof": 24,
+      "significant": false
+    },
+    {
+      "position": 1,
+      "property": "modality",
+      "chi2": 9.6,
+      "p": 0.8847,
+      "dof": 16,
+      "significant": false
+    },
+    {
+      "position": 1,
+      "property": "ruler",
+      "chi2": 54.0,
+      "p": 0.0687,
+      "dof": 40,
+      "significant": false
+    },
+    {
+      "position": 1,
+      "property": "polarity",
+      "chi2": 10.5,
+      "p": 0.234,
+      "dof": 8,
+      "significant": false
+    },
+    {
+      "position": 1,
+      "property": "diurnal",
+      "chi2": 10.5,
+      "p": 0.234,
+      "dof": 8,
+      "significant": false
+    },
+    {
+      "position": 2,
+      "property": "season",
+      "chi2": 47.3,
+      "p": 0.0002,
+      "dof": 18,
+      "significant": true
+    },
+    {
+      "position": 2,
+      "property": "human_animal",
+      "chi2": 23.0,
+      "p": 0.0276,
+      "dof": 12,
+      "significant": true
+    },
+    {
+      "position": 2,
+      "property": "fertility",
+      "chi2": 19.6,
+      "p": 0.0754,
+      "dof": 12,
+      "significant": false
+    },
+    {
+      "position": 2,
+      "property": "element",
+      "chi2": 19.9,
+      "p": 0.3403,
+      "dof": 18,
+      "significant": false
+    },
+    {
+      "position": 2,
+      "property": "modality",
+      "chi2": 17.4,
+      "p": 0.1342,
+      "dof": 12,
+      "significant": false
+    },
+    {
+      "position": 2,
+      "property": "ruler",
+      "chi2": 41.8,
+      "p": 0.0744,
+      "dof": 30,
+      "significant": false
+    },
+    {
+      "position": 2,
+      "property": "polarity",
+      "chi2": 3.8,
+      "p": 0.6977,
+      "dof": 6,
+      "significant": false
+    },
+    {
+      "position": 2,
+      "property": "diurnal",
+      "chi2": 3.8,
+      "p": 0.6977,
+      "dof": 6,
+      "significant": false
+    },
+    {
+      "position": 3,
+      "property": "season",
+      "chi2": 56.7,
+      "p": 0.0063,
+      "dof": 33,
+      "significant": true
+    },
+    {
+      "position": 3,
+      "property": "human_animal",
+      "chi2": 37.0,
+      "p": 0.0239,
+      "dof": 22,
+      "significant": true
+    },
+    {
+      "position": 3,
+      "property": "fertility",
+      "chi2": 37.0,
+      "p": 0.0236,
+      "dof": 22,
+      "significant": true
+    },
+    {
+      "position": 3,
+      "property": "element",
+      "chi2": 26.7,
+      "p": 0.7706,
+      "dof": 33,
+      "significant": false
+    },
+    {
+      "position": 3,
+      "property": "modality",
+      "chi2": 15.8,
+      "p": 0.8262,
+      "dof": 22,
+      "significant": false
+    },
+    {
+      "position": 3,
+      "property": "ruler",
+      "chi2": 72.0,
+      "p": 0.0618,
+      "dof": 55,
+      "significant": false
+    },
+    {
+      "position": 3,
+      "property": "polarity",
+      "chi2": 9.8,
+      "p": 0.5447,
+      "dof": 11,
+      "significant": false
+    },
+    {
+      "position": 3,
+      "property": "diurnal",
+      "chi2": 9.8,
+      "p": 0.5447,
+      "dof": 11,
+      "significant": false
+    },
+    {
+      "position": 4,
+      "property": "season",
+      "chi2": 39.7,
+      "p": 0.1965,
+      "dof": 33,
+      "significant": false
+    },
+    {
+      "position": 4,
+      "property": "human_animal",
+      "chi2": 40.9,
+      "p": 0.0086,
+      "dof": 22,
+      "significant": true
+    },
+    {
+      "position": 4,
+      "property": "fertility",
+      "chi2": 40.1,
+      "p": 0.0106,
+      "dof": 22,
+      "significant": true
+    },
+    {
+      "position": 4,
+      "property": "element",
+      "chi2": 42.0,
+      "p": 0.1355,
+      "dof": 33,
+      "significant": false
+    },
+    {
+      "position": 4,
+      "property": "modality",
+      "chi2": 29.5,
+      "p": 0.1311,
+      "dof": 22,
+      "significant": false
+    },
+    {
+      "position": 4,
+      "property": "ruler",
+      "chi2": 76.1,
+      "p": 0.0311,
+      "dof": 55,
+      "significant": true
+    },
+    {
+      "position": 4,
+      "property": "polarity",
+      "chi2": 18.3,
+      "p": 0.0749,
+      "dof": 11,
+      "significant": false
+    },
+    {
+      "position": 4,
+      "property": "diurnal",
+      "chi2": 18.3,
+      "p": 0.0749,
+      "dof": 11,
+      "significant": false
+    }
+  ],
+  "encoding_map": {
+    "pos0": "FIXED: A1 = zodiac entry marker",
+    "pos1": "SEMI-FIXED: Q1/Q2 = unknown (no astrological correlation)",
+    "pos2": "VARIABLE: encodes SEASON + SIGN TYPE (p=0.0002, p=0.028)",
+    "pos3": "VARIABLE: encodes SEASON + FERTILITY + SIGN TYPE (p=0.006, p=0.024, p=0.024)",
+    "pos4": "VARIABLE: encodes SIGN TYPE + FERTILITY (p=0.009, p=0.011)",
+    "pos5": "SEMI-FIXED: A2 = degree label marker"
+  }
+}

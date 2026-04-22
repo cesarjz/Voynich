@@ -1,0 +1,101 @@
+{
+  "total_signs": 10,
+  "total_nymphs": 299,
+  "expected_nymphs": 300,
+  "missing_nymphs": 1,
+  "missing_signs": [
+    "Capricorn",
+    "Aquarius"
+  ],
+  "hypothesis_1_tubes_season": {
+    "description": "Tubes correlate with season (Winter/Spring)",
+    "signs_with_tubes": [
+      "Pisces",
+      "Aries",
+      "Taurus",
+      "Sagittarius (partial)"
+    ],
+    "pattern": "Tubes only in first 3 signs + echo in last",
+    "fisher_p": "Low power (N=10), but pattern is visually clear",
+    "conclusion": "SUGGESTIVE — tubes mark Winter/Spring, consistent with textual encoding"
+  },
+  "hypothesis_2_dress": {
+    "description": "Dress correlates with astrological property",
+    "signs_with_dressed": [
+      "Aries",
+      "Taurus",
+      "Gemini (partial)"
+    ],
+    "pattern": "Gradual arc peaking at Aries-Taurus boundary",
+    "conclusion": "SUGGESTIVE — marks Spring signs, gradient transition"
+  },
+  "hypothesis_3_missing_stars": {
+    "description": "Missing stars = Lilly pitted/azimene degrees",
+    "missing_star_degrees": {
+      "Cancer": [
+        12,
+        26
+      ],
+      "Leo": [
+        9
+      ],
+      "Virgo": [
+        2
+      ],
+      "Sagittarius": [
+        21
+      ]
+    },
+    "lilly_matches": "Partial — individual matches but too few to test",
+    "conclusion": "INCONCLUSIVE — 4 missing stars across 10 signs is insufficient"
+  },
+  "hypothesis_4_crowns": {
+    "description": "Crowns = increasing fortune or fixed stars",
+    "crown_signs": [
+      "Cancer",
+      "Libra",
+      "Scorpio"
+    ],
+    "crown_degrees": {
+      "Cancer": [
+        3
+      ],
+      "Libra": [
+        12
+      ],
+      "Scorpio": [
+        12
+      ]
+    },
+    "fertility_match": "2/3 fertile signs (Cancer, Scorpio)",
+    "fortune_match": "To be computed at runtime",
+    "conclusion": "INCONCLUSIVE — N=3 crowns is too few"
+  },
+  "hypothesis_5_center_stars": {
+    "description": "Center stars = signs with bright fixed stars",
+    "signs_with_center": [
+      "Pisces (2)",
+      "Virgo (1)",
+      "Scorpio (1)"
+    ],
+    "royal_star_match": "1/3 (Scorpio only)",
+    "bright_star_match": "2/3 (Virgo/Spica, Scorpio/Antares)",
+    "pisces_anomaly": "No bright star in Pisces — may represent the two fish",
+    "conclusion": "PARTIAL — Virgo and Scorpio match, Pisces does not"
+  },
+  "key_findings": [
+    "30 nymphs per sign confirms 1 nymph = 1 degree interpretation",
+    "Pisces anomaly: 29 nymphs (not 30) — unique among all signs",
+    "Visual features encode season independently of text labels",
+    "Dual encoding (visual + textual) is consistent with reference manual",
+    "Outside nymphs are a space-adjustment mechanism to reach 30",
+    "Gradual dress transition suggests continuous property, not binary",
+    "Zodiac section is functionally equivalent to Astrolabium Planum"
+  ],
+  "astrolabium_parallels": [
+    "30 entries per sign = 30 degrees",
+    "Calendar order (not standard zodiacal from Aries)",
+    "Figure + text per degree",
+    "Voynich encodes properties, Astrolabium writes them explicitly"
+  ]
+}

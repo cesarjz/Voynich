@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: venusring_paper.aux
+The style file: abbrvnat.bst
+Database file #1: venusring_paper.bib
+Warning--there's a number but no volume in martinezgavilan2025
+You've used 11 entries,
+            2773 wiz_defined-function locations,
+            666 strings with 7437 characters,
+and the built_in function-call counts, 3783 in all, are:
+= -- 337
+> -- 142
+< -- 11
++ -- 55
+- -- 42
+* -- 246
+:= -- 612
+add.period$ -- 44
+call.type$ -- 11
+change.case$ -- 43
+chr.to.int$ -- 9
+cite$ -- 23
+duplicate$ -- 204
+empty$ -- 364
+format.name$ -- 55
+if$ -- 789
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 11
+newline$ -- 73
+num.names$ -- 45
+pop$ -- 105
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 0
+skip$ -- 134
+stack$ -- 0
+substring$ -- 66
+swap$ -- 17
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 96
+warning$ -- 1
+while$ -- 37
+width$ -- 0
+write$ -- 169
+(There was 1 warning)

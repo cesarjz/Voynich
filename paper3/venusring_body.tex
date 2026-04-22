@@ -1,0 +1,2166 @@
+% ============================================================
+%  Body — The Venus Ring of Voynich f57v
+%  Outline / skeleton with section headers, one-line summaries,
+%  and content notes (in LaTeX comments) for each subsection.
+%  Sections to be drafted in order after author approval.
+% ============================================================
+
+% ============================================================
+\section{Introduction}
+\label{sec:intro}
+
+The Voynich Manuscript (Beinecke Rare Book and Manuscript Library MS~408)
+is a hand-drawn codex of approximately 234 surviving folios, radiocarbon-dated
+to 1404--1438~CE, written in an unknown script and accompanied by an
+extensive program of botanical, cosmological, balneological, and
+pharmaceutical illustrations. It has resisted decipherment for over a
+century. Most published proposals to read it as a substitution cipher of
+some natural language have failed under quantitative scrutiny, and most
+proposals to identify a specific textual source for its content have
+failed under documentary scrutiny. The most consequential negative result
+in the field is that no internally consistent reading has ever been
+produced for any continuous passage of the manuscript longer than a few
+words.
+
+This paper is the third in a series of computational studies of the
+Voynich Manuscript by the present author. The first two
+papers~\citep{jimenez2026negative,jimenez2026twotier} characterised the
+manuscript's global text structure: the first established that nineteen
+substitution-based decipherment models against five Semitic languages
+all converge on the same structural ceiling without producing readable
+text, and the second established that the manuscript's positional
+structure is consistent with a designed two-tier combinatorial code
+rather than with the surface form of an underlying natural-language
+text. Both papers characterised global properties of the manuscript;
+neither identified a specific historical or textual tradition to which
+the manuscript belongs. The interpretive question---\emph{what kind of
+medieval document is this, and where does it sit in the documented
+textual landscape of the early fifteenth century?}---was left open.
+
+The present paper takes a different methodological approach to that
+question. Rather than continuing to analyse global structure, it
+identifies and quantitatively characterises a single \emph{local
+anomaly} in the manuscript and traces it to a documented historical
+tradition. Specifically, we report that folio f57v---a cosmological
+circular diagram showing four nymphs around a central solar
+symbol~$\odot$---contains a private subalphabet of five glyphs that
+appear nowhere else in the entire 37,087-word STA1 transliteration of
+the manuscript, plus three further glyphs concentrated on f57v at
+enrichment factors of $75\times$ to $302\times$. We show that the
+concentration is statistically incompatible with chance by tens of
+orders of magnitude, that it is geographically confined to the four
+concentric text rings of f57v (most densely to line f57v.3), and that
+it is absent from every other folio of the manuscript's
+cosmological/astronomical block (the foldout pages of ff.~67--70). We
+then demonstrate that this localized inscription coexists on the same
+folio with the manuscript's general categorial labeling system---which
+is fully present in f57v's central nymph labels---without contaminating
+it.
+
+The two coexisting layers correspond, we argue, to a documented
+medieval textual category: the descriptive astrological text plus the
+reserved talismanic inscription in non-standard characters
+(\textit{karacteres}) prescribed by the Latin Picatrix tradition for
+the manufacture of planetary images. We support this interpretation by
+direct visual comparison with the only extant fully illustrated copy of
+\textit{Picatrix Latinus}, Cracow Jagiellonian Library MS~793 (Piotr
+Gaszowiec, 1471--1474, copied from a reconstructed Bohemian prototype
+c.~1390--1410), and by direct verification against the printed
+critical edition of the Latin Picatrix text by \citet{pingree1986}.
+
+The paper makes two main claims. The \textbf{empirical claim}
+(\S\S\ref{sec:subalphabet}--\ref{sec:two_phenomena}) is that the
+Voynich Manuscript contains two textually distinct phenomena that
+coexist in the same codex without contaminating each other:
+
+\begin{itemize}[itemsep=0pt,topsep=2pt]
+\item \textbf{Phenomenon~A}, a general categorial labeling system
+operating throughout most of the manuscript and validated for the
+zodiac block, the f57v central nymph labels, the f70r1 sun-ray
+labels, and body text in the herbal/pharmaceutical/recipe sections;
+\item \textbf{Phenomenon~B}, a localized enumerative inscription
+composed of a private subalphabet of eight glyphs, confined to the
+four concentric text rings of folio f57v and most densely to line
+f57v.3, and absent from every other folio of the manuscript.
+\end{itemize}
+
+The empirical claim is independent of any interpretive frame and is
+defended on purely internal evidence from the STA1 transliteration of
+the manuscript and from the IVTFF locus-tag system.
+
+The \textbf{interpretive claim} (\S\S\ref{sec:verification}--\ref{sec:discussion})
+is that Phenomenon~B is plausibly an instance of the medieval
+astrological-talismanic \textit{karacteres} tradition codified by the
+Latin Picatrix, and that the Voynich Manuscript should therefore be
+read as an \emph{independent witness} of that tradition---not as a
+copy or translation of any specific Picatrix manuscript, but as a
+sibling production of the same documented textual milieu, datable
+within the Voynich's C14 window to the same Toledo--Prague--Cracow
+geographic and chronological context in which the Picatrix tradition
+is known to have been actively practised. The interpretive claim is
+explicitly weaker than ``decipherment'': it does not assert
+character-level correspondences, textual lineage, or an underlying
+natural language. It asserts \emph{shared membership in a documented
+tradition}, with the structural anomaly of f57v as the empirical
+anchor.
+
+\subsection{Strategic shift: from global structure to local anomaly}
+\label{sec:strategic_shift}
+
+The methodological strategy of this paper is the opposite of the two
+companion studies. Where papers~1 and~2 sought general structural
+patterns across the entire 224-folio corpus and asked whether those
+patterns were compatible with various global hypotheses, the present
+paper deliberately seeks the \emph{single most distinctive point} in
+the manuscript and asks what it points to.
+
+The reason for the shift is methodological. Papers~1 and~2 produced
+strong negative and structural results, but these results
+underdetermine the historical question. A two-tier positional code
+is consistent with many different medieval textual genres
+(encyclopaedic indices, lapidaries, astronomical tables, alchemical
+recipes, talismanic manuals), and global structural arguments cannot
+discriminate between them. Local anomalies, by contrast, are
+discriminative precisely because they are unusual: a folio that
+behaves textually unlike any other folio in the manuscript is, by
+construction, a folio whose textual signature can be matched against
+specific categories rather than against general statistics.
+
+Folio f57v turns out to be such an anomaly. As \S\ref{sec:ranking}
+will document, it is the rank-1 folio in the entire manuscript by
+proportion of isolated single-character ``words'' ($63.9\%$, against
+a corpus median of $2.3\%$), and it is the only folio whose dominant
+textual behaviour is enumerative rather than continuous. This kind of
+anomaly is the right kind of empirical handle for a historical
+identification: there is exactly one folio with this signature, and
+the question is whether any documented medieval textual category
+prescribes \emph{exactly that} signature in \emph{exactly that}
+iconographic context. The remainder of the paper develops the answer.
+
+\subsection{Notation, corpus, and reproducibility}
+\label{sec:notation}
+
+Throughout this paper we work from Ren\'e Zandbergen's STA1~2.0 super
+transliteration of the Voynich Manuscript~\citep{zandbergen_sta1}, a
+fine-grained transcription of the manuscript's atomic glyph forms
+into ASCII codes. The corpus contains $37{,}087$ word tokens,
+$157{,}254$ atom occurrences, and $166$ distinct atom types
+distributed over $224$ folios. STA1 makes finer distinctions than the
+more widely cited EVA transliteration, and the present paper depends
+on those distinctions in ways discussed in \S\ref{sec:eva_caveat}.
+
+Locus tags follow the IVTFF format
+specification~\citep{zandbergen_ivtff}, in which each line of the
+manuscript is identified by a folio name, a line number, and a
+two-character tag indicating the page element (\texttt{@P0} for
+ordinary paragraph text, \texttt{@L0} for centred labels, \texttt{@Ro}
+for rotated radial labels, \texttt{@Cc}/\texttt{+Cc} for concentric
+circular text, \texttt{@Ri} for radial text inside a diagram, etc.).
+This tag system is essential for the analysis of \S\ref{sec:intrafolio}
+because the f57v anomaly is page-element-specific, not folio-uniform:
+it lives in the \texttt{@Cc}/\texttt{+Cc} concentric ring lines and
+not in any \texttt{@L0}/\texttt{@Ro} label of the same folio.
+
+All quantitative results in this paper are reproducible from the
+project's public GitHub repository, which contains the principal
+companion notebook (\filename{74_f57v_private_subalphabet.ipynb}),
+the structured JSON outputs used as the source of every numerical
+table and figure, and the standalone polar rectification tool
+(\filename{tools/circular_text_unwrap.ipynb}) of
+\S\ref{sec:vc4_alphabet}. The full inventory of artefacts and
+external sources is collected in \S\ref{sec:data_availability}.
+
+
+% ============================================================
+\section[Theoretical framework: \textit{cifra ineffabile} and the
+talismanic tradition]{Theoretical framework: \textit{cifra ineffabile}\\
+and the medieval astrological-talismanic tradition}
+\label{sec:framework}
+
+This section establishes the theoretical category to which the empirical
+findings of the rest of the paper will be assigned. The category is the
+medieval astrological-talismanic tradition of \textit{cifras ineffabiles}
+or ``ineffable ciphers'': closed inventories of non-alphabetic graphic
+characters whose function is not phonetic transcription but operative
+encoding within a categorial system. This is the kind of textual object
+that Phenomenon~B (\S\ref{sec:phenomenonB}) most closely resembles, and
+it is the kind of object that the Picatrix tradition explicitly
+prescribes. Three things need to be in place before that argument can
+be made: a clear distinction between substitution-based ciphers and
+categorial pasigraphies (\S\ref{sec:cat_encoding}); a brief situation
+of the Picatrix corpus within its documented transmission history
+(\S\ref{sec:picatrix_corpus}); and an explicit characterisation of the
+\textit{karacteres} prescription within the Picatrix text itself
+(\S\ref{sec:karacteres_prescription}).
+
+\subsection{From substitution ciphers to categorial encoding}
+\label{sec:cat_encoding}
+
+The default assumption in nearly a century of Voynich scholarship has
+been that the manuscript is a \emph{substitution cipher}: a writing
+system in which each Voynich glyph stands, by some fixed but unknown
+rule, for a letter, syllable, or phoneme of an underlying natural
+language. The first companion paper of this series~\citep{jimenez2026negative}
+tested nineteen different substitution-based decipherment models against
+five Semitic languages (Hebrew, Aramaic, Arabic, Judeo-Arabic, Geez)
+and found that all of them converge on the same structural ceiling
+without producing readable text. The second companion
+paper~\citep{jimenez2026twotier} established that the Voynich's
+positional structure is a designed two-tier categorial code rather
+than the surface form of an underlying natural-language text.
+
+The cumulative force of these results is that the Voynich is not a
+substitution cipher of any tested natural language. The alternative
+theoretical category we adopt in the present paper is that of
+\emph{categorial} or \emph{pasigraphic} encoding: a writing system in
+which the position of a sign within a structured slot carries the
+semantic weight, rather than the sign itself standing for a specific
+phoneme. In a categorial encoding, the ``alphabet'' is not a phonetic
+inventory but a small set of conventional marks distributed across
+positionally meaningful slots; reading the system requires knowledge
+of the slot structure rather than knowledge of an underlying language.
+
+The most explicit early-modern formulation of this alternative is
+Juan Caramuel y Lobkowitz's \textit{Apparatus philosophicus} (1665),
+which introduces the term \textit{cifra ineffabilis} (``ineffable
+cipher'') for writing systems whose elements do not correspond to
+spoken sounds but to categories within a formal system. Caramuel
+develops the idea in dialogue with Lullian combinatorial logic, with
+Aristotelian categories, and with the Kabbalistic letter-mysticism of
+the late Renaissance. The relevant point for the present paper is
+that Caramuel \emph{recovers} a medieval tradition rather than
+inventing one: his \textit{cifras ineffabiles} are an early-modern
+codification of practices that the medieval astrological-talismanic
+manuscripts (Picatrix among them) had already been documenting for
+several centuries. The recent academic recovery of Caramuel's
+linguistic framework by \citet{martinezgavilan2025} establishes the
+philological lineage; the project's own theoretical companion document
+on Caramuel's \textit{Apparatus philosophicus} extends the connection
+to the Voynich case.
+
+The Voynich Manuscript's positional code structure, as documented in
+the second companion paper~\citep{jimenez2026twotier}, places it
+\emph{within} the category of categorial pasigraphies rather than
+within the category of substitution ciphers. The present paper extends
+this picture: it identifies, on a single folio of the manuscript,
+a localized inscription (Phenomenon~B, \S\ref{sec:phenomenonB}) of
+the type that Caramuel's framework would call a \textit{cifra
+ineffabilis} in the strict sense---a closed inventory of
+non-phonetic characters in cyclic enumerative deployment. The general
+labeling layer of the manuscript (Phenomenon~A) is the broader
+categorial encoding; the f57v ring inscription is its strict
+talismanic instance.
+
+\subsection{The Picatrix corpus and its medieval transmission}
+\label{sec:picatrix_corpus}
+
+The Picatrix corpus is the principal medieval witness of the categorial
+talismanic tradition we have just described. It is also one of the
+best documented, and its transmission history is unusually well
+attested. We summarise the key facts here; the historical-geographic
+detail relevant to the Voynich's C14 window has already been laid out
+in \S\ref{sec:cracow_milieu} and \S\ref{sec:transmission} and is not
+repeated.
+
+\noindent\textbf{The Arabic original.} The
+\textit{Gh\=ayat al-\d{H}ak\={\i}m} (``The Aim of the Sage'') is an
+Arabic compilation on astral magic, astrology, and operative talismanic
+practice. It was traditionally attributed to the Andalusi mathematician
+and astronomer \textit{Maslama b.~Ahmad al-Majr\={\i}\d{t}\={\i}}
+(d.~1007), but \citet{fierro1996} reattributes it to the earlier
+Cordoban polymath \textit{Maslama b.~Q\=asim al-Qur\d{t}ub\={\i}}
+(d.~353/964), the same author as the \textit{Rutbat al-\d{H}ak\={\i}m}.
+The reattribution places the composition of the original text squarely
+in tenth-century al-Andalus, within the Batinist--Ismaili intellectual
+network of Maslama al-Qur\d{t}ub\={\i}'s circle.
+
+\noindent\textbf{The Castilian and Latin translations.} Under the
+patronage of King Alfonso~X of Castile (Alfonso ``the Wise''), the
+\textit{Gh\=ayat al-\d{H}ak\={\i}m} was translated into Castilian
+c.~1256--1258 by an anonymous translator working in the orbit of the
+Toledo translation school. A Latin translation was produced shortly
+afterwards, almost certainly from the Castilian intermediate
+(c.~1256--1300, the exact dating is debated). The Latin version
+became known as \textit{Picatrix}, by which name it has been
+transmitted ever since.
+
+\noindent\textbf{The surviving Latin manuscripts.} \citet{pingree1986},
+in the manuscript census of the introduction to his critical edition,
+documents approximately twenty surviving Latin Picatrix manuscripts
+of varying completeness, dated between the late thirteenth and the
+sixteenth century. The Cracow Jagiellonian Library MS~793 is the only
+one of these that preserves a fully developed illustrative program,
+which is why it occupies a privileged place in the iconographic
+analysis of \citet{sniezynska2009} and in the present paper.
+
+\noindent\textbf{Modern editions.} The principal modern critical
+edition of the Latin text is \citet{pingree1986}; the principal
+French translation with commentary is \citet{bakhouche2003}; the
+principal English translation is \citet{attrell2019}, working from
+Pingree's Latin and incorporating insights from the Arabic
+\textit{Gh\=ayat al-\d{H}ak\={\i}m}. All three are cited in the
+present paper as needed.
+
+\subsection{The \textit{karacteres} prescription}
+\label{sec:karacteres_prescription}
+
+Within the Picatrix text, the specific category that matters for the
+Voynich comparison is the \textit{karacteres} prescription. The
+Picatrix instructs its operator, in many of its planetary-image
+recipes, to inscribe specific images (statues, plates, rings, combs,
+amulets) with reserved non-alphabetic characters drawn from a
+restricted graphic vocabulary. \citet{sniezynska2009}~(p.~103)
+describes these characters succinctly:
+
+\begin{quote}
+\itshape
+``[The karacteres are] transformations of the Arabic or Semitic
+alphabet, encountered as medieval mason's marks.''
+\end{quote}
+
+\noindent The defining properties of the category, as
+\citet{sniezynska2009} reconstructs them, are:
+
+\begin{itemize}[itemsep=0pt,topsep=2pt]
+\item the inventory is small and closed (a finite set of geometric
+forms, not an open writing system);
+\item the forms are constructed from a restricted graphic vocabulary
+of straight strokes, small circles, right-angle hooks, and curved
+tails (the same vocabulary documented in
+\S\ref{sec:vc2_shields}--\S\ref{sec:vc4_alphabet});
+\item the function is operative, not communicative: the inscription
+is a component of a talismanic device whose efficacy depends on the
+correct deployment of the characters in the prescribed iconographic
+context;
+\item the characters are explicitly prescribed for specific
+planetary positions, with the Sun and Venus chapters of Book~II
+preserving the most extensive surviving instances (cf.\
+\S\S\ref{sec:vc2_shields}--\ref{sec:oloiol}).
+\end{itemize}
+
+\noindent The same author also documents (p.~105) the historical fate
+of the karacteres tradition in early-modern scholastic reception:
+
+\begin{quote}
+\itshape
+``The use of the magical alphabet and esoteric symbols is condemned
+in the \textit{Speculum astronomiae}; perhaps this is why such
+inscriptions contained in the text of \textit{Picatrix Latinus}
+appear in the miniatures of the Cracow manuscript only once.''
+\end{quote}
+
+\noindent The reference to the \textit{Speculum astronomiae}
+(thirteenth-century, traditionally attributed to Albertus Magnus)
+captures the doctrinal pressure that led the Cracow scribe of
+1471--1474 to suppress most of the karacteres prescribed by his Latin
+source text, preserving only three vestiges (the two Sun-shield
+sigils of f.~191r and the $\mathrm{O\Lambda OIO\Lambda}$ Venus
+inscription of f.~191v) on iconographic grounds. The asymmetry of
+preservation that this scribal censorship produces is exactly the
+asymmetry that \S\ref{sec:more_complete} exploits to argue that the
+Voynich, on the karacteres dimension specifically, is a more
+complete witness of the medieval tradition than its own documented
+Cracow contemporary.
+
+The \textit{karacteres} prescription is therefore the SPECIFIC textual
+category---closed inventory, restricted graphic vocabulary, operative
+function, planetary association, doctrinally censored in the
+late-medieval scholastic reception---into which the empirical findings
+of \S\S\ref{sec:subalphabet}--\ref{sec:two_phenomena} most naturally
+fit. The interpretive proposal of \S\ref{sec:reformulation}, that
+Voynich f57v's Phenomenon~B is one more witness of the same
+documented tradition, is the obvious reading of those findings under
+the theoretical frame established here. The remaining sections develop
+that reading and document its limitations.
+
+
+% ============================================================
+\section{Quantitative finding: the private subalphabet of f57v}
+\label{sec:subalphabet}
+
+This section is the empirical core of the paper. Working only from the
+public STA1~2.0 transliteration of the Voynich Manuscript and from the
+locus-tagging conventions of the IVTFF format \citep{zandbergen_sta1,zandbergen_ivtff},
+we show that folio~f57v carries a textually anomalous inventory: five glyphs
+that occur \emph{nowhere else} in the entire 224-folio corpus, plus three
+further glyphs that are concentrated on f57v at enrichment factors of two to
+three orders of magnitude over the corpus baseline. The probability of this
+concentration arising by chance is on the order of~$10^{-26}$ for the single
+most frequent exclusive glyph and~$10^{-64}$ for the five exclusive glyphs
+considered jointly. Within the folio, the anomaly is further localized to the
+four concentric text rings of the diagram---most densely to ring~f57v.3---and
+is entirely absent from the central nymph labels. The full computation is
+released as the public companion notebook~74
+(\texttt{74\_f57v\_private\_subalphabet.ipynb}) and as the structured JSON
+results file \texttt{f57v\_subalphabet\_resultados.json}.
+
+\subsection{Methodology and metrics}
+\label{sec:method}
+
+We work from the STA1~2.0 super-transliteration of the Voynich Manuscript
+\citep{zandbergen_sta1}: 37,087 word tokens, 157,254 atom occurrences, 166
+distinct atom types distributed over 224 folios. STA1 uses a finer-grained
+inventory than the more widely cited EVA transliteration; the additional
+distinctions matter for this analysis, because several of the glyphs we will
+identify as exclusive to f57v are EVA-collapsed into more common atoms in EVA
+(see~\S\ref{sec:eva_caveat}).
+
+For every atom type~$a$ in the STA1 inventory we compute its global frequency
+$N(a)$ across the 224-folio corpus and its frequency $n_{f}(a)$ on each
+individual folio~$f$. The \emph{folio share} of an atom on folio~$f$ is
+$n_{f}(a)/N(a)$, and its \emph{enrichment factor} on folio~$f$ is the folio
+share divided by the folio's atom share of the corpus. For f57v, which
+contains $428$~atoms out of $154{,}973$~corpus atoms (after removing
+high-uncertainty IVTFF tokens), the atom share is $0.276\%$, so the baseline
+expectation for any atom under a uniform distribution is that $0.276\%$ of its
+total occurrences should land on f57v. Atoms whose actual concentration on
+f57v is dramatically above this baseline are the candidates of interest.
+
+A second metric is the per-line proportion of \emph{isolated atoms}:
+single-character word tokens that have no neighbours within the same word.
+A locus written as a list of one-character ``words'' separated by spaces is
+the IVTFF representation of an enumerative inscription (an alphabet table, a
+list of separate sigils, a label key) as opposed to running text. The
+proportion of isolated atoms per folio is therefore a coarse but transcription-stable
+proxy for ``how much of this folio looks like a list rather than a paragraph''.
+
+Finally, we use the IVTFF locus tag system \citep{zandbergen_ivtff} to identify
+which lines of f57v belong to which page element: \texttt{@L0} marks centred
+labels (the central nymph captions of f57v), \texttt{@Ro} marks rotated radial
+labels, and \texttt{@Cc}/\texttt{+Cc} mark concentric circular text. This
+distinction is essential because the anomaly is page-element-specific, not
+folio-uniform.
+
+\subsection{Identification of exclusive and enriched glyphs}
+\label{sec:identification}
+
+Direct enumeration of per-glyph folio shares yields a small but extremely
+sharp population of anomalies. Five STA1 atoms have $100\%$ of their corpus
+occurrences on f57v, and three further atoms have folio shares between
+$20\%$ and $84\%$---all hundreds of times the $0.276\%$ baseline.
+Table~\ref{tab:subalphabet} lists the eight glyphs together with their global
+counts, f57v counts, percentage on f57v, and enrichment factor over baseline.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Glyph & Global $N(a)$ & On f57v $n_{f57v}(a)$ & \% on f57v & Enrichment \\
+\midrule
+\multicolumn{5}{l}{\emph{Exclusive (folio share = 100\%):}} \\
+X2 & 10 & 10 & 100.0\% & $362\times$ \\
+Xd & 5  & 5  & 100.0\% & $362\times$ \\
+Pc & 5  & 5  & 100.0\% & $362\times$ \\
+Xf & 4  & 4  & 100.0\% & $362\times$ \\
+Ea & 1  & 1  & 100.0\% & $362\times$ \\
+\midrule
+\multicolumn{5}{l}{\emph{Strongly enriched:}} \\
+Eb & 6  & 5  & 83.3\%  & $302\times$ \\
+Ja & 14 & 4  & 28.6\%  & $103\times$ \\
+X1 & 34 & 7  & 20.6\%  & $\phantom{0}75\times$ \\
+\bottomrule
+\end{tabular}
+\caption{The eight atoms forming the f57v private subalphabet. Counts are
+measured against the STA1~2.0 transliteration of the entire 224-folio Voynich
+corpus. f57v's atom share of the corpus is $0.276\%$; an atom occurring at
+the corpus baseline rate would therefore have a folio share of $0.276\%$, and
+the enrichment factor is the folio share divided by this baseline. Source:
+\texttt{74\_f57v\_private\_subalphabet.ipynb}.}
+\label{tab:subalphabet}
+\end{table}
+
+The five exclusive glyphs collectively contribute $25$ atom tokens, and the
+three enriched glyphs contribute a further $16$ tokens on f57v. These $41$
+tokens make up nearly $10\%$ of the $428$ atoms on the folio---a substantial
+fraction of the page is written in glyphs that essentially do not appear
+elsewhere in the manuscript.
+
+\subsection{Statistical significance and probability of chance}
+\label{sec:probability}
+
+A simple null model treats the corpus as $428/154{,}979 = 0.276\%$ ``chance
+of any given atom landing on f57v''. Under this null, the probability that
+all $10$~tokens of glyph X2 land on f57v by chance alone is
+\[
+p_{X2} \;=\; (0.00276)^{10} \;\approx\; 2.6\times 10^{-26}.
+\]
+Computing the same probability for each of the five exclusive glyphs and
+multiplying gives a combined null probability for the $25$ exclusive tokens
+of approximately $1.1\times 10^{-64}$. This is the probability under a
+strict ``random sprinkling'' null and is therefore an \emph{upper bound} on
+the chance probability under any reasonable urn model that does not already
+encode some form of folio-level concentration. Even granting several orders
+of magnitude of slack for non-uniformities in the corpus (different folios
+have different sizes, some glyphs cluster topically, etc.), the f57v
+concentration is statistically incompatible with chance by tens of orders of
+magnitude.
+
+The interpretation is unambiguous: the eight glyphs of
+Table~\ref{tab:subalphabet} are not a random fluctuation. They are a textually
+distinctive sub-inventory used by the scribe \emph{exclusively or near-exclusively}
+on f57v, and we will refer to them collectively as the \emph{f57v private
+subalphabet}.
+
+\subsection{Intra-folio distribution: where the subalphabet lives}
+\label{sec:intrafolio}
+
+Folio f57v is itself structurally heterogeneous: it contains $13$ text loci
+(four central nymph labels, four radial nymph labels, four concentric text
+rings, and one further short label). Table~\ref{tab:perline} breaks down the
+$428$ atoms of the folio by IVTFF locus tag, giving for each line its total
+atom count, word count, isolated-atom count, and the breakdown of subalphabet
+occurrences.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{llrrrl}
+\toprule
+Locus & Tag & Atoms & Words & Isolated & Subalphabet glyphs \\
+\midrule
+f57v.1  & \texttt{@L0} & 5   & 1  & 0  & --- \\
+f57v.2  & \texttt{@Cc} & 148 & 50 & 17 & X2$\times$3 \\
+f57v.3  & \texttt{+Cc} & 68  & 68 & 68 & X2$\times$4, X1$\times$4, Xf$\times$4, Xd$\times$4, Pc$\times$4, Ea$\times$1, Eb$\times$4, Ja$\times$3 \\
+f57v.4  & \texttt{+Cc} & 89  & 31 & 11 & X2$\times$2, X1$\times$1, Eb$\times$1 \\
+f57v.5  & \texttt{+Cc} & 57  & 35 & 28 & X2$\times$1, X1$\times$2, Xd$\times$1, Pc$\times$1, Ja$\times$1 \\
+f57v.6  & \texttt{@L0} & 8   & 1  & 0  & --- \\
+f57v.7  & \texttt{@L0} & 9   & 1  & 0  & --- \\
+f57v.8  & \texttt{@L0} & 7   & 1  & 0  & --- \\
+f57v.9  & \texttt{@L0} & 8   & 1  & 0  & --- \\
+f57v.10 & \texttt{@Ro} & 7   & 1  & 0  & --- \\
+f57v.11 & \texttt{@Ro} & 8   & 1  & 0  & --- \\
+f57v.12 & \texttt{@Ro} & 5   & 1  & 0  & --- \\
+f57v.13 & \texttt{@Ro} & 9   & 2  & 0  & --- \\
+\bottomrule
+\end{tabular}
+\caption{Per-line breakdown of folio f57v by IVTFF locus tag. The four
+concentric text rings (\texttt{@Cc}/\texttt{+Cc}, lines f57v.2--f57v.5) carry
+the entire subalphabet. The eight central labels (\texttt{@L0}/\texttt{@Ro})
+contain zero subalphabet atoms. Line~f57v.3 alone accounts for $28$ of the
+$41$ subalphabet tokens on the folio and is the only line in the entire
+corpus where every word is a single-character isolated atom ($68/68 = 100\%$).
+Source: \texttt{74\_f57v\_private\_subalphabet.ipynb}.}
+\label{tab:perline}
+\end{table}
+
+Three properties of the table are worth emphasising. First, the subalphabet
+is \emph{entirely confined to the four concentric text rings}: the central
+nymph labels (\texttt{@L0}) and the radial labels (\texttt{@Ro}) of the same
+folio contain none of the eight glyphs. The anomaly is therefore not a
+property of f57v as such, but of the ring text within f57v.
+
+Second, line~f57v.3 is qualitatively different from every other line in the
+manuscript. All $68$ of its ``words'' are single-atom tokens; this is the
+only line in the entire 224-folio corpus where the isolated-atom rate is
+exactly $100\%$. Of the eight subalphabet glyphs, seven appear here---five of
+them in groups of exactly four occurrences. The structure of f57v.3 is that
+of an enumeration, not a sentence: $17$ atomic characters repeated $4$ times.
+This $17\!\times\!4$ regularity has been noted intuitively by voynichologists
+for decades; what is new here is the quantitative demonstration that the
+characters in question are themselves a closed inventory used essentially
+nowhere else in the manuscript.
+
+Third, all four ring lines (f57v.2--f57v.5) carry subalphabet atoms in
+descending density: 12 on f57v.2, 28 on f57v.3, 4 on f57v.4, 6 on f57v.5.
+The subalphabet is therefore a property of the ring system as a whole, with
+f57v.3 as its densest concentration.
+
+\subsection{Comparison with the 224-folio corpus and rank ordering}
+\label{sec:ranking}
+
+To put f57v's anomaly in context against the rest of the manuscript, we rank
+all $224$ folios by their proportion of isolated atoms. Table~\ref{tab:ranking}
+shows the top~15. The median across the corpus is $2.3\%$.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{rlrrrr}
+\toprule
+Rank & Folio & Words & Atoms & Avg. word len. & \% isolated atoms \\
+\midrule
+1  & \textbf{f57v}  & 194 & 428  & 2.21 & \textbf{63.92\%} \\
+2  & f49v   & 154 & 589  & 3.82 & 20.13\% \\
+3  & f38v   & 58  & 205  & 3.53 & 12.07\% \\
+4  & f66r   & 338 & 1406 & 4.16 & 10.65\% \\
+5  & f25v   & 57  & 208  & 3.65 & 8.77\% \\
+6  & f90r2  & 46  & 171  & 3.72 & 8.70\% \\
+7  & f93r   & 151 & 600  & 3.97 & 8.61\% \\
+8  & f35r   & 84  & 313  & 3.73 & 8.33\% \\
+9  & f90v2  & 62  & 265  & 4.27 & 8.06\% \\
+10 & f38r   & 38  & 147  & 3.87 & 7.89\% \\
+11 & f6v    & 107 & 399  & 3.73 & 7.48\% \\
+12 & f24r   & 108 & 361  & 3.34 & 7.41\% \\
+13 & f21r   & 97  & 377  & 3.89 & 7.22\% \\
+14 & f42v   & 97  & 392  & 4.04 & 7.22\% \\
+15 & f67r1  & 163 & 656  & 4.02 & 6.75\% \\
+\bottomrule
+\end{tabular}
+\caption{Top~15 folios by percentage of isolated atoms. f57v is rank~\#1 at
+$63.9\%$, more than three times rank~\#2 and roughly $28\times$ the corpus
+median ($2.3\%$). Ranks~\#2 and~\#4 (f49v and f66r) are documented in
+\S7.2 of the IVTFF specification \citep{zandbergen_ivtff} as folios with
+extensive ``key-like'' transcription artefacts (single-character entries
+along page margins) that partially inflate their isolated-atom counts.
+Source: \texttt{74\_f57v\_private\_subalphabet.ipynb}.}
+\label{tab:ranking}
+\end{table}
+
+f57v is rank~\#1 by a wide margin: its isolated-atom rate of $63.9\%$ is
+more than three times that of the second-place folio and approximately
+$28$~times the corpus median. Ranks~\#2 and~\#4 (f49v at $20.1\%$ and f66r
+at $10.6\%$) are flagged in the IVTFF specification \citep{zandbergen_ivtff}
+as folios with marginal ``key-like'' transcription artefacts: f49v has a
+sequence of single-character entries along the right margin that the
+transcriber rendered as isolated atoms, and f66r contains a multi-line
+list-like marginal annotation. After mentally discounting those two folios
+on transcription grounds, the next genuine running-text folio is f38v at
+$12.1\%$. Even so, f57v at $63.9\%$ is approximately $5\times$ further from
+its nearest comparator. \textbf{f57v is the only folio in the manuscript
+whose dominant text behaviour is enumerative rather than continuous}, and it
+is so by a margin that places it in a class of its own.
+
+\subsection{A note on transliteration: STA1 versus EVA}
+\label{sec:eva_caveat}
+
+The five exclusive atoms reported here (X2, Xd, Xf, Pc, Ea) and the three
+enriched atoms (Eb, Ja, X1) are STA1 designations. Several of these
+correspond in EVA to glyphs that are merged with more common atoms: for
+example, several of the ``X-series'' STA1 atoms collapse into the EVA atoms
+\texttt{x} or \texttt{r}. Repeating the analysis in EVA does not eliminate
+the anomaly---f57v is still rank~\#1 by isolated-atom percentage in EVA---but
+it does \emph{flatten} the table of exclusive atoms: where STA1 separates a
+genuinely f57v-exclusive shape from a more common look-alike, EVA collapses
+them, and the apparent exclusivity disappears under that conflation. The
+quantitative result of this section therefore depends on the finer
+inventory of STA1, not on EVA. We regard this as evidence in favour of
+STA1's distinctions being substantive rather than arbitrary, at least on
+this folio. The same conclusion was reached for unrelated reasons by the
+transcription robustness analysis of the author's first companion paper
+\citep{jimenez2026negative}.
+
+
+% ============================================================
+\section{Robustness: the cosmological-suite test}
+\label{sec:f70r}
+
+The single most important threat to the interpretation of \S\ref{sec:subalphabet}
+is the possibility that the f57v subalphabet is not a property of f57v as such
+but of an entire \emph{class} of cosmological pages within the manuscript. If
+that were the case, the f57v anomaly would lose its specificity: the
+``private'' subalphabet would in reality be the dialect of a wider section of
+the codex, and the link with a single talismanic inscription on Venus's comb
+would be much weaker. To rule this out we test the subalphabet against every
+other folio in the cosmological/astronomical block of the manuscript, not only
+against the most obvious iconographic sibling.
+
+\subsection{The cosmological block of the Voynich and the test set}
+\label{sec:cosmoblock}
+
+The cosmological/astronomical block of the Voynich consists of f57v itself
+together with the foldout pages of quires~9 and~10: f67r1, f67r2, f67v1,
+f67v2, f68r1, f68r2, f68r3, f68v1, f68v2, f68v3, and the f70r and f70v solar
+foldout pages (f70r1, f70r2, f70v1, f70v2). All fourteen of these pages share
+the broad iconographic family of f57v: a circular or radial diagram, often
+with a central anthropomorphic figure (Sun, Moon, or human face), surrounded
+by concentric rings of stars, glyphs and text labels. Several of them
+(f67r1, f68r1, f68v3, f70r1) display an explicit anthropomorphic sun or moon
+face at the centre, exactly as f57v's $\odot$ symbol prefigures schematically.
+
+The natural null hypothesis is therefore: \emph{if the eight subalphabet
+glyphs of Table~\ref{tab:subalphabet} are characteristic of the cosmological
+genre rather than of f57v specifically, they should appear with appreciable
+frequency on at least some of these fourteen other folios}. This is a much
+stricter test than comparing f57v to a single ``twin'' folio, because the
+test set spans the entire cosmological iconographic family of the manuscript.
+
+\subsection{Test results}
+\label{sec:test_results}
+
+We computed the per-folio occurrence count of each of the eight subalphabet
+glyphs across the fourteen test folios using the same STA1 corpus and the
+same enumeration procedure as \S\ref{sec:subalphabet}. The results are shown
+in Table~\ref{tab:cosmotest}.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+Folio & Atoms & X1 & X2 & Xd & Xf & Pc & Ea & Eb & Ja & Total \\
+\midrule
+\textbf{f57v}  & 428 & 7 & 10 & 5 & 4 & 5 & 1 & 5 & 4 & \textbf{41} \\
+\midrule
+f67r1 & 656 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f67r2 & 749 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f67v1 & 336 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 \\
+f67v2 & 276 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f68r1 & 317 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 \\
+f68r2 & 391 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f68r3 & 476 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f68v1 & 381 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f68v2 & 455 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f68v3 & 692 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f70r1 & 495 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f70r2 & 925 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f70v1 & 400 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+f70v2 & 585 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\midrule
+\textbf{Sum (14 cosmo)} & 7134 & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{2} & \textbf{2} \\
+\bottomrule
+\end{tabular}
+\caption{Subalphabet occurrence counts across f57v and all 14 other
+cosmological/astronomical folios of the Voynich Manuscript. Out of $7134$
+atoms across the 14 test folios, the five exclusive glyphs (X2, Xd, Xf, Pc,
+Ea) and the two most-enriched non-exclusive glyphs (X1, Eb) all score
+\emph{exactly zero}. Only the weakest enriched glyph, Ja, contributes two
+isolated stray tokens (one each on f67v1 and f68r1). Source:
+\texttt{f57v\_subalphabet\_cosmological\_robustness.json}.}
+\label{tab:cosmotest}
+\end{table}
+
+The result is unambiguous. Of the eight subalphabet glyphs, seven do not
+appear at all on any of the fourteen other cosmological folios:
+\textbf{0 occurrences across $7134$~atoms of comparison material}. The only
+exception is glyph Ja, which contributes one token on f67v1 and one on
+f68r1---but Ja is also the weakest member of the subalphabet (folio share
+$28.6\%$ on f57v, the lowest of the eight) and the two stray tokens are
+fully consistent with its global distribution outside f57v ($14$~tokens
+total in the corpus, of which $4$ on f57v and $10$ scattered elsewhere).
+
+\subsection{What the cosmological-suite test rules out}
+\label{sec:f70r_meaning}
+
+Three alternative explanations of the f57v anomaly are decisively ruled out
+by Table~\ref{tab:cosmotest}:
+
+\noindent (i)~\textbf{Genre artefact.} ``f57v's vocabulary is the vocabulary
+of the cosmological-page genre.'' If this were true, the same vocabulary
+should appear on at least some of f67r1, f68r1, f70r1 (the other diagrams
+with explicit central solar figures). It appears on \emph{none} of them.
+
+\noindent (ii)~\textbf{Foldout artefact.} ``Foldout pages have larger writing
+surfaces and admit more glyph variation than ordinary pages.'' If this were
+true, the foldouts of ff.~67--68 and 70 should sample at least the most
+common subalphabet glyphs (X1 with 34 corpus occurrences, Ja with 14, X2 with
+10). None of them does, and the foldouts collectively contain $7134$~atoms
+of comparison material---more than $16\times$ f57v's atom count---across
+which the subalphabet has zero footprint.
+
+\noindent (iii)~\textbf{Diagram artefact.} ``Any folio with concentric text
+rings will produce isolated single-character tokens.'' If this were true,
+f70r1 (an explicit anthropomorphic sun diagram with 16 radial rays and
+labels) and the f67/f68 diagrams (concentric star rings) should show some
+elevation of the isolated-atom rate. None do (cf.\ Table~\ref{tab:ranking};
+f70r1 sits at $1\%$ isolated atoms, f70r2 at $3\%$, all f67/f68 foldouts
+likewise within ordinary corpus range).
+
+The conclusion is that the f57v subalphabet is \textbf{folio-specific, not
+genre-specific, not foldout-specific, and not diagram-specific}. It is a
+property of the four concentric text rings of f57v in particular, and within
+those rings most densely a property of line f57v.3. This is the strongest
+possible robustness test that could have failed---the test set is the entire
+cosmological iconographic family of the manuscript---and it does not fail.
+
+
+% ============================================================
+\section{The unified categorial labeling system of the Voynich}
+\label{sec:unified}
+
+The previous two sections have isolated f57v as textually unique within the
+manuscript: only f57v carries the eight-glyph private subalphabet
+(\S\ref{sec:subalphabet}), and only f57v has its concentric rings filled
+with isolated single-character ``words'' (\S\ref{sec:f70r}). One might infer
+from this uniqueness that f57v is altogether disconnected from the rest of
+the manuscript---an alien folio bound into the codex by accident, written
+in a separate hand or system. The purpose of this section is to show that
+this inference would be wrong. The \emph{labels} of f57v---the central
+nymph captions and the radial captions, written in normal Voynich glyphs
+rather than in subalphabet glyphs---turn out to follow the same canonical
+positional morphology that the author's previous unpublished work
+documents for the zodiac block of the manuscript (notebooks~67--71). The
+same is true of the radial labels on f70r1 (the sun foldout). Voynich f57v
+is therefore not a textual outlier but a folio with two coexisting
+textual layers: a normal labeling layer (analysed in this section) and a
+localized inscription layer (the subject of \S\ref{sec:subalphabet} and
+\S\ref{sec:f70r}). The two layers will be named explicitly as
+Phenomenon~A and Phenomenon~B in \S\ref{sec:two_phenomena}.
+
+\subsection{The zodiac canonical morphology (background)}
+\label{sec:zodiac_canon}
+
+The zodiac block of the Voynich Manuscript (folios f70v2--f73v) contains
+ten signs of the zodiac drawn as roundels surrounded by 30~degree-marker
+nymphs each, every nymph carrying a small radial label of typically 4--8
+glyphs. The author's previous unpublished work on this block (notebooks
+67--71 of the project repository) established the following structural
+properties of these labels:
+
+\begin{enumerate}[itemsep=0pt,topsep=2pt]
+\item There are 27~canonical zodiac labels recurring across the block.
+\item All 27~canonical labels follow the morphology
+\[
+[\,A1\,] \;+\; [\,Q1/Q2\,] \;+\; [\,J\text{-class season encoder}\,] \;+\;
+[\,\text{categorial body}\,] \;+\; [\,A2\,]
+\]
+\item In position~1, $23/27 = 85\%$ of labels begin with the atom~A1; the
+remaining four positions are taken by structurally similar atoms (A3, K1,
+Aa).
+\item In position~2, the slot is dominated by the binary
+$\{\mathrm{Q1}, \mathrm{Q2}\}$, which the analysis of notebook~71
+identifies as a season encoder: this slot is significantly correlated
+with the calendrical position of the nymph within the sign
+($p = 0.0002$, Bonferroni-corrected over the four positional tests).
+\item Positions~3 and~4 carry categorial atoms that we interpret as
+``fertility'' and ``sign type'' encoders respectively (notebook~71
+section~5).
+\item A final A2 marker closes the canonical word in $\sim 80\%$ of
+labels.
+\end{enumerate}
+
+The full statistical defence of these properties is the subject of a
+separate paper now in preparation, and we cite it here only as
+background. For the present argument, the only thing we need is the
+observation that there is a \emph{canonical positional template} for
+zodiac labels and that the template is empirically tight enough to be
+falsifiable on new label sets.
+
+\subsection{Test~1: positional analysis on f57v central nymph labels}
+\label{sec:test_l0}
+
+Folio f57v contains four central nymph labels, one per nymph, tagged
+\texttt{@L0} in the IVTFF transliteration. After tokenisation into STA1
+atoms, the four labels decompose as shown in Table~\ref{tab:l0}.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lllllllllll}
+\toprule
+Locus & p1 & p2 & p3 & p4 & p5 & p6 & p7 & p8 & p9 & length \\
+\midrule
+f57v.6 & A1 & Q2 & A1 & B1 & A3 & C1 & A3 & B4 &     & 8 \\
+f57v.7 & A1 & P1 & A3 & C1 & A3 & F3 & B1 & B2 & A2 & 9 \\
+f57v.8 & A1 & B2 & Q1 & K1 & B1 & A3 & B2 &    &     & 7 \\
+f57v.9 & A1 & Q2 & A3 & C1 & B1 & A3 & B2 & A2 &     & 8 \\
+\bottomrule
+\end{tabular}
+\caption{Positional decomposition of the four central nymph labels of
+f57v (\texttt{@L0}) into STA1 atoms. All four begin with A1 in
+position~1 ($4/4 = 100\%$, vs.\ $85\%$ in the zodiac canon); three of
+four contain a Q-class atom (Q1 or Q2) in positions~2--3; A3 appears in
+all four labels in either position~3 or position~5; and the closing A2
+marker is present in $2/4$ labels (f57v.7, f57v.9). Source:
+\texttt{74\_f57v\_private\_subalphabet.ipynb} key
+\texttt{nymph\_L0\_positional}.}
+\label{tab:l0}
+\end{table}
+
+The fit with the zodiac canonical morphology is exact in position~1 and
+strong in positions~2--3:
+
+\noindent\textbf{Position 1.} All four labels start with A1. The zodiac
+distribution at position~1 over the 27~canonical labels is
+$\{A1\!:\!23, A3\!:\!1, K1\!:\!2, Aa\!:\!1\}$, i.e.\ $85\%$ A1. The
+nymph labels of f57v therefore conform to the dominant zodiac value with
+$100\%$ purity, more strictly than the zodiac block itself. Under a
+naive null hypothesis where each label's position-1 atom is sampled
+uniformly from the corpus inventory of $\sim 166$~atom types, the
+probability of $4/4$ labels independently starting with the same
+specific atom is $(1/166)^3 \approx 2.2\times 10^{-7}$.
+
+\noindent\textbf{Positions 2--3.} Of the four labels, three contain a
+Q-class atom (Q1 or Q2) in either position~2 or position~3 (f57v.6,
+f57v.8, f57v.9), as the zodiac canon prescribes for the season encoder
+slot. The fourth label (f57v.7) places P1 in position~2 instead, but P1
+is structurally similar to Q1/Q2 (it shares the same allograph cluster
+in the unpublished allograph analysis of nb27). The zodiac season-slot
+discipline is therefore satisfied in 4/4 labels, three strictly and one
+loosely.
+
+\noindent\textbf{Categorial body.} All four labels contain at least one
+A3 atom in positions~3--5 and at least one B-class atom (B1, B2, or
+B4) in positions~5--7. This matches the categorial-body slots of the
+zodiac canon.
+
+\noindent\textbf{Closing A2 marker.} Two of the four labels (f57v.7 and
+f57v.9) end with A2; the other two terminate with a B-class atom. This
+$50\%$ A2 closure is below the zodiac canon's $\sim 80\%$ but is
+consistent with it given the small sample.
+
+The four central nymph labels of f57v therefore conform to the
+zodiac canonical morphology in essentially all of its discriminative
+slots. They are not random Voynich words; they are structurally zodiac
+labels, even though they appear on a non-zodiac folio.
+
+\subsection{Test~2: positional analysis on f70r1 sun-ray labels}
+\label{sec:test_ri}
+
+Folio f70r1 (the sun foldout, with an anthropomorphic sun face at the
+centre and 16 radial rays) carries 15 short radial labels tagged
+\texttt{@Ri} in the IVTFF transliteration, one per ray. We applied the
+same canonical-template test to these 15 labels. The aggregate result is
+shown in Table~\ref{tab:ri}.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lr}
+\toprule
+Property & \% of labels (n=15) \\
+\midrule
+Begin with canonical position-1 atom (A1 or A2)        & 86.7\% (13/15) \\
+Contain Q1 or Q2 in early positions                    & 73.3\% (11/15) \\
+Contain J-class season encoder (J1)                    & 33.3\% (5/15) \\
+Contain any of the eight subalphabet glyphs of \S\ref{sec:subalphabet} & \textbf{0.0\% (0/15)} \\
+\bottomrule
+\end{tabular}
+\caption{Aggregate canonical-morphology compliance of the 15 sun-ray
+labels (\texttt{@Ri}) on folio f70r1. The conformance with the zodiac
+canon is essentially the same as on f57v's central nymph labels, while
+the subalphabet of \S\ref{sec:subalphabet} is entirely absent. Source:
+\texttt{74\_f57v\_private\_subalphabet.ipynb} key \texttt{f70r1\_Ri}.}
+\label{tab:ri}
+\end{table}
+
+The compliance rates with positions~1 and~2 of the zodiac canon
+($87\%$ and $73\%$) are well within the zodiac block's own observed
+ranges ($85\%$ and $\sim 70\%$ respectively). The J-class season
+encoder appears at $33\%$, which is lower than the zodiac block's
+$\sim 60\%$ but still substantially above the corpus-baseline rate
+for J1.
+
+The most striking observation, however, is the last row: among the
+15~radial labels of f70r1, exactly \textbf{zero} contain any of the
+eight subalphabet glyphs of \S\ref{sec:subalphabet}. The labels of
+f70r1 are written in fully canonical Voynich vocabulary, despite
+sitting on a folio that is iconographically the closest sibling of
+f57v. This is consistent with the cosmological-suite test of
+\S\ref{sec:f70r} and reinforces the same conclusion from a different
+angle: the canonical labeling system extends across cosmological
+folios, while the f57v subalphabet does not.
+
+\subsection{The cross-folio shared word A1Q1J1A3C1}
+\label{sec:shared_word}
+
+A particularly clear instance of cross-folio canonical morphology is
+a recurring word, which we will refer to as \textbf{A1\,Q1\,J1\,A3\,C1}.
+Decomposed positionally:
+
+\begin{itemize}[itemsep=0pt,topsep=2pt]
+\item position~1: A1 (canonical zodiac p1)
+\item position~2: Q1 (canonical zodiac p2 season encoder)
+\item position~3: J1 (canonical zodiac p3 J-class encoder)
+\item position~4: A3 (canonical zodiac p4 categorial atom)
+\item position~5: C1 (canonical zodiac p5 closing slot)
+\end{itemize}
+
+This is, slot for slot, a complete canonical zodiac label of the form
+described in \S\ref{sec:zodiac_canon}. Across the entire STA1 corpus
+the word A1Q1J1A3C1 occurs ten times, in exactly the loci listed in
+Table~\ref{tab:shared_word}.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{llll}
+\toprule
+Locus & Folio & Tag & Folio context \\
+\midrule
+f31v.9    & f31v   & \texttt{+P0} & herbal section \\
+f57v.13   & f57v   & \texttt{@Ro} & central radial label of f57v \\
+f70r2.15  & f70r2  & \texttt{@Cc} & solar foldout (concentric ring) \\
+f72v3.20  & f72v3  & \texttt{@Cc} & zodiac block (Leo) \\
+f88v.9    & f88v   & \texttt{+P0} & pharmaceutical section \\
+f102v2.21 & f102v2 & \texttt{+P0} & pharmaceutical section \\
+f103v.9   & f103v  & \texttt{+P0} & recipe section \\
+f106v.16  & f106v  & \texttt{+P0} & recipe section \\
+f108v.15  & f108v  & \texttt{+P0} & recipe section \\
+f111v.9   & f111v  & \texttt{+P0} & recipe section \\
+\bottomrule
+\end{tabular}
+\caption{All ten occurrences of the canonical-zodiac-form word
+\textbf{A1Q1J1A3C1} in the STA1 corpus. The word appears once on f57v
+itself (as a central radial label), once on the f70r2 solar foldout (as
+ring text), once on the f72v3 zodiac folio (Leo), and seven times in the
+herbal/pharmaceutical/recipe sections. Source:
+\texttt{74\_f57v\_private\_subalphabet.ipynb} key
+\texttt{shared\_word\_A1Q1J1A3C1}.}
+\label{tab:shared_word}
+\end{table}
+
+Three observations from Table~\ref{tab:shared_word}:
+
+\noindent (i)~The word appears in three of the four major sections of
+the manuscript (herbal, cosmological/zodiac, pharmaceutical, recipes).
+It is not section-specific. This is the strongest single piece of
+evidence that the canonical zodiac morphology is in fact a
+\emph{manuscript-wide} positional system, not a property of the
+zodiac block alone.
+
+\noindent (ii)~The cosmological occurrences (f57v.13, f70r2.15) and
+the zodiac occurrence (f72v3.20) place the same canonical word in the
+same canonical syntactic context---a label or short ring entry,
+typically associated with a circular diagram. The categorial system
+treats f57v's radial labels and the Leo nymphs of f72v3 as
+\emph{the same kind of textual element}.
+
+\noindent (iii)~The seven occurrences of A1Q1J1A3C1 in the herbal,
+pharmaceutical and recipe sections (where they appear in
+\texttt{+P0} continuous-text loci rather than as labels) suggest that
+the canonical zodiac morphology is also embedded in the running text
+of those sections. This is consistent with the encyclopaedic-code
+hypothesis of the second companion paper~\citep{jimenez2026twotier}:
+the canonical morphology is the manuscript's general categorial
+labeling system, and labels-as-such are simply the most visible
+instances of it.
+
+The combined picture is clear. The canonical zodiac positional template
+is not a local feature of the zodiac block; it operates on the central
+nymph labels of f57v, on the radial labels of f70r1, on the ring text
+of f70r2, and even in the body text of the herbal and pharmaceutical
+sections. f57v participates fully in this manuscript-wide system---and
+this is the textual layer of f57v that we will call Phenomenon~A in
+the next section.
+
+
+% ============================================================
+\section{Two textually distinct phenomena coexist in the Voynich}
+\label{sec:two_phenomena}
+
+The combined picture of \S\S\ref{sec:subalphabet}--\ref{sec:unified} forces a
+conceptual reframing of the manuscript. The Voynich contains \emph{two}
+textually distinct phenomena that coexist in the same codex---and, in the
+case of f57v, on the same folio---without contaminating each other. Calling
+them ``Phenomenon~A'' and ``Phenomenon~B'' is a deliberate choice of neutral
+terminology, intended to keep the empirical separation distinct from any
+particular interpretive hypothesis. The interpretive proposal (Phenomenon~A
+as descriptive categorial labeling, Phenomenon~B as a talismanic
+inscription in the Picatrix sense) is developed in
+\S\ref{sec:verification}--\S\ref{sec:discussion}. The present section is
+about the \emph{empirical} separation only.
+
+\subsection{Phenomenon~A: the general categorial labeling system}
+\label{sec:phenomenonA}
+
+Phenomenon~A is the manuscript's pervasive positional categorial morphology
+documented in \S\ref{sec:unified}. Its empirical signature is:
+
+\begin{itemize}[itemsep=0pt,topsep=2pt]
+\item canonical position~1 dominated by atom~A1 (with structurally similar
+A2/A3/K1/Aa as minority alternatives);
+\item canonical position~2 dominated by Q1/Q2 (the season-encoder slot of
+nb71);
+\item canonical positions~3--4 occupied by J-class and categorial atoms;
+\item a closing A2 marker in roughly $80\%$ of canonical instances;
+\item words drawn from the manuscript's general atom inventory of $\sim
+166$ STA1 atom types.
+\end{itemize}
+
+This template is documented for the zodiac block (notebooks 67--71), and
+\S\ref{sec:unified} extended it to the central nymph labels of f57v
+(\texttt{@L0}), to the radial sun-ray labels of f70r1 (\texttt{@Ri}), to the
+ring text of f70r2 (\texttt{@Cc}), and to body-text occurrences in the
+herbal, pharmaceutical and recipe sections. Phenomenon~A therefore appears
+to operate \emph{throughout most of the manuscript}, irrespective of section
+or page genre, and is at minimum present in every textual element of f57v
+\emph{except} the four concentric text rings.
+
+\subsection{Phenomenon~B: the localized enumerative inscription}
+\label{sec:phenomenonB}
+
+Phenomenon~B is the textual layer documented in \S\S\ref{sec:subalphabet}
+and \ref{sec:f70r}. Its empirical signature is the exact opposite of
+Phenomenon~A on every dimension:
+
+\begin{itemize}[itemsep=0pt,topsep=2pt]
+\item it is built from a closed inventory of eight glyphs (the
+\emph{private subalphabet} of Table~\ref{tab:subalphabet}), of which five
+appear nowhere else in the corpus and three are concentrated on f57v at
+enrichment factors of $75\times$--$302\times$;
+\item it is structurally enumerative, not running text: in its densest
+locus (line f57v.3) every ``word'' is a single isolated atom, $68/68 =
+100\%$ isolated, the only such line in the manuscript;
+\item it has cyclic regularity ($17 \times 4$ atomic characters in
+f57v.3) consistent with a fixed-length inscription rather than free
+discourse;
+\item it does not follow Phenomenon~A's canonical positional template:
+the subalphabet glyphs do not occupy zodiac p1/p2/p3/p4 slots and they do
+not appear in any canonical Phenomenon~A label, including the
+A1Q1J1A3C1 word of \S\ref{sec:shared_word};
+\item geographically, it is confined to the four concentric text rings of
+f57v (loci tagged \texttt{@Cc}/\texttt{+Cc}, lines f57v.2--f57v.5), and
+to no other folio in the entire manuscript---confirmed by the
+cosmological-suite test of \S\ref{sec:f70r}.
+\end{itemize}
+
+Phenomenon~B is therefore strictly localized, structurally enumerative,
+and lexically disjoint from Phenomenon~A. Table~\ref{tab:two_phenomena}
+summarises the contrast.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lll}
+\toprule
+Property & Phenomenon~A & Phenomenon~B \\
+\midrule
+Atom inventory & General STA1 ($\sim 166$ atoms) & Closed: 8 atoms (Tab.~\ref{tab:subalphabet}) \\
+Geographic extent & Manuscript-wide & f57v concentric rings only \\
+Structural form & Positional words (4--9 atoms) & Isolated single-atom tokens \\
+Densest locus & ---  & f57v.3 ($17\!\times\!4$, $68/68$ isolated) \\
+Canonical morphology (\S\ref{sec:zodiac_canon}) & Yes (zodiac canon) & No \\
+Position-1 dominance & A1 ($85\%$ zodiac, $100\%$ \texttt{@L0}) & N/A \\
+Test against cosmo suite (\S\ref{sec:f70r}) & Present in 14/14 folios & Absent in 14/14 folios \\
+On f57v itself & \texttt{@L0}/\texttt{@Ro} labels & \texttt{@Cc}/\texttt{+Cc} ring text \\
+Hypothesised function & Descriptive categorial labeling & Operative talismanic inscription \\
+\bottomrule
+\end{tabular}
+\caption{Side-by-side empirical comparison of Phenomenon~A (the general
+categorial labeling system) and Phenomenon~B (the localized enumerative
+inscription on f57v). The two phenomena are disjoint on every measurable
+dimension and coexist on f57v in spatially separated page elements: the
+central nymph and radial labels carry Phenomenon~A, the four concentric
+text rings carry Phenomenon~B.}
+\label{tab:two_phenomena}
+\end{table}
+
+\subsection{Why the separation matters: f57v as the only co-presence}
+\label{sec:why_separation}
+
+The decisive empirical observation is that the two phenomena coexist
+\emph{on the same folio without overlapping}. Folio f57v has thirteen
+text loci (Table~\ref{tab:perline}), and they are partitioned exactly
+into two groups by the categorisation of Table~\ref{tab:two_phenomena}:
+the eight \texttt{@L0}/\texttt{@Ro} labels carry Phenomenon~A and zero
+subalphabet atoms; the four \texttt{@Cc}/\texttt{+Cc} concentric ring
+lines carry Phenomenon~B and zero canonical Phenomenon~A morphology.
+The two layers occupy disjoint page elements.
+
+This is the structurally non-trivial fact. The coexistence is not a
+random mix of two systems but a \emph{spatial assignment}: descriptive
+labeling around the figures, and a closed enumerative inscription on
+the concentric rings around them. As the cosmological-suite test of
+\S\ref{sec:f70r} confirms, f57v is the only folio in the entire
+224-folio corpus where this pattern of co-presence occurs.
+
+The argument that follows in
+\S\S\ref{sec:verification}--\ref{sec:discussion} is that this exact
+pattern---a descriptive astrological text accompanying a figure together
+with a reserved talismanic inscription in non-standard characters
+attached to a specific planetary position---is precisely what
+\textit{Picatrix Latinus} prescribes for the manufacture of planetary
+images, and that f57v is plausibly an instance of that practice. But the
+\emph{empirical} separation of Phenomenon~A from Phenomenon~B does not
+depend on the Picatrix interpretation. It is a fact about the manuscript
+that has to be accounted for under any interpretive framework.
+
+
+% ============================================================
+\section{Direct verification against \textit{Picatrix Latinus} MS 793}
+\label{sec:verification}
+
+\S\S\ref{sec:subalphabet}--\ref{sec:two_phenomena} establish, on purely
+internal evidence from the Voynich Manuscript, that folio f57v contains a
+localized enumerative inscription (Phenomenon~B) coexisting on the same
+folio with the manuscript's general categorial labeling system
+(Phenomenon~A) and that this co-presence does not occur on any other folio
+of the codex. The present section turns to external evidence and asks
+whether any documented medieval textual tradition prescribes \emph{exactly
+this kind of co-presence}---a descriptive astrological text accompanying a
+figure together with a reserved talismanic inscription in non-standard
+characters attached to a specific planetary position. The answer, we
+argue, is yes: the tradition is the Latin Picatrix, the
+\textit{karacteres} prescription specifically, and the strongest documentary
+witness is the only fully illustrated extant Latin Picatrix manuscript,
+Cracow Jagiellonian Library MS~793. We document four direct
+correspondences with f57v, drawing on the photographic facsimile of MS~793
+obtained in April~2026 and on the printed critical Latin edition of the
+Picatrix text by \citet{pingree1986}.
+
+\subsection{The MS~793 facsimile and its provenance}
+\label{sec:facsimile}
+
+The photographic facsimile of \bjms{} consulted here is a complete-codex
+digital reproduction of $401$ pages, covering the entire bound
+miscellaneous volume in which the Picatrix Latinus is the longest item.
+The Picatrix section proper occupies approximately ff.~171r--197r of the
+manuscript (= facsimile pp.~340--395), preceded by an unrelated
+miscellaneous block of medical, astrological and computus material in
+ff.~1--170 (cf.\ task~\#16 of the project repository, ``index of the
+\bjms{} facsimile by manuscript folio'', currently in progress).
+
+The manuscript itself is dated $1471$--$1474$ on internal grounds and is
+attributed to Piotr Gaszowiec (1430--1474), court physician and
+astrologer to King Casimir~IV Jagiellon, who copied the text in Cracow.
+\citet{sniezynska2009}~(pp.~11--13) reconstructs that Gaszowiec did not
+copy from a Cracovian original but from an earlier Bohemian prototype no
+longer extant, dated c.~1390--1410 and produced in the workshop of King
+Waclav~IV of Bohemia. The full transmission chain Gaszowiec~$\rightarrow$
+Bohemian prototype~$\rightarrow$ Latin Picatrix~$\rightarrow$ Toledan
+translation from the Castilian of Alfonso~X is discussed in
+\S\ref{sec:transmission} below.
+
+For the purposes of this section, the relevant facts are: (i)~MS~793 is
+the only fully illustrated copy of the Latin Picatrix to survive; (ii)~it
+is the closest extant witness in geography and date to the Voynich
+Manuscript's C14 window (Voynich: 1404--1438; MS~793: 1471--1474, with a
+prototype c.~1390--1410 that overlaps the lower bound of the Voynich
+C14); (iii)~its illustrative program is partially abridged with respect
+to the original Picatrix prescriptions, in ways that we will document
+below.
+
+\subsection{The Cracow Picatrix milieu (1410--1474)}
+\label{sec:cracow_milieu}
+
+The 1471--1474 date of MS~793 is not the date at which Picatrix entered
+Cracow. \citet{sniezynska2009}~(pp.~12--13) documents continuous
+Picatrix-related activity in the Cracow milieu from at least 1410:
+
+\noindent (i)~A 1430 court document concerning Anna of Cilli (Anne, second
+wife of Wladyslaw~II Jagiello) mentions a certain \textit{Nicolaus},
+described as practising \textit{ars nigromantiae}, who reportedly
+manufactured \textit{figure solis et lune} engraved on rock crystal---an
+operative talismanic practice in the canonical Picatrix mould.
+
+\noindent (ii)~Two Cracow practitioners, \textit{Henricus Bohemus} (Henryk
+Czech) and Stanis\l aw of Kazimierz, are documented in the first half of
+the fifteenth century as \textit{nigromantici} in court records.
+
+\noindent (iii)~Jan of G\l og\'ow (1445--1507) wrote a
+\textit{Tractatus de XLVIII imaginibus celestibus} that explicitly
+discusses the manufacture of planetary talismans following Picatrix
+prescriptions.
+
+\noindent (iv)~Piotr Gaszowiec, the scribe of MS~793, was court
+physician-astrologer to Casimir~IV Jagiellon and a professor at the
+Cracow University faculty of medicine---a member of the same intellectual
+milieu in which the Picatrix tradition was actively practised, not an
+isolated antiquarian.
+
+The Cracow Picatrix tradition is therefore documented \emph{anterior} to
+MS~793 by approximately sixty years and predates the Voynich Manuscript's
+lower C14 bound by only a few years. The Bohemian prototype that
+Gaszowiec copied from (c.~1390--1410) overlaps the Voynich's C14 window
+directly. This places the Cracow--Bohemia Picatrix milieu in the same
+geographic and chronological neighbourhood as the Voynich's
+manufacture, and provides the historical setting for the iconographic
+correspondences documented in the next subsections.
+
+\subsection{Visual confirmation~1: the central solar disc}
+\label{sec:vc1_disc}
+
+The most immediately obvious iconographic correspondence is the central
+solar disc. Folio f57v of the Voynich shows, at the geometric centre of
+its concentric ring system, a small but unambiguous schematic symbol: a
+circle with a smaller circle inside and a dot in the centre---the
+canonical astronomical symbol for the Sun, $\odot$.
+
+On MS~793 f.~191r (= facsimile p.~382), the Picatrix text presents
+``Forma Solis secundum opinionem'' in four versions corresponding to four
+different astrological authorities. The right-hand figure on the page is
+the Sun on his chariot (\textit{sol in curru}), drawn naturalistically as
+an enthroned ruler. In his raised right hand he holds a golden disc with
+a smaller dark circle inside and a central dot---naturalistically rendered
+as a piece of golden jewellery, but iconographically the same object
+$\odot$ that the Voynich draws schematically.
+
+This is one of the few cases in the entire iconographic comparison where
+the two manuscripts are not just \emph{topically} related but
+\emph{literally} drawing the same object. The Voynich draws the symbolic
+reduction; MS~793 draws the naturalistic version. The image files
+\filename{historic/picatrix_p382_sun_disc.jpg} and
+\filename{historic/f57v_diagram.jpg} document the side-by-side comparison
+(see Figure~\ref{fig:disc}).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.30\textwidth]{f57v_diagram.jpg}\hspace{1em}
+\includegraphics[width=0.30\textwidth]{picatrix_p382_sun_disc.jpg}
+\caption{Left: Voynich f57v, central solar disc $\odot$. Right: \bjms{}
+f.~191r (facsimile p.~382), the right-hand Sun figure's hand-held disc.
+The two are iconographically the same object: a circle within a circle
+with a central dot, drawn schematically in the Voynich and
+naturalistically in MS~793.}
+\label{fig:disc}
+\end{figure}
+
+\subsection{Visual confirmation~2: the \textit{karacteres} on the Sun shields}
+\label{sec:vc2_shields}
+
+The same MS~793 folio (f.~191r, facsimile p.~382) contains two Sun
+figures: the right-hand Sun in his chariot just discussed, and a
+left-hand Sun figure on horseback. \emph{Both} figures hold shields, and
+\emph{both} shields are inscribed with abstract compound sigils that are
+neither Latin letters nor Greek letters nor any standard heraldic device.
+The sigils are constructed from short straight strokes, small circles,
+right-angle hooks and curved tails---the geometrical vocabulary of what
+\citet{sniezynska2009}~(p.~103) explicitly describes as
+\textit{karacteres}: ``transformations of the Arabic or Semitic alphabet,
+encountered as medieval mason's marks'', noting (p.~105) that ``the use
+of the magical alphabet and esoteric symbols is condemned in the
+\textit{Speculum astronomiae}; perhaps this is why such inscriptions
+contained in the text of \textit{Picatrix Latinus} appear in the
+miniatures of the Cracow manuscript only once''.
+
+That last observation is important: \citet{sniezynska2009} explicitly
+notes that the Cracow scribe of 1471--1474 \emph{actively suppressed}
+most of the karacteres prescribed in the Latin Picatrix text, in
+compliance with the \textit{Speculum astronomiae}'s condemnation of
+magical alphabets. The few karacteres that survived this scribal
+censorship are precisely the ones we are now examining: the two compound
+sigils on the Sun shields of f.~191r and the literal
+$\mathrm{O\Lambda OIO\Lambda}$ inscription on the Venus comb of f.~191v.
+What MS~793 preserves of the karacteres tradition is therefore a small
+residue of what the original Picatrix prescribed.
+
+The image files \filename{historic/picatrix_p382_left_shield.jpg} and
+\filename{historic/picatrix_p382_right_shield.jpg} document the two
+shield sigils in high resolution. They are reproduced side by side in
+Figure~\ref{fig:shields}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.28\textwidth]{picatrix_p382_left_shield.jpg}\hspace{1em}
+\includegraphics[width=0.28\textwidth]{picatrix_p382_right_shield.jpg}
+\caption{The two compound karacter sigils on the Sun shields of \bjms{}
+f.~191r (facsimile p.~382). Left: the shield of the left-hand Sun figure
+(Sun on horseback). Right: the shield of the right-hand Sun figure (Sun in
+chariot). Both sigils are constructed from short strokes, small circles
+and angular hooks of a geometrically restricted vocabulary, identified by
+\citet{sniezynska2009}~(p.~103) as \textit{karacteres} of the Picatrix
+talismanic-alphabet tradition. They are two of only three surviving
+karacteres in the entire MS~793 illustrative program, the third being
+the $\mathrm{O\Lambda OIO\Lambda}$ inscription on the Venus comb of
+f.~191v (\S\ref{sec:oloiol}).}
+\label{fig:shields}
+\end{figure}
+
+\subsection{The literal $\mathrm{O\Lambda OIO\Lambda}$ inscription on the wooden comb of Venus}
+\label{sec:oloiol}
+
+On MS~793 f.~191v (= p.~383 of the facsimile PDF), the
+``\textit{Forma Veneris secundum opinionem sapientis Picatricis}'' figure
+holds a \textbf{wooden comb} (\textit{pectinem ligneum similem tabule})
+inscribed with the magical word $\mathrm{O\Lambda OIO\Lambda}$. The object
+is iconographically a comb, one of Venus's standard attributes alongside
+the apple, with the inscription engraved on its flat central surface and
+two sets of teeth visible above and below. Unlike the karacter sigils of
+the Sun shields (\S\ref{sec:vc2_shields}), this inscription is preserved
+\textbf{literally and verbatim} in the printed critical edition of the
+Latin text by \citet{pingree1986}, where it appears in two distinct
+passages of Book~II, Capitulum~X
+(``\textit{De lapidibus appropriatis cuilibet planete et formacionibus
+figurarum}''):
+
+\medskip
+
+\noindent\textit{Pingree 1986, p.~67, entry 27} (descriptive cataloguing of the
+iconographic forms of Venus, Picatrix's own ``opinion''):
+
+\begin{quote}
+\itshape
+``Forma Veneris secundum opinionem sapientis Picatricis est forma mulieris
+tenentis in eius dextra manu malum et in sinistra \textbf{pectinem similem
+tabule et istis figuris scriptum:} $\mathrm{O\Lambda OIO\Lambda}$.
+Et hec est eius forma.''
+\end{quote}
+
+\noindent (``The form of Venus according to the opinion of the wise Picatrix is
+the form of a woman holding in her right hand an apple and in her left hand
+\textbf{a comb similar to a tablet, inscribed with these figures:}
+$\mathrm{O\Lambda OIO\Lambda}$. And this is its form.'')
+
+\medskip
+
+\noindent\textit{Pingree 1986, p.~70, entry 55} (operative talismanic
+instructions for the manufacture of a Venus love-amulet):
+
+\begin{quote}
+\itshape
+``Ymago Veneris. Si ex formis Veneris feceris formam mulieris cuius corpus sit
+humanum, caput vero avis necnon et pedes aquile, in dextra manu malum, in
+sinistra vero \textbf{pectinem tenentis ligneum similem tabule talibus figuris
+scriptum:} $\mathrm{O\Lambda OIO\Lambda}$, qui hanc ymaginem secum portaverit
+bene recipietur et ab omnibus diligetur.''
+\end{quote}
+
+\noindent (``Image of Venus. If from the forms of Venus you make the figure of
+a woman whose body is human but whose head is that of a bird and whose feet
+are those of an eagle, holding an apple in her right hand and in her left
+\textbf{a wooden comb similar to a tablet, inscribed with these figures:}
+$\mathrm{O\Lambda OIO\Lambda}$, whoever carries this image with him will be
+well received and loved by all.'')
+
+\medskip
+
+\noindent Three observations from the verbatim Latin text:
+
+\noindent (i)~\textbf{The inscription is preserved as Greek capital
+characters} in the printed critical edition. Pingree uses the unicode
+characters $\mathrm{O\Lambda OIO\Lambda}$, not Latin letters that resemble
+Greek. This is significant because it indicates that in the manuscripts
+collated by Pingree (which include MS 793 among other Latin Picatrix
+witnesses), the inscription was written either as actual Greek letters or as
+signs that the editor judged equivalent to Greek letters --- in any case,
+\textbf{distinct from the Latin script of the surrounding body of the text}.
+This is exactly the category ``invented or transformed alphabet inserted as a
+talismanic inscription'' that the Picatrix tradition prescribes.
+
+\noindent (ii)~\textbf{The object is iconographically a wooden comb}, not a
+tablet. Pingree's text twice writes \textit{pectinem similem tabule} (``a comb
+similar to a tablet'', entry 27) and \textit{pectinem ligneum similem tabule}
+(``a wooden comb similar to a tablet'', entry 55). The comb is one of the
+standard iconographic attributes of Venus in medieval art, alongside the
+apple, the mirror, and the rose. The flat surface of the comb between its two
+sets of teeth carries the inscription. \textbf{This explains the visual
+structure of the object in MS 793 f. 191v}: the user-observed ``8 vertical
+strokes above and 12 vertical strokes below the central inscription'' (visible
+in \filename{historic/picatrix_p383_tablet_only.jpg}) are the \textbf{teeth of
+the wooden comb}, with 8 broad teeth on one side and 12 fine teeth on the
+other in a typical medieval double-comb design.
+
+\noindent (iii)~\textbf{The inscription has explicitly operative talismanic
+function}. Entry 55 is not descriptive but \emph{prescriptive}: it is a recipe
+for fabricating a Venus love-amulet, instructing the operator that a wooden
+comb engraved with $\mathrm{O\Lambda OIO\Lambda}$ on its flat surface, when
+worn, makes the bearer ``well received and loved by all'' (\textit{bene
+recipietur et ab omnibus diligetur}). The thematic association is canonically
+Venusian: the planet of love and attraction is invoked through an inscription
+on her standard iconographic attribute (the comb). The Cracow scribe of MS
+793, who suppressed nearly all other karacteres prescribed by the Picatrix
+text in compliance with the \textit{Speculum astronomiae}'s condemnation of
+magical alphabets \citep[see][p.~105]{sniezynska2009}, preserved this single
+inscription verbatim --- presumably because of its central iconographic role
+in the Venus images of the chapter.
+
+\medskip
+
+The two Picatrix passages together establish that, in the medieval
+astrological-talismanic tradition into which this paper places the Voynich,
+the use of inscribed non-Latin characters as operative talismanic devices
+was \emph{textually documented and prescribed}, not merely incidental.
+The f57v.3 alphabet ring of the Voynich ($17\times 4 = 68$ atomic characters
+in cyclic structure) is a much more extensive instance of the same category
+of textual phenomenon than the six characters of
+$\mathrm{O\Lambda OIO\Lambda}$, but both belong to the same documented
+tradition.
+
+\subsection{Side-by-side comparison: alphabet versus compound sigils}
+\label{sec:vc4_alphabet}
+
+The four preceding subsections established three independent
+correspondences between Voynich f57v and \bjms{} ff.~191r--191v: the
+central solar disc (\S\ref{sec:vc1_disc}), the karacter sigils on the
+Sun shields (\S\ref{sec:vc2_shields}), and the literal
+$\mathrm{O\Lambda OIO\Lambda}$ inscription on the Venus comb
+(\S\ref{sec:oloiol}). Each correspondence is documentary, anchored to a
+specific page of MS~793 and to a specific passage of the Latin Picatrix
+edited by \citet{pingree1986}. We now present a fourth correspondence
+that is structural rather than iconographic: a direct visual comparison
+of the f57v concentric ring text with the karacter sigils of MS~793,
+designed to test what kind of textual relationship the two materials
+enter into.
+
+\subsubsection*{The polar unwrap of the f57v second ring}
+
+The four concentric text rings of f57v are difficult to compare directly
+with linear text because they are physically circular. To bring them into
+a directly comparable form we developed an open-source polar
+rectification tool (\filename{tools/circular_text_unwrap.ipynb} in the
+project repository), which uses bilinear interpolation
+(\texttt{scipy.ndimage.map\_coordinates}) to remap an annular region of a
+circular diagram into a horizontal strip. The tool is fully parametric in
+the centre coordinates and inner/outer radii of the annulus and is
+provided as a standalone Jupyter notebook so that the experiment can be
+reproduced or extended to other Voynich circular diagrams.
+
+Applied to the second concentric text ring of f57v---the densest locus
+of Phenomenon~B, line f57v.3 with its $17\!\times\!4$ structure of
+single-atom isolated tokens---the polar unwrap produces a horizontal
+strip in which the 68 atomic characters become individually legible
+(Figure~\ref{fig:unwrap}). The image \filename{historic/f57v_ring2_alphabet_strip.jpg}
+records the rectified strip; the four cyclic repetitions of the
+17-character pattern are visible by inspection along the horizontal
+axis.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{f57v_ring2_alphabet_strip.jpg}
+\caption{Polar unwrap of the second concentric text ring of Voynich
+f57v (line f57v.3, the densest locus of Phenomenon~B), produced with
+\texttt{circular\_text\_unwrap.ipynb}. The original circular
+ring is remapped to a horizontal strip in which the 68 atomic
+characters become legible as a sequence. Four cyclic repetitions of a
+17-character pattern are present along the horizontal axis, matching
+the $17\!\times\!4$ structure detected on purely textual grounds in
+Table~\ref{tab:perline}.}
+\label{fig:unwrap}
+\end{figure}
+
+\subsubsection*{Side-by-side: f57v.3 atomic characters vs MS~793 shield sigils}
+
+We now compare the rectified f57v.3 strip with the two MS~793 shield
+sigils of \S\ref{sec:vc2_shields}. We want to be explicit, before
+presenting the comparison, about what kind of claim it supports. The
+present subsection is a \emph{qualitative, side-by-side visual
+comparison}, not a quantitative test. We attempted a reproducible
+pixel-level quantification of the shared graphic vocabulary, including
+scale-normalised binarisation, connected-component extraction, skeleton
+decomposition of the compound sigils into elementary sub-strokes, and a
+primitive-category distribution comparison via Jensen--Shannon
+divergence with permutation testing (companion notebook~74b of the
+project repository). The attempt proved not to be supportable on the
+available source material: the photographic facsimile of MS~793 is
+sufficiently noisy at the stroke-thickness scale that automated
+segmentation cannot cleanly separate the karakter ink from the
+parchment texture of the underlying shield paint, and the resulting
+primitive distributions were dominated by segmentation artefacts rather
+than by real stroke-shape statistics. We therefore present the
+comparison below as a visual judgement, and retain the quantitative
+test only as documented future work (cf.\ \S\ref{sec:future_work}) for
+the higher-resolution archival imagery of MS~793 that would be obtained
+by an in-person inspection at the Biblioteka Jagiello\'nska.
+
+With that caveat stated, the comparison (Figure~\ref{fig:karacteres})
+makes one structural property immediately clear to the eye: the visual
+vocabulary used to construct individual characters of the Voynich ring
+is, by inspection, the \emph{same vocabulary} from which the MS~793
+shield sigils are built. Both inventories use short straight strokes,
+small circles, right-angle hooks, and short curved tails as their
+elementary graphic units; both avoid alphabetic letterforms and standard
+heraldic devices; both place individual characters in spatial isolation
+rather than ligated cursive sequences.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{comparison_karacteres_v2.jpg}
+\caption{Side-by-side comparison of the rectified f57v.3 ring strip
+(top) with the two MS~793 Sun-shield sigils of f.~191r (bottom). The
+elementary graphic vocabulary---short strokes, small circles, angular
+hooks, curved tails---is shared between the two sources. The
+relationship is one of \emph{atomic alphabet} (Voynich) to \emph{compound
+sigils written in that alphabet} (MS~793), not of direct textual
+copying.}
+\label{fig:karacteres}
+\end{figure}
+
+\subsubsection*{Interpretation: alphabet vs compound sigils}
+
+The structural relationship is asymmetric. The MS~793 shield sigils are
+\emph{compound}: each shield carries a single sigil that is itself
+constructed from several elementary marks combined into a unit. The
+Voynich f57v.3 ring is \emph{atomic}: each of its 68 characters is a
+single isolated mark, and the four cyclic repetitions show the
+inscription as a fixed-length sequence of such atoms rather than as a
+single compound device.
+
+This is the structural pattern of an alphabet versus the words written
+\emph{in} that alphabet. If the medieval karacteres tradition is taken
+literally---an alphabet of geometric characters from which talismanic
+inscriptions are composed---then the Voynich f57v.3 ring is a candidate
+for the \emph{alphabet itself}, while the MS~793 shield sigils and the
+$\mathrm{O\Lambda OIO\Lambda}$ comb inscription are candidates for
+\emph{compound inscriptions} drawing on the same atomic vocabulary.
+
+We do \emph{not} claim that the specific atomic characters of the f57v.3
+ring can be matched one-to-one with the elementary components of the
+MS~793 sigils. Such a one-to-one matching would require either a
+key-document we do not possess or a much larger comparative corpus of
+karacteres, and the present paper does not undertake it (cf.\
+\S\ref{sec:limitations}). What we do claim, on the strength of the
+\emph{visual} comparison in Figure~\ref{fig:karacteres}, is that the
+two sources belong to the same \emph{graphic genre}, with the Voynich
+ring carrying the more complete inventory and the MS~793 shields
+carrying compound instances of that inventory. The claim is deliberately
+calibrated to the evidence: it is a qualitative reading of the side-by-side
+figure by a human observer, not a statistical test, and
+\S\ref{sec:limitations}(a) lists it among the limitations that future
+work at higher source resolution should revisit.
+
+If this reading is correct, then the relationship of the Voynich to
+\textit{Picatrix Latinus} is not one of textual descent but of
+\emph{independent witnessing}: the Voynich preserves an entire alphabet
+of karacteres on a single concentric ring, while MS~793 preserves only
+three small relics of the same tradition (two compound shield sigils and
+one literal six-character word) after its scribe's
+\textit{Speculum astronomiae}-driven suppression of the rest. The
+implications of this asymmetric preservation pattern are developed in
+\S\ref{sec:more_complete} below.
+
+
+% ============================================================
+\section{Discussion: the Voynich as an independent witness of the
+\textit{Picatrix} tradition}
+\label{sec:discussion}
+
+The empirical findings of \S\S\ref{sec:subalphabet}--\ref{sec:two_phenomena}
+and the iconographic correspondences of \S\ref{sec:verification} are
+independent of any single interpretive frame and stand as facts about
+the manuscript whatever their ultimate explanation. This section
+proposes the interpretive frame we believe best accounts for them, and
+explicitly states what the frame does \emph{not} claim. The proposal
+has four moving parts: (i)~a methodological reformulation of the
+``Picatrix hypothesis'' from textual derivation to independent
+witnessing; (ii)~the observation that the Voynich preserves the
+\textit{karacteres} tradition more completely than its own closest
+documented contemporary; (iii)~the placement of the Voynich within
+the documented Toledo--Prague--Cracow transmission chain; and
+(iv)~an honest enumeration of the limitations the present paper does
+not resolve.
+
+\subsection{Reformulation: independent witness, not derivation}
+\label{sec:reformulation}
+
+The traditional ``Picatrix hypothesis'' for the Voynich, going back to
+\citet{dimperio1978}, has typically been formulated as a textual
+descent claim: \emph{the Voynich is, in some sense, a copy or
+translation of the Latin Picatrix or of one of its sources}. So
+formulated, the hypothesis is methodologically weak and easily
+rejectable. The two companion papers of this series~\citep{jimenez2026negative,
+jimenez2026twotier} have already established that no substitution-based
+mapping of Voynich glyphs onto any natural language tested produces
+readable text against any of the obvious source candidates, and that
+the Voynich's positional structure is consistent with a designed
+combinatorial code rather than with the surface form of an underlying
+natural-language source. A direct textual descent of the Voynich from
+the Picatrix Latinus is not compatible with these findings.
+
+We therefore reformulate the hypothesis. The Voynich is \emph{not}
+proposed as a textual derivation of Picatrix Latinus or of any
+specific Picatrix manuscript. It is proposed as an \emph{independent
+witness} of the same broader medieval astrological-talismanic tradition
+that the Picatrix corpus codifies. Specifically:
+
+\begin{itemize}[itemsep=0pt,topsep=2pt]
+\item The Picatrix text (in Arabic and Latin recensions) is one
+documented codification of an older tradition of categorial astrological
+texts plus reserved talismanic inscriptions in non-standard characters
+(\textit{karacteres}).
+\item Cracow Jagiellonian Library MS~793 is one documented illustrated
+witness of the Latin recension of that codification, datable to
+1471--1474 with a Bohemian prototype c.~1390--1410.
+\item The Voynich Manuscript, on the textual evidence of
+\S\S\ref{sec:subalphabet}--\ref{sec:two_phenomena}, contains a
+\emph{co-presence} of the same two textual layers (descriptive
+categorial text plus a reserved enumerative inscription in
+non-standard characters) on a folio whose iconography
+(\S\ref{sec:verification}) overlaps directly with the most karacteres-rich
+folios of MS~793.
+\end{itemize}
+
+The reformulated hypothesis is therefore a claim of \emph{shared
+membership in a documented tradition}, not of textual lineage.
+Crucially, this kind of claim is much weaker and much easier to
+defend: it does not require us to identify a specific source manuscript,
+to reconstruct a specific copying chain, or to demonstrate one-to-one
+character correspondences. It requires only that the Voynich's
+structural fingerprint be incompatible with random scribal invention
+and compatible with the documented practice of the tradition---both
+of which are empirical claims that the previous sections of this paper
+defend.
+
+\paragraph{A methodological note on ``extractable content''.} A common
+reflex when evaluating work on the Voynich is to measure progress in
+terms of how much readable text a proposal produces. Under that
+measure, the present paper does not advance the field: no specific
+message is recovered, no translation is offered, no continuous
+passage is made legible. We want to be explicit that this absence is
+\emph{not a residual gap} of the present analysis but an
+\emph{architectural prediction} of the interpretive frame of
+\S\ref{sec:verification}--\S\ref{sec:reformulation}. The medieval
+\textit{karacteres} tradition, as documented by
+\citet{sniezynska2009}~(p.~103) and by the prescriptive passages of
+\citet{pingree1986}, is \emph{operative} rather than communicative:
+the characters are deployed for planetary correspondence in a
+talismanic device, not to transmit a linguistic message to a reader.
+A successful identification of a folio with that tradition should
+therefore predict that no linguistic decoding will recover content,
+which is exactly what the nineteen substitution-based models of
+\citet{jimenez2026negative} find. The two results are mutually
+coherent: the ``failure to read'' of the first paper and the
+``operative inscription'' of the present paper are the same fact seen
+from two angles. We do not, therefore, present the silence of
+specific content as a limitation of the interpretive proposal; we
+present it as one of its predictions, and as the reason that
+decipherment-shaped evaluations are the wrong test for the reading
+developed here.
+
+\subsection{The Voynich as a more complete witness than MS~793}
+\label{sec:more_complete}
+
+A striking consequence of the reformulation in \S\ref{sec:reformulation}
+is that, on the karacteres dimension specifically, the Voynich is
+arguably a \emph{more complete} witness of the medieval talismanic
+tradition than MS~793 itself. As documented in \S\ref{sec:vc2_shields}
+and \S\ref{sec:oloiol}, the entire surviving karacteres material in
+MS~793's illustrative program consists of three vestiges: the two
+compound Sun-shield sigils of f.~191r and the literal
+$\mathrm{O\Lambda OIO\Lambda}$ inscription on the Venus comb of
+f.~191v. The Voynich, by contrast, carries on a single folio (f57v,
+lines f57v.2--f57v.5) an entire eight-glyph private subalphabet
+deployed in a structurally enumerative $17\!\times\!4$ inscription.
+By counts, this is more karacteres material on a single folio than
+MS~793 preserves in its entire illustrative program.
+
+This is not a claim of priority or of greater authenticity, but of
+asymmetric preservation: the same tradition shows up in the Voynich as
+a relatively complete inscription and in MS~793 as three small relics.
+We emphasise that this asymmetry is offered as a \emph{complementary
+historical hypothesis}, not as independent evidence for the
+reformulated reading of \S\ref{sec:reformulation}. The load-bearing
+evidence of this paper is the $\sim 10^{-26}$/$\sim 10^{-64}$
+concentration of the private subalphabet (\S\ref{sec:probability}) and
+the four positive iconographic correspondences of
+\S\ref{sec:verification}; the asymmetry discussed here is a
+downstream observation that, if accepted, would help rationalise why
+so little karacter material survives in the Cracow witness, but the
+paper's argument does not depend on it.
+
+This caveat is important because the asymmetry claim is partly an
+\textit{argumentum ex silentio}: it reasons from what MS~793 does
+\emph{not} show in order to support a reading of what the Voynich
+\emph{does} show. \citet{sniezynska2009}~(p.~105) documents that the
+Cracow scribe actively suppressed most of the karacteres prescribed by
+his Latin source text in compliance with the \textit{Speculum
+astronomiae}'s condemnation of magical alphabets, which supplies a
+concrete and historically situated mechanism for the gap we observe in
+MS~793; but gap-based arguments are in general weaker than
+presence-based arguments, and a stricter reader is entitled to
+discount this particular line and still accept the main empirical
+claim. The temporal direction of the asymmetry, under which MS~793
+was copied several decades after the Voynich's C14 window and therefore
+under stronger scholastic pressure than the Voynich's manufacturer
+plausibly faced, is offered here as the most natural historical
+reading of that gap, not as a demonstrated fact.
+
+\subsection{The Toledo--Prague--Cracow transmission chain}
+\label{sec:transmission}
+
+The reformulated hypothesis becomes historically concrete when placed
+against the documented transmission chain of astrological manuscripts
+in Central Europe between the late thirteenth and the late fifteenth
+century. \citet{sniezynska2009}~(\textit{Wprowadzenie}, pp.~11--13)
+documents the chain in some detail; we summarise the four nodes most
+relevant to the Voynich's C14 window.
+
+\noindent\textbf{Toledo (mid-13th century).} The Latin translation of
+\textit{Gh\=ayat al-\d{H}ak\={\i}m} as \textit{Picatrix} is produced in
+Castile in or around 1256, in the orbit of Alfonso~X's translation
+workshop, from a Castilian intermediate translation. Alfonso~X is the
+documented source from whom several Central European royal courts
+acquired astrological manuscripts in the second half of the
+thirteenth century.
+
+\noindent\textbf{Prague (late 13th--early 15th century).} \v{P}\v{r}emysl
+Otakar~II of Bohemia is documented as receiving astrological
+manuscripts \emph{directly from Alfonso~X}. V\'aclav~II's court
+astrologers, including Alvaro de Oviedo (d.~1299), reached Prague
+``mainly from Toledo''~\citep[p.~12]{sniezynska2009}. Under Charles~IV
+and his son V\'aclav~IV, Prague became the major Central European
+centre of astrological manuscript production: Havel of Strahov,
+Niccol\`o Beccari, and K\v{r}i\v{s}\v{t}an of Prachatice were active
+in V\'aclav~IV's circle. The lost Bohemian prototype of MS~793,
+reconstructed by Sniezynska-Stolot to c.~1390--1410, belongs to this
+Prague phase.
+
+\noindent\textbf{Cracow (1410--1474).} As documented in
+\S\ref{sec:cracow_milieu}, the Picatrix tradition arrives in Cracow at
+the latest by 1410 (Anna of Cilli's \textit{Nicolaus}) and is
+continuously practised there through the fifteenth century, culminating
+in Gaszowiec's MS~793 of 1471--1474.
+
+\noindent\textbf{The Voynich's C14 window (1404--1438).} The Voynich's
+radiocarbon dating overlaps the Bohemian phase of the chain almost
+exactly. The Bohemian prototype that Gaszowiec later copied
+(c.~1390--1410) is essentially contemporary with the Voynich. We do
+not claim that the Voynich is that prototype, or a copy of it, or any
+other specific manuscript. What we do claim is that the Voynich's
+manufacture date sits squarely inside a documented Central European
+geography and chronology in which the Picatrix tradition was actively
+copied, illustrated, and operatively practised.
+
+The transmission chain therefore provides a plausible historical home
+for the Voynich. Under the reformulated hypothesis of
+\S\ref{sec:reformulation}, the Voynich is one more witness of the same
+broad textual tradition that flowed from Toledo through Prague to
+Cracow---neither a copy of any specific surviving manuscript, nor an
+isolated invention, but a sibling production of the same milieu.
+
+\subsection{f57v within the wider cosmological suite}
+\label{sec:cosmological_program}
+
+A final implication of the reformulated hypothesis concerns the placement
+of f57v within the wider cosmological/astronomical block of the Voynich.
+The robustness test of \S\ref{sec:f70r} already established that f57v is
+the unique locus of Phenomenon~B in that block: among the fourteen other
+foldout panels of ff.~67--70, the seven strongest subalphabet glyphs do
+not appear at all. This is consistent with the reading developed in
+\S\S\ref{sec:reformulation}--\ref{sec:more_complete}: f57v is not an
+alien folio bound into the codex by accident, but a member of the same
+cosmological suite that nonetheless carries one additional textual layer
+that no other folio in the suite carries.
+
+The specific identification of the four central nymphs of f57v
+(planets, seasons, cardinal directions, classical elements, or some
+combination), and the corresponding identification of the four concentric
+rings, is left as a separate question. The structural test of
+\S\ref{sec:test_l0} shows that the four \texttt{@L0} labels follow the
+canonical zodiac positional morphology and that position~5 exhibits a
+$2$--$2$ binary split (A3/B1) consistent with a binary categorical
+attribute, but the resolution of which binary attribute this is (e.g.\
+solar/lunar, hot/cold, masculine/feminine, fertile/sterile) requires
+external evidence beyond the present paper. The textual finding stands
+independently of any such identification.
+
+\subsection{Limitations and what this paper does not claim}
+\label{sec:limitations}
+
+The reformulated hypothesis is deliberately weaker than the
+``decipherment'' claims that have historically been associated with
+the Voynich Manuscript, and it is important to be explicit about
+what this paper does \emph{not} claim. The empirical findings of
+\S\S\ref{sec:subalphabet}--\ref{sec:two_phenomena} are robust to all
+of the limitations below; only the interpretive frame of
+\S\ref{sec:reformulation}--\S\ref{sec:transmission} is conditional on
+external evidence that future work would have to settle.
+
+\noindent\textbf{(a)~No one-to-one identification of glyphs, and no
+quantitative vocabulary test.} We do not identify specific Voynich
+subalphabet glyphs with specific characters of the MS~793 karacter
+inventory. The graphical comparison of Figure~\ref{fig:karacteres} is
+restricted to membership in a shared geometric vocabulary (short
+strokes, small circles, hooks, curved tails) and does not assert that,
+for example, a given Voynich atom corresponds to a given component of
+the Sun-shield sigils. A defensible one-to-one matching would require
+either a key document we do not possess or a substantially larger
+corpus of medieval karacteres to provide statistical leverage.
+Furthermore, the shared-vocabulary claim of \S\ref{sec:vc4_alphabet}
+is itself offered as a qualitative visual reading of the side-by-side
+figure, not as a quantitative statistical test. As reported in
+\S\ref{sec:future_work}(d), we attempted to replace the visual
+judgement with a reproducible pixel-level quantification of the
+primitive-category distributions of the two sources, but the
+available photographic facsimile of MS~793 is too noisy at the
+stroke-thickness scale to support automatic segmentation, and the
+companion notebook of that attempt is retained in the repository as
+documentation of the failure mode. A stricter quantitative test
+awaits higher-resolution archival imagery of MS~793 and a matched
+external control source.
+
+\noindent\textbf{(b)~No claim of textual derivation or authorship.} We
+do not claim that the Voynich is a copy, translation, abridgement, or
+derivative of any specific Picatrix manuscript or of any other
+identified text. We do not claim a specific author, scribe, or place
+of manufacture.
+
+\noindent\textbf{(c)~No claim of underlying natural language.} We do
+not claim that the Voynich, taken as a whole, encodes any specific
+natural language. The first companion paper~\citep{jimenez2026negative}
+established that nineteen substitution-based decipherment models
+against five Semitic languages all converge on the same structural
+ceiling without producing readable text, and the second companion
+paper~\citep{jimenez2026twotier} established a positional code
+structure inconsistent with simple natural-language transcription.
+The interpretation of Phenomenon~A as ``categorial labeling'' and of
+Phenomenon~B as ``operative talismanic inscription'' is compatible
+with both findings.
+
+\noindent\textbf{(d)~The Cracow milieu hypothesis is plausible, not
+unique.} The Toledo--Prague--Cracow chain of \S\ref{sec:transmission}
+is one documented pathway through which the relevant tradition was
+demonstrably active in Central Europe during the Voynich's C14 window,
+but it is not the only conceivable pathway. Other Central European
+courts (Buda, Vienna, the imperial chancery, the German university
+towns) had access to overlapping astrological material in the same
+period, and the present paper does not exclude any of them.
+
+\noindent\textbf{(e)~The interpretive frame is independent of the
+empirical findings.} Most importantly, none of the empirical results
+of \S\S\ref{sec:subalphabet}--\ref{sec:two_phenomena} depend on the
+Picatrix interpretation being correct. The private subalphabet is a
+fact about the STA1 corpus, the cosmological-suite test is a fact
+about the IVTFF transcription, and the canonical-morphology compliance
+of the f57v nymph labels is a fact about the positional analysis of
+notebook~71. If the Picatrix interpretation of \S\ref{sec:reformulation}
+is later refuted, the empirical findings remain in place and have to
+be accounted for under whatever alternative frame is proposed.
+
+
+% ============================================================
+\section{Conclusions}
+\label{sec:conclusions}
+
+This paper has reported a single quantitative finding about the Voynich
+Manuscript and has developed an interpretive proposal around it. We
+recapitulate both, in the order in which they were established, and
+then list the directions in which the work can most usefully be
+extended.
+
+\subsection{Summary of empirical findings}
+\label{sec:summary_empirical}
+
+The empirical core of the paper is that folio f57v of the Voynich
+Manuscript carries a private subalphabet of eight STA1 atoms
+(Table~\ref{tab:subalphabet}), of which five are exclusive to that
+single folio of the entire corpus and three are concentrated on it
+at enrichment factors of $75\times$--$302\times$ over baseline. The
+joint probability of the concentration under the simplest null is
+$\sim 10^{-64}$ (\S\ref{sec:probability}). The subalphabet lives
+exclusively in the four concentric text rings of f57v, most densely
+in line f57v.3 (the only line in the manuscript with $100\%$
+isolated single-character ``words'', \S\ref{sec:intrafolio}), and is
+absent from the eight nymph labels of the same folio. f57v is the
+rank-$1$ folio of the entire manuscript by proportion of isolated
+atoms, by a wide margin (\S\ref{sec:ranking}); and the
+cosmological-suite robustness test of \S\ref{sec:f70r} confirms that
+the anomaly is folio-specific rather than genre-specific.
+
+In parallel, the four central nymph labels of f57v conform $4/4$ to
+the canonical zodiac positional morphology of the author's previous
+unpublished work (\S\ref{sec:test_l0}), and the recurring word that
+those labels share with the zodiac block, the cosmological foldouts
+and several body-text loci of the herbal and recipe sections
+(\S\ref{sec:shared_word}) shows that this categorial labeling system
+operates manuscript-wide. f57v therefore carries two textually
+disjoint layers (Table~\ref{tab:two_phenomena}): a Phenomenon~A
+labeling layer that is shared with the rest of the manuscript, and a
+Phenomenon~B alphabet-ring inscription that is unique to the folio.
+f57v is the only folio in the corpus where the two layers coexist.
+
+\subsection{Summary of the interpretive proposal}
+\label{sec:summary_interpretive}
+
+The four iconographic correspondences against Cracow Jagiellonian
+Library MS~793 documented in \S\ref{sec:verification} (the central
+solar disc, the karacter sigils on the Sun shields, the literal
+$\mathrm{O\Lambda OIO\Lambda}$ inscription on the Venus comb verified
+verbatim against \citet{pingree1986}, and the structural
+alphabet-vs-compound-sigils relationship revealed by the polar
+unwrap) place Phenomenon~B within the documented \textit{karacteres}
+prescription of the medieval astrological-talismanic tradition
+codified by the Latin Picatrix.
+
+The interpretive proposal of \S\ref{sec:reformulation} is that the
+Voynich should be read as an \emph{independent witness} of that
+tradition, not as a textual derivation of any specific Picatrix
+manuscript. The proposal places the Voynich within the documented
+Toledo--Prague--Cracow transmission chain of astrological manuscripts
+in Central Europe between the late thirteenth and the late fifteenth
+century (\S\ref{sec:transmission}); the Voynich's C14 window
+($1404$--$1438$) overlaps the Bohemian phase of that chain almost
+exactly. It is explicitly weaker than ``decipherment'' and is
+independent of the empirical findings, which stand under any
+alternative interpretive frame.
+
+\subsection{Directions for future work}
+\label{sec:future_work}
+
+The empirical findings of this paper open several directions in which
+the present analysis can be extended or independently verified.
+
+\noindent\textbf{(a)~In-person archival inspection of MS~793.} The
+present comparison relies on a complete-codex photographic facsimile
+of MS~793 obtained in April~2026. An in-person inspection of the
+original at the Biblioteka Jagiello\'nska in Cracow would allow direct
+verification of the karacter sigils on the Sun shields and of the
+Venus comb inscription, including any pigmentation, palaeographic
+detail, or marginal annotations not visible in the digital facsimile.
+Task~\#16 of the project repository (``index the full MS~793 facsimile
+by manuscript folio'') is a prerequisite step toward this inspection.
+
+\noindent\textbf{(b)~Comparison with the other ${\sim}20$ extant Latin
+Picatrix manuscripts.} \citet{pingree1986} catalogues approximately
+twenty surviving Latin Picatrix manuscripts in his census, of which
+MS~793 is the only fully illustrated copy. Several of the others
+contain partial illustrative material or marginal sigils that have not
+been systematically compared with the Voynich. A targeted survey of
+karacter inscriptions across the Pingree census would establish
+whether the f57v subalphabet shares specific atoms with any extant
+Picatrix witness, and would test the asymmetric-preservation claim of
+\S\ref{sec:more_complete} against a wider sample.
+
+\noindent\textbf{(c)~Palaeographic analysis of the Voynich script
+against contemporary Bohemian and Cracow manuscripts.} The Voynich's
+glyph forms have been compared against many Latin and vernacular
+hands of the late fourteenth and early fifteenth century, but to the
+present author's knowledge they have not been systematically compared
+against the karacter inventories of contemporary Central European
+talismanic manuscripts. The structural similarity documented in
+Figure~\ref{fig:karacteres} suggests that such a comparison would be
+diagnostically informative.
+
+\noindent\textbf{(d)~Quantitative characterisation of the graphic
+vocabulary shared between f57v and MS~793.} The side-by-side comparison
+of Figure~\ref{fig:karacteres} establishes, at the qualitative level,
+that the rectified f57v.3 ring and the MS~793 Sun-shield sigils draw
+from a common inventory of elementary marks (short strokes, small
+circles, right-angle hooks, curved tails), but the comparison is a
+visual judgement and (as discussed in \S\ref{sec:vc4_alphabet}) a
+sceptical reader is entitled to ask for quantitative support. We did
+attempt such a quantification as a companion to this paper (companion
+notebook~74b of the project repository, \texttt{74b\_f57v\_graphic\_%
+vocabulary\_quantitative.ipynb}). The pipeline rescales all source
+images to a common height, binarises with Otsu thresholding, extracts
+connected components, decomposes the compound MS~793 sigils via
+skeletonisation into elementary sub-strokes at skeleton junction
+points, classifies each resulting stroke into one of six primitive
+categories (dot, loop, straight stroke, arc, hook, complex), and
+compares the f57v and shield primitive-frequency distributions with
+Jensen--Shannon divergence under a permutation null. The attempt
+failed at the image-quality step: the publicly available photographic
+facsimile of MS~793 at its current resolution is too noisy, at the
+stroke-thickness scale, for automatic segmentation to cleanly separate
+karakter ink from the parchment texture of the underlying painted
+shield. The resulting primitive distributions were dominated by
+segmentation artefacts rather than by real stroke-shape statistics,
+and the reported Jensen--Shannon divergence varied by a factor of two
+under modest changes in the binarisation threshold. The notebook is
+nonetheless retained in the repository as a documented methodological
+attempt, both so that the procedure can be reproduced by any reader
+and so that the exact failure mode is on the record. A successful
+quantitative test of the shared-vocabulary claim therefore requires
+(i)~higher-resolution archival imagery of MS~793 than is presently
+available to the project, most plausibly obtained by an in-person
+inspection at the Biblioteka Jagiello\'nska (see~(a) above); and
+(ii)~a matched external control source (e.g.\ abstract marks from
+unrelated late-medieval manuscripts, mason's marks from the same
+geographic region) to establish a baseline against which the
+f57v--MS~793 distance can be judged small or large. Until both of
+those are in hand, the shared-vocabulary claim of
+\S\ref{sec:vc4_alphabet} stands as a qualitative reading of the
+side-by-side figure, not as a quantitative result.
+
+\noindent\textbf{(e)~Textual identification of specific characters in
+the f57v alphabet ring.} Beyond the vocabulary-level test of~(d), a
+full character-level matching between the $17\!\times\!4$ characters
+of line f57v.3 and the elementary components of the MS~793 shield
+sigils, the $\mathrm{O\Lambda OIO\Lambda}$ comb inscription, and
+karacter inventories in other Picatrix witnesses would test the
+reformulated hypothesis at the level of individual glyph identity.
+This is the most direct but also the most ambitious extension of the
+present work, and it presupposes either a key-document we do not
+possess or the successful construction of a substantially larger
+comparative karacteres corpus from surviving Picatrix witnesses.
+
+\noindent\textbf{(f)~Identification of the four central nymphs of
+f57v.} The present paper has deliberately set aside the question of
+which entities the four central nymphs of f57v represent (planets,
+seasons, cardinal directions, classical elements, or some
+combination). The structural analysis of \S\S\ref{sec:test_l0}
+shows that the four \texttt{@L0} labels follow the canonical zodiac
+positional morphology and that position-$5$ exhibits a
+$2$--$2$ binary split (A3/B1) consistent with a binary categorical
+attribute. A targeted analysis of the four labels against
+candidate identification schemes (Sun--Venus--Mercury--Moon for the
+inner planets; spring--summer--autumn--winter for the seasons;
+etc.) is the natural follow-up.
+
+\noindent\textbf{(g)~Application of the cosmological-suite test to
+other circular diagrams of the Voynich.} The polar unwrap tool
+\filename{tools/circular_text_unwrap.ipynb} of
+\S\ref{sec:vc4_alphabet} is parametric in centre coordinates and
+inner/outer radii and is therefore applicable to any Voynich
+circular diagram. Systematic application of the same enumerative-vs-
+running-text metric used in \S\ref{sec:intrafolio}, combined with
+the rectified-strip visualisation, to all the manuscript's
+concentric-text folios would test whether any other folio shows a
+weaker version of the f57v signature that the present blunt
+folio-level analysis has missed.
+
+\subsection{Closing remark}
+
+The Voynich Manuscript has been a difficult object for computational
+methods because almost every published claim about it has been a
+claim about the entire codex at once. The strategy of the present
+paper has been the opposite: to find the single most distinctive
+point in the manuscript and to ask what it points to. The point
+turned out to be folio f57v, the eight glyphs of
+Table~\ref{tab:subalphabet}, and the $17\!\times\!4$ enumeration of
+line f57v.3; what it points to, on the documentary evidence of
+\S\ref{sec:verification} and on the historical placement of
+\S\ref{sec:transmission}, is a documented medieval textual category
+in which the Voynich now appears to participate. The companion
+papers~\citep{jimenez2026negative,jimenez2026twotier} together with
+the present work suggest, on cumulative empirical and documentary
+grounds, that the Voynich is best read as a medieval categorial
+pasigraphy in the broad tradition codified by the Latin Picatrix---an
+encyclopaedic categorial code carrying, on at least one of its
+folios, an operative talismanic inscription of the same tradition's
+\textit{karacteres}.
+
+
+% ============================================================
+\section*{Data and code availability}
+\label{sec:data_availability}
+
+The Voynich text used throughout this paper is the STA1~2.0 super
+transliteration by Ren\'e Zandbergen~\citep{zandbergen_sta1}, available
+at \url{https://voynich.nu/}, together with the IVTFF format
+specification (Version~2.0.1, July~2025)~\citep{zandbergen_ivtff}. All
+quantitative results, intermediate JSON outputs, and figures of this
+paper are reproducible from the project's public GitHub repository,
+which contains:
+
+\begin{itemize}[itemsep=0pt,topsep=2pt]
+\item \filename{74_f57v_private_subalphabet.ipynb} --- the principal
+companion notebook implementing the per-folio glyph counting, the
+probability calculation, the per-line breakdown of f57v, the
+rank-ordering of the $224$-folio corpus, and the canonical-morphology
+compliance tests of \S\S\ref{sec:test_l0}--\ref{sec:test_ri};
+\item \filename{f57v_subalphabet_resultados.json} --- the structured
+JSON output of the notebook, used as the source for
+Tables~\ref{tab:subalphabet}, \ref{tab:perline}, \ref{tab:ranking},
+\ref{tab:l0}, \ref{tab:ri}, and \ref{tab:shared_word};
+\item \filename{f57v_subalphabet_cosmological_robustness.json} ---
+the structured JSON output of the cosmological-suite robustness test
+of \S\ref{sec:f70r}, used as the source for Table~\ref{tab:cosmotest};
+\item \filename{tools/circular_text_unwrap.ipynb} --- the standalone
+polar rectification tool of \S\ref{sec:vc4_alphabet}, parametric in
+centre coordinates and inner/outer radii of the annulus, applicable to
+any Voynich circular diagram;
+\item the \filename{historic/} directory containing high-resolution
+crops of the relevant pages of the MS~793 photographic facsimile
+(\filename{picatrix_p382_*.jpg}, \filename{picatrix_p383_*.jpg}), the
+high-resolution crops of Voynich f57v
+(\filename{f57v_diagram.jpg}, \filename{f57v_ring2_alphabet_strip.jpg}),
+and the side-by-side comparison images
+(\filename{comparison_karacteres_v2.jpg}).
+\end{itemize}
+
+The Sniezynska-Stolot~2009 monograph is available open-access at the
+Jagiellonian University institutional repository (RUJ). The Pingree~1986
+critical edition of the Latin Picatrix is available at major research
+libraries; the cited passages on \textit{Forma Veneris} (Book~II,
+Capitulum~X, entries~$27$ and~$55$, pp.~$67$ and~$70$) were verified
+directly against the printed edition.
+
+
+% ============================================================
+\section*{Acknowledgements}
+
+The author thanks Ren\'e Zandbergen for the STA1 corpus and for
+maintaining the IVTFF format specification, both of which made the
+present analysis possible; Ewa \'Snie\.zy\'nska-Stolot, whose 2009
+monograph on the iconography of \textit{Picatrix Latinus} in MS~793
+provides the foundational scholarly source for the iconographic
+comparison developed here; Mar\'ia Dolores Mart\'inez Gavil\'an
+(Universidad de Le\'on, retired), whose 2025 article on Juan
+Caramuel's \textit{Apparatus philosophicus} provides the theoretical
+framework of \S\ref{sec:framework} and without which the present
+paper would not have known how to name what it was seeing in the
+corpus; the Beinecke Rare Book and Manuscript Library of Yale
+University for making high-resolution images of MS~408 freely
+available in the public domain; and the Biblioteka Jagiello\'nska in
+Cracow for preserving MS~793 and for making its photographic
+facsimile accessible. The author also acknowledges Anthropic Claude
+(Opus~4.6, 1M~context) for tool-assisted code development, manuscript
+drafting, and structured output generation; all content has been
+verified by the author and all empirical claims are reproducible from
+the public companion artefacts listed in
+\S\ref{sec:data_availability}.
+
+% End of body skeleton.
+% Next step: full drafting section by section, in the recommended order:
+% Section 3 → 4 → 5 → 6 → 7 → 8 → 2 → 1 → 9

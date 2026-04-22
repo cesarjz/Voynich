@@ -1,0 +1,546 @@
+{
+  "green": {
+    "n_voynich": 167,
+    "n_herbals": {
+      "bnf_lat_17848": 79,
+      "bnf_lat_6823_manfredus": 98,
+      "carrara_herbal": 6
+    },
+    "unique_pages_top20": 7,
+    "top_matches": [
+      {
+        "voynich": "f103r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0004.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f103v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0004.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f77r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0004.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f101v (part).jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9125
+      },
+      {
+        "voynich": "f16v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.9059
+      },
+      {
+        "voynich": "f45v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.9049
+      },
+      {
+        "voynich": "f53r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.9044
+      },
+      {
+        "voynich": "f22r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.8948
+      },
+      {
+        "voynich": "f4r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.8941
+      },
+      {
+        "voynich": "f79r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0010.jpg",
+        "sim": 0.8906
+      },
+      {
+        "voynich": "f20r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0012.jpg",
+        "sim": 0.889
+      },
+      {
+        "voynich": "f95v.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0007.jpg",
+        "sim": 0.8883
+      },
+      {
+        "voynich": "f4r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0012.jpg",
+        "sim": 0.8856
+      },
+      {
+        "voynich": "f6r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.8856
+      },
+      {
+        "voynich": "f100r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.8855
+      },
+      {
+        "voynich": "f21v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.8847
+      },
+      {
+        "voynich": "f4v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.8842
+      },
+      {
+        "voynich": "f79r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.8832
+      },
+      {
+        "voynich": "f95v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0039.jpg",
+        "sim": 0.8817
+      },
+      {
+        "voynich": "f20r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.881
+      }
+    ],
+    "mean_by_herbal": {
+      "bnf_lat_6823_manfredus": 0.8222,
+      "carrara_herbal": 0.7681,
+      "bnf_lat_17848": 0.7879
+    }
+  },
+  "red": {
+    "n_voynich": 200,
+    "n_herbals": {
+      "bnf_lat_17848": 80,
+      "bnf_lat_6823_manfredus": 100,
+      "carrara_herbal": 6
+    },
+    "unique_pages_top20": 5,
+    "top_matches": [
+      {
+        "voynich": "f116v.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0001.jpg",
+        "sim": 0.8341
+      },
+      {
+        "voynich": "f54r.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0002.jpg",
+        "sim": 0.8041
+      },
+      {
+        "voynich": "f54r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0020.jpg",
+        "sim": 0.8034
+      },
+      {
+        "voynich": "f116v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0001.jpg",
+        "sim": 0.7618
+      },
+      {
+        "voynich": "f24v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7598
+      },
+      {
+        "voynich": "f73v.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0001.jpg",
+        "sim": 0.7564
+      },
+      {
+        "voynich": "f19v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7536
+      },
+      {
+        "voynich": "f14v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7535
+      },
+      {
+        "voynich": "f19r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7534
+      },
+      {
+        "voynich": "f23v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7531
+      },
+      {
+        "voynich": "f96r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7518
+      },
+      {
+        "voynich": "f35r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7513
+      },
+      {
+        "voynich": "f35v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7481
+      },
+      {
+        "voynich": "f52r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7476
+      },
+      {
+        "voynich": "f6v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.747
+      },
+      {
+        "voynich": "f31r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7466
+      },
+      {
+        "voynich": "f20r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7435
+      },
+      {
+        "voynich": "f15r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7402
+      },
+      {
+        "voynich": "f14r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.7381
+      },
+      {
+        "voynich": "f4v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal02.jpg",
+        "sim": 0.736
+      }
+    ],
+    "mean_by_herbal": {
+      "bnf_lat_17848": 0.6314,
+      "bnf_lat_6823_manfredus": 0.5733,
+      "carrara_herbal": 0.6728
+    }
+  },
+  "blue": {
+    "n_voynich": 84,
+    "n_herbals": {
+      "bnf_lat_17848": 1,
+      "bnf_lat_6823_manfredus": 10,
+      "carrara_herbal": 4
+    },
+    "unique_pages_top20": 2,
+    "top_matches": [
+      {
+        "voynich": "f10r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f10v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f26r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f27r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f48v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f67v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f69v and 70r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f84v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f85v and 86r (foldout).jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 1.0
+      },
+      {
+        "voynich": "f68v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 0.9961
+      },
+      {
+        "voynich": "f79v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal01.jpg",
+        "sim": 0.944
+      },
+      {
+        "voynich": "f79v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0069.jpg",
+        "sim": 0.9225
+      },
+      {
+        "voynich": "f68v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal01.jpg",
+        "sim": 0.9087
+      },
+      {
+        "voynich": "f81r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal01.jpg",
+        "sim": 0.9067
+      },
+      {
+        "voynich": "f10r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal01.jpg",
+        "sim": 0.9044
+      },
+      {
+        "voynich": "f10v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal01.jpg",
+        "sim": 0.9044
+      },
+      {
+        "voynich": "f26r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal01.jpg",
+        "sim": 0.9044
+      },
+      {
+        "voynich": "f27r.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal01.jpg",
+        "sim": 0.9044
+      },
+      {
+        "voynich": "f48v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal01.jpg",
+        "sim": 0.9044
+      },
+      {
+        "voynich": "f67v.jpg",
+        "herbal": "carrara_herbal",
+        "page": "Carrara_Herbal01.jpg",
+        "sim": 0.9044
+      }
+    ],
+    "mean_by_herbal": {
+      "bnf_lat_6823_manfredus": 0.8245,
+      "carrara_herbal": 0.71,
+      "bnf_lat_17848": 0.6823
+    }
+  },
+  "brown": {
+    "n_voynich": 200,
+    "n_herbals": {
+      "bnf_lat_17848": 77,
+      "bnf_lat_6823_manfredus": 100,
+      "carrara_herbal": 6
+    },
+    "unique_pages_top20": 7,
+    "top_matches": [
+      {
+        "voynich": "f116v.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0001.jpg",
+        "sim": 0.9374
+      },
+      {
+        "voynich": "f3v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9325
+      },
+      {
+        "voynich": "f9v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9204
+      },
+      {
+        "voynich": "f9r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9192
+      },
+      {
+        "voynich": "f10v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9187
+      },
+      {
+        "voynich": "f25r.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0021.jpg",
+        "sim": 0.9127
+      },
+      {
+        "voynich": "f42v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9113
+      },
+      {
+        "voynich": "f81r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0048.jpg",
+        "sim": 0.9102
+      },
+      {
+        "voynich": "f8v.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0001.jpg",
+        "sim": 0.9096
+      },
+      {
+        "voynich": "f90v (part).jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9073
+      },
+      {
+        "voynich": "f27v.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0041.jpg",
+        "sim": 0.9067
+      },
+      {
+        "voynich": "f7r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9065
+      },
+      {
+        "voynich": "f19v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9025
+      },
+      {
+        "voynich": "f5v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9023
+      },
+      {
+        "voynich": "f67v.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0040.jpg",
+        "sim": 0.9016
+      },
+      {
+        "voynich": "f17v.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.9016
+      },
+      {
+        "voynich": "f3v.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0044.jpg",
+        "sim": 0.9011
+      },
+      {
+        "voynich": "f35v.jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0001.jpg",
+        "sim": 0.9007
+      },
+      {
+        "voynich": "f89v (part).jpg",
+        "herbal": "bnf_lat_17848",
+        "page": "page_0040.jpg",
+        "sim": 0.9007
+      },
+      {
+        "voynich": "f93r.jpg",
+        "herbal": "bnf_lat_6823_manfredus",
+        "page": "page_0009.jpg",
+        "sim": 0.899
+      }
+    ],
+    "mean_by_herbal": {
+      "bnf_lat_17848": 0.8256,
+      "bnf_lat_6823_manfredus": 0.8561,
+      "carrara_herbal": 0.7759
+    }
+  }
+}

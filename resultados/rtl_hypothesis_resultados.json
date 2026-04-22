@@ -1,0 +1,23 @@
+{
+  "h_ltr": [
+    4.132,
+    2.929,
+    2.962,
+    3.286,
+    3.732
+  ],
+  "h_rtl": [
+    4.132,
+    2.978,
+    3.016,
+    3.359,
+    3.818
+  ],
+  "bounce_ltr": 0.803,
+  "bounce_rtl": 0.839,
+  "first_last_ratio_ltr": 1.245,
+  "first_last_ratio_rtl": 0.803,
+  "rtl_better": 0,
+  "ltr_better": 1,
+  "verdict": "LTR reading produces a more natural entropy profile."
+}

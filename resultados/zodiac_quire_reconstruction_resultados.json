@@ -1,0 +1,38 @@
+{
+  "signs_present": [
+    "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius"
+  ],
+  "signs_missing": [
+    "Aquarius (unknown)",
+    "Capricorn (f74 cut out)"
+  ],
+  "labels_per_sign": {
+    "Pisces": 30,
+    "Aries": 30,
+    "Taurus": 30,
+    "Gemini": 29,
+    "Cancer": 30,
+    "Leo": 30,
+    "Virgo": 30,
+    "Libra": 30,
+    "Scorpio": 30,
+    "Sagittarius": 30
+  },
+  "total_labels": 299,
+  "predicted_total": 360,
+  "pct_single_word": 88.3,
+  "unique_labels": 271,
+  "labels_in_multiple_signs": 17,
+  "order": "calendar (January=Aquarius first)",
+  "parallel": "Heidelberg Astrolabium Planum + Pietro d'Abano, Padua",
+  "f74": "deliberately cut out, cut mark on f75"
+}

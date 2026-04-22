@@ -1,0 +1,12 @@
+{
+  "suffix_diversity_mean": 3.7,
+  "pct_4plus_suffixes": 45.0,
+  "profile_correlation_mean": 0.113,
+  "pct_positive_correlation": 50.8,
+  "shift_consistency": {
+    "C1": 0.26,
+    "B2": 0.38,
+    "G1": 0.29
+  },
+  "conclusion": "grammatical_markers"
+}

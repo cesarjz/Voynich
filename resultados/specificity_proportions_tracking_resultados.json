@@ -1,0 +1,19 @@
+{
+  "specificity_profiles": {
+    "folio_vs_recipe_r": 0.234,
+    "folio_vs_recipe_p": 0.1509
+  },
+  "proportional_analysis": {
+    "n_folios": 38,
+    "mean_r": -0.153,
+    "ttest_p": NaN
+  },
+  "cross_section": {
+    "n_cross_stems": 734,
+    "n_identified": 57,
+    "fisher_p": 0.4231,
+    "activo_observed": 17,
+    "activo_null_mean": 19.6,
+    "activo_p": 0.994
+  }
+}
