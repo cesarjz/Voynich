@@ -1,0 +1,107 @@
+{
+ "n_words": 34282,
+ "target_coverage": 0.946,
+ "roles_fold0": {
+  "B": "CLOSER",
+  "C": "OPENER",
+  "E": "MIXED",
+  "J": "MIXED",
+  "K": "ENCODER",
+  "P": "OPENER",
+  "S": "OPENER",
+  "T": "OPENER",
+  "U": "ENCODER",
+  "a": "ENCODER",
+  "d": "OPENER",
+  "e": "ENCODER",
+  "f": "OPENER",
+  "i": "SCAFFOLD",
+  "k": "MIXED",
+  "l": "SCAFFOLD",
+  "m": "CLOSER",
+  "n": "BODY",
+  "o": "ENCODER",
+  "p": "OPENER",
+  "q": "OPENER",
+  "r": "SCAFFOLD",
+  "s": "OPENER",
+  "t": "ENCODER",
+  "y": "CLOSER"
+ },
+ "role_counts_fold0": {
+  "CLOSER": 3,
+  "OPENER": 9,
+  "MIXED": 3,
+  "ENCODER": 6,
+  "SCAFFOLD": 3,
+  "BODY": 1
+ },
+ "acceptance_matched_coverage": {
+  "real": {
+   "positional": 0.9445481593839332,
+   "five_slot": 0.9456857826264512,
+   "roles": 0.9419812146315851,
+   "bigram": 0.9423020827256287,
+   "stolfi": 0.9451898955720203,
+   "zattera_REG": 0.8164051105536433
+  },
+  "positional": {
+   "positional": 0.960299865818797,
+   "five_slot": 0.9492736713143924,
+   "roles": 0.8792660871594423,
+   "bigram": 0.43565136223090833,
+   "stolfi": 0.5773000408377574,
+   "zattera_REG": 0.48074791435738873
+  },
+  "shuffled": {
+   "positional": 0.5455924391809113,
+   "five_slot": 0.6003150341286972,
+   "roles": 0.481418820372207,
+   "bigram": 0.2963070999358264,
+   "stolfi": 0.4514614083192346,
+   "zattera_REG": 0.25185228399743304
+  },
+  "unigram": {
+   "positional": 0.5496178752698209,
+   "five_slot": 0.6064698675689867,
+   "roles": 0.4597164692841724,
+   "bigram": 0.20013418120296367,
+   "stolfi": 0.35079633626976253,
+   "zattera_REG": 0.20491803278688525
+  }
+ },
+ "auc_real_vs": {
+  "positional": {
+   "positional": 0.5108657417380494,
+   "five_slot": 0.5006604955128039,
+   "roles": 0.6302856824521508,
+   "bigram": 0.829549142370166,
+   "stolfi": 0.7824497270773942,
+   "zattera_REG": 0.6136953166960821
+  },
+  "shuffled": {
+   "positional": 0.8060946650781281,
+   "five_slot": 0.7754043222008289,
+   "roles": 0.8258674043041554,
+   "bigram": 0.8702936638994262,
+   "stolfi": 0.8128188921407699,
+   "zattera_REG": 0.7792333558944412
+  },
+  "unigram": {
+   "positional": 0.8375405074888208,
+   "five_slot": 0.7990966090536751,
+   "roles": 0.8715464476302262,
+   "bigram": 0.9340940719543471,
+   "stolfi": 0.876587986154405,
+   "zattera_REG": 0.804448682599853
+  }
+ },
+ "bits_per_word_on_stolfi_accepted": {
+  "positional": 14.599816973726963,
+  "five_slot": 15.728224352116033,
+  "roles": 13.505553506012493,
+  "bigram": 11.533262928596674,
+  "stolfi": 13.227347056748512
+ },
+ "n_stolfi_accepted_real": 32442
+}

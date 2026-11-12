@@ -1,0 +1,6 @@
+external/
+__pycache__/
+# Derived from TraCES (CC BY-NC-ND): regenerated locally by geez_data.py / spec_data.py, never published
+c2_benchmark/data/gk*.json
+c2_benchmark/data/ctl_GEEZ*.json
+c2_benchmark/cache/lm_gk*.pt

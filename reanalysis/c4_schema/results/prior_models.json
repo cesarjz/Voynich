@@ -1,0 +1,465 @@
+{
+ "n_tokens_raw": 34691,
+ "n_readable": 34282,
+ "units": [
+  "B",
+  "C",
+  "E",
+  "F",
+  "J",
+  "K",
+  "P",
+  "S",
+  "T",
+  "U",
+  "a",
+  "d",
+  "e",
+  "f",
+  "i",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "y"
+ ],
+ "pooled_acceptance": {
+  "real": {
+   "zattera_REG": 0.8164051105536433,
+   "zattera_REG+SEP": 0.9559827314625751,
+   "stolfi_normal": 0.9463275188145382,
+   "stolfi_full": 0.9727262120063007,
+   "five_slot": 0.9396184586663555
+  },
+  "positional": {
+   "zattera_REG": 0.4764307800011668,
+   "zattera_REG+SEP": 0.7499562452599031,
+   "stolfi_normal": 0.5817921941543667,
+   "stolfi_full": 0.587159442272913,
+   "five_slot": 0.938276646636719
+  },
+  "shuffled": {
+   "zattera_REG": 0.2474184703342862,
+   "zattera_REG+SEP": 0.45324076774983957,
+   "stolfi_normal": 0.45440756081908873,
+   "stolfi_full": 0.4611457907940027,
+   "five_slot": 0.37675748206055654
+  },
+  "unigram": {
+   "zattera_REG": 0.20669739221749023,
+   "zattera_REG+SEP": 0.3962429263170177,
+   "stolfi_normal": 0.37302374423895923,
+   "stolfi_full": 0.38046205005542266,
+   "five_slot": 0.34776267428971475
+  }
+ },
+ "language_size": {
+  "zattera_REG (upper bound)": 4665599.0,
+  "stolfi_normal (derivations)": 1.834931790609435e+18,
+  "stolfi_full (derivations)": 1.834931790609436e+18,
+  "five_slot (L<=10, fold 0)": 448139731695.0
+ },
+ "probabilistic_fold0": {
+  "n_words": 3244,
+  "bits_per_word": {
+   "five_slot": 15.799245150175325,
+   "positional": 14.608819229329937,
+   "bigram": 11.564932687205,
+   "stolfi_normal": 13.300874103642684
+  },
+  "bits_per_unit": {
+   "five_slot": 3.820840261455849,
+   "positional": 3.5329513627513283,
+   "bigram": 2.7968273175259446,
+   "stolfi_normal": 3.2166419854045674
+  }
+ },
+ "folds": [
+  {
+   "real": {
+    "zattera_REG": 0.820647419072616,
+    "zattera_REG+SEP": 0.9533391659375912,
+    "stolfi_normal": 0.9460484106153397,
+    "stolfi_full": 0.9708369787109945,
+    "five_slot": 0.9428404782735491
+   },
+   "positional": {
+    "zattera_REG": 0.47244094488188976,
+    "zattera_REG+SEP": 0.7363662875473899,
+    "stolfi_normal": 0.5783027121609798,
+    "stolfi_full": 0.5850102070574511,
+    "five_slot": 0.9349664625255176
+   },
+   "shuffled": {
+    "zattera_REG": 0.2458442694663167,
+    "zattera_REG+SEP": 0.4467774861475649,
+    "stolfi_normal": 0.4590259550889472,
+    "stolfi_full": 0.46602508019830857,
+    "five_slot": 0.36978710994459024
+   },
+   "unigram": {
+    "zattera_REG": 0.20909886264216973,
+    "zattera_REG+SEP": 0.3881598133566638,
+    "stolfi_normal": 0.36132983377077865,
+    "stolfi_full": 0.3677456984543599,
+    "five_slot": 0.3400408282298046
+   },
+   "n": 3429,
+   "inv_sizes": {
+    "DOMINIUM": 15,
+    "GENUS": 17,
+    "SPECIES": 18,
+    "CORPUS": 15,
+    "FINIS": 8
+   }
+  },
+  {
+   "real": {
+    "zattera_REG": 0.8171478565179353,
+    "zattera_REG+SEP": 0.9568387284922718,
+    "stolfi_normal": 0.9498396033829105,
+    "stolfi_full": 0.9740449110527851,
+    "five_slot": 0.9434237386993293
+   },
+   "positional": {
+    "zattera_REG": 0.4916885389326334,
+    "zattera_REG+SEP": 0.7608632254301546,
+    "stolfi_normal": 0.584426946631671,
+    "stolfi_full": 0.5890930300379119,
+    "five_slot": 0.9442986293379995
+   },
+   "shuffled": {
+    "zattera_REG": 0.25342665500145817,
+    "zattera_REG+SEP": 0.45931758530183725,
+    "stolfi_normal": 0.4435695538057743,
+    "stolfi_full": 0.44852726742490523,
+    "five_slot": 0.3881598133566638
+   },
+   "unigram": {
+    "zattera_REG": 0.21493146689997084,
+    "zattera_REG+SEP": 0.40624088655584717,
+    "stolfi_normal": 0.38291046952464275,
+    "stolfi_full": 0.3864100320793234,
+    "five_slot": 0.36045494313210846
+   },
+   "n": 3429,
+   "inv_sizes": {
+    "DOMINIUM": 14,
+    "GENUS": 17,
+    "SPECIES": 18,
+    "CORPUS": 16,
+    "FINIS": 8
+   }
+  },
+  {
+   "real": {
+    "zattera_REG": 0.8165110851808635,
+    "zattera_REG+SEP": 0.9603267211201867,
+    "stolfi_normal": 0.9477829638273045,
+    "stolfi_full": 0.9749124854142357,
+    "five_slot": 0.9364060676779463
+   },
+   "positional": {
+    "zattera_REG": 0.4635355892648775,
+    "zattera_REG+SEP": 0.7359976662777129,
+    "stolfi_normal": 0.5749708284714119,
+    "stolfi_full": 0.5802217036172695,
+    "five_slot": 0.9352392065344224
+   },
+   "shuffled": {
+    "zattera_REG": 0.2412485414235706,
+    "zattera_REG+SEP": 0.4401983663943991,
+    "stolfi_normal": 0.455950991831972,
+    "stolfi_full": 0.4617852975495916,
+    "five_slot": 0.3725204200700117
+   },
+   "unigram": {
+    "zattera_REG": 0.20507584597432907,
+    "zattera_REG+SEP": 0.4014002333722287,
+    "stolfi_normal": 0.36551925320886813,
+    "stolfi_full": 0.37397899649941657,
+    "five_slot": 0.33255542590431736
+   },
+   "n": 3428,
+   "inv_sizes": {
+    "DOMINIUM": 14,
+    "GENUS": 17,
+    "SPECIES": 18,
+    "CORPUS": 15,
+    "FINIS": 8
+   }
+  },
+  {
+   "real": {
+    "zattera_REG": 0.808343057176196,
+    "zattera_REG+SEP": 0.9539089848308051,
+    "stolfi_normal": 0.9436989498249708,
+    "stolfi_full": 0.9725787631271878,
+    "five_slot": 0.9387397899649942
+   },
+   "positional": {
+    "zattera_REG": 0.47112018669778294,
+    "zattera_REG+SEP": 0.7482497082847142,
+    "stolfi_normal": 0.5822637106184364,
+    "stolfi_full": 0.5878063010501751,
+    "five_slot": 0.9425320886814469
+   },
+   "shuffled": {
+    "zattera_REG": 0.2467911318553092,
+    "zattera_REG+SEP": 0.4501166861143524,
+    "stolfi_normal": 0.4501166861143524,
+    "stolfi_full": 0.45770128354725786,
+    "five_slot": 0.38418903150525086
+   },
+   "unigram": {
+    "zattera_REG": 0.20682613768961494,
+    "zattera_REG+SEP": 0.4008168028004667,
+    "stolfi_normal": 0.3719369894982497,
+    "stolfi_full": 0.38010501750291714,
+    "five_slot": 0.3631855309218203
+   },
+   "n": 3428,
+   "inv_sizes": {
+    "DOMINIUM": 15,
+    "GENUS": 17,
+    "SPECIES": 18,
+    "FINIS": 8,
+    "CORPUS": 16
+   }
+  },
+  {
+   "real": {
+    "zattera_REG": 0.8153442240373395,
+    "zattera_REG+SEP": 0.955075845974329,
+    "stolfi_normal": 0.9442823803967327,
+    "stolfi_full": 0.9752042007001167,
+    "five_slot": 0.9434072345390898
+   },
+   "positional": {
+    "zattera_REG": 0.4871645274212369,
+    "zattera_REG+SEP": 0.7631271878646441,
+    "stolfi_normal": 0.588681446907818,
+    "stolfi_full": 0.5959743290548425,
+    "five_slot": 0.9396149358226371
+   },
+   "shuffled": {
+    "zattera_REG": 0.2456242707117853,
+    "zattera_REG+SEP": 0.4571178529754959,
+    "stolfi_normal": 0.45915985997666275,
+    "stolfi_full": 0.46645274212368726,
+    "five_slot": 0.37689614935822635
+   },
+   "unigram": {
+    "zattera_REG": 0.20624270711785297,
+    "zattera_REG+SEP": 0.40110851808634773,
+    "stolfi_normal": 0.3751458576429405,
+    "stolfi_full": 0.3853558926487748,
+    "five_slot": 0.3424737456242707
+   },
+   "n": 3428,
+   "inv_sizes": {
+    "DOMINIUM": 14,
+    "GENUS": 17,
+    "SPECIES": 18,
+    "CORPUS": 16,
+    "FINIS": 8
+   }
+  },
+  {
+   "real": {
+    "zattera_REG": 0.8106767794632439,
+    "zattera_REG+SEP": 0.9568261376896149,
+    "stolfi_normal": 0.9422403733955659,
+    "stolfi_full": 0.970828471411902,
+    "five_slot": 0.9378646441073513
+   },
+   "positional": {
+    "zattera_REG": 0.4830805134189031,
+    "zattera_REG+SEP": 0.7546674445740957,
+    "stolfi_normal": 0.5878063010501751,
+    "stolfi_full": 0.5907234539089848,
+    "five_slot": 0.9346557759626605
+   },
+   "shuffled": {
+    "zattera_REG": 0.2508751458576429,
+    "zattera_REG+SEP": 0.4539089848308051,
+    "stolfi_normal": 0.4542007001166861,
+    "stolfi_full": 0.4612018669778296,
+    "five_slot": 0.37222870478413067
+   },
+   "unigram": {
+    "zattera_REG": 0.20245040840140024,
+    "zattera_REG+SEP": 0.3763127187864644,
+    "stolfi_normal": 0.37397899649941657,
+    "stolfi_full": 0.38185530921820304,
+    "five_slot": 0.3418903150525088
+   },
+   "n": 3428,
+   "inv_sizes": {
+    "DOMINIUM": 15,
+    "GENUS": 17,
+    "SPECIES": 18,
+    "CORPUS": 15,
+    "FINIS": 8
+   }
+  },
+  {
+   "real": {
+    "zattera_REG": 0.8275962660443408,
+    "zattera_REG+SEP": 0.9585764294049008,
+    "stolfi_normal": 0.9451575262543758,
+    "stolfi_full": 0.970536756126021,
+    "five_slot": 0.9323220536756126
+   },
+   "positional": {
+    "zattera_REG": 0.47549591598599766,
+    "zattera_REG+SEP": 0.7470828471411902,
+    "stolfi_normal": 0.5813885647607935,
+    "stolfi_full": 0.587222870478413,
+    "five_slot": 0.9352392065344224
+   },
+   "shuffled": {
+    "zattera_REG": 0.24912485414235705,
+    "zattera_REG+SEP": 0.4652858809801634,
+    "stolfi_normal": 0.4632438739789965,
+    "stolfi_full": 0.4687864644107351,
+    "five_slot": 0.3792298716452742
+   },
+   "unigram": {
+    "zattera_REG": 0.205659276546091,
+    "zattera_REG+SEP": 0.39323220536756126,
+    "stolfi_normal": 0.3716452742123687,
+    "stolfi_full": 0.37864644107351225,
+    "five_slot": 0.34772462077012833
+   },
+   "n": 3428,
+   "inv_sizes": {
+    "DOMINIUM": 14,
+    "GENUS": 17,
+    "SPECIES": 18,
+    "CORPUS": 15,
+    "FINIS": 8
+   }
+  },
+  {
+   "real": {
+    "zattera_REG": 0.8214702450408401,
+    "zattera_REG+SEP": 0.9582847141190198,
+    "stolfi_normal": 0.9477829638273045,
+    "stolfi_full": 0.9702450408401401,
+    "five_slot": 0.941365227537923
+   },
+   "positional": {
+    "zattera_REG": 0.4752042007001167,
+    "zattera_REG+SEP": 0.7438739789964994,
+    "stolfi_normal": 0.5755542590431738,
+    "stolfi_full": 0.5822637106184364,
+    "five_slot": 0.9428238039673279
+   },
+   "shuffled": {
+    "zattera_REG": 0.24299883313885648,
+    "zattera_REG+SEP": 0.4451575262543757,
+    "stolfi_normal": 0.4486581096849475,
+    "stolfi_full": 0.45536756126021005,
+    "five_slot": 0.3766044340723454
+   },
+   "unigram": {
+    "zattera_REG": 0.205950991831972,
+    "zattera_REG+SEP": 0.40840140023337224,
+    "stolfi_normal": 0.3856476079346558,
+    "stolfi_full": 0.3941073512252042,
+    "five_slot": 0.3547257876312719
+   },
+   "n": 3428,
+   "inv_sizes": {
+    "DOMINIUM": 15,
+    "GENUS": 17,
+    "SPECIES": 18,
+    "CORPUS": 15,
+    "FINIS": 8
+   }
+  },
+  {
+   "real": {
+    "zattera_REG": 0.808926487747958,
+    "zattera_REG+SEP": 0.9524504084014003,
+    "stolfi_normal": 0.9486581096849475,
+    "stolfi_full": 0.9743290548424738,
+    "five_slot": 0.9358226371061844
+   },
+   "positional": {
+    "zattera_REG": 0.4693698949824971,
+    "zattera_REG+SEP": 0.7558343057176196,
+    "stolfi_normal": 0.5711785297549592,
+    "stolfi_full": 0.5758459743290548,
+    "five_slot": 0.9305717619603268
+   },
+   "shuffled": {
+    "zattera_REG": 0.24737456242707118,
+    "zattera_REG+SEP": 0.45915985997666275,
+    "stolfi_normal": 0.4635355892648775,
+    "stolfi_full": 0.47112018669778294,
+    "five_slot": 0.37310385064177365
+   },
+   "unigram": {
+    "zattera_REG": 0.20536756126021002,
+    "zattera_REG+SEP": 0.4043173862310385,
+    "stolfi_normal": 0.36493582263710617,
+    "stolfi_full": 0.37281213535589264,
+    "five_slot": 0.33926487747957995
+   },
+   "n": 3428,
+   "inv_sizes": {
+    "DOMINIUM": 14,
+    "GENUS": 17,
+    "SPECIES": 18,
+    "CORPUS": 15,
+    "FINIS": 8
+   }
+  },
+  {
+   "real": {
+    "zattera_REG": 0.8173862310385064,
+    "zattera_REG+SEP": 0.9542007001166861,
+    "stolfi_normal": 0.9477829638273045,
+    "stolfi_full": 0.9737456242707118,
+    "five_slot": 0.9439906651108518
+   },
+   "positional": {
+    "zattera_REG": 0.4752042007001167,
+    "zattera_REG+SEP": 0.7535005834305718,
+    "stolfi_normal": 0.5933488914819136,
+    "stolfi_full": 0.5974329054842473,
+    "five_slot": 0.9428238039673279
+   },
+   "shuffled": {
+    "zattera_REG": 0.2508751458576429,
+    "zattera_REG+SEP": 0.45536756126021005,
+    "stolfi_normal": 0.4466161026837806,
+    "stolfi_full": 0.4544924154025671,
+    "five_slot": 0.3748541423570595
+   },
+   "unigram": {
+    "zattera_REG": 0.20536756126021002,
+    "zattera_REG+SEP": 0.382438739789965,
+    "stolfi_normal": 0.37718786464410736,
+    "stolfi_full": 0.3836056009334889,
+    "five_slot": 0.35530921820303385
+   },
+   "n": 3428,
+   "inv_sizes": {
+    "DOMINIUM": 14,
+    "GENUS": 17,
+    "SPECIES": 18,
+    "CORPUS": 16,
+    "FINIS": 8
+   }
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+random 10-fold               accept real 0.884 (types 0.784, nb77-literal 0.879) | surrogates pos 0.882 shuf 0.350 unig 0.333 | bits slot 3.418 pos 3.185 bigram 2.888 | AUC slot 0.868 pos 0.882 bigram 0.890
+  inventory sizes (fold 0): {'DOMINIUM': 17, 'GENUS': 15, 'SPECIES': 19, 'CORPUS': 15, 'FINIS': 11}
+  acceptance by length (fold 0): L1=0.88(n=86) L2=0.91(n=338) L3=0.88(n=869) L4=0.92(n=906) L5=0.90(n=826) L6=0.87(n=401) L7=0.88(n=138) L8=0.63(n=93)
+  first violating slot (fold 0, share of words): CORPUS=0.019 DOMINIUM=0.025 FINIS=0.029 GENUS=0.026 SPECIES=0.013
+  held-out section herbal    accept real 0.808 (types 0.654, nb77-literal 0.814) | surrogates pos 0.886 shuf 0.348 unig 0.298 | bits slot 3.636 pos 3.492 bigram 3.250 | AUC slot 0.842 pos 0.853 bigram 0.850
+  held-out section astro     accept real 0.839 (types 0.798, nb77-literal 0.839) | surrogates pos 0.879 shuf 0.383 unig 0.328 | bits slot 3.579 pos 3.486 bigram 3.234 | AUC slot 0.842 pos 0.845 bigram 0.861
+  held-out section cosmo     accept real 0.863 (types 0.769, nb77-literal 0.859) | surrogates pos 0.893 shuf 0.380 unig 0.350 | bits slot 3.515 pos 3.264 bigram 3.021 | AUC slot 0.840 pos 0.848 bigram 0.857
+  held-out section zodiac    accept real 0.859 (types 0.795, nb77-literal 0.853) | surrogates pos 0.884 shuf 0.362 unig 0.305 | bits slot 3.497 pos 3.474 bigram 3.003 | AUC slot 0.854 pos 0.859 bigram 0.901
+  held-out section bio       accept real 0.920 (types 0.791, nb77-literal 0.901) | surrogates pos 0.879 shuf 0.335 unig 0.321 | bits slot 3.276 pos 2.987 bigram 2.671 | AUC slot 0.890 pos 0.911 bigram 0.918
+  held-out section pharma    accept real 0.840 (types 0.712, nb77-literal 0.843) | surrogates pos 0.875 shuf 0.372 unig 0.311 | bits slot 3.503 pos 3.351 bigram 3.065 | AUC slot 0.848 pos 0.861 bigram 0.874
+  held-out section recipe    accept real 0.913 (types 0.785, nb77-literal 0.890) | surrogates pos 0.884 shuf 0.319 unig 0.345 | bits slot 3.407 pos 3.142 bigram 2.837 | AUC slot 0.884 pos 0.898 bigram 0.908
+leave-one-section-out        accept real 0.870 (types 0.741, nb77-literal 0.861) | surrogates pos 0.883 shuf 0.342 unig 0.323 | bits slot 3.474 pos 3.262 bigram 2.975 | AUC slot 0.865 pos 0.878 bigram 0.885
+Currier A -> B               accept real 0.885 (types 0.707, nb77-literal 0.855) | surrogates pos 0.874 shuf 0.326 unig 0.378 | bits slot 3.554 pos 3.360 bigram 3.264 | AUC slot 0.863 pos 0.884 bigram 0.873
+Currier B -> A               accept real 0.794 (types 0.614, nb77-literal 0.808) | surrogates pos 0.894 shuf 0.356 unig 0.284 | bits slot 3.681 pos 3.583 bigram 3.407 | AUC slot 0.835 pos 0.847 bigram 0.837

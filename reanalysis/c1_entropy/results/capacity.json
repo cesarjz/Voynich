@@ -1,0 +1,72 @@
+{
+ "Voynich STA1": {
+  "words": 37087,
+  "types": 10127,
+  "log2_types": 13.305919236202762,
+  "unigram_H": 10.996705886362808,
+  "lzma_bits_per_word": 11.621538544503466,
+  "nb44_style_KB": 61.68457833913148,
+  "unigram_KB": 50.97935390094218,
+  "lzma_KB": 53.876
+ },
+ "Voynich EVA": {
+  "words": 34725,
+  "types": 7766,
+  "log2_types": 12.922955991908477,
+  "unigram_H": 10.38545522597209,
+  "lzma_bits_per_word": 11.219582433405328,
+  "nb44_style_KB": 56.09370585237773,
+  "unigram_KB": 45.0793665902351,
+  "lzma_KB": 48.7
+ },
+ "Voynich STA1, word order shuffled": {
+  "words": 37087,
+  "types": 10127,
+  "log2_types": 13.305919236202762,
+  "unigram_H": 10.996705886362808,
+  "lzma_bits_per_word": 11.810499635991048,
+  "nb44_style_KB": 61.68457833913148,
+  "unigram_KB": 50.97935390094218,
+  "lzma_KB": 54.752
+ },
+ "Hebrew Torah": {
+  "words": 37087,
+  "types": 8416,
+  "log2_types": 13.038918989292302,
+  "unigram_H": 10.807395637805152,
+  "lzma_bits_per_word": 10.778547739099954,
+  "nb44_style_KB": 60.44679856948545,
+  "unigram_KB": 50.10173525240996,
+  "lzma_KB": 49.968
+ },
+ "Hebrew Moreh (Tibbonid)": {
+  "words": 37087,
+  "types": 10812,
+  "log2_types": 13.400345796534694,
+  "unigram_H": 11.501596266588761,
+  "lzma_bits_per_word": 12.072801790384771,
+  "nb44_style_KB": 62.122328069510274,
+  "unigram_KB": 53.31996259237218,
+  "lzma_KB": 55.968
+ },
+ "Judeo-Arabic (Quran)": {
+  "words": 37087,
+  "types": 9210,
+  "log2_types": 13.168985440978698,
+  "unigram_H": 10.787283435645994,
+  "lzma_bits_per_word": 11.09607139968183,
+  "nb44_style_KB": 61.04977038119712,
+  "unigram_KB": 50.00849759722537,
+  "lzma_KB": 51.44
+ },
+ "Ge'ez": {
+  "words": 37087,
+  "types": 14318,
+  "log2_types": 13.805542364358724,
+  "unigram_H": 12.264110438152624,
+  "lzma_bits_per_word": 12.112492247957505,
+  "nb44_style_KB": 64.0007687083715,
+  "unigram_KB": 56.8548829774708,
+  "lzma_KB": 56.152
+ }
+}

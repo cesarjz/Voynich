@@ -1,0 +1,8 @@
+STA1: 227 pages, 5385 lines, 37087 words
+Voynich STA1               exact 0.056 (x1.22, z=+9.1) | 1-edit 0.222 (x1.11, z=+15.4) | lag1-3 x1.29 lag20-40 x1.04 | line above same/other 0.047/0.039
+Voynich EVA                exact 0.070 (x1.26, z=+17.3) | 1-edit 0.231 (x1.10, z=+11.9) | lag1-3 x1.28 lag20-40 x1.04 | line above same/other 0.042/0.042
+Torah (Hebrew)             exact 0.105 (x1.43, z=+32.0) | 1-edit 0.108 (x1.19, z=+11.9) | lag1-3 x1.05 lag20-40 x1.13 | line above same/other 0.029/0.028
+Moreh (Hebrew, Tibbon)     exact 0.057 (x1.54, z=+25.5) | 1-edit 0.096 (x1.21, z=+13.0) | lag1-3 x1.10 lag20-40 x1.08 | line above same/other 0.019/0.019
+Judeo-Arabic               exact 0.065 (x1.21, z=+12.4) | 1-edit 0.100 (x1.10, z=+9.3) | lag1-3 x0.94 lag20-40 x1.04 | line above same/other 0.021/0.021
+Ge'ez                      exact 0.055 (x1.53, z=+21.1) | 1-edit 0.034 (x1.30, z=+16.1) | lag1-3 x1.11 lag20-40 x1.24 | line above same/other 0.014/0.014
+Copy-and-modify (synthetic) exact 0.135 (x3.54, z=+114.2) | 1-edit 0.307 (x2.56, z=+140.4) | lag1-3 x3.13 lag20-40 x1.30 | line above same/other 0.065/0.062

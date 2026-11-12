@@ -1,0 +1,158 @@
+{
+ "Torah plain": {
+  "n_words": 37087,
+  "V": 27,
+  "mean_len": 3.8096637635829267,
+  "observed": {
+   "pair_onsets": 154,
+   "pair_codas": 235,
+   "pair": 0.6553191489361702,
+   "class_onsets": 175,
+   "class_codas": 266,
+   "class": 0.6578947368421053
+  },
+  "reversed": {
+   "pair_onsets": 177,
+   "pair_codas": 298,
+   "pair": 0.5939597315436241,
+   "class_onsets": 196,
+   "class_codas": 332,
+   "class": 0.5903614457831325
+  },
+  "shuffled_pair": {
+   "mean": 0.7647007984034337,
+   "q025": 0.6991468764902242,
+   "q975": 0.8345994800049523
+  }
+ },
+ "long words (pairs)": {
+  "n_words": 37087,
+  "V": 27,
+  "mean_len": 7.622724944050476,
+  "observed": {
+   "pair_onsets": 363,
+   "pair_codas": 362,
+   "pair": 1.0027624309392265,
+   "class_onsets": 497,
+   "class_codas": 568,
+   "class": 0.875
+  },
+  "reversed": {
+   "pair_onsets": 298,
+   "pair_codas": 393,
+   "pair": 0.7582697201017812,
+   "class_onsets": 437,
+   "class_codas": 635,
+   "class": 0.6881889763779527
+  },
+  "shuffled_pair": {
+   "mean": 1.022558717231089,
+   "q025": 0.9052139945652173,
+   "q975": 1.1662438118811882
+  }
+ },
+ "small alphabet (16)": {
+  "n_words": 37087,
+  "V": 16,
+  "mean_len": 3.8096637635829267,
+  "observed": {
+   "pair_onsets": 101,
+   "pair_codas": 191,
+   "pair": 0.5287958115183246,
+   "class_onsets": 137,
+   "class_codas": 220,
+   "class": 0.6227272727272727
+  },
+  "reversed": {
+   "pair_onsets": 108,
+   "pair_codas": 176,
+   "pair": 0.6136363636363636,
+   "class_onsets": 121,
+   "class_codas": 219,
+   "class": 0.5525114155251142
+  },
+  "shuffled_pair": {
+   "mean": 0.654025888158069,
+   "q025": 0.597618070152391,
+   "q975": 0.7793055803173471
+  }
+ },
+ "small alphabet + long words": {
+  "n_words": 37087,
+  "V": 16,
+  "mean_len": 7.622724944050476,
+  "observed": {
+   "pair_onsets": 369,
+   "pair_codas": 386,
+   "pair": 0.9559585492227979,
+   "class_onsets": 470,
+   "class_codas": 504,
+   "class": 0.9325396825396826
+  },
+  "reversed": {
+   "pair_onsets": 334,
+   "pair_codas": 349,
+   "pair": 0.9570200573065902,
+   "class_onsets": 458,
+   "class_codas": 512,
+   "class": 0.89453125
+  },
+  "shuffled_pair": {
+   "mean": 1.095024178881693,
+   "q025": 1.0107586473315109,
+   "q975": 1.171265620932049
+  }
+ },
+ "verbose len-2 codes": {
+  "n_words": 37087,
+  "V": 17,
+  "mean_len": 7.619327527165853,
+  "observed": {
+   "pair_onsets": 135,
+   "pair_codas": 154,
+   "pair": 0.8766233766233766,
+   "class_onsets": 172,
+   "class_codas": 196,
+   "class": 0.8775510204081632
+  },
+  "reversed": {
+   "pair_onsets": 123,
+   "pair_codas": 122,
+   "pair": 1.0081967213114753,
+   "class_onsets": 152,
+   "class_codas": 186,
+   "class": 0.8172043010752689
+  },
+  "shuffled_pair": {
+   "mean": 1.0763455792087877,
+   "q025": 1.0020089285714286,
+   "q975": 1.168934394409938
+  }
+ },
+ "verbose fixed (len 1-3)": {
+  "n_words": 37087,
+  "V": 16,
+  "mean_len": 6.029659988675277,
+  "observed": {
+   "pair_onsets": 190,
+   "pair_codas": 107,
+   "pair": 1.7757009345794392,
+   "class_onsets": 241,
+   "class_codas": 154,
+   "class": 1.5649350649350648
+  },
+  "reversed": {
+   "pair_onsets": 127,
+   "pair_codas": 183,
+   "pair": 0.6939890710382514,
+   "class_onsets": 150,
+   "class_codas": 232,
+   "class": 0.646551724137931
+  },
+  "shuffled_pair": {
+   "mean": 1.0513437747551833,
+   "q025": 0.9218025846702317,
+   "q975": 1.1847470934621773
+  }
+ }
+}

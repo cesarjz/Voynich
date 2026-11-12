@@ -1,0 +1,4 @@
+core glyphs 34, role sizes {'ENCODER': 7, 'BODY': 3, 'OPENER': 10, 'CLOSER': 8, 'SCAFFOLD': 3, 'MIXED': 3}
+roles: MI 0.223  held-out R 3.018 share 0.576
+ceiling: MI 0.961 sizes {'OPENER': 4, 'SCAFFOLD': 1, 'ENCODER': 8, 'BODY': 10, 'MIXED': 7, 'CLOSER': 4}  held-out R 2.592 share 2.002
+random: MI 0.209 [0.078,0.343] max 0.488 p 0.4229 | share 0.673 [0.305,1.065] p 0.6866

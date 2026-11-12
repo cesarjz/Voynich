@@ -1,5 +1,25 @@
 # Computational Analysis of the Voynich Manuscript
 
+> **Correction notice (12 November 2026).** The two main conclusions presented below are not supported by the evidence: that no natural
+> language underlies the Voynich text, and that the manuscript is an encyclopaedic classificatory code (the
+> CLAVIS CODICIS) read with a lost key book. Several further claims (the ~68 % ceiling, the entropy "bounce", the
+> two tiers, the syllabary, the six-role grammar, the five-slot schema, the 48 KB capacity, and the model ranking
+> used against the hoax hypotheses) fail their controls. The full list, with what was wrong and the corrected result,
+> is in the correction note on Zenodo
+> ([Phase 1](https://doi.org/10.5281/zenodo.19188264) · [Phase 2](https://doi.org/10.5281/zenodo.19546773)). The material below is kept
+> unchanged for transparency; it is superseded by a re-analysis submitted for peer review, whose scripts, logs and results are in
+> [`reanalysis/`](reanalysis/).
+>
+> **Nota de corrección (12 de noviembre de 2026).** Las dos conclusiones principales que se presentan abajo no están
+> respaldadas por la evidencia: que bajo el texto del Voynich no hay una lengua natural, y que el manuscrito es un código clasificatorio
+> enciclopédico (la CLAVIS CODICIS) que se lee con un libro clave perdido. Varias afirmaciones más (el techo del ~68 %,
+> el «rebote» de entropía, los dos niveles, el silabario, la gramática de seis roles, el esquema de cinco ranuras, la
+> capacidad de 48 KB y la clasificación de modelos usada contra la hipótesis del fraude) no superan sus controles. La
+> lista completa, con lo que estaba mal y el resultado corregido, está en la nota de corrección en Zenodo
+> ([fase 1](https://doi.org/10.5281/zenodo.19188264) · [fase 2](https://doi.org/10.5281/zenodo.19546773)). El material de abajo se mantiene sin
+> cambios por transparencia; lo sustituye un reanálisis enviado a revisión por pares, cuyos scripts, registros y resultados están en
+> [`reanalysis/`](reanalysis/).
+
 > Natural language, cipher, or artificial system? An investigation using information theory, machine learning, and computational statistics.
 
 **Independent research project** | Corpus: STA1 2.0 (37,087 words, 157,254 glyphs, 166 distinct glyphs)

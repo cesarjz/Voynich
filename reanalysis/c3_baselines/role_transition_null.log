@@ -1,0 +1,48 @@
+roles: {'ENCODER': 7, 'BODY': 3, 'OPENER': 10, 'CLOSER': 8, 'SCAFFOLD': 3, 'MIXED': 3}  coverage 97.6%
+observed: P(ENC|OPEN)=0.635 pos1->2 OPEN->ENC share=0.441 forbidden=4 MI=0.223
+  null 20/100
+  null 40/100
+  null 60/100
+  null 80/100
+  null 100/100
+null (roles_rederived): P(ENC|OPEN)=0.477 [0.470,0.486] pos12 share=0.348 forbidden=0.6 MI=0.032 [0.029,0.035] p(MI)=0.0099
+/home/cesar/Documentos/Code/Personales/LLM_training/paper_dsh/revision_R1/c3_baselines/role_transition_null.py:230: RuntimeWarning: Mean of empty slice
+  d['oe_mean'] = np.nanmean(np.array([x['oe'] for x in nl]), 0).tolist()
+null (roles_fixed): P(ENC|OPEN)=0.474 [0.469,0.480] pos12 share=0.348 forbidden=0.0 MI=0.021 [0.020,0.022] p(MI)=0.0099
+cells (row -> col): observed P vs null (rederived) mean [95 %]:
+  OPENER   ->OPENER    obs 0.086  null 0.134 [0.125,0.142] *
+  OPENER   ->ENCODER   obs 0.635  null 0.477 [0.470,0.486] *
+  OPENER   ->CLOSER    obs 0.008  null 0.065 [0.044,0.071] *
+  OPENER   ->BODY      obs 0.203  null 0.104 [0.100,0.108] *
+  OPENER   ->SCAFFOLD  obs 0.017  null 0.106 [0.103,0.109] *
+  OPENER   ->MIXED     obs 0.050  null 0.114 [0.106,0.134] *
+  ENCODER  ->OPENER    obs 0.151  null 0.138 [0.133,0.144] *
+  ENCODER  ->ENCODER   obs 0.222  null 0.323 [0.314,0.333] *
+  ENCODER  ->CLOSER    obs 0.040  null 0.106 [0.066,0.115] *
+  ENCODER  ->BODY      obs 0.113  null 0.157 [0.153,0.161] *
+  ENCODER  ->SCAFFOLD  obs 0.265  null 0.157 [0.153,0.160] *
+  ENCODER  ->MIXED     obs 0.208  null 0.119 [0.109,0.159] *
+  CLOSER   ->OPENER    obs 0.249  null 0.115 [0.105,0.126] *
+  CLOSER   ->ENCODER   obs 0.255  null 0.232 [0.218,0.247] *
+  CLOSER   ->CLOSER    obs 0.084  null 0.135 [0.083,0.152]
+  CLOSER   ->BODY      obs 0.314  null 0.288 [0.276,0.302] *
+  CLOSER   ->SCAFFOLD  obs 0.050  null 0.177 [0.165,0.188] *
+  CLOSER   ->MIXED     obs 0.049  null 0.053 [0.039,0.104]
+  BODY     ->OPENER    obs 0.183  null 0.173 [0.154,0.193]
+  BODY     ->ENCODER   obs 0.295  null 0.515 [0.491,0.538] *
+  BODY     ->BODY      obs 0.348  null 0.041 [0.032,0.047] *
+  BODY     ->SCAFFOLD  obs 0.015  null 0.086 [0.075,0.098] *
+  BODY     ->MIXED     obs 0.149  null 0.156 [0.144,0.172]
+  SCAFFOLD ->OPENER    obs 0.314  null 0.184 [0.171,0.195] *
+  SCAFFOLD ->ENCODER   obs 0.339  null 0.427 [0.413,0.442] *
+  SCAFFOLD ->CLOSER    obs 0.008  null 0.069 [0.052,0.077] *
+  SCAFFOLD ->BODY      obs 0.143  null 0.085 [0.078,0.091] *
+  SCAFFOLD ->SCAFFOLD  obs 0.021  null 0.103 [0.096,0.112] *
+  SCAFFOLD ->MIXED     obs 0.175  null 0.132 [0.122,0.153] *
+  MIXED    ->OPENER    obs 0.190  null 0.189 [0.181,0.196]
+  MIXED    ->ENCODER   obs 0.445  null 0.408 [0.399,0.417] *
+  MIXED    ->CLOSER    obs 0.019  null 0.088 [0.067,0.096] *
+  MIXED    ->BODY      obs 0.195  null 0.092 [0.088,0.097] *
+  MIXED    ->SCAFFOLD  obs 0.004  null 0.103 [0.097,0.108] *
+  MIXED    ->MIXED     obs 0.147  null 0.120 [0.112,0.144] *
+held-out bits/glyph: A positional 3.190  R roles 3.018  G glyph-bigram 2.891  fraction of sequential info captured by roles 0.58

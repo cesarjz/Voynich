@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "model": "Nucleus-Only (Model 13)",
+    "description": "Only nucleus-position glyphs map to Hebrew chars; onset/coda are structural NULL",
+    "content_vocab": 120,
+    "structural_glyphs": 63,
+    "onset_types": 63,
+    "nucleus_types": 12,
+    "coda_types": 0,
+    "ratio_sigma_A": 4.44,
+    "mean_content_length": 2.25,
+    "mean_orig_length": 4.24,
+    "lm": "LSTM 2-layer (embed=32, hidden=192)",
+    "temperature": 2.0,
+    "n_seeds": 20
+  },
+  "scorecard": {
+    "collapse_z": -0.472,
+    "ngram_percentile": 100.0,
+    "roots_found": 2,
+    "roots_list": [
+      "הלך",
+      "משל"
+    ],
+    "cardinality_ratio": 1.0,
+    "K_eff": 27,
+    "word_length_z": 1.28,
+    "rhat_pct": 99.2,
+    "verdicts": [
+      "PASS",
+      "PASS",
+      "FAIL",
+      "PASS",
+      "PASS"
+    ],
+    "summary": "4+/0±/1−"
+  },
+  "best_em": {
+    "score": -26.288,
+    "temperature": 2.0,
+    "seed": 2,
+    "K_eff": 27
+  },
+  "mcmc_best_score": -26.4214,
+  "val_loss": 2.0093
+}

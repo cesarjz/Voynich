@@ -1,0 +1,28 @@
+context M1:voy:STA: 159 symbols, roles {} [0s]
+context M1:voy:EVA: 34 symbols, roles {} [0s]
+context M1:voy:SHUF: 159 symbols, roles {} [0s]
+context M1:ctl:GEEZ: 188 symbols, roles {} [0s]
+context M1:ctl:JARAB: 156 symbols, roles {} [0s]
+context M7:voy:STA: 159 symbols, roles {} [0s]
+context M7:voy:EVA: 34 symbols, roles {} [0s]
+context M7:voy:SHUF: 159 symbols, roles {} [0s]
+context M7:ctl:GEEZ: 188 symbols, roles {} [0s]
+context M7:ctl:JARAB: 156 symbols, roles {} [0s]
+
+Stage 1: EM
+
+Stage 2: selection + MCMC calibration
+
+Stage 3: MCMC chains
+
+Stage 4: evaluation
+M1:voy:STA           acc=nan sym=-1/159 RI=+0.081 (oracle +nan) p=0.0090 roots=2 (oracle 0)
+M1:voy:EVA           acc=nan sym=-1/34 RI=+0.020 (oracle +nan) p=0.1798 roots=0 (oracle 0)
+M1:voy:SHUF          acc=nan sym=-1/159 RI=+0.004 (oracle +nan) p=0.4645 roots=0 (oracle 0)
+M1:ctl:GEEZ          acc=nan sym=-1/188 RI=+0.039 (oracle +nan) p=0.0969 roots=1 (oracle 0)
+M1:ctl:JARAB         acc=0.036 sym=5/156 RI=-0.007 (oracle +0.217) p=0.5674 roots=0 (oracle 3)
+M7:voy:STA           acc=nan sym=-1/159 RI=+0.149 (oracle +nan) p=0.0010 roots=2 (oracle 0)
+M7:voy:EVA           acc=nan sym=-1/34 RI=+0.051 (oracle +nan) p=0.0450 roots=0 (oracle 0)
+M7:voy:SHUF          acc=nan sym=-1/159 RI=-0.033 (oracle +nan) p=0.7483 roots=0 (oracle 0)
+M7:ctl:GEEZ          acc=nan sym=-1/188 RI=-0.058 (oracle +nan) p=0.9870 roots=0 (oracle 0)
+M7:ctl:JARAB         acc=0.000 sym=3/156 RI=-0.022 (oracle +0.215) p=0.6903 roots=0 (oracle 3)

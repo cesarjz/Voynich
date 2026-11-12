@@ -1,0 +1,6 @@
+    Adaptive T: median|delta|=0.5362 -> T_start=0.510787, T_end=0.00510787
+    MCMC iter 3000: score=-48.1417, best=-41.9615, T=0.203398, accept=39.0%
+    MCMC iter 6000: score=-42.7914, best=-41.9615, T=0.080969, accept=31.2%
+    MCMC iter 9000: score=-42.1534, best=-41.9615, T=0.032232, accept=24.5%
+    MCMC iter 12000: score=-41.5550, best=-41.5550, T=0.012831, accept=20.0%
+    MCMC iter 15000: score=-41.4456, best=-41.4456, T=0.005108, accept=17.0%

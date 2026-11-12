@@ -1,0 +1,11 @@
+Voynich STA1           V= 166 | pair 166/85=1.95 [1.57,2.01] rev 0.28 shuf 0.67 [0.61,0.75] | class 171/90=1.90 rev 0.25 shuf 0.68
+Voynich EVA            V=  34 | pair 132/43=3.07 [2.53,3.53] rev 0.33 shuf 0.74 [0.67,0.79] | class 145/46=3.15 rev 0.33 shuf 0.74
+Torah                  V=  27 | pair 154/235=0.66 [0.59,0.77] rev 0.59 shuf 0.77 [0.69,0.87] | class 175/266=0.66 rev 0.59 shuf 0.81
+Moreh                  V=  27 | pair 205/276=0.74 [0.67,0.80] rev 0.72 shuf 0.79 [0.72,0.89] | class 233/306=0.76 rev 0.75 shuf 0.82
+Judeo-Arabic           V=  22 | pair 97/310=0.31 [0.27,0.35] rev 0.71 shuf 0.59 [0.54,0.67] | class 114/389=0.29 rev 0.67 shuf 0.60
+Ge'ez fidel            V= 201 | pair 294/369=0.80 [0.75,0.86] rev 0.49 shuf 1.01 [0.93,1.08] | class 352/446=0.79 rev 0.49 shuf 1.01
+Ge'ez consonants       V=  35 | pair 107/165=0.65 [0.49,0.70] rev 0.49 shuf 0.75 [0.67,0.85] | class 143/189=0.76 rev 0.46 shuf 0.75
+Torah homophonic L1    V= 148 | pair 182/287=0.63 [0.58,0.71] rev 0.56 shuf 0.66 [0.60,0.72] | class 199/318=0.63 rev 0.54 shuf 0.67
+Moreh homophonic L1    V= 150 | pair 229/291=0.79 [0.64,0.80] rev 0.74 shuf 0.79 [0.67,0.92] | class 246/343=0.72 rev 0.71 shuf 0.78
+Torah verbose-fixed    V=  16 | pair 190/107=1.78 [1.49,1.93] rev 0.69 shuf 1.02 [0.91,1.16] | class 241/154=1.56 rev 0.65 shuf 1.16
+Torah verbose-homoph   V=  18 | pair 271/197=1.38 [1.15,1.48] rev 0.77 shuf 0.95 [0.85,1.08] | class 356/253=1.41 rev 0.83 shuf 1.13

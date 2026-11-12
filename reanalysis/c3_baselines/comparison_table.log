@@ -1,0 +1,8 @@
+corpus                                    words chars    %F  %O-C  util obs/null  O->C   on   co
+Voynich (STA1)                            37087   166 48.3% 14.6%  6.7%     0.52 50.3%  166   85
+Hebrew (Torah)                            37087    27 56.5% 12.8%  2.5%     0.34 44.2%  154  235
+Hebrew (Moreh, Tibbonid)                  37087    27 50.8% 12.5%  1.7%     0.37 37.3%  205  276
+Judeo-Arabic (Quran)                      37087    22 52.4% 10.5%  2.6%     0.35 37.7%   97  310
+Ge'ez (TraCES v1, fidel)                  37087   201 57.5%  7.1%  0.8%     0.36 31.5%  294  369
+Ge'ez (TraCES v1, consonants)             37087    35 55.5%  6.2%  3.2%     0.41 30.5%  107  165
+Ge'ez (old geez_processed.json, buggy)    37087   188 61.1%  9.4%  0.8%     0.22 39.2%  247  353

@@ -1,0 +1,233 @@
+== setup + LSTM training (main process) ==
+Device: cuda
+Voynich: 37,087 words, 157,254 glyphs, 166 types
+Voynich syllables: 16775 types, 1361 functional (freq>=5)
+Mean syllables/word: 1.64
+Mean glyphs/syllable: 2.58
+Threshold: 0.0341
+Downloading Hebrew Bible (Torah)...
+  Descargando Genesis...
+  Descargando Exodus...
+  Descargando Leviticus...
+  Descargando Numbers...
+  Descargando Deuteronomy...
+  Hebrew total: 80,051 words
+Hebrew subsample: 37,087 words, 27 chars
+Hebrew syllables: 3829 types, 1168 functional (freq>=5)
+Mean syllables/word: 1.55
+Mean chars/syllable: 2.45
+Threshold: 0.0324
+Training LSTM: 160632 samples, 17744 val samples
+  Epoch  0: train=2.5099, val=2.2642, patience=0
+  Epoch  5: train=2.0828, val=2.0470, patience=0
+  Epoch 10: train=2.0461, val=2.0263, patience=1
+  Epoch 15: train=2.0335, val=2.0171, patience=1
+  Epoch 17: train=2.0291, val=2.0148, patience=1
+  Epoch 18: train=2.0271, val=2.0145, patience=2
+  Epoch 20: train=2.0260, val=2.0134, patience=1
+  Epoch 24: train=2.0222, val=2.0115, patience=1
+  Epoch 25: train=2.0206, val=2.0105, patience=0
+  Epoch 26: train=2.0186, val=2.0108, patience=1
+Best val loss: 2.0092
+
+Mapping space: 1361 Voynich syls → 1168 Hebrew syls
+Ratio |Σ|/|A|: 1361/1168 = 1.17
+LSTM saved to nb20_parallel_lm.pt; 45s
+== EM: 20 jobs on 6 workers ==
+  [EM] T=2.0 seed  0 [freq+scramble]: score=-35.0218, K=847, iter=   2, 1s
+  [EM] T=2.0 seed  1 [freq+scramble]: score=-35.1107, K=830, iter=   2, 1s
+  [EM] T=2.0 seed  2 [freq+scramble]: score=-36.6795, K=834, iter=   2, 1s
+  [EM] T=2.0 seed  4 [freq+scramble]: score=-35.3580, K=838, iter=   2, 1s
+  [EM] T=2.0 seed  3 [freq+scramble]: score=-35.9096, K=833, iter=   2, 1s
+  [EM] T=2.0 seed  5 [random       ]: score=-41.5844, K=748, iter=   2, 1s
+  [EM] T=2.0 seed  6 [random       ]: score=-43.2113, K=753, iter=   2, 1s
+  [EM] T=2.0 seed  7 [random       ]: score=-42.2304, K=757, iter=   2, 1s
+  [EM] T=2.0 seed  8 [random       ]: score=-40.9083, K=747, iter=   2, 1s
+  [EM] T=2.0 seed  9 [random       ]: score=-42.3759, K=760, iter=   2, 1s
+  [EM] T=3.0 seed  1 [freq+scramble]: score=-36.2878, K=825, iter=   2, 1s
+  [EM] T=3.0 seed  0 [freq+scramble]: score=-36.2419, K=835, iter=   2, 1s
+  [EM] T=3.0 seed  2 [freq+scramble]: score=-35.6476, K=833, iter=   2, 1s
+  [EM] T=3.0 seed  3 [freq+scramble]: score=-35.7700, K=827, iter=   2, 1s
+  [EM] T=3.0 seed  4 [freq+scramble]: score=-36.0341, K=841, iter=   2, 1s
+  [EM] T=3.0 seed  5 [random       ]: score=-41.7308, K=737, iter=   2, 1s
+  [EM] T=3.0 seed  6 [random       ]: score=-43.1373, K=766, iter=   2, 1s
+  [EM] T=3.0 seed  7 [random       ]: score=-41.8062, K=768, iter=   2, 1s
+  [EM] T=3.0 seed  8 [random       ]: score=-42.6843, K=770, iter=   2, 1s
+  [EM] T=3.0 seed  9 [random       ]: score=-41.8714, K=769, iter=   2, 1s
+
+Best: T=2.0, seed=0, score=-35.0218, K_eff=847; 52s
+MCMC: 4 chains, 15000 iter, T=2.0
+  Chain 0: accept=0.987, final_score=-37.4290, 1s
+  Chain 1: accept=0.988, final_score=-36.7467, 1s
+  Chain 2: accept=0.997, final_score=-37.1048, 1s
+  Chain 3: accept=0.988, final_score=-38.2519, 1s
+
+Global best MCMC score: -35.4666
+K_eff: 843
+R-hat < 1.1: 0.0% of 0 syllables
+
+Test 1 - Collapse z-score: 0.001
+  Verdict: PASS
+
+Test 2 - N-gram: real=0.8546, percentile=0.0%
+  Verdict: FAIL
+
+Test 3 - Roots: 36 unique roots, 3881 total matches
+  Found: ['אכל', 'אמר', 'בוא', 'בנה', 'ברך', 'גדל', 'דבר', 'הלך', 'זכר', 'חיה', 'חכם', 'טהר', 'ידע', 'ישב', 'כתב', 'לבש', 'למד', 'לקח', 'מות', 'מלך', 'משל', 'נשא', 'נתן', 'ספר', 'עבד', 'עמד', 'עשה', 'פתח', 'קדש', 'קרא', 'ראה', 'שוב', 'שלח', 'שמע', 'שמר', 'שתה']
+  Verdict: PASS
+
+Test 4 - Cardinality: K_eff=843, K_target=1168, ratio=0.722
+  Verdict: PASS
+
+Test 5 - Word length: decoded=3.26, Hebrew=3.81, z=0.45
+  Verdict: PASS
+
+============================================================
+SCORECARD: 4+/0±/1−
+R-hat < 1.1: 0.0%
+N-gram percentile: 0.0%
+Roots: 36
+K_eff: 843 / 1168
+============================================================
+=== Sample decoded words ===
+  A2 Ba A1 A3 A1       → [A2-BaA1A3A1         ] → נה
+  Q2 J1 A1 C2          → [Q2J1A1-C2           ] → האהמ
+  A1 J1                → [A1J1                ] → או
+  D1 B1 A1 A1          → [D1B1A1A1            ] → ה
+  B2 A3 K1             → [B2A3K1              ] → לאיש
+  A1 B1 J1 G1          → [A1B1J1-G1           ] → ובניךאת
+  Q1 Q2 J1 B1          → [Q1Q2J1B1            ] → ה
+  A3                   → [A3                  ] → ך
+  D1 C1 K2             → [D1C1-K2             ] → וירחמ
+  Ba Q1 A1 K1 B1       → [BaQ1A1K1B1          ] → ה
+  Q1 A1 B2 Q2          → [Q1A1B2Q2            ] → ה
+  A1 B1 Ba             → [A1B1-Ba             ] → ואב
+  A1 Q1 J1             → [A1Q1J1              ] → כו
+  A1 Q2 A1             → [A1Q2A1              ] → עבד
+  D1 D1 K1 A1          → [D1D1K1A1            ] → ה
+  A1 Q1 A2             → [A1Q1A2              ] → רע
+  A2 A1 J1             → [A2A1J1              ] → גדיו
+  Q1 B1 A1             → [Q1B1A1              ] → העדת
+  A2 A1 A3             → [A2A1A3              ] → שה
+  A1 K1 C1             → [A1K1C1              ] → ה
+  A2 L1 A2 A2          → [A2-L1A2A2           ] → נגב
+  C1 Q1 A2 G1          → [C1Q1A2-G1           ] → ויתנואת
+  A3 Q2                → [A3Q2                ] → האלהים
+  B4 L1 L1 A2          → [B4-L1-L1A2          ] → קרבןני
+  L1 A1 P1             → [L1A1-P1             ] → צרווי
+  A2 A1 L1 Q1 J1       → [A2A1-L1Q1J1         ] → דבידם
+  B2 A3 A2             → [B2A3A2              ] → אות
+  C1 P1 B2 J1 D1       → [C1-P1B2J1-D1        ] → אלנהואשר
+  A3 Q2                → [A3Q2                ] → האלהים
+  A1 A3 A1             → [A1A3A1              ] → צו
+
+=== Mapping statistics ===
+Voynich syllables mapped: 16775
+Hebrew syllables used: 843
+Fan-out (V→H): mean=19.9
+
+=== Top 20 mappings (by Voynich frequency) ===
+  K2           (freq= 1705) → חמ
+  L1           (freq= 1704) → ן
+  G1           (freq= 1545) → את
+  A1           (freq= 1159) → ו
+  C2           (freq= 1113) → מ
+  Ba           (freq= 1001) → ב
+  A2           (freq=  889) → נ
+  A3           (freq=  842) → ך
+  D1           (freq=  840) → אשר
+  F1           (freq=  613) → חמור
+  K1           (freq=  608) → ל
+  J1           (freq=  586) → גו
+  P1           (freq=  576) → וי
+  Q1           (freq=  540) → א
+  B2           (freq=  513) → בניו
+  B1           (freq=  497) → כ
+  Q2           (freq=  432) → ת
+  B3           (freq=  403) → יהוה
+  C1           (freq=  377) → אל
+  U2           (freq=  340) → ראות
+Results saved to syl2syl_results.json
+{
+  "metadata": {
+    "model": "Syllable-to-Syllable (Model 12)",
+    "description": "Maps Voynich syllable types to Hebrew syllable types, scored by LSTM CharLM",
+    "voynich_syllables": 16775,
+    "voynich_syllables_functional": 1361,
+    "hebrew_syllables": 3829,
+    "hebrew_syllables_functional": 1168,
+    "ratio_sigma_A": 1.17,
+    "segmentation": "TP-P20",
+    "lm": "LSTM 2-layer (embed=32, hidden=192)",
+    "temperature": 2.0,
+    "n_seeds": 20,
+    "mcmc_chains": 4,
+    "mcmc_iter": 15000
+  },
+  "scorecard": {
+    "collapse_z": 0.001,
+    "ngram_percentile": 0.0,
+    "roots_found": 36,
+    "roots_list": [
+      "אכל",
+      "אמר",
+      "בוא",
+      "בנה",
+      "ברך",
+      "גדל",
+      "דבר",
+      "הלך",
+      "זכר",
+      "חיה",
+      "חכם",
+      "טהר",
+      "ידע",
+      "ישב",
+      "כתב",
+      "לבש",
+      "למד",
+      "לקח",
+      "מות",
+      "מלך",
+      "משל",
+      "נשא",
+      "נתן",
+      "ספר",
+      "עבד",
+      "עמד",
+      "עשה",
+      "פתח",
+      "קדש",
+      "קרא",
+      "ראה",
+      "שוב",
+      "שלח",
+      "שמע",
+      "שמר",
+      "שתה"
+    ],
+    "root_matches_total": 3881,
+    "cardinality_ratio": 0.722,
+    "K_eff": 843,
+    "word_length_z": 0.45,
+    "rhat_pct": 0.0,
+    "verdicts": [
+      "PASS",
+      "FAIL",
+      "PASS",
+      "PASS",
+      "PASS"
+    ],
+    "summary": "4+/0±/1−"
+  },
+  "best_em": {
+    "score": -35.0218,
+    "temperature": 2.0,
+    "seed": 0,
+    "K_eff": 847
+  },
+  "mcmc_best_score": -35.4666,
+  "val_loss": 2.0092
+}
+Mapping saved to syl2syl_shuf_mapping.json
+== done in 150s ==

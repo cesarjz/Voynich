@@ -1,0 +1,23 @@
+Voynich STA1             n= 37087 pair  166/  85=1.95 rev 0.28 | sub18000 1.73 [1.42,2.03] | edge 1.50 [1.40,1.61] shuf 0.66 | first/last types 114/85 H 3.61/2.88
+Voynich EVA              n= 34725 pair  132/  43=3.07 rev 0.33 | sub18000 3.03 [2.55,3.53] | edge 1.70 [1.52,1.85] shuf 0.78 | first/last types 31/29 H 3.46/2.51
+Torah                    n= 37087 pair  154/ 235=0.66 rev 0.59 | sub18000 0.72 [0.63,0.79] | edge 0.73 [0.65,0.79] shuf 0.77 | first/last types 22/22 H 3.72/3.77
+Moreh                    n= 37087 pair  205/ 276=0.74 rev 0.72 | sub18000 0.82 [0.72,0.92] | edge 0.95 [0.87,1.03] shuf 0.78 | first/last types 22/24 H 3.83/3.78
+Judeo-Arabic             n= 37087 pair   97/ 310=0.31 rev 0.71 | sub18000 0.36 [0.32,0.40] | edge 0.60 [0.57,0.65] shuf 0.57 | first/last types 22/22 H 3.65/3.39
+Ge'ez fidel              n= 37087 pair  294/ 369=0.80 rev 0.49 | sub18000 0.80 [0.71,0.87] | edge 0.83 [0.77,0.90] shuf 0.96 | first/last types 167/177 H 5.11/5.98
+Ge'ez consonants         n= 37087 pair  107/ 165=0.65 rev 0.49 | sub18000 0.60 [0.53,0.69] | edge 0.63 [0.57,0.69] shuf 0.77 | first/last types 33/29 H 3.86/3.98
+Latin Vulgate NT         n= 37087 pair  173/ 316=0.55 rev 1.44 | sub18000 0.61 [0.51,0.70] | edge 0.81 [0.74,0.88] shuf 0.87 | first/last types 22/20 H 3.96/3.19
+Latin Pliny NH           n= 37087 pair  255/ 402=0.63 rev 1.58 | sub18000 0.66 [0.57,0.72] | edge 0.84 [0.79,0.91] shuf 0.90 | first/last types 34/25 H 4.10/3.35
+Italian Diodati NT       n= 37087 pair  117/ 143=0.82 rev 1.26 | sub18000 0.95 [0.88,1.05] | edge 0.68 [0.62,0.79] shuf 0.88 | first/last types 22/24 H 4.10/3.02
+German Luther NT         n= 37087 pair  116/ 150=0.77 rev 1.52 | sub18000 0.78 [0.66,0.95] | edge 0.88 [0.84,0.95] shuf 0.94 | first/last types 27/22 H 4.08/3.42
+French Martin NT         n= 37087 pair  121/ 121=1.00 rev 1.06 | sub18000 0.97 [0.89,1.06] | edge 0.96 [0.83,1.06] shuf 0.90 | first/last types 31/31 H 4.21/3.35
+Spanish NT               n= 37087 pair  119/ 153=0.78 rev 1.01 | sub18000 0.83 [0.73,0.93] | edge 0.74 [0.70,0.82] shuf 0.85 | first/last types 27/24 H 4.14/3.21
+English KJV NT           n= 37087 pair  102/  87=1.17 rev 1.59 | sub18000 1.24 [1.11,1.38] | edge 1.12 [1.00,1.22] shuf 0.77 | first/last types 25/23 H 4.04/3.69
+Anglo-Saxon Hatton       n= 37087 pair  112/ 143=0.78 rev 1.49 | sub18000 0.79 [0.69,0.92] | edge 0.72 [0.61,0.87] shuf 0.87 | first/last types 32/29 H 4.08/3.34
+Greek NT                 n= 37087 pair  110/ 250=0.44 rev 1.39 | sub18000 0.47 [0.41,0.53] | edge 0.88 [0.82,0.96] shuf 0.70 | first/last types 25/25 H 3.82/3.10
+Russian Codex Marianus   n= 37087 pair  207/ 201=1.03 rev 0.93 | sub18000 0.99 [0.88,1.09] | edge 1.04 [0.96,1.11] shuf 0.82 | first/last types 44/43 H 4.36/3.47
+Sanskrit Mahabharata     n= 37087 pair  310/ 360=0.86 rev 1.07 | sub18000 0.98 [0.91,1.05] | edge 1.04 [0.94,1.14] shuf 0.79 | first/last types 38/42 H 4.24/4.11
+Arabic Quran             n= 37087 pair  141/ 231=0.61 rev 1.13 | sub18000 0.77 [0.72,0.85] | edge 1.17 [1.08,1.25] shuf 0.95 | first/last types 31/16 H 4.19/2.86
+Arabic Avicenna          n= 37087 pair  258/ 322=0.80 rev 0.61 | sub18000 0.76 [0.65,0.85] | edge 1.02 [0.96,1.12] shuf 0.86 | first/last types 33/43 H 3.92/4.45
+Latin Caesar BG          n= 37087 pair  177/ 430=0.41 rev 2.11 | sub18000 0.49 [0.44,0.52] | edge 0.92 [0.85,0.98] shuf 0.87 | first/last types 23/21 H 4.08/3.29
+Italian Dante            n= 37087 pair  114/ 136=0.84 rev 1.30 | sub18000 0.96 [0.82,1.13] | edge 0.51 [0.48,0.56] shuf 0.87 | first/last types 29/31 H 4.07/3.22
+German Simplicissimus    n= 37087 pair  174/ 187=0.93 rev 1.28 | sub18000 0.93 [0.86,0.99] | edge 0.95 [0.81,1.07] shuf 0.95 | first/last types 27/25 H 4.18/3.42

@@ -1,0 +1,181 @@
+{
+ "n_words_target": 37087,
+ "B_null": 2000,
+ "corpora": {
+  "Voynich (STA1)": {
+   "n_words": 37087,
+   "n_chars": 166,
+   "classes": {
+    "nuclear": 54,
+    "free": 477,
+    "coda": 90,
+    "onset": 171
+   },
+   "pct_F": 0.48345781540701593,
+   "pct_OC": 0.14579232615202092,
+   "util": 0.0671863926293409,
+   "util_obs_over_null": 0.5222911723701359,
+   "oc_transition": 0.5027229908743008,
+   "onsets": 166,
+   "codas": 85,
+   "top_patterns": {
+    "F": 17930,
+    "O-C": 5407,
+    "O-F": 3088,
+    "F-F": 1493,
+    "F-C": 1457,
+    "C": 963
+   }
+  },
+  "Hebrew (Torah)": {
+   "n_words": 37087,
+   "n_chars": 27,
+   "classes": {
+    "free": 687,
+    "nuclear": 40,
+    "onset": 175,
+    "coda": 266
+   },
+   "pct_F": 0.5645913662469328,
+   "pct_OC": 0.12805026019899157,
+   "util": 0.024647692732799115,
+   "util_obs_over_null": 0.33982111009118215,
+   "oc_transition": 0.441650390625,
+   "onsets": 154,
+   "codas": 235,
+   "top_patterns": {
+    "F": 20939,
+    "O-C": 4749,
+    "O-F": 3063,
+    "F-C": 1533,
+    "O-N-C": 771,
+    "F-F": 502
+   }
+  },
+  "Hebrew (Moreh, Tibbonid)": {
+   "n_words": 37087,
+   "n_chars": 27,
+   "classes": {
+    "nuclear": 81,
+    "coda": 306,
+    "onset": 233,
+    "free": 677
+   },
+   "pct_F": 0.5079947151292906,
+   "pct_OC": 0.12454498881009518,
+   "util": 0.017126193001060445,
+   "util_obs_over_null": 0.3727123051409874,
+   "oc_transition": 0.3734700854700855,
+   "onsets": 205,
+   "codas": 276,
+   "top_patterns": {
+    "F": 18840,
+    "O-C": 4619,
+    "O-F": 4086,
+    "F-C": 1647,
+    "F-F": 1043,
+    "O-N-C": 730
+   }
+  },
+  "Judeo-Arabic (Quran)": {
+   "n_words": 37087,
+   "n_chars": 22,
+   "classes": {
+    "free": 533,
+    "onset": 114,
+    "coda": 389,
+    "nuclear": 88
+   },
+   "pct_F": 0.5237954000053927,
+   "pct_OC": 0.10472672364979642,
+   "util": 0.025939474559361488,
+   "util_obs_over_null": 0.35032436443075887,
+   "oc_transition": 0.3771958627483172,
+   "onsets": 97,
+   "codas": 310,
+   "top_patterns": {
+    "F": 19426,
+    "O-C": 3884,
+    "O-F": 2884,
+    "F-C": 1585,
+    "F-F": 1210,
+    "O-N-C": 796
+   }
+  },
+  "Ge'ez (TraCES v1, fidel)": {
+   "n_words": 37087,
+   "n_chars": 201,
+   "classes": {
+    "onset": 352,
+    "free": 1010,
+    "coda": 446,
+    "nuclear": 177
+   },
+   "pct_F": 0.5750802167875536,
+   "pct_OC": 0.07083344568177528,
+   "util": 0.007844330143981712,
+   "util_obs_over_null": 0.36386359861099027,
+   "oc_transition": 0.3146971201588878,
+   "onsets": 294,
+   "codas": 369,
+   "top_patterns": {
+    "F": 21328,
+    "O-F": 3271,
+    "O-C": 2627,
+    "F-C": 1954,
+    "F-F": 1292,
+    "O-N-C": 552
+   }
+  },
+  "Ge'ez (TraCES v1, consonants)": {
+   "n_words": 37087,
+   "n_chars": 35,
+   "classes": {
+    "free": 783,
+    "onset": 143,
+    "nuclear": 35,
+    "coda": 189
+   },
+   "pct_F": 0.5554506970097338,
+   "pct_OC": 0.0619624127052606,
+   "util": 0.032398753894081,
+   "util_obs_over_null": 0.41079293809594597,
+   "oc_transition": 0.3046953046953047,
+   "onsets": 107,
+   "codas": 165,
+   "top_patterns": {
+    "F": 20600,
+    "O-F": 3449,
+    "F-F": 2416,
+    "O-C": 2298,
+    "F-C": 1498,
+    "O-F-F": 490
+   }
+  },
+  "Ge'ez (old geez_processed.json, buggy)": {
+   "n_words": 37087,
+   "n_chars": 188,
+   "classes": {
+    "free": 823,
+    "onset": 325,
+    "coda": 488,
+    "nuclear": 162
+   },
+   "pct_F": 0.61129236659746,
+   "pct_OC": 0.09448054574379162,
+   "util": 0.007558119530685506,
+   "util_obs_over_null": 0.22331023365739297,
+   "oc_transition": 0.3922850914605251,
+   "onsets": 247,
+   "codas": 353,
+   "top_patterns": {
+    "F": 22671,
+    "O-C": 3504,
+    "O-F": 2680,
+    "F-C": 1425,
+    "F-F": 725,
+    "O-N-C": 630
+   }
+  }
+ }
+}

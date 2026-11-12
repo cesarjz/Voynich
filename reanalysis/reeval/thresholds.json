@@ -1,0 +1,13 @@
+{
+  "ngram": {
+    "statistic": "Jensen-Shannon distance between word-internal trigram distributions (decoded Voynich vs size-matched target sample)",
+    "null": "within-table permutation of the learned mapping",
+    "B": 1000,
+    "seed": 42,
+    "p_value": "(1 + #{null <= real}) / (B + 1); lower is better",
+    "PASS": "p < 0.05",
+    "MARGINAL": "0.05 <= p < 0.20",
+    "FAIL": "p >= 0.20",
+    "note": "Same cut-offs as notebook 08 (percentile <= 5 PASS, <= 20 MARGINAL), now applied in the correct direction to every model."
+  }
+}

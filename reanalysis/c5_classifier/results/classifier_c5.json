@@ -1,0 +1,322 @@
+{
+ "n_pages": 226,
+ "sections": [
+  "astro",
+  "bio",
+  "cosmo",
+  "herbal",
+  "pharma",
+  "recipe",
+  "zodiac"
+ ],
+ "section_counts": {
+  "pharma": 16,
+  "recipe": 26,
+  "herbal": 131,
+  "cosmo": 13,
+  "astro": 8,
+  "zodiac": 12,
+  "bio": 20
+ },
+ "currier_counts": {
+  "A": 114,
+  "B": 82,
+  "?": 30
+ },
+ "hand_counts": {
+  "1": 113,
+  "3": 33,
+  "?": 1,
+  "2": 46,
+  "5": 7,
+  "4": 26
+ },
+ "tasks": {
+  "section | glyphs34": {
+   "accuracy": 0.6327433628318584,
+   "balanced_accuracy": 0.672164667393675,
+   "acc_ci": [
+    0.5707964601769911,
+    0.6946902654867256
+   ],
+   "bal_ci": [
+    0.5880977752406323,
+    0.7569971883914856
+   ],
+   "majority": 0.5796460176991151,
+   "chance_balanced": 0.14285714285714285,
+   "perm_acc_mean": 0.11777876106194692,
+   "perm_bal_mean": 0.14136922028353324,
+   "p_acc": 0.000999000999000999,
+   "p_bal": 0.000999000999000999,
+   "classes": [
+    "astro",
+    "bio",
+    "cosmo",
+    "herbal",
+    "pharma",
+    "recipe",
+    "zodiac"
+   ]
+  },
+  "section | roles6 (global roles)": {
+   "accuracy": 0.5309734513274337,
+   "balanced_accuracy": 0.5348233509493052,
+   "acc_ci": [
+    0.4646017699115044,
+    0.5973451327433629
+   ],
+   "bal_ci": [
+    0.44620393043581064,
+    0.6254113234529307
+   ],
+   "majority": 0.5796460176991151,
+   "chance_balanced": 0.14285714285714285,
+   "perm_acc_mean": 0.10804424778761063,
+   "perm_bal_mean": 0.1441272198221626,
+   "p_acc": 0.000999000999000999,
+   "p_bal": 0.000999000999000999,
+   "classes": [
+    "astro",
+    "bio",
+    "cosmo",
+    "herbal",
+    "pharma",
+    "recipe",
+    "zodiac"
+   ]
+  },
+  "section | roles6 (fold-derived roles)": {
+   "accuracy": 0.5309734513274337,
+   "balanced_accuracy": 0.5348233509493052
+  },
+  "Currier language | glyphs34": {
+   "accuracy": 0.9540816326530612,
+   "balanced_accuracy": 0.9588147197261446,
+   "acc_ci": [
+    0.923469387755102,
+    0.9795918367346939
+   ],
+   "bal_ci": [
+    0.931463193035835,
+    0.9840031746031745
+   ],
+   "majority": 0.5816326530612245,
+   "chance_balanced": 0.5,
+   "perm_acc_mean": 0.5004336734693877,
+   "perm_bal_mean": 0.4985362644415918,
+   "p_acc": 0.000999000999000999,
+   "p_bal": 0.000999000999000999,
+   "classes": [
+    "A",
+    "B"
+   ]
+  },
+  "Currier language | roles6": {
+   "accuracy": 0.7755102040816326,
+   "balanced_accuracy": 0.76936243046641,
+   "acc_ci": [
+    0.7142857142857143,
+    0.8316326530612245
+   ],
+   "bal_ci": [
+    0.7068971175580651,
+    0.827326900136059
+   ],
+   "majority": 0.5816326530612245,
+   "chance_balanced": 0.5,
+   "perm_acc_mean": 0.5016632653061225,
+   "perm_bal_mean": 0.5004764655541292,
+   "p_acc": 0.000999000999000999,
+   "p_bal": 0.000999000999000999,
+   "classes": [
+    "A",
+    "B"
+   ]
+  },
+  "hand | glyphs34": {
+   "accuracy": 0.7066666666666667,
+   "balanced_accuracy": 0.7117823564149074,
+   "acc_ci": [
+    0.6444444444444445,
+    0.7644444444444445
+   ],
+   "bal_ci": [
+    0.6297086930013545,
+    0.7860079268587101
+   ],
+   "majority": 0.5022222222222222,
+   "chance_balanced": 0.2,
+   "perm_acc_mean": 0.1941822222222222,
+   "perm_bal_mean": 0.20060818747752185,
+   "p_acc": 0.000999000999000999,
+   "p_bal": 0.000999000999000999,
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  "hand | roles6": {
+   "accuracy": 0.5777777777777777,
+   "balanced_accuracy": 0.47226995141577677,
+   "acc_ci": [
+    0.5111111111111111,
+    0.6444444444444445
+   ],
+   "bal_ci": [
+    0.4122519617196547,
+    0.533524114091737
+   ],
+   "majority": 0.5022222222222222,
+   "chance_balanced": 0.2,
+   "perm_acc_mean": 0.1760977777777778,
+   "perm_bal_mean": 0.2006242145823908,
+   "p_acc": 0.000999000999000999,
+   "p_bal": 0.000999000999000999,
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  "section | (language, hand) LOO majority": {
+   "accuracy": 0.6150442477876106,
+   "balanced_accuracy": 0.3870480664373794
+  },
+  "section within Currier A | glyphs34": {
+   "accuracy": 0.8333333333333334,
+   "balanced_accuracy": 0.9166666666666666,
+   "acc_ci": [
+    0.7631578947368421,
+    0.8947368421052632
+   ],
+   "bal_ci": [
+    0.8404712301587302,
+    0.955332187857961
+   ],
+   "majority": 0.8421052631578947,
+   "chance_balanced": 0.3333333333333333,
+   "perm_acc_mean": 0.47400877192982455,
+   "perm_bal_mean": 0.31138888888888894,
+   "p_acc": 0.000999000999000999,
+   "p_bal": 0.000999000999000999,
+   "classes": [
+    "herbal",
+    "pharma",
+    "recipe"
+   ]
+  },
+  "section within Currier A | roles6": {
+   "accuracy": 0.7631578947368421,
+   "balanced_accuracy": 0.8368055555555555,
+   "acc_ci": [
+    0.6842105263157895,
+    0.8333333333333334
+   ],
+   "bal_ci": [
+    0.6979022606382979,
+    0.9059887238723872
+   ],
+   "majority": 0.8421052631578947,
+   "chance_balanced": 0.3333333333333333,
+   "perm_acc_mean": 0.3957894736842105,
+   "perm_bal_mean": 0.3115486111111111,
+   "p_acc": 0.000999000999000999,
+   "p_bal": 0.000999000999000999,
+   "classes": [
+    "herbal",
+    "pharma",
+    "recipe"
+   ]
+  },
+  "section within Currier B | glyphs34": {
+   "accuracy": 0.6951219512195121,
+   "balanced_accuracy": 0.7127799736495388,
+   "acc_ci": [
+    0.5975609756097561,
+    0.7926829268292683
+   ],
+   "bal_ci": [
+    0.5828426535087718,
+    0.8290073563377678
+   ],
+   "majority": 0.4024390243902439,
+   "chance_balanced": 0.25,
+   "perm_acc_mean": 0.25565853658536586,
+   "perm_bal_mean": 0.2452477602108037,
+   "p_acc": 0.000999000999000999,
+   "p_bal": 0.000999000999000999,
+   "classes": [
+    "bio",
+    "cosmo",
+    "herbal",
+    "recipe"
+   ]
+  },
+  "section within Currier B | roles6": {
+   "accuracy": 0.4146341463414634,
+   "balanced_accuracy": 0.4342226613965744,
+   "acc_ci": [
+    0.3048780487804878,
+    0.524390243902439
+   ],
+   "bal_ci": [
+    0.3099153382253711,
+    0.5768961087142137
+   ],
+   "majority": 0.4024390243902439,
+   "chance_balanced": 0.25,
+   "perm_acc_mean": 0.24948780487804878,
+   "perm_bal_mean": 0.24970956851119894,
+   "p_acc": 0.005994005994005994,
+   "p_bal": 0.004995004995004995,
+   "classes": [
+    "bio",
+    "cosmo",
+    "herbal",
+    "recipe"
+   ]
+  }
+ },
+ "roles_global": {
+  "A1": "ENCODER",
+  "A2": "BODY",
+  "A3": "ENCODER",
+  "Aa": "OPENER",
+  "Ab": "CLOSER",
+  "B1": "OPENER",
+  "B2": "SCAFFOLD",
+  "B3": "CLOSER",
+  "B4": "CLOSER",
+  "Ba": "SCAFFOLD",
+  "C1": "SCAFFOLD",
+  "C2": "OPENER",
+  "D1": "OPENER",
+  "E1": "CONNECTOR",
+  "E2": "CLOSER",
+  "F1": "BODY",
+  "F3": "CLOSER",
+  "G1": "MIXED",
+  "G3": "CLOSER",
+  "H1": "ENCODER",
+  "J1": "ENCODER",
+  "K1": "OPENER",
+  "K2": "MIXED",
+  "L1": "OPENER",
+  "Lb": "OPENER",
+  "M1": "CLOSER",
+  "P1": "OPENER",
+  "P2": "OPENER",
+  "Q1": "MIXED",
+  "Q2": "ENCODER",
+  "T1": "OPENER",
+  "U1": "ENCODER",
+  "U2": "OPENER",
+  "Z1": "SCAFFOLD"
+ }
+}

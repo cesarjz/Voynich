@@ -1,0 +1,326 @@
+{
+ "B": 10000,
+ "n_words": 37087,
+ "corpora": {
+  "Voynich (STA1)": {
+   "classes": {
+    "nuclear": 54,
+    "free": 477,
+    "coda": 90,
+    "onset": 171
+   },
+   "definitions": {
+    "nb36_2syl_OC": {
+     "tokens": 5407,
+     "onsets": 166,
+     "codas": 85,
+     "cells": 14110,
+     "observed_pairs": 948,
+     "observed_util": 0.0671863926293409,
+     "null_mean_pairs": 1814.8326,
+     "null_sd_pairs": 14.606550324126403,
+     "null_util_mean": 0.1286203118355776,
+     "null_util_q025_q975": [
+      0.1265768958185684,
+      0.13061658398299078
+     ],
+     "z": -59.34547040639755,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.5223622277889431
+    },
+    "nb48_first_last": {
+     "tokens": 7526,
+     "onsets": 170,
+     "codas": 89,
+     "cells": 15130,
+     "observed_pairs": 1354,
+     "observed_util": 0.08949107732980832,
+     "null_mean_pairs": 2052.8626,
+     "null_sd_pairs": 16.300487472133554,
+     "null_util_mean": 0.13568159947124916,
+     "null_util_q025_q975": [
+      0.13357567746199603,
+      0.13780568407138136
+     ],
+     "z": -42.87372394198261,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.659566792244157
+    },
+    "nb44_cooccur": {
+     "tokens": 9518,
+     "onsets": 171,
+     "codas": 89,
+     "cells": 15219,
+     "observed_pairs": 1528,
+     "observed_util": 0.10040081477100993,
+     "null_mean_pairs": 2279.8477,
+     "null_sd_pairs": 17.827677563797586,
+     "null_util_mean": 0.14980272685458965,
+     "null_util_q025_q975": [
+      0.1475129771995532,
+      0.15211249096524082
+     ],
+     "z": -42.17305912727333,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.6702202081305695
+    }
+   }
+  },
+  "Hebrew (Torah)": {
+   "classes": {
+    "free": 687,
+    "nuclear": 40,
+    "onset": 175,
+    "coda": 266
+   },
+   "definitions": {
+    "nb36_2syl_OC": {
+     "tokens": 4749,
+     "onsets": 154,
+     "codas": 235,
+     "cells": 36190,
+     "observed_pairs": 892,
+     "observed_util": 0.024647692732799115,
+     "null_mean_pairs": 2624.475,
+     "null_sd_pairs": 16.231855171613354,
+     "null_util_mean": 0.07251934235976788,
+     "null_util_q025_q975": [
+      0.07162199502625034,
+      0.07339043934788615
+     ],
+     "z": -106.73302476415589,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.3398774993093857
+    },
+    "nb48_first_last": {
+     "tokens": 6657,
+     "onsets": 162,
+     "codas": 256,
+     "cells": 41472,
+     "observed_pairs": 1333,
+     "observed_util": 0.032142168209876545,
+     "null_mean_pairs": 3113.5095,
+     "null_sd_pairs": 18.75414838264206,
+     "null_util_mean": 0.07507497829861111,
+     "null_util_q025_q975": [
+      0.07419463734567901,
+      0.0759548611111111
+     ],
+     "z": -94.93950157971204,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.42813423244733956
+    },
+    "nb44_cooccur": {
+     "tokens": 7494,
+     "onsets": 164,
+     "codas": 257,
+     "cells": 42148,
+     "observed_pairs": 1456,
+     "observed_util": 0.034544936889057604,
+     "null_mean_pairs": 3309.1731,
+     "null_sd_pairs": 19.45621213929065,
+     "null_util_mean": 0.07851317025718896,
+     "null_util_q025_q975": [
+      0.07760747840941444,
+      0.07941064819208503
+     ],
+     "z": -95.24840121668022,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.4399890715901202
+    }
+   }
+  },
+  "Hebrew (Moreh, Tibbonid)": {
+   "classes": {
+    "nuclear": 81,
+    "coda": 306,
+    "onset": 233,
+    "free": 677
+   },
+   "definitions": {
+    "nb36_2syl_OC": {
+     "tokens": 4619,
+     "onsets": 205,
+     "codas": 276,
+     "cells": 56580,
+     "observed_pairs": 969,
+     "observed_util": 0.017126193001060445,
+     "null_mean_pairs": 2600.1907,
+     "null_sd_pairs": 16.287672096903034,
+     "null_util_mean": 0.045956003888299755,
+     "null_util_q025_q975": [
+      0.045387062566277836,
+      0.046518204312477905
+     ],
+     "z": -100.14879292112944,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.3726649741497806
+    },
+    "nb48_first_last": {
+     "tokens": 6674,
+     "onsets": 216,
+     "codas": 295,
+     "cells": 63720,
+     "observed_pairs": 1550,
+     "observed_util": 0.024325172630257377,
+     "null_mean_pairs": 3212.486,
+     "null_sd_pairs": 19.146808194223983,
+     "null_util_mean": 0.05041566227244193,
+     "null_util_q025_q975": [
+      0.04982736974262398,
+      0.051004394224733206
+     ],
+     "z": -86.82836236389113,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.48249237506404696
+    },
+    "nb44_cooccur": {
+     "tokens": 7722,
+     "onsets": 217,
+     "codas": 295,
+     "cells": 64015,
+     "observed_pairs": 1714,
+     "observed_util": 0.026774974615324534,
+     "null_mean_pairs": 3481.3675,
+     "null_sd_pairs": 20.21636252844186,
+     "null_util_mean": 0.05438362102632195,
+     "null_util_q025_q975": [
+      0.0537686479731313,
+      0.0549871123955323
+     ],
+     "z": -87.42262597999704,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.4923352676785775
+    }
+   }
+  },
+  "Judeo-Arabic (Quran)": {
+   "classes": {
+    "free": 533,
+    "onset": 114,
+    "coda": 389,
+    "nuclear": 88
+   },
+   "definitions": {
+    "nb36_2syl_OC": {
+     "tokens": 3884,
+     "onsets": 97,
+     "codas": 310,
+     "cells": 30070,
+     "observed_pairs": 780,
+     "observed_util": 0.025939474559361488,
+     "null_mean_pairs": 2226.6068,
+     "null_sd_pairs": 14.948650105410769,
+     "null_util_mean": 0.07404744928500166,
+     "null_util_q025_q975": [
+      0.07306285334220153,
+      0.07499168606584636
+     ],
+     "z": -96.77173455791774,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.3503088196802417
+    },
+    "nb48_first_last": {
+     "tokens": 5694,
+     "onsets": 101,
+     "codas": 369,
+     "cells": 37269,
+     "observed_pairs": 1338,
+     "observed_util": 0.03590115109071883,
+     "null_mean_pairs": 2964.5336,
+     "null_sd_pairs": 17.42753117697089,
+     "null_util_mean": 0.0795442217392471,
+     "null_util_q025_q975": [
+      0.07861761785934691,
+      0.0804690225120073
+     ],
+     "z": -93.3312689837179,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.45133575143152366
+    },
+    "nb44_cooccur": {
+     "tokens": 6698,
+     "onsets": 101,
+     "codas": 372,
+     "cells": 37572,
+     "observed_pairs": 1500,
+     "observed_util": 0.03992334717342702,
+     "null_mean_pairs": 3155.7496,
+     "null_sd_pairs": 18.40793809905134,
+     "null_util_mean": 0.08399205791546897,
+     "null_util_q025_q975": [
+      0.0830405621207282,
+      0.0849568827850527
+     ],
+     "z": -89.94758625819857,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.47532288366605513
+    }
+   }
+  },
+  "Ge'ez": {
+   "classes": {
+    "onset": 352,
+    "free": 1010,
+    "coda": 446,
+    "nuclear": 177
+   },
+   "definitions": {
+    "nb36_2syl_OC": {
+     "tokens": 2627,
+     "onsets": 294,
+     "codas": 369,
+     "cells": 108486,
+     "observed_pairs": 851,
+     "observed_util": 0.007844330143981712,
+     "null_mean_pairs": 2338.491,
+     "null_sd_pairs": 11.30417168260209,
+     "null_util_mean": 0.021555693822244346,
+     "null_util_q025_q975": [
+      0.021348376749073614,
+      0.021763176815441623
+     ],
+     "z": -131.58779269863288,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.3639098888984392
+    },
+    "nb48_first_last": {
+     "tokens": 4263,
+     "onsets": 333,
+     "codas": 430,
+     "cells": 143190,
+     "observed_pairs": 1822,
+     "observed_util": 0.01272435225923598,
+     "null_mean_pairs": 3434.4344,
+     "null_sd_pairs": 15.235311224612746,
+     "null_util_mean": 0.023985155387946086,
+     "null_util_q025_q975": [
+      0.023772609819121448,
+      0.024191633493959076
+     ],
+     "z": -105.83534371093789,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.5305094777760204
+    },
+    "nb44_cooccur": {
+     "tokens": 5001,
+     "onsets": 338,
+     "codas": 434,
+     "cells": 146692,
+     "observed_pairs": 2116,
+     "observed_util": 0.014424781174160827,
+     "null_mean_pairs": 3880.1136,
+     "null_sd_pairs": 16.985780721376084,
+     "null_util_mean": 0.026450751233877787,
+     "null_util_q025_q975": [
+      0.02622501567910997,
+      0.026674937965260544
+     ],
+     "z": -103.85825820651961,
+     "p_lower": 9.999000099990002e-05,
+     "observed_over_null": 0.5453448579443653
+    }
+   }
+  }
+ }
+}

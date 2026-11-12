@@ -1,0 +1,20 @@
+== Voynich (STA1): {'nuclear': 54, 'free': 477, 'coda': 90, 'onset': 171}
+   nb36_2syl_OC     166x85 tokens=5,407 obs=948 (6.7%) null=1815±15 (12.9%) obs/null=0.52 z=-59.3 p=0.0001
+   nb48_first_last  170x89 tokens=7,526 obs=1354 (8.9%) null=2053±16 (13.6%) obs/null=0.66 z=-42.9 p=0.0001
+   nb44_cooccur     171x89 tokens=9,518 obs=1528 (10.0%) null=2280±18 (15.0%) obs/null=0.67 z=-42.2 p=0.0001
+== Hebrew (Torah): {'free': 687, 'nuclear': 40, 'onset': 175, 'coda': 266}
+   nb36_2syl_OC     154x235 tokens=4,749 obs=892 (2.5%) null=2624±16 (7.3%) obs/null=0.34 z=-106.7 p=0.0001
+   nb48_first_last  162x256 tokens=6,657 obs=1333 (3.2%) null=3114±19 (7.5%) obs/null=0.43 z=-94.9 p=0.0001
+   nb44_cooccur     164x257 tokens=7,494 obs=1456 (3.5%) null=3309±19 (7.9%) obs/null=0.44 z=-95.2 p=0.0001
+== Hebrew (Moreh, Tibbonid): {'nuclear': 81, 'coda': 306, 'onset': 233, 'free': 677}
+   nb36_2syl_OC     205x276 tokens=4,619 obs=969 (1.7%) null=2600±16 (4.6%) obs/null=0.37 z=-100.1 p=0.0001
+   nb48_first_last  216x295 tokens=6,674 obs=1550 (2.4%) null=3212±19 (5.0%) obs/null=0.48 z=-86.8 p=0.0001
+   nb44_cooccur     217x295 tokens=7,722 obs=1714 (2.7%) null=3481±20 (5.4%) obs/null=0.49 z=-87.4 p=0.0001
+== Judeo-Arabic (Quran): {'free': 533, 'onset': 114, 'coda': 389, 'nuclear': 88}
+   nb36_2syl_OC     97x310 tokens=3,884 obs=780 (2.6%) null=2227±15 (7.4%) obs/null=0.35 z=-96.8 p=0.0001
+   nb48_first_last  101x369 tokens=5,694 obs=1338 (3.6%) null=2965±17 (8.0%) obs/null=0.45 z=-93.3 p=0.0001
+   nb44_cooccur     101x372 tokens=6,698 obs=1500 (4.0%) null=3156±18 (8.4%) obs/null=0.48 z=-89.9 p=0.0001
+== Ge'ez: {'onset': 352, 'free': 1010, 'coda': 446, 'nuclear': 177}
+   nb36_2syl_OC     294x369 tokens=2,627 obs=851 (0.8%) null=2338±11 (2.2%) obs/null=0.36 z=-131.6 p=0.0001
+   nb48_first_last  333x430 tokens=4,263 obs=1822 (1.3%) null=3434±15 (2.4%) obs/null=0.53 z=-105.8 p=0.0001
+   nb44_cooccur     338x434 tokens=5,001 obs=2116 (1.4%) null=3880±17 (2.6%) obs/null=0.55 z=-103.9 p=0.0001

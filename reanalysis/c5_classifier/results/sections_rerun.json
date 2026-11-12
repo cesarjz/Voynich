@@ -1,0 +1,132 @@
+{
+ "published_ranges": {
+  "sections": [
+   "herbal",
+   "astro",
+   "zodiac",
+   "bio",
+   "pharma",
+   "recipe"
+  ],
+  "n_core_glyphs": 34,
+  "correct": 150,
+  "total": 226,
+  "accuracy": 0.6637168141592921,
+  "largest_class": 0.48672566371681414,
+  "pages_per_section": {
+   "herbal": 110,
+   "astro": 12,
+   "zodiac": 22,
+   "bio": 20,
+   "pharma": 6,
+   "recipe": 56
+  },
+  "confusion": {
+   "herbal": {
+    "pharma": 11,
+    "herbal": 75,
+    "recipe": 10,
+    "bio": 8,
+    "astro": 6
+   },
+   "astro": {
+    "bio": 4,
+    "astro": 5,
+    "zodiac": 1,
+    "pharma": 1,
+    "recipe": 1
+   },
+   "zodiac": {
+    "herbal": 2,
+    "recipe": 2,
+    "bio": 1,
+    "zodiac": 14,
+    "astro": 3
+   },
+   "bio": {
+    "bio": 20
+   },
+   "pharma": {
+    "pharma": 5,
+    "astro": 1
+   },
+   "recipe": {
+    "recipe": 31,
+    "astro": 6,
+    "herbal": 4,
+    "pharma": 8,
+    "zodiac": 1,
+    "bio": 6
+   }
+  },
+  "stdout": "Leave-one-out folio classification accuracy: 150/226 = 66.4%\nChance level (largest class): 48.7%\n\nConfusion matrix:\n            herbal   astro  zodiac     bio  pharma  recipe\n    herbal      75       6       0       8      11      10\n     astro       0       5       1       4       1       1\n    zodiac       2       3      14       1       0       2\n       bio       0       0       0      20       0       0\n    pharma       0       1       0       0       5       0\n    recipe       4       6       1       6       8      31\n"
+ },
+ "sta_I_metadata": {
+  "sections": [
+   "astro",
+   "bio",
+   "cosmo",
+   "herbal",
+   "pharma",
+   "recipe",
+   "zodiac"
+  ],
+  "n_core_glyphs": 34,
+  "correct": 142,
+  "total": 219,
+  "accuracy": 0.6484018264840182,
+  "largest_class": 0.589041095890411,
+  "pages_per_section": {
+   "herbal": 129,
+   "cosmo": 10,
+   "recipe": 25,
+   "astro": 8,
+   "zodiac": 12,
+   "bio": 19,
+   "pharma": 16
+  },
+  "confusion": {
+   "herbal": {
+    "herbal": 76,
+    "pharma": 15,
+    "bio": 11,
+    "astro": 6,
+    "recipe": 19,
+    "cosmo": 1,
+    "zodiac": 1
+   },
+   "cosmo": {
+    "cosmo": 4,
+    "zodiac": 2,
+    "astro": 3,
+    "recipe": 1
+   },
+   "recipe": {
+    "zodiac": 2,
+    "recipe": 16,
+    "bio": 5,
+    "herbal": 2
+   },
+   "astro": {
+    "cosmo": 2,
+    "astro": 4,
+    "pharma": 1,
+    "herbal": 1
+   },
+   "zodiac": {
+    "zodiac": 9,
+    "astro": 2,
+    "cosmo": 1
+   },
+   "bio": {
+    "bio": 19
+   },
+   "pharma": {
+    "pharma": 14,
+    "recipe": 1,
+    "cosmo": 1
+   }
+  },
+  "stdout": "Leave-one-out folio classification accuracy: 142/219 = 64.8%\nChance level (largest class): 58.9%\n\nConfusion matrix:\n             astro     bio   cosmo  herbal  pharma  recipe  zodiac\n     astro       4       0       2       1       1       0       0\n       bio       0      19       0       0       0       0       0\n     cosmo       3       0       4       0       0       1       2\n    herbal       6      11       1      76      15      19       1\n    pharma       0       0       1       0      14       1       0\n    recipe       0       5       0       2       0      16       2\n    zodiac       2       0       1       0       0       0       9\n"
+ }
+}

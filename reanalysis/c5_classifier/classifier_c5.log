@@ -1,0 +1,14 @@
+pages 226, sections {'pharma': 16, 'recipe': 26, 'herbal': 131, 'cosmo': 13, 'astro': 8, 'zodiac': 12, 'bio': 20}, core glyphs 34
+Currier {'A': 114, 'B': 82, '?': 30}, hands {'1': 113, '3': 33, '?': 1, '2': 46, '5': 7, '4': 26}
+section | glyphs34                         acc 0.633 [0.571,0.695] (majority 0.580, perm 0.118, p 0.0010) | bal 0.672 [0.588,0.757] (chance 0.143, perm 0.141, p 0.0010)
+section | roles6 (global roles)            acc 0.531 [0.465,0.597] (majority 0.580, perm 0.108, p 0.0010) | bal 0.535 [0.446,0.625] (chance 0.143, perm 0.144, p 0.0010)
+section | roles6 (fold-derived roles)      acc 0.531 | bal 0.535
+Currier language | glyphs34                acc 0.954 [0.923,0.980] (majority 0.582, perm 0.500, p 0.0010) | bal 0.959 [0.931,0.984] (chance 0.500, perm 0.499, p 0.0010)
+Currier language | roles6                  acc 0.776 [0.714,0.832] (majority 0.582, perm 0.502, p 0.0010) | bal 0.769 [0.707,0.827] (chance 0.500, perm 0.500, p 0.0010)
+hand | glyphs34                            acc 0.707 [0.644,0.764] (majority 0.502, perm 0.194, p 0.0010) | bal 0.712 [0.630,0.786] (chance 0.200, perm 0.201, p 0.0010)
+hand | roles6                              acc 0.578 [0.511,0.644] (majority 0.502, perm 0.176, p 0.0010) | bal 0.472 [0.412,0.534] (chance 0.200, perm 0.201, p 0.0010)
+section | (language, hand) LOO majority    acc 0.615 | bal 0.387
+section within Currier A | glyphs34        acc 0.833 [0.763,0.895] (majority 0.842, perm 0.474, p 0.0010) | bal 0.917 [0.840,0.955] (chance 0.333, perm 0.311, p 0.0010)
+section within Currier A | roles6          acc 0.763 [0.684,0.833] (majority 0.842, perm 0.396, p 0.0010) | bal 0.837 [0.698,0.906] (chance 0.333, perm 0.312, p 0.0010)
+section within Currier B | glyphs34        acc 0.695 [0.598,0.793] (majority 0.402, perm 0.256, p 0.0010) | bal 0.713 [0.583,0.829] (chance 0.250, perm 0.245, p 0.0010)
+section within Currier B | roles6          acc 0.415 [0.305,0.524] (majority 0.402, perm 0.249, p 0.0060) | bal 0.434 [0.310,0.577] (chance 0.250, perm 0.250, p 0.0050)
