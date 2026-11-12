@@ -13,9 +13,11 @@
   },
   "B": 1000,
   "not_reevaluated": {
-   "4": "semantic cross-validation, no mapping",
-   "12": "mapping not stored; notebook 20 must be re-run (also has n-gram bug)",
-   "13": "mapping not stored; notebook 21 must be re-run"
+   "4": "semantic cross-validation, no mapping"
+  },
+  "rerun": {
+   "12": "notebook 20 re-run for R1 (rerun/20_syllable_to_syllable_R1.ipynb)",
+   "13": "notebook 21 re-run for R1 (rerun/21_nucleus_only_R1.ipynb)"
   }
  },
  "rows": [

@@ -220,13 +220,13 @@ Stage 3: MCMC chains
 
 Stage 4: evaluation
 Traceback (most recent call last):
-  File "/home/cesar/Documentos/Code/Personales/LLM_training/paper_dsh/revision_R1/c2_benchmark/run_c2.py", line 542, in <module>
+  File "reanalysis/c2_benchmark/run_c2.py", line 542, in <module>
     encoding='utf-8')
 
-  File "/home/cesar/Documentos/Code/Personales/LLM_training/paper_dsh/revision_R1/c2_benchmark/run_c2.py", line 531, in main
+  File "reanalysis/c2_benchmark/run_c2.py", line 531, in main
     for r in runs:
                    
-  File "/home/cesar/Documentos/Code/Personales/LLM_training/paper_dsh/revision_R1/c2_benchmark/run_c2.py", line 450, in evaluate
+  File "reanalysis/c2_benchmark/run_c2.py", line 450, in evaluate
     'realism_index': (nm - real) / (nm - ceiling), 'realism_index_oracle': (nm - oracle) / (nm - ceiling),
                                          ^^^^^^^^^^^^^^^^^^^^^
 TypeError: 'NoneType' object is not subscriptable

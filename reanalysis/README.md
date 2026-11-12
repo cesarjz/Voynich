@@ -52,6 +52,10 @@ Python 3.12 with the versions in `requirements.txt`. From each folder: `python <
 (`c2_benchmark/run_c2.py`, `rerun/nb20_parallel.py`, `c3_baselines/role_partition_control.py`) run in parallel
 over CPU cores. The benchmark's Hebrew language models are included (`c2_benchmark/cache/`); the Ge'ez ones are
 not, since they are trained on TraCES, and are rebuilt on first run.
+Training the LSTM language models on a GPU is not bit-for-bit deterministic, so the trained models used in the
+analysis are included and reused when present: `c2_benchmark/cache/lm_*.pt` and `rerun/nb20_parallel_lm.pt` (Model 12).
+Delete them (or pass `--retrain` to `rerun/nb20_parallel.py`) to retrain; results then differ slightly. `rerun/nb20_parallel.py` uses the GPU in every worker; 8 workers
+fit in 16 GB.
 
 ## Known issue (12 November 2026)
 

@@ -3,9 +3,9 @@
 Re-scores the n-gram realism test of every stored decipherment mapping with one protocol, fixing the inverted-direction error found in the original notebooks.
 
 ```bash
-cd LLM_training/paper_dsh/revision_R1/reeval
-../../../.venv/bin/python run_ngram_reeval.py            # B = 1000, ~minutes
-../../../.venv/bin/python run_ngram_reeval.py --only 7 14 --B 200
+cd reanalysis/reeval
+python run_ngram_reeval.py            # B = 1000, ~minutes
+python run_ngram_reeval.py --only 7 14 --B 200
 ```
 
 Outputs: `results/ngram_reeval.json` (all numbers) and `results/ngram_reeval.md` (table with old values side by side).
@@ -23,7 +23,8 @@ Outputs: `results/ngram_reeval.json` (all numbers) and `results/ngram_reeval.md`
 
 - Corpus parsing, TP-P20 syllabification, EVA parsing and allograph rewriting are executed **verbatim from the notebook source** (`nbcode.py`), not re-implemented.
 - With the old samples (first 5,000 words), the re-implemented JSD reproduces the stored `real_jsd` to 4 decimals for Models 1, 5, 7, 14, 15, 17 and 19.
-- Sefaria texts come from the frozen copies in `LLM_training/corpus/sefaria/`, verified against the original word counts.
+- Sefaria texts: the Torah from the frozen copy in `corpus/sefaria/`; Onkelos and the Zohar fetched by `../fetch_external.sh`; verified against the original word counts.
+- The original model outputs read by `run_ngram_reeval.py` are in `stored_results/` (identical to `results/` of Zenodo record 10.5281/zenodo.19188265).
 
 ## Not covered
 

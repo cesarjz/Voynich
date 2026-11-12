@@ -21,7 +21,7 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).parent
-NB = HERE.parents[2] / '75_family_position_correlation.ipynb'
+NB = HERE.parents[1] / '75_family_position_correlation.ipynb'
 B = 10_000
 
 cells = json.loads(NB.read_text(encoding='utf-8'))['cells']

@@ -192,13 +192,19 @@ def main():
     ap.add_argument('--workers', type=int, default=8)
     ap.add_argument('--check', action='store_true')
     ap.add_argument('--smoke', action='store_true', help='2 EM iters, 600 MCMC iters; outputs renamed *_SMOKE')
+    ap.add_argument('--retrain', action='store_true',
+                    help='retrain the LSTM even if nb20_parallel_lm.pt exists (GPU training is not bit-for-bit deterministic)')
     a = ap.parse_args()
     if a.check:
         return check()
     t0 = time.time()
-    print('== setup + LSTM training (main process) ==', flush=True)
-    g = setup(train_lm=True)
-    print(f'LSTM saved to {LM_PATH.name}; {time.time()-t0:.0f}s', flush=True)
+    if a.retrain or not LM_PATH.exists():
+        print('== setup + LSTM training (main process) ==', flush=True)
+        g = setup(train_lm=True)
+        print(f'LSTM saved to {LM_PATH.name}; {time.time()-t0:.0f}s', flush=True)
+    else:
+        print(f'== setup; LSTM loaded from {LM_PATH.name} (use --retrain to train it again) ==', flush=True)
+        g = setup(train_lm=False)
     import torch                                   # free the main process's GPU memory (cells 8-10 do not use the LM)
     g['neural_lm'] = g['neural_lm'].cpu()
     g.pop('best_model_state', None); g.pop('optimizer', None)

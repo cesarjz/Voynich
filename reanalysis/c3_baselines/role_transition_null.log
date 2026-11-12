@@ -6,7 +6,7 @@ observed: P(ENC|OPEN)=0.635 pos1->2 OPEN->ENC share=0.441 forbidden=4 MI=0.223
   null 80/100
   null 100/100
 null (roles_rederived): P(ENC|OPEN)=0.477 [0.470,0.486] pos12 share=0.348 forbidden=0.6 MI=0.032 [0.029,0.035] p(MI)=0.0099
-/home/cesar/Documentos/Code/Personales/LLM_training/paper_dsh/revision_R1/c3_baselines/role_transition_null.py:230: RuntimeWarning: Mean of empty slice
+reanalysis/c3_baselines/role_transition_null.py:230: RuntimeWarning: Mean of empty slice
   d['oe_mean'] = np.nanmean(np.array([x['oe'] for x in nl]), 0).tolist()
 null (roles_fixed): P(ENC|OPEN)=0.474 [0.469,0.480] pos12 share=0.348 forbidden=0.0 MI=0.021 [0.020,0.022] p(MI)=0.0099
 cells (row -> col): observed P vs null (rederived) mean [95 %]:
