@@ -1,0 +1,71 @@
+context M1:ctl:LATIN: 25 symbols, roles {} [0s]
+context M1:ctl:LATL1: 159 symbols, roles {} [0s]
+context M1:ctl:GEEZN: 205 symbols, roles {} [0s]
+context M1:ctl:SELF: 131 symbols, roles {} [0s]
+context M1:ctl:NAIB: 20 symbols, roles {} [0s]
+context M7:ctl:LATIN: 25 symbols, roles {} [0s]
+context M7:ctl:LATL1: 159 symbols, roles {} [1s]
+context M7:ctl:GEEZN: 205 symbols, roles {} [0s]
+context M7:ctl:SELF: 131 symbols, roles {} [0s]
+context M7:ctl:NAIB: 20 symbols, roles {} [1s]
+
+Stage 1: EM
+  31 jobs to run (124 cached) on 15 workers
+  [1/31] M1_ctl_SELF_em (296s, elapsed 296s)
+  [2/31] M7_ctl_SELF_A09 (1392s, elapsed 1392s)
+  [3/31] M7_ctl_SELF_A12 (1530s, elapsed 1530s)
+  [4/31] M7_ctl_SELF_A06 (1573s, elapsed 1574s)
+  [5/31] M7_ctl_SELF_A10 (1634s, elapsed 1634s)
+  [6/31] M7_ctl_SELF_A01 (1685s, elapsed 1685s)
+  [7/31] M7_ctl_SELF_A04 (1809s, elapsed 1809s)
+  [8/31] M7_ctl_SELF_A11 (1865s, elapsed 1865s)
+  [9/31] M7_ctl_SELF_A07 (1885s, elapsed 1885s)
+  [10/31] M7_ctl_SELF_A05 (1973s, elapsed 1973s)
+  [11/31] M7_ctl_SELF_A03 (2005s, elapsed 2005s)
+  [12/31] M7_ctl_SELF_A08 (2044s, elapsed 2044s)
+  [13/31] M7_ctl_SELF_A00 (2052s, elapsed 2052s)
+  [14/31] M7_ctl_SELF_A13 (2113s, elapsed 2113s)
+  [15/31] M7_ctl_SELF_A14 (2077s, elapsed 2373s)
+  [16/31] M7_ctl_SELF_A02 (2394s, elapsed 2394s)
+  [17/31] M7_ctl_SELF_A15 (1429s, elapsed 2821s)
+  [18/31] M7_ctl_SELF_A16 (1593s, elapsed 3124s)
+  [19/31] M7_ctl_SELF_B1.5_0 (1347s, elapsed 3156s)
+  [20/31] M7_ctl_SELF_A19 (1548s, elapsed 3233s)
+  [21/31] M7_ctl_SELF_A17 (1688s, elapsed 3262s)
+  [22/31] M7_ctl_SELF_B1.5_3 (1341s, elapsed 3314s)
+  [23/31] M7_ctl_SELF_A18 (1699s, elapsed 3332s)
+  [24/31] M7_ctl_SELF_B2.0_0 (1305s, elapsed 3349s)
+  [25/31] M7_ctl_SELF_B1.5_1 (1499s, elapsed 3365s)
+  [26/31] M7_ctl_SELF_B1.5_4 (1367s, elapsed 3372s)
+  [27/31] M7_ctl_SELF_B1.5_2 (1499s, elapsed 3385s)
+  [28/31] M7_ctl_SELF_B2.0_2 (1366s, elapsed 3479s)
+  [29/31] M7_ctl_SELF_B2.0_1 (1433s, elapsed 3485s)
+  [30/31] M7_ctl_SELF_B2.0_3 (1249s, elapsed 3622s)
+  [31/31] M7_ctl_SELF_B2.0_4 (1318s, elapsed 3712s)
+
+Stage 2: selection + MCMC calibration
+  1 jobs to run (4 cached) on 15 workers
+  [1/1] M7_ctl_SELF_cal (2s, elapsed 2s)
+
+Stage 3: MCMC chains
+  8 jobs to run (32 cached) on 15 workers
+  [1/8] M1_ctl_SELF_m1c0 (195s, elapsed 196s)
+  [2/8] M1_ctl_SELF_m1c1 (197s, elapsed 197s)
+  [3/8] M1_ctl_SELF_m1c2 (197s, elapsed 197s)
+  [4/8] M1_ctl_SELF_m1c3 (197s, elapsed 197s)
+  [5/8] M7_ctl_SELF_m7c1 (217s, elapsed 218s)
+  [6/8] M7_ctl_SELF_m7c2 (219s, elapsed 220s)
+  [7/8] M7_ctl_SELF_m7c3 (228s, elapsed 228s)
+  [8/8] M7_ctl_SELF_m7c0 (232s, elapsed 232s)
+
+Stage 4: evaluation
+M1:ctl:LATIN         acc=nan sym=-1/25 RI=+0.030 (oracle +nan) p=0.0130 roots=0 (oracle 0)
+M1:ctl:LATL1         acc=0.000 sym=0/159 RI=-0.005 (oracle -0.176) p=0.5395 roots=0 (oracle 0)
+M1:ctl:GEEZN         acc=nan sym=-1/205 RI=+0.034 (oracle +nan) p=0.1249 roots=0 (oracle 0)
+M1:ctl:SELF          acc=nan sym=-1/131 RI=+0.015 (oracle +nan) p=0.3576 roots=0 (oracle 0)
+M1:ctl:NAIB          acc=nan sym=-1/20 RI=+0.061 (oracle +nan) p=0.0010 roots=1 (oracle 0)
+M7:ctl:LATIN         acc=nan sym=-1/25 RI=+0.107 (oracle +nan) p=0.0010 roots=3 (oracle 0)
+M7:ctl:LATL1         acc=0.000 sym=0/159 RI=-0.012 (oracle -0.160) p=0.6284 roots=0 (oracle 0)
+M7:ctl:GEEZN         acc=nan sym=-1/205 RI=-0.013 (oracle +nan) p=0.6693 roots=2 (oracle 0)
+M7:ctl:SELF          acc=nan sym=-1/131 RI=-0.050 (oracle +nan) p=0.8961 roots=0 (oracle 0)
+M7:ctl:NAIB          acc=nan sym=-1/20 RI=+0.100 (oracle +nan) p=0.0010 roots=9 (oracle 0)

@@ -56,10 +56,3 @@ Training the LSTM language models on a GPU is not bit-for-bit deterministic, so 
 analysis are included and reused when present: `c2_benchmark/cache/lm_*.pt` and `rerun/nb20_parallel_lm.pt` (Model 12).
 Delete them (or pass `--retrain` to `rerun/nb20_parallel.py`) to retrain; results then differ slightly. `rerun/nb20_parallel.py` uses the GPU in every worker; 8 workers
 fit in 16 GB.
-
-## Known issue (12 November 2026)
-
-The specificity control `ctl_SELF` (copy-and-modify text, `c2_benchmark/data/ctl_SELF.json`, `results_spec/`) was
-generated before a fix that made `c3_baselines/self_citation.py::copy_modify` independent of Python's hash seed
-(set iteration order). Re-running `spec_data.py` now produces a different, deterministic `ctl_SELF`; the
-corresponding benchmark runs are being repeated and will replace the current files.
