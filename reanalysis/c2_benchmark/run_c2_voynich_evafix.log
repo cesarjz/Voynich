@@ -1,0 +1,55 @@
+context M1:voy:STA: 159 symbols, roles {} [0s]
+context M1:voy:EVA: 34 symbols, roles {} [0s]
+context M1:voy:SHUF: 159 symbols, roles {} [0s]
+context M1:ctl:GEEZ: 188 symbols, roles {} [0s]
+context M1:ctl:JARAB: 156 symbols, roles {} [0s]
+context M7:voy:STA: 159 symbols, roles {} [0s]
+context M7:voy:EVA: 34 symbols, roles {} [0s]
+context M7:voy:SHUF: 159 symbols, roles {} [0s]
+context M7:ctl:GEEZ: 188 symbols, roles {} [0s]
+context M7:ctl:JARAB: 156 symbols, roles {} [1s]
+
+Stage 1: EM
+  15 jobs to run (140 cached) on 15 workers
+  [1/15] M7_voy_EVA_A18 (1932s, elapsed 1932s)
+  [2/15] M7_voy_EVA_B1.5_3 (1935s, elapsed 1936s)
+  [3/15] M7_voy_EVA_A19 (2109s, elapsed 2109s)
+  [4/15] M7_voy_EVA_A15 (2132s, elapsed 2133s)
+  [5/15] M7_voy_EVA_A17 (2180s, elapsed 2180s)
+  [6/15] M7_voy_EVA_B2.0_1 (2194s, elapsed 2194s)
+  [7/15] M7_voy_EVA_B2.0_4 (2198s, elapsed 2198s)
+  [8/15] M7_voy_EVA_B1.5_2 (2246s, elapsed 2246s)
+  [9/15] M7_voy_EVA_B1.5_1 (2262s, elapsed 2262s)
+  [10/15] M7_voy_EVA_B2.0_0 (2269s, elapsed 2269s)
+  [11/15] M7_voy_EVA_B1.5_0 (2279s, elapsed 2279s)
+  [12/15] M7_voy_EVA_B1.5_4 (2287s, elapsed 2287s)
+  [13/15] M7_voy_EVA_A16 (2302s, elapsed 2302s)
+  [14/15] M7_voy_EVA_B2.0_2 (2346s, elapsed 2346s)
+  [15/15] M7_voy_EVA_B2.0_3 (2354s, elapsed 2354s)
+
+Stage 2: selection + MCMC calibration
+  1 jobs to run (4 cached) on 15 workers
+  [1/1] M7_voy_EVA_cal (7s, elapsed 7s)
+
+Stage 3: MCMC chains
+  8 jobs to run (32 cached) on 15 workers
+  [1/8] M1_voy_EVA_m1c0 (161s, elapsed 161s)
+  [2/8] M1_voy_EVA_m1c1 (162s, elapsed 162s)
+  [3/8] M1_voy_EVA_m1c3 (162s, elapsed 162s)
+  [4/8] M1_voy_EVA_m1c2 (167s, elapsed 167s)
+  [5/8] M7_voy_EVA_m7c0 (594s, elapsed 594s)
+  [6/8] M7_voy_EVA_m7c2 (638s, elapsed 638s)
+  [7/8] M7_voy_EVA_m7c3 (733s, elapsed 733s)
+  [8/8] M7_voy_EVA_m7c1 (741s, elapsed 741s)
+
+Stage 4: evaluation
+M1:voy:STA           acc=nan sym=-1/159 RI=+0.081 (oracle +nan) p=0.0090 roots=2 (oracle 0)
+M1:voy:EVA           acc=nan sym=-1/34 RI=+0.005 (oracle +nan) p=0.4206 roots=0 (oracle 0)
+M1:voy:SHUF          acc=nan sym=-1/159 RI=+0.004 (oracle +nan) p=0.4645 roots=0 (oracle 0)
+M1:ctl:GEEZ          acc=nan sym=-1/188 RI=+0.039 (oracle +nan) p=0.0969 roots=1 (oracle 0)
+M1:ctl:JARAB         acc=0.036 sym=5/156 RI=-0.007 (oracle +0.217) p=0.5674 roots=0 (oracle 3)
+M7:voy:STA           acc=nan sym=-1/159 RI=+0.149 (oracle +nan) p=0.0010 roots=2 (oracle 0)
+M7:voy:EVA           acc=nan sym=-1/34 RI=+0.037 (oracle +nan) p=0.1059 roots=0 (oracle 0)
+M7:voy:SHUF          acc=nan sym=-1/159 RI=-0.033 (oracle +nan) p=0.7483 roots=0 (oracle 0)
+M7:ctl:GEEZ          acc=nan sym=-1/188 RI=-0.058 (oracle +nan) p=0.9870 roots=0 (oracle 0)
+M7:ctl:JARAB         acc=0.000 sym=3/156 RI=-0.022 (oracle +0.215) p=0.6903 roots=0 (oracle 3)

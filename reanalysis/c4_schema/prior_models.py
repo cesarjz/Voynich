@@ -56,8 +56,8 @@ def slot_to_eva(s):
 def load_eva():
     words = []
     for line in (VOYNICH_DIR / 'corpus' / 'voynich_eva.txt').read_text(encoding='utf-8').splitlines():
-        m = re.match(r'^<(f\d+[rv]\d*)[^>]*>\s+(.*)', line.strip())
-        if not m or re.match(r'^<[^>]+>\s*<!', line.strip()):
+        m = re.match(r'^<([^.>]+)\.[^>]*>\s+(.*)', line.strip())  # text loci only (2026-11-13 fix, see reeval/corpora.py)
+        if not m:
             continue
         folio, txt = m.group(1), m.group(2)
         txt = re.sub(r'\{[^}]*\}', '', txt)

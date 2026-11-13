@@ -12,7 +12,7 @@
 | 11 | Syllabic homophonic | hebrew | 0.7334 | 0.7491 ± 0.0088 | 0.0977 | +0.024 | 0.0490 | PASS | 22% |
 | 12 | Syllable-to-syllable | hebrew | 0.5008 | 0.6634 ± 0.0116 | 0.0977 | +0.287 | 0.0010 | PASS | 0.1% |
 | 13 | Nucleus-only | hebrew | 0.6479 | 0.7272 ± 0.0242 | 0.0977 | +0.126 | 0.0020 | PASS | 100% |
-| 14 | Neural v2 (EVA) | hebrew | 0.7130 | 0.7462 ± 0.0176 | 0.1014 | +0.051 | 0.0320 | PASS | 0% |
+| 14 | Neural v2 (EVA) | hebrew | 0.7138 | 0.7458 ± 0.0178 | 0.0968 | +0.049 | 0.0400 | PASS | 0% |
 | 15 | Morphological | hebrew | 0.7398 | 0.7575 ± 0.0164 | 0.0977 | +0.027 | 0.1319 | MARGINAL | 16% |
 | 16 | Morphological (Zohar) | zohar | 0.7064 | 0.7344 ± 0.0218 | 0.0985 | +0.044 | 0.1019 | MARGINAL | 0% |
 | 17 | Tibbonid Hebrew | tibbonid | 0.7304 | 0.7594 ± 0.0192 | 0.0977 | +0.044 | 0.0759 | MARGINAL | 13% |

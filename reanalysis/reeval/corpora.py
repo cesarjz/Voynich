@@ -101,7 +101,38 @@ def voynich_sta():
     return words, ns['syls_to_words'](syls)
 
 
+EVA_LOCUS = re.compile(r'^<([^.>]+)\.[^>]*>\s+(.*)')   # text locus: page '.' line (headers have no '.')
+
+
+def eva_text_loci():
+    """ZL EVA reduced to its text loci (page headers dropped), with inline <!...> comments removed.
+
+    2026-11-13: nb 24 `parse_eva_ivtff` skips every line matching ^<...>\\s*<! to drop page headers, but in ZL v3b
+    many text loci also begin with an inline comment (`<f57v.2,@Cc>  <!10:30>text`): all circular text, about half
+    of the labels and radii and some paragraph lines were lost (34,725 of 38,245 words).  Every locus with a '.' is
+    now kept, whatever the page name (fRos included, as in the STA1 loaders).  Removing the comments first is
+    equivalent to the parser's own <...> stripping, so the notebook parser is still used verbatim.
+
+    ',' (uncertain space) remains a word break, as in nb 24.  STA1 already resolves most of ZL's uncertain spaces as
+    spaces (STA1 677 commas, EVA 2,748); with ',' as a break EVA matches STA1's word count in 82.7% of loci, against
+    76.0% if ',' joined words."""
+    out = []
+    for line in (VOYNICH_DIR / 'corpus' / 'voynich_eva.txt').read_text(encoding='utf-8').splitlines():
+        m = EVA_LOCUS.match(line.strip())
+        if m:
+            tag = line.strip()[:line.strip().index('>') + 1]
+            out.append(f"{tag}      {re.sub(r'<![^>]*>', '', m.group(2)).strip()}")
+    return '\n'.join(out)
+
+
 def voynich_eva():
+    ns = load_defs('24_neural_v2_eva.ipynb', ['EVA_MULTI', 'tokenize_eva_word', 'parse_eva_ivtff'])
+    words, _ = ns['parse_eva_ivtff'](eva_text_loci())
+    return words
+
+
+def voynich_eva_old():
+    """Pre-2026-11-13 behaviour (nb 24 parser on the raw file); comparison only."""
     ns = load_defs('24_neural_v2_eva.ipynb', ['EVA_MULTI', 'tokenize_eva_word', 'parse_eva_ivtff'])
     words, _ = ns['parse_eva_ivtff']((VOYNICH_DIR / 'corpus' / 'voynich_eva.txt').read_text(encoding='utf-8'))
     return words

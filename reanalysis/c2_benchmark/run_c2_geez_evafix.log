@@ -1,0 +1,123 @@
+context M1:gkn:L0: 193 symbols, roles {} [0s]
+context M1:voyg:STA: 159 symbols, roles {} [0s]
+context M1:voyg:EVA: 34 symbols, roles {} [0s]
+context M1:voyg:SHUF: 159 symbols, roles {} [0s]
+context M1:gkc:L0: 32 symbols, roles {} [0s]
+context M1:voygc:STA: 159 symbols, roles {} [0s]
+context M1:voygc:EVA: 34 symbols, roles {} [0s]
+context M1:voygc:SHUF: 159 symbols, roles {} [0s]
+context M7:gkn:L0: 193 symbols, roles {} [0s]
+context M7:voyg:STA: 159 symbols, roles {} [0s]
+context M7:voyg:EVA: 34 symbols, roles {} [1s]
+context M7:voyg:SHUF: 159 symbols, roles {} [0s]
+context M7:gkc:L0: 32 symbols, roles {} [1s]
+context M7:voygc:STA: 159 symbols, roles {} [0s]
+context M7:voygc:EVA: 34 symbols, roles {} [1s]
+context M7:voygc:SHUF: 159 symbols, roles {} [0s]
+
+Stage 1: EM
+  62 jobs to run (186 cached) on 15 workers
+  [1/62] M1_voygc_EVA_em (218s, elapsed 218s)
+  [2/62] M1_voyg_EVA_em (294s, elapsed 294s)
+  [3/62] M7_voyg_EVA_A05 (4808s, elapsed 4808s)
+  [4/62] M7_voyg_EVA_A13 (4660s, elapsed 4878s)
+  [5/62] M7_voyg_EVA_A06 (4958s, elapsed 4958s)
+  [6/62] M7_voyg_EVA_A14 (5030s, elapsed 5324s)
+  [7/62] M7_voyg_EVA_A03 (5472s, elapsed 5472s)
+  [8/62] M7_voyg_EVA_A10 (5632s, elapsed 5632s)
+  [9/62] M7_voyg_EVA_A12 (5660s, elapsed 5660s)
+  [10/62] M7_voyg_EVA_A04 (5799s, elapsed 5799s)
+  [11/62] M7_voyg_EVA_A11 (5951s, elapsed 5951s)
+  [12/62] M7_voyg_EVA_A01 (6135s, elapsed 6135s)
+  [13/62] M7_voyg_EVA_A02 (6158s, elapsed 6158s)
+  [14/62] M7_voyg_EVA_A09 (6448s, elapsed 6448s)
+  [15/62] M7_voyg_EVA_A00 (6781s, elapsed 6781s)
+  [16/62] M7_voyg_EVA_A08 (7500s, elapsed 7500s)
+  [17/62] M7_voyg_EVA_A19 (3627s, elapsed 9099s)
+  [18/62] M7_voyg_EVA_A07 (9351s, elapsed 9351s)
+  [19/62] M7_voyg_EVA_A17 (4894s, elapsed 9852s)
+  [20/62] M7_voyg_EVA_B1.5_1 (4406s, elapsed 10066s)
+  [21/62] M7_voyg_EVA_B1.5_2 (4431s, elapsed 10230s)
+  [22/62] M7_voyg_EVA_B1.5_0 (4755s, elapsed 10387s)
+  [23/62] M7_voyg_EVA_B2.0_2 (3936s, elapsed 10718s)
+  [24/62] M7_voyg_EVA_A18 (5791s, elapsed 11115s)
+  [25/62] M7_voyg_EVA_A15 (6753s, elapsed 11561s)
+  [26/62] M7_voyg_EVA_A16 (6834s, elapsed 11713s)
+  [27/62] M7_voyg_EVA_B2.0_0 (5597s, elapsed 11755s)
+  [28/62] M7_voygc_EVA_A00 (2456s, elapsed 11808s)
+  [29/62] M7_voyg_EVA_B1.5_3 (5913s, elapsed 11864s)
+  [30/62] M7_voygc_EVA_A01 (2121s, elapsed 11974s)
+  [31/62] M7_voyg_EVA_B1.5_4 (6158s, elapsed 12293s)
+  [32/62] M7_voygc_EVA_A03 (2093s, elapsed 12323s)
+  [33/62] M7_voygc_EVA_A04 (2154s, elapsed 12540s)
+  [34/62] M7_voygc_EVA_A02 (2494s, elapsed 12560s)
+  [35/62] M7_voygc_EVA_A05 (2411s, elapsed 13129s)
+  [36/62] M7_voygc_EVA_A06 (2224s, elapsed 13339s)
+  [37/62] M7_voyg_EVA_B2.0_3 (6028s, elapsed 13528s)
+  [38/62] M7_voygc_EVA_A07 (2236s, elapsed 13797s)
+  [39/62] M7_voygc_EVA_A10 (2172s, elapsed 13980s)
+  [40/62] M7_voygc_EVA_A11 (2170s, elapsed 14035s)
+  [41/62] M7_voyg_EVA_B2.0_1 (7672s, elapsed 14120s)
+  [42/62] M7_voygc_EVA_A08 (2485s, elapsed 14198s)
+  [43/62] M7_voygc_EVA_A12 (2328s, elapsed 14302s)
+  [44/62] M7_voygc_EVA_A09 (2697s, elapsed 14452s)
+  [45/62] M7_voygc_EVA_A13 (2428s, elapsed 14721s)
+  [46/62] M7_voygc_EVA_A14 (2466s, elapsed 14789s)
+  [47/62] M7_voygc_EVA_A16 (2328s, elapsed 14888s)
+  [48/62] M7_voygc_EVA_A15 (2359s, elapsed 14899s)
+  [49/62] M7_voygc_EVA_A17 (2133s, elapsed 15262s)
+  [50/62] M7_voyg_EVA_B2.0_4 (6201s, elapsed 15300s)
+  [51/62] M7_voygc_EVA_A19 (2060s, elapsed 15588s)
+  [52/62] M7_voygc_EVA_A18 (2361s, elapsed 15700s)
+  [53/62] M7_voygc_EVA_B1.5_2 (1848s, elapsed 15882s)
+  [54/62] M7_voygc_EVA_B2.0_1 (1482s, elapsed 15934s)
+  [55/62] M7_voygc_EVA_B1.5_0 (2161s, elapsed 15957s)
+  [56/62] M7_voygc_EVA_B1.5_3 (1842s, elapsed 15962s)
+  [57/62] M7_voygc_EVA_B1.5_1 (2009s, elapsed 15989s)
+  [58/62] M7_voygc_EVA_B2.0_0 (1787s, elapsed 16089s)
+  [59/62] M7_voygc_EVA_B1.5_4 (2000s, elapsed 16197s)
+  [60/62] M7_voygc_EVA_B2.0_4 (1416s, elapsed 16304s)
+  [61/62] M7_voygc_EVA_B2.0_2 (1603s, elapsed 16324s)
+  [62/62] M7_voygc_EVA_B2.0_3 (1664s, elapsed 16452s)
+
+Stage 2: selection + MCMC calibration
+  2 jobs to run (6 cached) on 15 workers
+  [1/2] M7_voygc_EVA_cal (7s, elapsed 7s)
+  [2/2] M7_voyg_EVA_cal (8s, elapsed 8s)
+
+Stage 3: MCMC chains
+  16 jobs to run (48 cached) on 15 workers
+  [1/16] M1_voygc_EVA_m1c1 (288s, elapsed 288s)
+  [2/16] M1_voygc_EVA_m1c0 (288s, elapsed 288s)
+  [3/16] M1_voygc_EVA_m1c3 (295s, elapsed 295s)
+  [4/16] M1_voygc_EVA_m1c2 (299s, elapsed 299s)
+  [5/16] M1_voyg_EVA_m1c0 (389s, elapsed 389s)
+  [6/16] M1_voyg_EVA_m1c3 (390s, elapsed 390s)
+  [7/16] M1_voyg_EVA_m1c1 (400s, elapsed 400s)
+  [8/16] M1_voyg_EVA_m1c2 (416s, elapsed 417s)
+  [9/16] M7_voygc_EVA_m7c2 (841s, elapsed 841s)
+  [10/16] M7_voygc_EVA_m7c1 (848s, elapsed 848s)
+  [11/16] M7_voygc_EVA_m7c0 (856s, elapsed 856s)
+  [12/16] M7_voyg_EVA_m7c3 (858s, elapsed 858s)
+  [13/16] M7_voyg_EVA_m7c2 (860s, elapsed 860s)
+  [14/16] M7_voyg_EVA_m7c1 (874s, elapsed 874s)
+  [15/16] M7_voyg_EVA_m7c0 (878s, elapsed 878s)
+  [16/16] M7_voygc_EVA_m7c3 (689s, elapsed 977s)
+
+Stage 4: evaluation
+M1:gkn:L0            acc=0.456 sym=22/193 RI=+0.187 (oracle +0.772) p=0.0010 roots=0 (oracle 0)
+M1:voyg:STA          acc=nan sym=-1/159 RI=+0.078 (oracle +nan) p=0.0010 roots=0 (oracle 0)
+M1:voyg:EVA          acc=nan sym=-1/34 RI=+0.046 (oracle +nan) p=0.0040 roots=0 (oracle 0)
+M1:voyg:SHUF         acc=nan sym=-1/159 RI=+0.015 (oracle +nan) p=0.1958 roots=0 (oracle 0)
+M1:gkc:L0            acc=1.000 sym=28/32 RI=+0.851 (oracle +0.852) p=0.0010 roots=0 (oracle 0)
+M1:voygc:STA         acc=nan sym=-1/159 RI=+0.097 (oracle +nan) p=0.0030 roots=0 (oracle 0)
+M1:voygc:EVA         acc=nan sym=-1/34 RI=+0.082 (oracle +nan) p=0.0030 roots=0 (oracle 0)
+M1:voygc:SHUF        acc=nan sym=-1/159 RI=+0.009 (oracle +nan) p=0.3966 roots=0 (oracle 0)
+M7:gkn:L0            acc=0.972 sym=142/193 RI=+0.777 (oracle +0.793) p=0.0010 roots=0 (oracle 0)
+M7:voyg:STA          acc=nan sym=-1/159 RI=+0.051 (oracle +nan) p=0.0010 roots=0 (oracle 0)
+M7:voyg:EVA          acc=nan sym=-1/34 RI=+0.035 (oracle +nan) p=0.0050 roots=0 (oracle 0)
+M7:voyg:SHUF         acc=nan sym=-1/159 RI=-0.003 (oracle +nan) p=0.5724 roots=0 (oracle 0)
+M7:gkc:L0            acc=1.000 sym=28/32 RI=+0.851 (oracle +0.852) p=0.0010 roots=0 (oracle 0)
+M7:voygc:STA         acc=nan sym=-1/159 RI=+0.164 (oracle +nan) p=0.0010 roots=0 (oracle 0)
+M7:voygc:EVA         acc=nan sym=-1/34 RI=+0.106 (oracle +nan) p=0.0010 roots=0 (oracle 0)
+M7:voygc:SHUF        acc=nan sym=-1/159 RI=-0.084 (oracle +nan) p=0.9890 roots=0 (oracle 0)

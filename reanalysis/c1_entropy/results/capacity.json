@@ -10,14 +10,14 @@
   "lzma_KB": 53.876
  },
  "Voynich EVA": {
-  "words": 34725,
-  "types": 7766,
-  "log2_types": 12.922955991908477,
-  "unigram_H": 10.38545522597209,
-  "lzma_bits_per_word": 11.219582433405328,
-  "nb44_style_KB": 56.09370585237773,
-  "unigram_KB": 45.0793665902351,
-  "lzma_KB": 48.7
+  "words": 38245,
+  "types": 8647,
+  "log2_types": 13.077983973962752,
+  "unigram_H": 10.513643882287667,
+  "lzma_bits_per_word": 11.281370113740358,
+  "nb44_style_KB": 62.52093713552568,
+  "unigram_KB": 50.26178878476148,
+  "lzma_KB": 53.932
  },
  "Voynich STA1, word order shuffled": {
   "words": 37087,

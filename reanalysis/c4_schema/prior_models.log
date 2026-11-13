@@ -1,4 +1,4 @@
-EVA tokens 34,691; readable in Slot alphabet 34,282 (98.8%); units 26
+EVA tokens 38,248; readable in Slot alphabet 37,698 (98.6%); units 26
   fold 0 done
   fold 1 done
   fold 2 done
@@ -11,11 +11,11 @@ EVA tokens 34,691; readable in Slot alphabet 34,282 (98.8%); units 26
   fold 9 done
 
 model              real  posit   shuf   unig   language size
-zattera_REG       0.816  0.476  0.247  0.207   4.67e+06
-zattera_REG+SEP   0.956  0.750  0.453  0.396   
-stolfi_normal     0.946  0.582  0.454  0.373   1.83e+18
-stolfi_full       0.973  0.587  0.461  0.380   1.83e+18
-five_slot         0.940  0.938  0.377  0.348   4.48e+11
+zattera_REG       0.806  0.467  0.249  0.206   4.67e+06
+zattera_REG+SEP   0.953  0.741  0.459  0.398   
+stolfi_normal     0.944  0.577  0.457  0.370   1.83e+18
+stolfi_full       0.970  0.582  0.465  0.379   1.83e+18
+five_slot         0.937  0.936  0.382  0.354   4.18e+11
 
-held-out words accepted by Stolfi-normal (fold 0, n=3,244) bits/word: five_slot 15.80 positional 14.61 bigram 11.56 stolfi_normal 13.30
-five-slot inventory sizes (fold 0, Slot units): {'DOMINIUM': 15, 'GENUS': 17, 'SPECIES': 18, 'CORPUS': 15, 'FINIS': 8}
+held-out words accepted by Stolfi-normal (fold 0, n=3,554) bits/word: five_slot 15.96 positional 14.85 bigram 11.70 stolfi_normal 13.39
+five-slot inventory sizes (fold 0, Slot units): {'DOMINIUM': 14, 'GENUS': 17, 'SPECIES': 18, 'CORPUS': 15, 'FINIS': 8}

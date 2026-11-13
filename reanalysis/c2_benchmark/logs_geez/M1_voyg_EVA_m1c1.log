@@ -1,6 +1,6 @@
-    Adaptive T: median|delta|=0.5607 -> T_start=0.534071, T_end=0.00534071
-    MCMC iter 3000: score=-55.3150, best=-50.5227, T=0.212670, accept=45.1%
-    MCMC iter 6000: score=-53.2400, best=-50.5227, T=0.084660, accept=41.3%
-    MCMC iter 9000: score=-52.2785, best=-50.5227, T=0.033702, accept=38.1%
-    MCMC iter 12000: score=-51.2723, best=-50.5227, T=0.013416, accept=35.5%
-    MCMC iter 15000: score=-50.4867, best=-50.4861, T=0.005341, accept=32.7%
+    Adaptive T: median|delta|=0.4474 -> T_start=0.426159, T_end=0.00426159
+    MCMC iter 3000: score=-54.0233, best=-50.7487, T=0.169698, accept=43.2%
+    MCMC iter 6000: score=-51.2463, best=-50.7487, T=0.067554, accept=40.5%
+    MCMC iter 9000: score=-51.1433, best=-50.7487, T=0.026892, accept=37.1%
+    MCMC iter 12000: score=-50.5241, best=-50.4946, T=0.010705, accept=34.2%
+    MCMC iter 15000: score=-50.4036, best=-50.3960, T=0.004262, accept=31.3%

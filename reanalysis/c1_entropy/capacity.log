@@ -1,6 +1,6 @@
 corpus                                words  types  log2V     H1   LZMA   KB: nb44 / H1 / LZMA
 Voynich STA1                          37087  10127  13.31  11.00  11.62    61.7 /  51.0 /  53.9
-Voynich EVA                           34725   7766  12.92  10.39  11.22    56.1 /  45.1 /  48.7
+Voynich EVA                           38245   8647  13.08  10.51  11.28    62.5 /  50.3 /  53.9
 Voynich STA1, word order shuffled     37087  10127  13.31  11.00  11.81    61.7 /  51.0 /  54.8
 Hebrew Torah                          37087   8416  13.04  10.81  10.78    60.4 /  50.1 /  50.0
 Hebrew Moreh (Tibbonid)               37087  10812  13.40  11.50  12.07    62.1 /  53.3 /  56.0
